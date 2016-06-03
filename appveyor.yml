@@ -1,0 +1,43 @@
+# master
+-
+  branches:
+    only:
+      - master
+      
+  skip_tags: true
+
+  version: 0.1.0
+  
+  init:
+    - git config --global core.autocrlf input
+
+  install:
+    - npm install -g bower
+    - npm install -g gulp
+    - npm install
+    - bower install
+
+  build_script:
+    - gulp build --production
+    
+  test: off
+  
+  artifacts:
+    - path: docs
+      name: Oakbrook Style Guide
+
+  deploy:
+    - provider: Environment
+      name: Oakbrook Style Guide
+   
+  on_failure:
+    - ps: Update-AppveyorBuild -Version "$($env:appveyor_build_version)-fail-$(Get-Date -format dd_mm_yyyy_HH_mm_ss)"
+
+  on_success:
+    - ps: git config --global user.name "$($env:GIT_NAME)"
+    - ps: git config --global user.email "$($env:GIT_EMAIL_ADDRESS)"
+    - ps: git config --global credential.helper store
+    - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:GIT_USERNAME):$($env:GIT_PASSWORD)@github.com`n"
+    - ps: git remote add github https://$($env:GIT_USERNAME)@github.com/$($env:APPVEYOR_REPO_NAME).git
+    - ps: git tag $($env:APPVEYOR_BUILD_VERSION) $($env:APPVEYOR_REPO_COMMIT)
+    - ps: git push github --tags --quiet

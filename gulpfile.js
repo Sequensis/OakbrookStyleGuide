@@ -21,13 +21,27 @@ gulp.task('build', function(done) {
 });
 
 gulp.task('default', function(done) {
-    return runSequence('build', 'server', 'watch', function() {
+    return runSequence('build', 'browser', 'watch', function() {
         done();
     });
 });
 
 gulp.task('clean', function () {
     return del([config.paths.dist.root + '/*', config.paths.docs.root + '/*']);
+});
+
+gulp.task('browser', function (done) {
+    browser.init({
+        server: config.paths.docs.root, port: config.serverPort
+    });
+    
+    return done();
+});
+
+gulp.task('browser:reload', function (done) {
+    browser.reload();
+    
+    return done();
 });
 
 gulp.task('icons', function () {
@@ -82,6 +96,12 @@ gulp.task('panini:partials', function () {
         .pipe(gulp.dest(config.paths.bin.partials));
 });
 
+gulp.task('panini:refresh', function (done) {
+    panini.refresh();
+    
+    return done();
+});
+
 gulp.task('scripts', ['scripts:application']);
 
 gulp.task('scripts:application', function () {
@@ -108,12 +128,6 @@ gulp.task('scripts:application', function () {
         .pipe(gulp.dest(config.paths.docs.scripts));
 });
 
-gulp.task('server', function () {
-    return browser.init({
-        server: config.paths.docs.root, port: config.serverPort
-    });
-});
-
 gulp.task('styles', ['styles:likelyloans', 'styles:docs']);
 
 gulp.task('styles:likelyloans', function () {
@@ -127,42 +141,35 @@ gulp.task('styles:likelyloans', function () {
             browsers: config.compatibility
         }))
         .pipe(gulp.dest(config.paths.dist.styles))
-        .pipe(gulp.dest(config.paths.docs.styles))
         .pipe($.cssnano())
         .pipe($.rename('likelyloans.min.css'))
         .pipe($.sourcemaps.write('.'))
-        .pipe(gulp.dest(config.paths.dist.styles))
-        .pipe(gulp.dest(config.paths.docs.styles));
+        .pipe(gulp.dest(config.paths.dist.styles));
 });
 
 gulp.task('styles:docs', function () {
-    return gulp.src(config.paths.src.styles + '/Docs/Docs.scss')
+    return gulp.src(config.paths.src.styles + '/LikelyLoans/Docs.scss')
         .pipe($.sourcemaps.init({ loadMaps: true }))
         .pipe($.sass({
-            includePaths: config.paths.src.styles + '/Docs'
+            includePaths: config.paths.src.styles + '/LikelyLoans'
         }).on('error', $.sass.logError))
-        .pipe($.concat('docs.css'))
+        .pipe($.concat('likelyloans.css'))
         .pipe($.autoprefixer({
             browsers: config.compatibility
         }))
         .pipe(gulp.dest(config.paths.docs.styles))
         .pipe($.cssnano())
-        .pipe($.rename('docs.min.css'))
+        .pipe($.rename('likelyloans.min.css'))
         .pipe($.sourcemaps.write('.'))
         .pipe(gulp.dest(config.paths.docs.styles));
-});
-
-gulp.task('paniniRefresh', function (done) {
-    panini.refresh();
-    
-    return done();
 });
 
 gulp.task('watch', function () {
     gulp.watch(config.paths.src.icons + '/**/*', ['icons', browser.reload]);
     gulp.watch(config.paths.src.images + '/**/*', ['images', browser.reload]);
-    gulp.watch([config.paths.src.pages + '/**/*.{html,hbs,handlebars}'], ['panini', browser.reload]);
-    gulp.watch([config.paths.src.layouts + '/**/*.{html,hbs,handlebars}', config.paths.src.partials + '/**/*.{html,hbs,handlebars}'], ['paniniRefresh', 'panini', browser.reload]);
+    gulp.watch([config.paths.src.layouts + '/**/*.{html,hbs,handlebars}', config.paths.src.pages + '/**/*.{html,hbs,handlebars}', config.paths.src.partials + '/**/*.{html,hbs,handlebars}'], function () {
+        runSequence('panini:refresh', 'panini', 'browser:reload');
+    });
     gulp.watch(config.paths.src.scripts + '/**/*.{js,ts}', ['scripts', browser.reload]);
     gulp.watch(config.paths.src.styles + '/**/*.scss', ['styles', browser.reload]);
 });

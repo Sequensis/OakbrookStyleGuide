@@ -27,6 +27,7 @@
       "/src/Partials"
   ],
   "dependencies": {
-      "bootstrap-sass": "^3.3.6"
+      "bootstrap-sass": "^3.3.6",
+      "jquery-legacy": "jquery#1"
   }
 }

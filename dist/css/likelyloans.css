@@ -2230,24 +2230,3 @@ input[type="button"].btn-block {
   color: #fff;
   padding: 50px 0;
   text-align: center; }
-
-.ob-example {
-  position: relative;
-  margin: 15px 0;
-  padding: 39px 19px 14px;
-  background-color: white;
-  border: 1px solid #DDD;
-  border-radius: 4px; }
-
-.ob-example::after {
-  content: "Example";
-  position: absolute;
-  top: -1px;
-  right: -1px;
-  padding: 3px 7px;
-  font-size: 12px;
-  font-weight: bold;
-  background-color: whiteSmoke;
-  border: 1px solid #DDD;
-  color: #9DA0A4;
-  border-radius: 4px 0 4px 0; }

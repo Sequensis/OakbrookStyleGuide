@@ -14,14 +14,14 @@ var $ = require('gulp-load-plugins')({ lazy: true });
 
 var production = !!(yargs.argv.production);
 
-gulp.task('build', function(done) {
-    return runSequence('clean', ['icons', 'images', 'panini', 'styles', 'scripts'], function() {
+gulp.task('build', function (done) {
+    return runSequence('clean', ['icons', 'images', 'panini', 'styles', 'scripts'], function () {
         done();
     });
 });
 
-gulp.task('default', function(done) {
-    return runSequence('build', 'browser', 'watch', function() {
+gulp.task('default', function (done) {
+    return runSequence('build', 'browser', 'watch', function () {
         done();
     });
 });
@@ -34,13 +34,13 @@ gulp.task('browser', function (done) {
     browser.init({
         server: config.paths.docs.root, port: config.serverPort
     });
-    
+
     return done();
 });
 
 gulp.task('browser:reload', function (done) {
     browser.reload();
-    
+
     return done();
 });
 
@@ -98,24 +98,24 @@ gulp.task('panini:partials', function () {
 
 gulp.task('panini:refresh', function (done) {
     panini.refresh();
-    
+
     return done();
 });
 
-gulp.task('scripts', ['scripts:application']);
+gulp.task('scripts', ['scripts:application', 'scripts:docs']);
 
 gulp.task('scripts:application', function () {
     var javaScripts = gulp.src([
-            config.paths.src.scripts + '/**/*.js',
-            '!' + config.paths.src.scripts + '/Modernizr.js'
-        ]);
+        config.paths.src.scripts + '/**/*.js',
+        '!' + config.paths.src.scripts + '/Modernizr.js'
+    ]);
 
     var typeScripts = gulp.src(config.paths.src.scripts + '/**/*.ts')
         .pipe($.typescript({
             sortOutput: true
         }));
 
-    return mergeStream(javaScripts, typeScripts) 
+    return mergeStream(javaScripts, typeScripts)
         .pipe($.sourcemaps.init({ loadMaps: true }))
         .pipe($.babel())
         .pipe($.concat('oakbrookstyleguide.js'))
@@ -125,6 +125,22 @@ gulp.task('scripts:application', function () {
         .pipe($.rename('oakbrookstyleguide.min.js'))
         .pipe($.sourcemaps.write('.'))
         .pipe(gulp.dest(config.paths.dist.scripts))
+        .pipe(gulp.dest(config.paths.docs.scripts));
+});
+
+gulp.task('scripts:docs', function () {
+    return gulp.src([
+        config.paths.bower.root + '/jquery-legacy/dist/jquery.js',
+        config.paths.bower.root + '/bootstrap-sass/assets/javascripts/bootstrap.js'
+    ])
+
+        .pipe($.sourcemaps.init({ loadMaps: true }))
+        .pipe($.babel())
+        .pipe($.concat('docs.js'))
+        .pipe(gulp.dest(config.paths.docs.scripts))
+        .pipe($.uglify())
+        .pipe($.rename('docs.min.js'))
+        .pipe($.sourcemaps.write('.'))
         .pipe(gulp.dest(config.paths.docs.scripts));
 });
 

@@ -15,8 +15,8 @@ Oakbrook Style Guide is a front-end framework used by [Oakbrook Finance](http://
 ## Prerequisites
 
 * Install [Node.js](https://nodejs.org/en/download)
-* Install Gulp (`npm install -g bower`)
-* Install Bower (`npm install -g gulp`)
+* Install Gulp (`npm install -g gulp`)
+* Install Bower (`npm install -g bower`)
 
 ## Getting started
 

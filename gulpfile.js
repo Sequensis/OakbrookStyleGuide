@@ -102,7 +102,7 @@ gulp.task('panini:refresh', function (done) {
     return done();
 });
 
-gulp.task('scripts', ['scripts:application']);
+gulp.task('scripts', ['scripts:application', 'scripts:docs']);
 
 gulp.task('scripts:application', function () {
     var javaScripts = gulp.src([
@@ -130,8 +130,8 @@ gulp.task('scripts:application', function () {
 
 gulp.task('scripts:docs', function () {
     return gulp.src([
-        config.paths.bower.root + '/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js',
-        config.paths.bower.root + '/jquery/dist/jquery.js'
+        config.paths.bower.root + '/jquery-legacy/dist/jquery.js',
+        config.paths.bower.root + '/bootstrap-sass/assets/javascripts/bootstrap.js'
     ])
 
         .pipe($.sourcemaps.init({ loadMaps: true }))

@@ -1,11 +1,11 @@
 <div class="grid">
-    <h2 id="grid" class="page-header">
+    <h1 id="grid" class="page-header">
         Grid
-    </h2>
+    </h1>
 
-    <h3>
+    <h2>
         Introduction
-    </h3> 
+    </h2> 
     
     <ul>
         <li>Rows must be placed within a <code>.container</code> (fixed-width) or <code>.container-fluid</code> (full-width) for proper alignment and padding.</li>
@@ -19,9 +19,9 @@
         <li>Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying any <code>.col-md-*</code> class to an element will not only affect its styling on medium devices but also on large devices if a <code>.col-lg-*</code> class is not present.</li>
     </ul>
 
-    <h3>
+    <h2>
         Media queries
-    </h3>
+    </h2>
     
     <pre>/* Extra small devices (phones, &lt;=768px) */
 @media (max: @screen-sm-min) { ... }
@@ -35,9 +35,9 @@
 /* Large devices (large desktops, &gt;=1200px) */
 @media (min-width: @screen-lg-min) { ... }</pre> 
 
-    <h3>
+    <h2>
         Grid options
-    </h3> 
+    </h2> 
 
     <div class="table-responsive">
         <table class="table table-bordered table-striped">
@@ -101,9 +101,9 @@
         </table>
     </div>
     
-    <h3>
+    <h2>
         Containers
-    </h3>
+    </h2>
     
     <pre>&lt;div class="container">
     &lt;div class="row">
@@ -117,43 +117,43 @@
     &lt;/div>
 &lt;/div></pre>
 
-    <h3>
+    <h2>
         Twelve equal columns on all devices
-    </h3>
+    </h2>
     
     <div class="row">
-        <div class="col-xs-1">.col-xs-1</div>
-        <div class="col-xs-1">.col-xs-1</div>
-        <div class="col-xs-1">.col-xs-1</div>
-        <div class="col-xs-1">.col-xs-1</div>
-        <div class="col-xs-1">.col-xs-1</div>
-        <div class="col-xs-1">.col-xs-1</div>
-        <div class="col-xs-1">.col-xs-1</div>
-        <div class="col-xs-1">.col-xs-1</div>
-        <div class="col-xs-1">.col-xs-1</div>
-        <div class="col-xs-1">.col-xs-1</div>
-        <div class="col-xs-1">.col-xs-1</div>
-        <div class="col-xs-1">.col-xs-1</div>
+        <div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1</div>
+        <div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1</div>
+        <div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1</div>
+        <div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1</div>
+        <div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1</div>
+        <div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1</div>
+        <div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1</div>
+        <div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1</div>
+        <div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1</div>
+        <div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1</div>
+        <div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1</div>
+        <div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1</div>
     </div>
 
     <pre>&lt;div class="row">
-    &lt;div class="col-xs-1">.col-xs-1&lt;/div>
-    &lt;div class="col-xs-1">.col-xs-1&lt;/div>
-    &lt;div class="col-xs-1">.col-xs-1&lt;/div>
-    &lt;div class="col-xs-1">.col-xs-1&lt;/div>
-    &lt;div class="col-xs-1">.col-xs-1&lt;/div>
-    &lt;div class="col-xs-1">.col-xs-1&lt;/div>
-    &lt;div class="col-xs-1">.col-xs-1&lt;/div>
-    &lt;div class="col-xs-1">.col-xs-1&lt;/div>
-    &lt;div class="col-xs-1">.col-xs-1&lt;/div>
-    &lt;div class="col-xs-1">.col-xs-1&lt;/div>
-    &lt;div class="col-xs-1">.col-xs-1&lt;/div>
-    &lt;div class="col-xs-1">.col-xs-1&lt;/div>
+    &lt;div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1&lt;/div>
+    &lt;div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1&lt;/div>
+    &lt;div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1&lt;/div>
+    &lt;div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1&lt;/div>
+    &lt;div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1&lt;/div>
+    &lt;div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1&lt;/div>
+    &lt;div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1&lt;/div>
+    &lt;div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1&lt;/div>
+    &lt;div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-11&lt;/div>
+    &lt;div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1&lt;/div>
+    &lt;div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1&lt;/div>
+    &lt;div class="col-xs-4 col-sm-1">.col-xs-4 .col-sm-1&lt;/div>
 &lt;/div></pre>
 
-    <h3>
+    <h2>
         Twelve columns with different widths on each device (try resizing the browser)
-    </h3>
+    </h2>
     
     <div class="row">
         <div class="col-xs-4 col-sm-3 col-md-2 col-lg-1">.col-xs-4 .col-sm-3 .col-md-2 .col-lg-1</div>
@@ -183,11 +183,11 @@
     &lt;div class="col-xs-4 col-sm-3 col-md-2 col-lg-1">.col-xs-4 .col-sm-3 .col-md-2 .col-lg-1&lt;/div>
     &lt;div class="col-xs-4 col-sm-3 col-md-2 col-lg-1">.col-xs-4 .col-sm-3 .col-md-2 .col-lg-1&lt;/div>
     &lt;div class="col-xs-4 col-sm-3 col-md-2 col-lg-1">.col-xs-4 .col-sm-3 .col-md-2 .col-lg-1&lt;/div>
-&lt;/div></pre> 
-    
-    <h3>
+&lt;/div></pre>
+
+    <h2>
         Offsetting columns
-    </h3>
+    </h2>
     
     <div class="row">
         <div class="col-xs-6 col-xs-offset-6">.col-xs-6 .col-xs-6</div>

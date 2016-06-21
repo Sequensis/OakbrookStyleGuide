@@ -9,12 +9,4 @@
 @import "Thumbnails";
 @import "Wrapper";
 @import "Highlightjs";
-
-code {
-    color: #fff;
-    background-color: $brand-primary;
-}
-
-hr {
-    margin: 100px 0;
-}
+@import "Horizontal-Rule";

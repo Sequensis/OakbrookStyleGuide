@@ -131,7 +131,9 @@ gulp.task('scripts:application', function () {
 gulp.task('scripts:docs', function () {
     return gulp.src([
         config.paths.bower.root + '/jquery-legacy/dist/jquery.js',
-        config.paths.bower.root + '/bootstrap-sass/assets/javascripts/bootstrap.js'
+        config.paths.bower.root + '/bootstrap-sass/assets/javascripts/bootstrap.js',
+        config.paths.bower.root + '/highlightjs/highlight.pack.js',
+        config.paths.src.scripts + '/Docs/**/*'
     ])
 
         .pipe($.sourcemaps.init({ loadMaps: true }))

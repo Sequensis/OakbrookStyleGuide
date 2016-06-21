@@ -1,0 +1,26 @@
+.theme-light *{
+    background-color: $gray-lighter;
+}
+
+.theme-dark *{
+    background-color: $gray-dark;
+    color: #fff;
+}
+
+.theme-light code {
+    background-color: $brand-primary;
+}
+
+.theme-dark code {
+    color: $gray-dark;
+    background-color: $gray-lighter;
+}
+
+.theme-dark a {
+    color: #7EB1DC;
+}
+
+code {
+    color: #fff;
+    background-color: $brand-primary;
+}

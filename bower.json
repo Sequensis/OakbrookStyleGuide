@@ -2,32 +2,33 @@
   "name": "oakbrookstyleguide",
   "description": "Front-end framework for developing Oakbrook Finance projects on the web.",
   "keywords": [
-      "css",
-      "framework",
-      "front-end",
-      "js",
-      "mobile-first",
-      "oakbrook-finance",
-      "responsive",
-      "sass",
-      "web"
+    "css",
+    "framework",
+    "front-end",
+    "js",
+    "mobile-first",
+    "oakbrook-finance",
+    "responsive",
+    "sass",
+    "web"
   ],
   "homepage": "http://oakbrookstyleguide.azurewebsites.net/",
   "license": "MIT",
   "main": [
-      "dist/css/likelyloans.css",  
-      "dist/js/oakbrookstyleguide.js"  
+    "dist/css/likelyloans.css",
+    "dist/js/oakbrookstyleguide.js"
   ],
   "ignore": [
-      "./*",
-      "/src/Icons",
-      "/src/Images",
-      "/src/Layouts",
-      "/src/Pages",
-      "/src/Partials"
+    "./*",
+    "/src/Icons",
+    "/src/Images",
+    "/src/Layouts",
+    "/src/Pages",
+    "/src/Partials"
   ],
   "dependencies": {
-      "bootstrap-sass": "^3.3.6",
-      "jquery-legacy": "jquery#1"
+    "bootstrap-sass": "^3.3.6",
+    "jquery-legacy": "jquery#1",
+    "highlightjs": "^9.4.0"
   }
 }

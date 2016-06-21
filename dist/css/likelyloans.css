@@ -242,9 +242,9 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
-  line-height: 1.42857;
+  line-height: 2;
   color: #222222;
   background-color: #fff; }
 
@@ -283,7 +283,7 @@ img {
 
 .img-thumbnail {
   padding: 4px;
-  line-height: 1.42857;
+  line-height: 2;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -296,8 +296,8 @@ img {
   border-radius: 50%; }
 
 hr {
-  margin-top: 18px;
-  margin-bottom: 18px;
+  margin-top: 26px;
+  margin-bottom: 26px;
   border: 0;
   border-top: 1px solid #eeeeee; }
 
@@ -326,7 +326,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
   font-weight: 800;
-  line-height: 1.1;
+  line-height: 1.25;
   color: inherit; }
   h1 small,
   h1 .small, h2 small,
@@ -349,8 +349,8 @@ h1, h2, h3, h4, h5, h6,
 h1, .h1,
 h2, .h2,
 h3, .h3 {
-  margin-top: 18px;
-  margin-bottom: 9px; }
+  margin-top: 26px;
+  margin-bottom: 13px; }
   h1 small,
   h1 .small, .h1 small,
   .h1 .small,
@@ -365,8 +365,8 @@ h3, .h3 {
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-  margin-top: 9px;
-  margin-bottom: 9px; }
+  margin-top: 13px;
+  margin-bottom: 13px; }
   h4 small,
   h4 .small, .h4 small,
   .h4 .small,
@@ -397,10 +397,10 @@ h6, .h6 {
   font-size: 12px; }
 
 p {
-  margin: 0 0 9px; }
+  margin: 0 0 13px; }
 
 .lead {
-  margin-bottom: 18px;
+  margin-bottom: 26px;
   font-size: 14px;
   font-weight: 300;
   line-height: 1.4; }
@@ -518,14 +518,14 @@ a.bg-danger:focus {
   background-color: #e4b9b9; }
 
 .page-header {
-  padding-bottom: 8px;
-  margin: 36px 0 18px;
+  padding-bottom: 12px;
+  margin: 52px 0 26px;
   border-bottom: 1px solid #eeeeee; }
 
 ul,
 ol {
   margin-top: 0;
-  margin-bottom: 9px; }
+  margin-bottom: 13px; }
   ul ul,
   ul ol,
   ol ul,
@@ -547,11 +547,11 @@ ol {
 
 dl {
   margin-top: 0;
-  margin-bottom: 18px; }
+  margin-bottom: 26px; }
 
 dt,
 dd {
-  line-height: 1.42857; }
+  line-height: 2; }
 
 dt {
   font-weight: bold; }
@@ -587,8 +587,8 @@ abbr[data-original-title] {
   font-size: 90%; }
 
 blockquote {
-  padding: 9px 18px;
-  margin: 0 0 18px;
+  padding: 13px 26px;
+  margin: 0 0 26px;
   font-size: 16.25px;
   border-left: 5px solid #eeeeee; }
   blockquote p:last-child,
@@ -600,7 +600,7 @@ blockquote {
   blockquote .small {
     display: block;
     font-size: 80%;
-    line-height: 1.42857;
+    line-height: 2;
     color: #777777; }
     blockquote footer:before,
     blockquote small:before,
@@ -630,9 +630,9 @@ blockquote.pull-right {
     content: '\00A0 \2014'; }
 
 address {
-  margin-bottom: 18px;
+  margin-bottom: 26px;
   font-style: normal;
-  line-height: 1.42857; }
+  line-height: 2; }
 
 code,
 kbd,
@@ -662,10 +662,10 @@ kbd {
 
 pre {
   display: block;
-  padding: 8.5px;
-  margin: 0 0 9px;
+  padding: 12.5px;
+  margin: 0 0 13px;
   font-size: 12px;
-  line-height: 1.42857;
+  line-height: 2;
   word-break: break-all;
   word-wrap: break-word;
   color: #333333;
@@ -1214,7 +1214,7 @@ legend {
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 18px;
+  margin-bottom: 26px;
   font-size: 19.5px;
   line-height: inherit;
   color: #333333;
@@ -1258,16 +1258,16 @@ output {
   display: block;
   padding-top: 7px;
   font-size: 13px;
-  line-height: 1.42857;
+  line-height: 2;
   color: #555555; }
 
 .form-control {
   display: block;
   width: 100%;
-  height: 32px;
+  height: 40px;
   padding: 6px 12px;
   font-size: 13px;
-  line-height: 1.42857;
+  line-height: 2;
   color: #555555;
   background-color: #fff;
   background-image: none;
@@ -1308,7 +1308,7 @@ input[type="search"] {
   input[type="time"].form-control,
   input[type="datetime-local"].form-control,
   input[type="month"].form-control {
-    line-height: 32px; }
+    line-height: 40px; }
   input[type="date"].input-sm,
   .input-group-sm input[type="date"],
   input[type="time"].input-sm,
@@ -1345,7 +1345,7 @@ input[type="search"] {
   margin-bottom: 10px; }
   .radio label,
   .checkbox label {
-    min-height: 18px;
+    min-height: 26px;
     padding-left: 20px;
     margin-bottom: 0;
     font-weight: normal;
@@ -1404,7 +1404,7 @@ fieldset[disabled]
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 0;
-  min-height: 31px; }
+  min-height: 39px; }
   .form-control-static.input-lg, .form-control-static.input-sm {
     padding-left: 0;
     padding-right: 0; }
@@ -1441,7 +1441,7 @@ select[multiple].input-sm {
 
 .form-group-sm .form-control-static {
   height: 30px;
-  min-height: 30px;
+  min-height: 38px;
   padding: 6px 10px;
   font-size: 12px;
   line-height: 1.5; }
@@ -1478,7 +1478,7 @@ select[multiple].input-lg {
 
 .form-group-lg .form-control-static {
   height: 45px;
-  min-height: 35px;
+  min-height: 43px;
   padding: 11px 16px;
   font-size: 17px;
   line-height: 1.33333; }
@@ -1486,7 +1486,7 @@ select[multiple].input-lg {
 .has-feedback {
   position: relative; }
   .has-feedback .form-control {
-    padding-right: 40px; }
+    padding-right: 50px; }
 
 .form-control-feedback {
   position: absolute;
@@ -1494,9 +1494,9 @@ select[multiple].input-lg {
   right: 0;
   z-index: 2;
   display: block;
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
   pointer-events: none; }
 
@@ -1596,7 +1596,7 @@ select[multiple].input-lg {
   color: #a94442; }
 
 .has-feedback label ~ .form-control-feedback {
-  top: 23px; }
+  top: 31px; }
 
 .has-feedback label.sr-only ~ .form-control-feedback {
   top: 0; }
@@ -1656,7 +1656,7 @@ select[multiple].input-lg {
 
 .form-horizontal .radio,
 .form-horizontal .checkbox {
-  min-height: 25px; }
+  min-height: 33px; }
 
 .form-horizontal .form-group {
   margin-left: -15px;
@@ -1700,7 +1700,7 @@ select[multiple].input-lg {
   white-space: nowrap;
   padding: 6px 12px;
   font-size: 13px;
-  line-height: 1.42857;
+  line-height: 2;
   border-radius: 4px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2212,21 +2212,3 @@ input[type="button"].btn-block {
 @media print {
   .hidden-print {
     display: none !important; } }
-
-.bg-pacific {
-  background-color: #3399db;
-  color: #fff;
-  padding: 50px 0;
-  text-align: center; }
-
-.bg-shamrock {
-  background-color: #2dcc70;
-  color: #fff;
-  padding: 50px 0;
-  text-align: center; }
-
-.bg-juice {
-  background-color: #fdb728;
-  color: #fff;
-  padding: 50px 0;
-  text-align: center; }

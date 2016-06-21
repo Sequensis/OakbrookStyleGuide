@@ -1,3 +1,20 @@
 @import "../Bootstrap/Bootstrap";
+@import "../../../bower_components/highlightjs/styles/default";
 @import "Grid";
 @import "Body";
+@import "Colour-Palette";
+@import "Colour-Hue";
+@import "Themes";
+@import "Sidebar";
+@import "Thumbnails";
+@import "Wrapper";
+@import "Highlightjs";
+
+code {
+    color: #fff;
+    background-color: $brand-primary;
+}
+
+hr {
+    margin: 100px 0;
+}

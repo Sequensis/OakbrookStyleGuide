@@ -1,0 +1,41 @@
+.colour-hue-container {
+    height: 100px;
+    list-style: none;
+    width: 100%;
+    line-height: 50px;
+    color: #ffffff;
+}
+
+.colour-hue-container h4 {
+    line-height: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.colour-hue-gradient ul {
+    width: 100%;
+    display: table;
+}
+
+.colour-hue-gradient ul li {
+    display: table-cell;
+    width: auto;
+}
+
+.colour-hue-gradient li:nth-child(1) {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.colour-hue-gradient li:nth-child(2) {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.colour-hue-gradient li:nth-child(3) {
+    background-color: rgba(255,255,255,0);
+}
+.colour-hue-gradient li:nth-child(4) {
+    background-color: rgba(0,0,0,0.1);
+}
+.colour-hue-gradient li:nth-child(5) {
+    background-color: rgba(0,0,0,0.2);
+}

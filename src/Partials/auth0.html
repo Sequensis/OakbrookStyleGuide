@@ -1,0 +1,21 @@
+<h2 id="auth0">
+    Auth0
+</h2>
+
+<div id="lock-widget">
+</div>
+
+<script src="https://cdn.auth0.com/js/lock-9.0.js"></script>
+   <script>
+       var lock = new Auth0Lock('wgX0JYnX2B7VWRy5WjiAKfGxnaup9l4S', 'likelyloans.eu.auth0.com');
+
+       lock.show({
+           authParams: {
+               scope: 'openid profile'
+           },
+           container: 'lock-widget',
+           disableSignupAction: true,
+           responseType: 'code',
+       });
+ 
+   </script>

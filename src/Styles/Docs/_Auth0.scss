@@ -1,0 +1,19 @@
+$brand-login-modal: #FAF9F7;
+$brand-login-outline: #E6E5E3;
+
+#a0-lock.a0-theme-default .a0-bg-gradient {
+    display: none;
+}
+
+#a0-lock.a0-theme-default .a0-header h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#a0-lock.a0-theme-default .a0-image {
+    display: none;
+}
+
+
+#a0-lock.a0-theme-default .a0-primary {
+    background-color: $brand-login-modal !important;
+ }

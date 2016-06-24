@@ -70,7 +70,7 @@ gulp.task('icons', function (done) {
 gulp.task('icons:generate-favicon', function (done) {
     realFavicon.generateFavicon({
         masterPicture: config.paths.src.icons + '/Likelyloans/Favicon.png',
-        dest: config.paths.docs.root + '/icons/',
+        dest: config.paths.docs.root,
         iconsPath: '/',
         design: {
             ios: {

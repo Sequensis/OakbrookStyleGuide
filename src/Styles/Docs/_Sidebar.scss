@@ -1,37 +1,82 @@
 .sidebar-logo{
     width: 100%;
-    height: 120px;
-    background-color: $brand-primary;
+    height: 70px;
+    background-color: #fff;
+    // background-position: center;
+    // background-size: 50%;
+    // background-image: url(../img/LikelyLoans.png);
+    // background-repeat: no-repeat;
 }
 
 .sidebar-list {
     list-style: none;
     padding: 0;
+    background-color: $gray-lighter;
 }
 
 .sidebar-list a {
     display: block;
     text-decoration: none;
     padding-left: 20px;
-}
-
-.sidebar-list li:hover {
-    background-color: $gray-lighter;
+    text-transform: none;
 }
 
 .sidebar-btn {
-    position: fixed;
-    z-index: 1001;
-}
-
-.nav li, a{
+    background-color: #fff;
     color: $brand-primary;
+    margin: 0;
+    z-index: 1001;
+    padding: 20px;
+    height: 70px;
+    position: fixed;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 
+.sidebar-arrow {
+    background-color: #fff;
+    color: $brand-primary;
+    margin: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1001;
+    padding: 20px;
+    height: 70px;
+    position: fixed;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.sidebar-arrow:hover {
+    color: rgba(51, 153, 219, .5);
+}
+
+.sidebar-arrow:focus {
+    color: rgba(51, 153, 219, .5);
+}
+
+.sidebar-btn:hover {
+    color: rgba(51, 153, 219, .5);
+}
+
+.sidebar-btn:focus {
+    color: rgba(51, 153, 219, .5);
+}
+
+.nav li, a{
+    color: $gray-darker;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-stacked>li+li {
+    margin-top: 0;
+}
+
 .nav a:hover, a:focus {
-    color: $brand-info;
+    color: $gray-darker;
 }

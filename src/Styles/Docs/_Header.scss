@@ -1,0 +1,51 @@
+.header-container {
+    background: rgba(	255, 185, 20, 0.5);
+    height:100px;
+    width:auto;
+    position:relative;
+    margin: 50px 0;
+    padding: 0;
+}
+
+.header-intro {
+    margin-top: 0;
+}
+
+.header {
+    position: relative;
+    top: 100%;
+    transform: translateY(-75%);
+    display: block;
+    text-align: left;
+}
+
+.header h1{
+    font-size: 50px;
+    font-variant: small-caps;
+    color: #fff;
+}
+
+@media(min-width:640px) {
+
+    .header h1{
+        font-size: 60px;
+}  
+    .header-container{
+    height:250px;
+    margin: 100px 0;
+}
+}
+
+@media(min-width:1024px) {
+
+    .header h1{
+        font-size: 100px;
+}  
+}
+
+@media(min-width:1366px) {
+
+    .header h1{
+        font-size: 150px;
+}  
+}

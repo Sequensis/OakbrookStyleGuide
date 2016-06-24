@@ -55,7 +55,7 @@ dist/
 ├── css/
 │   ├── likeyloans.css
 │   ├── likeyloans.min.css
-│   ├── likeyloans.min.css.map
+│   └── likeyloans.min.css.map 
 └── js/
     ├── oakbrookstyleguide.js
     ├── oakbrookstyleguide.min.js

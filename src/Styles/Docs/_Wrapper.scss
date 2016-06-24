@@ -23,7 +23,7 @@
     height: 100%;
     margin-left: -200px;
     overflow-y: auto;
-    background: #e5e5e5;
+    background: #fff;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -38,6 +38,7 @@
 
 #wrapper.toggled #page-content-wrapper {
     position: absolute;
+    padding-top: 0;
     margin-right: -200px;
 }
 
@@ -60,7 +61,12 @@
 
 
     #page-content-wrapper {
-        padding: 20px 70px;
+        padding: 0px 70px;
+        position: relative;
+    }
+
+    #page-content-wrapper-splash-screen {
+        padding: 0px 0px;
         position: relative;
     }
 

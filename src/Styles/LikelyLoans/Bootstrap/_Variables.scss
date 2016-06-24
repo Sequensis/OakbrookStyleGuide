@@ -15,7 +15,8 @@ $gray:                   lighten($gray-base, 33.5%) !default; // #555
 $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         #3399db !default; // Pacific
+$brand-primary:         #005BC6 !default; // Pacific
+$brand-secondary:       #FFB914;
 $brand-success:         #2dcc70 !default; // Shamrock 
 $brand-info:            #5bc0de !default; 
 $brand-warning:         #fdb728 !default; // Juice
@@ -43,13 +44,13 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  'Montserrat', sans-serif !default;
+$font-family-sans-serif:  'Source Sans Pro', sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          13px !default;
+$font-size-base:          16px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default;
 $font-size-small:         ceil(($font-size-base * 0.85)) !default;
 
@@ -66,8 +67,8 @@ $line-height-base:        2 !default; // 20/14
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 
 //** By default, this inherits from the `<body>`.
-$headings-font-family:    inherit !default;
-$headings-font-weight:    800 !default;
+$headings-font-family:    'Montserrat', sans-serif !default;
+$headings-font-weight:    700 !default;
 $headings-line-height:    1.25 !default;
 $headings-color:          inherit !default;
 

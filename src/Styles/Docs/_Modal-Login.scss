@@ -9,7 +9,11 @@ $brand-login-modal: #FAF9F7;
 }
 
 .modal-login-close i {
-    color: $brand-login-outline;
+    color: $brand-login-modal;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .modal-login a {
@@ -40,4 +44,31 @@ $brand-login-modal: #FAF9F7;
 
 .modal-login-header h1 {
     font-size: 30px;
+}
+
+.modal-dialog {
+    z-index: 1000;
+}
+
+.modal-content {
+    border-radius: 3px;
+}
+
+.modal-body {
+        margin: 0;
+    padding: 0;
+}
+
+.modal-content .modal-login {
+    border: 0;
+}
+
+.modal-content .modal-login-close {
+    position: absolute;
+    right: 10px;
+    top: -40px;
+}
+
+.modal-login-close i:hover {
+    color: $brand-login-outline;
 }

@@ -4,43 +4,18 @@
 <br>
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
-    <div class="modal-login text-center">
-        <div class="modal-login-close"><a href="#"><i class="fa fa-times fa-2x"></i></a></div>
-        <div class="modal-login-header">
-            <h1>Welcome to Likely Loans</h1>
-            <p>Currently this service is only available by inviation only
-                <br>
-                <a href="#">Register your interest</a></p>
-        </div>
-        <div id="lock-widget">
+        <div class="modal-login text-center">
+            <div class="modal-login-close"><a href="#"><i class="fa fa-times fa-2x"></i></a></div>
+            <div class="modal-login-header">
+                <h1>Welcome to Likely Loans</h1>
+                <p>Currently this service is only available by inviation only
+                    <br>
+                    <a href="#">Register your interest</a></p>
+            </div>
+            <div id="lock-widget">
+            </div>
         </div>
     </div>
-    </div>
-    <script src="https://cdn.auth0.com/js/lock-9.0.js"></script>
-    <script>
-
-       var lock = new Auth0Lock('wgX0JYnX2B7VWRy5WjiAKfGxnaup9l4S', 'likelyloans.eu.auth0.com');
-       var failedAttempts = 0;
-
-       lock.show({
-           authParams: {
-               scope: 'openid profile'
-           },
-           container: 'lock-widget',
-           callbackURL: window.location.origin + '/signin-auth0',
-           disableSignupAction: true,
-           responseType: 'code',
-           closable: true
-       });
-
-       lock.on('signin error', function () {
-           failedAttempts++;
-
-           if (failedAttempts > 5) {
-               lock.$dicts.en.signin.wrongEmailPasswordErrorText = 'Wrong email or password.<br /><br />Warning! Your account will be locked after 10 failed attempts!';
-           }
-       });
-   </script>
 </div>
 <br>
 
@@ -78,4 +53,98 @@
            }
        });
    &lt;/script&gt;</pre></code>
-<hr>
+    <h2 id="auth0">
+        Auth0 Modal Login
+    </h2>
+    <br>
+    <div class="row">
+        <div class="col-md-12">
+            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Auth0-login">Auth0 Modal</button>
+            <div class="modal fade" id="Auth0-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="modal-login text-center">
+                                <div class="modal-login-close" data-dismiss="modal"><a href="#"><i class="fa fa-times fa-2x"></i></a></div>
+                                <div class="modal-login-header">
+                                    <h1>Welcome to Likely Loans</h1>
+                                    <p>Currently this service is only available by inviation only
+                                        <br>
+                                        <a href="#">Register your interest</a></p>
+                                </div>
+                                <div id="lock-widget-modal">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <pre><code class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-md&quot; data-toggle=&quot;modal&quot; data-target=&quot;#Auth0-login&quot;&gt...&lt;/button&gt;
+    &lt;div class=&quot;modal fade&quot; id=&quot;Auth0-login&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
+        &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+            &lt;div class=&quot;modal-content&quot;&gt;
+                &lt;div class=&quot;modal-body&quot;&gt;
+                    &lt;div class=&quot;modal-login text-center&quot;&gt;
+                    &lt;div class=&quot;modal-login-close&quot; data-dismiss=&quot;modal&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
+                        &lt;div class=&quot;modal-login-header&quot;&gt;
+                            &lt;h1&gt;...&lt;/h1&gt;
+                            &lt;p&gt;...&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div id=&quot;lock-widget-modal&quot;&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+    <hr>
+    <script src="https://cdn.auth0.com/js/lock-9.0.js"></script>
+    <script>
+
+       var lock = new Auth0Lock('wgX0JYnX2B7VWRy5WjiAKfGxnaup9l4S', 'likelyloans.eu.auth0.com');
+       var failedAttempts = 0;
+
+       lock.show({
+           authParams: {
+               scope: 'openid profile'
+           },
+           container: 'lock-widget',
+           callbackURL: window.location.origin + '/signin-auth0',
+           disableSignupAction: true,
+           responseType: 'code',
+           closable: true
+       });
+
+       lock.on('signin error', function () {
+           failedAttempts++;
+
+           if (failedAttempts > 5) {
+               lock.$dicts.en.signin.wrongEmailPasswordErrorText = 'Wrong email or password.<br /><br />Warning! Your account will be locked after 10 failed attempts!';
+           }
+       });
+
+       var lock = new Auth0Lock('wgX0JYnX2B7VWRy5WjiAKfGxnaup9l4S', 'likelyloans.eu.auth0.com');
+       var failedAttempts = 0;
+
+       lock.show({
+           authParams: {
+               scope: 'openid profile'
+           },
+           container: 'lock-widget-modal',
+           callbackURL: window.location.origin + '/signin-auth0',
+           disableSignupAction: true,
+           responseType: 'code',
+           closable: true
+       });
+
+       lock.on('signin error', function () {
+           failedAttempts++;
+
+           if (failedAttempts > 5) {
+               lock.$dicts.en.signin.wrongEmailPasswordErrorText = 'Wrong email or password.<br /><br />Warning! Your account will be locked after 10 failed attempts!';
+           }
+       });
+   </script>

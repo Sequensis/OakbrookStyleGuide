@@ -1,7 +1,6 @@
 .sidebar-logo{
     width: 100%;
     height: 70px;
-    background-color: #fff;
     // background-position: center;
     // background-size: 50%;
     // background-image: url(../img/LikelyLoans.png);
@@ -25,7 +24,7 @@
     background-color: #fff;
     color: $brand-primary;
     margin: 0;
-    z-index: 1001;
+    z-index: 5;
     padding: 20px;
     height: 70px;
     position: fixed;
@@ -41,7 +40,7 @@
     margin: 0;
     right: 0;
     bottom: 0;
-    z-index: 1001;
+    z-index: 99;
     padding: 20px;
     height: 70px;
     position: fixed;
@@ -67,7 +66,8 @@
     color: rgba(51, 153, 219, .5);
 }
 
-.nav li, a{
+.nav li, .nav a{
+    text-decoration: none;
     color: $gray-darker;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -77,6 +77,17 @@
     margin-top: 0;
 }
 
-.nav a:hover, a:focus {
+.nav a{
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.nav a:hover, .nav a:focus {
     color: $gray-darker;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }

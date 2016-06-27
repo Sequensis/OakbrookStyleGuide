@@ -1,0 +1,43 @@
+$brand-login-outline: #E6E5E3;
+$brand-login-modal: #FAF9F7;
+
+.modal-login {
+    border: 1px solid $brand-login-outline;
+    border-radius: 3px;
+    margin: 0;
+    padding: 0;
+}
+
+.modal-login-close i {
+    color: $brand-login-outline;
+}
+
+.modal-login a {
+    font-size: 16px !important;
+}
+
+.modal-login-close {
+    position: absolute;
+    right: 25px;
+    top: 5px;
+}
+
+.modal-login-header {
+    margin: 50px 50px 0px 50px;
+}
+
+.modal-login-header a {
+    font-weight: 400;
+}
+
+.modal-login-header a:hover {
+    color: $brand-primary !important;
+}
+
+.modal-login-header h1, .modal-login-header p {
+    color: $brand-primary;
+}
+
+.modal-login-header h1 {
+    font-size: 30px;
+}

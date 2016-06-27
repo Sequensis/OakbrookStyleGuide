@@ -2,9 +2,13 @@
     background-color: #fff;
 }
 
+a {
+    text-decoration: underline;
+}
+
 .theme-light {
     box-shadow: none;
-    border: 1px solid rgba(0,91,198, 0.5);
+    border: 0px;
     border-radius: 0px;
 }
 
@@ -14,7 +18,7 @@
 
 .theme-dark {
     box-shadow: none;
-    border: 1px solid rgba(0,91,198, 0.5);
+    border: 0px;
     border-radius: 0px;
 }
 
@@ -48,4 +52,44 @@ code {
 
 h1,h2,h3,h4,h5,h6 {
     line-height: 1.4;
+}
+
+.theme-warning {
+    box-shadow: none;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.theme-warning *{
+    background-color: $brand-warning;
+    color: $brand-primary;
+}
+
+.theme-warning code {
+    color: #fff;
+    background-color: $brand-primary;
+}
+
+.theme-warning a {
+    color: $brand-primary;
+}
+
+.theme-error {
+    box-shadow: none;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.theme-error *{
+    background-color: $brand-error;
+    color: #fff;
+}
+
+.theme-error code {
+    color: #fff;
+    background-color: $brand-warning;
+}
+
+.theme-error a {
+    color: $brand-warning;
 }

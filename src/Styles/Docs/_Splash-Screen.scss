@@ -6,7 +6,7 @@
 }
 
 .splash-screen-logo img {
-    width: 10vw;
+    width: 80vw;
     margin-left: 0px;
     display: block;
 }
@@ -20,14 +20,10 @@
     transform: translateY(-50%);
 }
 
-.splash-screen-header h1{
-    margin: 0;
-}
-
 .splash-screen-header h2 {
     font-size: 5vw;
     font-weight: 400;
-    margin: 0;
+    margin-top: 75px;
 }
 
 .splash-screen-hr {
@@ -91,15 +87,14 @@
 }
 
 @media(min-width:640px) {
-
-.splash-screen-main {
+    .splash-screen-logo img {
+    width: 40vw;
+    }
+    .splash-screen-main {
     padding-left: 70px;
-}
-    .splash-screen-header h1{
-            font-size: 8vw;
-}  
+    }
 
     .splash-screen-header h2{
             font-size: 3vw;
-}
+    }
 }

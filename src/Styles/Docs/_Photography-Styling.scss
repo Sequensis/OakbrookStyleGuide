@@ -1,0 +1,40 @@
+.photography-placeholder {
+    height: 50vh;
+    width: 100%;
+    background-color: $gray-lighter;
+    margin: 10px;
+}
+
+.photography-placeholder:first-child{
+    margin-left: 0;
+}
+
+.photography-header {
+    width: 100%;
+}
+
+.photography-header li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 0 5px;
+}
+
+.photography-header li p {
+    margin: 0;
+    font-size: 6vw;
+}
+
+@media(min-width:768px) {
+
+.photography-placeholder {
+    height: 20vw;
+    width: 100%;
+    background-color: $gray-lighter;
+    margin: 10px;
+}
+
+.photography-header li p {
+    margin: 0;
+    font-size: 3vw;
+}
+}

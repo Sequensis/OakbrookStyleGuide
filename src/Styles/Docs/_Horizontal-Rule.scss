@@ -3,14 +3,18 @@ hr {
 }
 
 .invisible-hr {
-    border-top: 1px solid;
-    margin: 1em 0;
+    border-top: 1px solid #fff;
+    margin: 20px 0;
     padding: 0; 
 }
 
 @media(min-width:640px) {
 
 hr {
+    margin: 100px 0;
+}
+
+.invisible-hr {
     margin: 100px 0;
 }
 }

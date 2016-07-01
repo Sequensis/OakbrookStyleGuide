@@ -62,25 +62,25 @@
     color: rgba(51, 153, 219, .5);
 }
 
-.nav li, .nav a{
+.sidebar .nav li, .sidebar .nav a{
     text-decoration: none;
     color: $gray-darker;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
 }
 
-.nav-stacked>li+li {
+.sidebar .nav-stacked>li+li {
     margin-top: 0;
 }
 
-.nav a{
+.sidebar .nav a{
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
 
-.nav a:hover, .nav a:focus {
+.sidebar .nav a:hover, .sidebar .nav a:focus {
     color: $gray-darker;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;

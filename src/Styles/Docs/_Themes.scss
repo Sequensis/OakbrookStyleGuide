@@ -1,9 +1,25 @@
-.theme-light *{
-    background-color: #fff;
-}
-
 a {
     text-decoration: underline;
+}
+
+code {
+    color: #fff;
+    background-color: $brand-primary-1;
+    border-radius: 0px;
+}
+
+.theme-header {
+    color: $brand-primary-1;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    line-height: 1.4;
+}
+
+// .theme-light //
+
+.theme-light *{
+    background-color: #fff;
 }
 
 .theme-light {
@@ -12,8 +28,19 @@ a {
     border-radius: 0px;
 }
 
-.theme-header {
-    color: $brand-primary
+.theme-light a {
+    color: $brand-primary-1;
+}
+
+.theme-light code {
+    background-color: $brand-primary-1;
+}
+
+// .theme-dark //
+
+.theme-dark *{
+    background-color: $brand-primary-1;
+    color: #fff;
 }
 
 .theme-dark {
@@ -22,36 +49,20 @@ a {
     border-radius: 0px;
 }
 
-.theme-light a {
-    color: $brand-primary;
-}
-
-.theme-dark *{
-    background-color: $brand-primary;
-    color: #fff;
-}
-
-.theme-light code {
-    background-color: $brand-primary;
+.theme-dark a {
+    color: $brand-primary-3;
 }
 
 .theme-dark code {
-    color: $brand-primary;
-    background-color: $brand-secondary;
+    color: $brand-primary-1;
+    background-color: $brand-primary-3;
 }
 
-.theme-dark a {
-    color: $brand-secondary;
-}
+// .theme-warning //
 
-code {
-    color: #fff;
-    background-color: $brand-primary;
-    border-radius: 0px;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    line-height: 1.4;
+.theme-warning *{
+    background-color: $brand-primary-3;
+    color: $brand-primary-3-font;
 }
 
 .theme-warning {
@@ -60,18 +71,20 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 0px;
 }
 
-.theme-warning *{
-    background-color: $brand-warning;
-    color: $brand-primary;
+.theme-warning a {
+    color: $brand-primary-3-font;
 }
 
 .theme-warning code {
     color: #fff;
-    background-color: $brand-primary;
+    background-color: $brand-primary-3-font;
 }
 
-.theme-warning a {
-    color: $brand-primary;
+// .theme-error //
+
+.theme-error *{
+    background-color: $brand-secondary-1;
+    color: #fff;
 }
 
 .theme-error {
@@ -80,16 +93,33 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 0px;
 }
 
-.theme-error *{
-    background-color: $brand-error;
+.theme-error a {
     color: #fff;
 }
 
 .theme-error code {
-    color: #fff;
-    background-color: $brand-warning;
+    color: $brand-secondary-1;
+    background-color: #fff;
 }
 
-.theme-error a {
-    color: $brand-warning;
+// .theme-success //
+
+.theme-success *{
+    background-color: $brand-secondary-3;
+    color: $brand-secondary-3-font;
+}
+
+.theme-success {
+    box-shadow: none;
+    border: 0px;
+    border-radius: 0px;
+}
+
+.theme-success a {
+    color: $brand-secondary-3-font;
+}
+
+.theme-success code {
+    color: #fff;
+    background-color: $brand-secondary-3-font;
 }

@@ -1,0 +1,49 @@
+.footer-distributed{
+	background-color: #fff;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+    position: absolute;
+    bottom: 0;
+	padding: 20px;
+}
+
+.footer-distributed a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+    padding: 0 5px;
+}
+
+.footer-distributed a:hover{
+    opacity: 0.5;
+}
+
+
+.footer-img {
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}

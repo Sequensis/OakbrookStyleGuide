@@ -2,6 +2,7 @@
     font-weight: 700;
     border-radius: 4px;
     padding: auto 20px;
+    text-decoration: none;
 }
 
 .btn:hover, .btn:focus, .btn.focus {
@@ -35,4 +36,14 @@
 
 .btn-primary-3:hover {
     color: $brand-primary-1;
+}
+
+.btn-primary-4 {
+    background-color: $brand-secondary-1;
+    color: #fff;
+}
+
+.btn-primary-4:hover {
+    background-color: darken($brand-secondary-1, 5%);
+    color: #fff;
 }

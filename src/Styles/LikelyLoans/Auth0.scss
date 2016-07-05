@@ -12,13 +12,12 @@ $brand-login-modal: #FAF9F7;
     color: $brand-primary !important;
 }
 
+#a0-lock.a0-theme-default .a0-panel .a0-error {
+    display: none;
+}
 
 
 // Container //
-
-// #a0-lock.a0-theme-default .a0-panel { 
-//     width: 500px !important;
-// }
 
 #a0-lock.a0-theme-default .a0-panel {
     box-shadow: none !important;
@@ -27,7 +26,6 @@ $brand-login-modal: #FAF9F7;
 #a0-lock.a0-theme-default .a0-panel {
     width: 100% !important;
 }
-
 
 // Header // 
 
@@ -54,14 +52,6 @@ $brand-login-modal: #FAF9F7;
 #a0-lock.a0-theme-default .a0-header h1 {
     display: none;
 }
-
-// Error //
-
-#a0-lock.a0-theme-default .a0-panel .a0-error {
-           padding-left: 10px !important;
-           padding-right: 10px !important;
-           background-color: $brand-error;
-       }
 
 // Forgot Password //
 
@@ -95,4 +85,42 @@ $brand-login-modal: #FAF9F7;
 
 #a0-lock.a0-theme-default .a0-panel .a0-footer {
     display: none !important;
+}
+
+// Styleguide Showcase //
+
+.theme-warning #a0-lock.a0-theme-default .a0-primary {
+    background-color: darken($brand-primary-3, 10%) !important;
+}
+
+.theme-warning #a0-lock.a0-theme-default .a0-panel .a0-forgot-pass {
+    color: $brand-primary-3-font !important;
+}
+
+.theme-warning #a0-lock.a0-theme-default .a0-panel .a0-email .a0-input-box i, #a0-lock.a0-theme-default .a0-panel .a0-password .a0-input-box i, #a0-lock.a0-theme-default .a0-panel .a0-repeatPassword .a0-input-box i, #a0-lock.a0-theme-default .a0-panel .a0-username .a0-input-box i {
+    color: #222 !important;
+}
+
+.theme-error #a0-lock.a0-theme-default .a0-primary {
+    background-color: darken($brand-secondary-1, 10%) !important;
+}
+
+.theme-error #a0-lock.a0-theme-default .a0-panel .a0-email input {
+    color: #222 !important;
+}
+
+.theme-error #a0-lock.a0-theme-default .a0-panel .a0-password input, #a0-lock.a0-theme-default .a0-panel .a0-repeatPassword input {
+    color: $brand-secondary-1 !important;
+}
+
+.theme-error #a0-lock.a0-theme-default .a0-panel .a0-email .a0-input-box i, #a0-lock.a0-theme-default .a0-panel .a0-password .a0-input-box i, #a0-lock.a0-theme-default .a0-panel .a0-repeatPassword .a0-input-box i, #a0-lock.a0-theme-default .a0-panel .a0-username .a0-input-box i {
+    color: #222 !important;
+}
+
+.theme-error #a0-lock.a0-theme-default .a0-panel .a0-forgot-pass {
+    color: #fff !important;
+}
+
+#a0-lock.a0-theme-default .a0-panel #a0-change_password .a0-collapse-reset .a0-instructions {
+    display: none;
 }

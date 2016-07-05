@@ -23,7 +23,7 @@ $('.btn-default').click(function () {
 });
 
 $('.btn-warning').one('click', function () {
-    $('.a0-password').append($('<div class = "modal-validate"><p>Your password will contain a minimum of 6 character and at least 1 number</p></div>'));
+    $('.a0-password').append( $('<div class = "modal-validate"><p>Your password will contain a minimum of 6 character and at least 1 number</p></div>'));
 });
 
 $('.btn-password').click(function () {
@@ -33,20 +33,4 @@ $('.btn-password').click(function () {
     $(".modal-login-header p").text("Enter your email address & we'll send you a link to get back up and running");
     $('.modal-exclamation').removeClass('modal-exclamation-open');
     $('.modal-validate').empty();
-});
-hljs.initHighlightingOnLoad();
-$('#navbar-icon').click(function () {
-    $(this).toggleClass('icon-open');
-    $(".navbar-circle").toggleClass("circle-open");
-    $(".btn-application").toggleClass('btn-application-open');
-    $(".btn-sign-in").toggleClass('btn-sign-in-open');
-});
-
-$('.btn-sign-in').click(function () {
-    $(this).toggleClass('btn-primary-1');
-    $(this).toggleClass('btn-primary-3');
-});
-$("#menu-toggle").click(function (e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
 });

@@ -6,6 +6,7 @@ $brand-login-modal: #FAF9F7;
     border-radius: 3px;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .modal-login-close i {
@@ -71,4 +72,16 @@ $brand-login-modal: #FAF9F7;
 
 .modal-login-close i:hover {
     color: $brand-login-outline;
+}
+
+.modal-exclamation {
+    opacity: 0;
+}
+
+.modal-exclamation-open {
+    opacity: 1;
+}
+
+.modal-validate {
+    background-color: #fff !important;
 }

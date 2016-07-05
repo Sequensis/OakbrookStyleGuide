@@ -1,10 +1,19 @@
-@import "Auth0";
-@import "Buttons";
-@import "Colour-Scheme";
 @import "Grid";
-@import "Footer";
+
 @import "LikelyLoans";
+
+@import "Buttons";
+
 @import "Navbar";
-@import "Summary-Circle";
+
+@import "Colour-Scheme";
+
 @import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+
 @import "../Docs/Docs";
+
+@import "Auth0";
+
+@import "Summary-Circle";
+
+@import "Footer";

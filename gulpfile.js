@@ -59,6 +59,7 @@ gulp.task('fonts:font-awesome', function () {
         config.paths.bower.root + '/components-font-awesome/fonts/**/*.*'
     )
         .pipe(gulp.dest(config.paths.docs.fonts))
+        .pipe(gulp.dest(config.paths.dist.fonts));
 });
 
 gulp.task('icons', function (done) {
@@ -139,7 +140,8 @@ gulp.task('images', function () {
         .pipe($.imagemin({
             progressive: true
         }))
-        .pipe(gulp.dest(config.paths.docs.images));
+        .pipe(gulp.dest(config.paths.docs.images))
+        .pipe(gulp.dest(config.paths.dist.images));
 });
 
 gulp.task('panini', ['panini:layouts', 'panini:pages', 'panini:partials'], function () {

@@ -188,8 +188,9 @@ gulp.task('scripts', ['scripts:application', 'scripts:docs']);
 
 gulp.task('scripts:application', function () {
     var javaScripts = gulp.src([
-        config.paths.src.scripts + '/**/*.js',
-        '!' + config.paths.src.scripts + '/Modernizr.js'
+        config.paths.src.scripts + '/Modernizr.js',
+        config.paths.bower.root + '/jquery-legacy/dist/jquery.js',
+        config.paths.bower.root + '/bootstrap-sass/assets/javascripts/bootstrap.js'
     ]);
 
     var typeScripts = gulp.src(config.paths.src.scripts + '/**/*.ts')
@@ -200,14 +201,12 @@ gulp.task('scripts:application', function () {
     return mergeStream(javaScripts, typeScripts)
         .pipe($.sourcemaps.init({ loadMaps: true }))
         .pipe($.babel())
-        .pipe($.concat('oakbrookstyleguide.js'))
+        .pipe($.concat('likelyloans.js'))
         .pipe(gulp.dest(config.paths.dist.scripts))
-        .pipe(gulp.dest(config.paths.docs.scripts))
         .pipe($.uglify())
-        .pipe($.rename('oakbrookstyleguide.min.js'))
+        .pipe($.rename('likelyloans.min.js'))
         .pipe($.sourcemaps.write('.'))
         .pipe(gulp.dest(config.paths.dist.scripts))
-        .pipe(gulp.dest(config.paths.docs.scripts));
 });
 
 gulp.task('scripts:docs', function () {

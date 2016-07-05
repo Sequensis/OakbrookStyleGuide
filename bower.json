@@ -20,7 +20,6 @@
   ],
   "ignore": [
     "./*",
-    "/src/Icons",
     "/src/Layouts",
     "/src/Pages",
     "/src/Partials"

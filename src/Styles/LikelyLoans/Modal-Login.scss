@@ -28,11 +28,7 @@ $brand-login-modal: #FAF9F7;
 }
 
 .modal-login-header {
-    margin: 50px 50px 0px 50px;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    margin: 20px 20px 0px 20px;
 }
 
 .modal-login-header a {
@@ -48,7 +44,7 @@ $brand-login-modal: #FAF9F7;
 }
 
 .modal-login-header h1 {
-    font-size: 1.5em;
+    font-size: $font-size-h2;
 }
 
 .modal-dialog {
@@ -94,7 +90,7 @@ $brand-login-modal: #FAF9F7;
 @media (min-width: 768px) {
 
     .modal-login-header h1 {
-    font-size: 35px;
+    font-size: $font-size-h1;
     }
 
 }

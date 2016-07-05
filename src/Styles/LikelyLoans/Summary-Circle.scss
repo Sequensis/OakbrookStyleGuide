@@ -1,4 +1,4 @@
-$circle: 3.5vw;
+$circle: 3vw;
 
 .circle {
     position: relative;
@@ -6,20 +6,20 @@ $circle: 3.5vw;
 
 .circle-primary {
     margin: 0 auto;
-    width: $circle*10;
-    height: $circle*10;
+    width: $circle*15;
+    height: $circle*15;
     border-radius: 50%;
     background-color: #fff;
-    border: $circle/4 solid $brand-primary-3
+    border: 5px solid $brand-primary-3
 }
 
 .circle-secondary {
     margin: 0 auto;
-    width: $circle*6;
-    height: $circle*6;
+    width: $circle*10;
+    height: $circle*10;
     border-radius: 50%;
     background-color: $brand-primary-1;
-    border: $circle/4 solid #fff;
+    border:5px solid #fff;
     margin-top: -10%;
 }
 
@@ -36,7 +36,7 @@ $circle: 3.5vw;
 
 .circle-primary .circle-amount p {
     margin: 0;
-    font-size: $circle*2;
+    font-size: $circle*4;
     font-weight: 700;
     line-height: 100px;
     font-family: 'Montserrat', sans-serif;
@@ -45,7 +45,7 @@ $circle: 3.5vw;
 
 .circle-secondary .circle-amount p {
     margin: 0;
-    font-size: $circle*1.25;
+    font-size: $circle*3;
     font-weight: 700;
     line-height: 100px;
     font-family: 'Montserrat', sans-serif;
@@ -53,7 +53,7 @@ $circle: 3.5vw;
 }
 
 .circle-secondary .circle-amount span {
-    font-size: $circle/2;
+    font-size: $circle*1.2;
 }
 
 @media(min-width:768px) {
@@ -64,16 +64,14 @@ $circle: 3.5vw;
         height: $circle*6;
         border-radius: 50%;
         background-color: #fff;
-        border: $circle/6 solid $brand-primary-3
     }
 
     .circle-secondary {
         width: $circle*4;
         height: $circle*4;
-        border: $circle/6 solid #fff;
         float: right;
-        margin-top: -12.5%;
-        margin-right: 25%;
+        margin-top: -8.5%;
+        margin-right: 33.5%;
     }
 
     .circle-primary .circle-amount p {

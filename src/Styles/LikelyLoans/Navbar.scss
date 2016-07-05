@@ -8,9 +8,14 @@
 
 .navbar {
     margin-top: 0;
+    margin-bottom: 0 !important;
     z-index: 100;
-    padding: 0 10px;
-    height: 50px;
+    height: 100px;
+    padding: 0 15px;
+}
+
+.navbar .col-xs-6 {
+    padding: 0 !important;
 }
 
 .navbar a{
@@ -27,7 +32,7 @@
 }
 
 .navbar-logo {
-    height: 100%;
+    height: 50%;
     z-index: 2;
     width: 87px;
     position: absolute;
@@ -43,7 +48,7 @@
 }
 
 .navbar-circle {
-    position: fixed;
+    position: absolute;
     left: 50%;
     margin-left: -75px;
     margin-top: -75px;
@@ -58,6 +63,7 @@
 }
 
 .navbar-circle.circle-open {
+    position: fixed;
     margin-top: -100vh;
     margin-left: -100vh;
     width: 200vh;
@@ -206,10 +212,10 @@
     }
 
     .navbar-circle.circle-open {
-        margin-top: -200vh;
-        margin-left: -200vh;
-        width: 400vh;
-        height: 400vh;
+        margin-top: -150vw;
+        margin-left: -150vw;
+        width: 300vw;
+        height: 300vw;
     }
 
     // .btn-application {

@@ -57,6 +57,31 @@ $brand-login-modal: #FAF9F7;
     display: none;
 }
 
+.modal-exclamation {
+    display: none;
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-top-header {
+    display: none;
+}
+
+    #a0-lock.a0-theme-default .a0-panel .a0-mode form .a0-body-content {
+    padding: 10px !important;
+}
+
+@media (min-width: 768px) {
+
+    .modal-exclamation {
+    display: block;
+    }
+
+    #a0-lock.a0-theme-default .a0-panel .a0-mode form .a0-body-content {
+    padding: 30px !important;
+}
+
+}
+
+
 // Forgot Password //
 
 #a0-lock.a0-theme-default .a0-forgot-pass {

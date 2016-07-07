@@ -71,7 +71,7 @@ $brand-login-modal: #FAF9F7;
     }
 
     #a0-lock.a0-theme-default .a0-panel .a0-mode form .a0-body-content {
-    padding: 30px !important;
+    padding: 20px 30px !important;
 }
 
 }
@@ -147,4 +147,21 @@ $brand-login-modal: #FAF9F7;
 
 #a0-lock.a0-theme-default .a0-panel #a0-change_password .a0-collapse-reset .a0-instructions {
     display: none;
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-inputs>div {
+    margin-top: 0 20px 20px 20px !important;
+}
+
+.vcenter {
+    margin-top: 12.5%;
+}
+
+.page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;  
 }

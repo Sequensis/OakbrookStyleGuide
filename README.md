@@ -56,6 +56,17 @@ dist/
 │   ├── likeyloans.css
 │   ├── likeyloans.min.css
 │   └── likeyloans.min.css.map 
+├── fonts/
+│   ├── FontAwesome.otf
+│   ├── fontawesome-webfont.eot
+│   ├── fontawesome-webfont.svg
+│   ├── fontawesome-webfont.ttf
+│   ├── fontawesome-webfont.woff
+│   └── fontawesome-webfont.woff2
+├── img/
+│   ├── LikelyLoans.svg
+│   ├── LikelyLoansFooter.svg
+│   └── LikelyLoansNav.svg 
 └── js/
     ├── oakbrookstyleguide.js
     ├── oakbrookstyleguide.min.js

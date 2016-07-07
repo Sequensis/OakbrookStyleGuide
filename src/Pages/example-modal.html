@@ -1,26 +1,30 @@
-<br>
-<div class=".container-fluid auth0">
-    <div class="col-md-6 col-md-offset-3">
-        <div class="modal-container theme-light">
-            <div class="modal-login text-center">
-                <div class="modal-login-header">
-                    <a class="modal-exclamation"><i class="fa fa-exclamation fa-4x"></i></a>
-                    <h1>Welcome to Likely Loans</h1>
-                    <p>Currently this service is only available by invitation only
-                        <br>
-                        <a href="#">Register your interest</a></p>
-                </div>
-                <div id="lock-widget">
-                </div>
+<nav class="navbar">
+    <div class="navbar-circle">
+    </div>
+    <div class="navbar-logo">
+        <img src="/img/LikelyLoans.svg">
+    </div>
+</nav>
+
+<div class="col-md-6 col-md-offset-3 vcenter">
+    <div class="modal-container theme-light">
+        <div class="modal-login text-center ">
+            <div class="modal-login-header">
+                <a class="modal-padlock"><i class="fa fa-lock fa-4x"></i></a>
+                <h1>Welcome to Likely Loans</h1>
+                <p>Currently this service is only available by invitation only
+                    <br>
+                    <a href="#">Register your interest</a></p>
+            </div>
+            <div id="lock-widget">
             </div>
         </div>
     </div>
 </div>
-<br>
-<br>
 
-    <script src="https://cdn.auth0.com/js/lock-9.0.js"></script>
-    <script>
+
+<script src="https://cdn.auth0.com/js/lock-9.0.js"></script>
+<script>
 
        var lock = new Auth0Lock('wgX0JYnX2B7VWRy5WjiAKfGxnaup9l4S', 'likelyloans.eu.auth0.com');
        var failedAttempts = 0;
@@ -46,7 +50,8 @@
            if (failedAttempts > 3) {
                $('.modal-container').addClass('theme-warning');
                $(".modal-login-header h1").text("Check your details and try again!");
-               $('.modal-exclamation').addClass('modal-exclamation-open');
+               $('.modal-padlock i').removeClass('fa-lock');
+               $('.modal-padlock i').addClass('fa-exclamation');
            }
 
             if (failedAttempts > 6) {

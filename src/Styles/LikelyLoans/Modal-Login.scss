@@ -28,7 +28,7 @@ $brand-login-modal: #FAF9F7;
 }
 
 .modal-login-header {
-    margin: 60px 20px 0px 30px;
+    margin: 30px 20px 0px 30px;
 }
 
 .modal-login-header a {
@@ -45,6 +45,7 @@ $brand-login-modal: #FAF9F7;
 
 .modal-login-header h1 {
     font-size: $font-size-h2;
+    margin: 30px 0;
 }
 
 .modal-dialog {

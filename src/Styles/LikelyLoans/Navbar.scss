@@ -250,8 +250,8 @@
 .overlay-profile {
     
   position: relative;
-  top: 10%;
-  transform: translateY(-10%);
+  top: 5%;
+  transform: translateY(-5%);
 
     a {
         text-decoration: none;
@@ -328,19 +328,18 @@
         color: $brand-primary-1;
     }
 
-    .overlay-profile {
-    
-  position: relative;
-  top: 30%;
-  transform: translateY(-30%);
+    .overlay-profile {   
+    position: relative;
+    top: 20%;
+    transform: translateY(-20%);
     }
 
-.overlay-content {
+    .overlay-content {
     
-  position: relative;
-  top: 40%;
-  transform: translateY(-40%);
-}
+    position: relative;
+    top: 30%;
+    transform: translateY(-30%);
+    }
     .navbar-circle.circle-open {
         margin-top: -150vw;
         margin-left: -150vw;
@@ -379,5 +378,5 @@
 
 // remove at later date //
 body {
-    overflow-x: hidden
+
 }

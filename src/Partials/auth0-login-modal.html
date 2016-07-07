@@ -2,13 +2,12 @@
     Auth0 Login
 </h2>
 <br>
-<div class=".container-fluid">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <div class="modal-container theme-light">
-                <div class="modal-login text-center">
+                <div class="modal-login text-center ">
                     <div class="modal-login-header">
-                        <a class="modal-exclamation"><i class="fa fa-exclamation fa-4x"></i></a>
+                        <a class="modal-padlock"><i class="fa fa-lock fa-4x"></i></a>
                         <h1>Welcome to Likely Loans</h1>
                         <p>Currently this service is only available by invitation only
                             <br>
@@ -20,111 +19,12 @@
             </div>
         </div>
     </div>
-</div>
-<br>
+<a class="btn btn-primary-1" href="example-modal.html">Example Modal</a>
 
-<div class="row">
-    <div class="col-md-12 text-center">
-        <button class="btn btn-primary-1 btn-default">
-                Default
-            </button>
-        <button class="btn btn-primary-2 btn-warning">
-                Warning
-            </button>
-        <button class="btn btn-primary-4 btn-error">
-               	Error
-            </button>
-        <button class="btn btn-primary-3 btn-password">
-               	Password reset
-            </button>
-    </div>
-</div>
-<br>
+<hr>
 
-<pre><code>
-&lt;div class=&quot;modal-login text-center&quot;&gt;
-    &lt;div class=&quot;modal-login-close&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
-        &lt;div class=&quot;modal-login-header&quot;&gt;
-        &lt;h1&gt;...&lt;/h1&gt;
-        &lt;p&gt;...&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div id=&quot;lock-widget&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-    &lt;script src=&quot;https://cdn.auth0.com/js/lock-9.0.js&quot;&gt;&lt;/script&gt;
-    &lt;script&gt;
-       var lock = new Auth0Lock(&#39;wgX0JYnX2B7VWRy5WjiAKfGxnaup9l4S&#39;, &#39;likelyloans.eu.auth0.com&#39;);
-       var failedAttempts = 0;
-
-       lock.show({
-           authParams: {
-               scope: &#39;openid profile&#39;
-           },
-           container: &#39;lock-widget&#39;,
-           callbackURL: window.location.origin + &#39;/signin-auth0&#39;,
-           disableSignupAction: true,
-           responseType: &#39;code&#39;,
-           closable: true
-       });
-
-       lock.on(&#39;signin error&#39;, function () {
-           failedAttempts++;
-
-           if (failedAttempts &gt; 5) {
-               lock.$dicts.en.signin.wrongEmailPasswordErrorText = &#39;Wrong email or password.&lt;br /&gt;&lt;br /&gt;Warning! Your account will be locked after 10 failed attempts!&#39;;
-           }
-       });
-   &lt;/script&gt;</pre></code>
-    <h2 id="auth0">
-        Auth0 Modal Login
-    </h2>
-    <br>
-    <div class="row">
-        <div class="col-md-12">
-            <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#Auth0-login">Auth0 Modal</button>
-            <div class="modal fade" id="Auth0-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            <div class="modal-login text-center">
-                                <div class="modal-login-close" data-dismiss="modal"><a href="#"><i class="fa fa-times fa-2x"></i></a></div>
-                                <div class="modal-login-header">
-                                    <h1>Welcome to Likely Loans</h1>
-                                    <p>Currently this service is only available by invitation only</p>
-                                    <br>
-                                    <p><a href="#">Register your interest</a></p>
-                                </div>
-                                <div id="lock-widget-modal">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
-    <pre><code class="html">
-&lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-md&quot; data-toggle=&quot;modal&quot; data-target=&quot;#Auth0-login&quot;&gt...&lt;/button&gt;
-    &lt;div class=&quot;modal fade&quot; id=&quot;Auth0-login&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot;&gt;
-        &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
-            &lt;div class=&quot;modal-content&quot;&gt;
-                &lt;div class=&quot;modal-body&quot;&gt;
-                    &lt;div class=&quot;modal-login text-center&quot;&gt;
-                    &lt;div class=&quot;modal-login-close&quot; data-dismiss=&quot;modal&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-times fa-2x&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;/div&gt;
-                        &lt;div class=&quot;modal-login-header&quot;&gt;
-                            &lt;h1&gt;...&lt;/h1&gt;
-                            &lt;p&gt;...&lt;/p&gt;
-                        &lt;/div&gt;
-                        &lt;div id=&quot;lock-widget-modal&quot;&gt;&lt;/div&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;</code></pre>
-    <hr>
-    <script src="https://cdn.auth0.com/js/lock-9.0.js"></script>
-    <script>
+        <script src="https://cdn.auth0.com/js/lock-9.0.js"></script>
+        <script>
 
        var lock = new Auth0Lock('wgX0JYnX2B7VWRy5WjiAKfGxnaup9l4S', 'likelyloans.eu.auth0.com');
        var failedAttempts = 0;
@@ -150,7 +50,8 @@
            if (failedAttempts > 3) {
                $('.modal-container').addClass('theme-warning');
                $(".modal-login-header h1").text("Check your details and try again!");
-               $('.modal-exclamation').addClass('modal-exclamation-open');
+               $('.modal-padlock i').removeClass('fa-lock');
+               $('.modal-padlock i').addClass('fa-exclamation');
            }
 
             if (failedAttempts > 6) {
@@ -175,25 +76,4 @@
            }
        });
 
-    //    var lock = new Auth0Lock('wgX0JYnX2B7VWRy5WjiAKfGxnaup9l4S', 'likelyloans.eu.auth0.com');
-    //    var failedAttempts = 0;
-
-    //    lock.show({
-    //        authParams: {
-    //            scope: 'openid profile'
-    //        },
-    //        container: 'lock-widget-modal',
-    //        callbackURL: window.location.origin + '/signin-auth0',
-    //        disableSignupAction: true,
-    //        responseType: 'code',
-    //        closable: true
-    //    });
-
-    //    lock.on('signin error', function () {
-    //        failedAttempts++;
-
-    //        if (failedAttempts > 5) {
-    //            lock.$dicts.en.signin.wrongEmailPasswordErrorText = 'Wrong email or password.<br /><br />Warning! Your account will be locked after 10 failed attempts!';
-    //        }
-    //    });
    </script>

@@ -105,6 +105,10 @@ $brand-login-modal: #FAF9F7;
     background-color: $gray-lighter !important;
 }
 
+#a0-lock.a0-theme-default .a0-primary:hover {
+    background-color: $brand-secondary-3 !important;
+}
+
 // Footer //
 
 #a0-lock.a0-theme-default .a0-panel .a0-footer {
@@ -155,13 +159,4 @@ $brand-login-modal: #FAF9F7;
 
 .vcenter {
     margin-top: 12.5%;
-}
-
-.page {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: auto;  
 }

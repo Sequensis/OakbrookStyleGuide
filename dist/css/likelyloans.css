@@ -2995,6 +2995,9 @@ body {
 #a0-lock.a0-theme-default .a0-primary {
   background-color: #eeeeee !important; }
 
+#a0-lock.a0-theme-default .a0-primary:hover {
+  background-color: #33D167 !important; }
+
 #a0-lock.a0-theme-default .a0-panel .a0-footer {
   display: none !important; }
 
@@ -3030,14 +3033,6 @@ body {
 
 .vcenter {
   margin-top: 12.5%; }
-
-.page {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  overflow: auto; }
 
 .icon-primary i {
   color: #005BC6; }

@@ -67,6 +67,25 @@
     height: 400vh;
 }
 
+.navbar-circle-static {
+    position: absolute;
+    background-color: $brand-primary-1;
+    left: 50%;
+    margin-left: -150px;
+    margin-top: -225px;
+    width: 300px;
+    height: 300px;
+    display: block;
+    border-radius: 50%;
+}
+
+.navbar-logo-static img {
+    position: absolute;
+    left: 50%;
+    width: 87px;
+    margin-left: -43.5px;
+}
+
 #navbar-icon {
     width: 30px;
     height: 37.5px;

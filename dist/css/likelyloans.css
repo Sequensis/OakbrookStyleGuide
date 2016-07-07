@@ -2213,6 +2213,20 @@ input[type="button"].btn-block {
   .hidden-print {
     display: none !important; } }
 
+body {
+  height: 100%; }
+
+.vcenter-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; }
+
+.vcenter {
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+
 .btn {
   font-weight: 700;
   border-radius: 4px;
@@ -2306,6 +2320,23 @@ input[type="button"].btn-block {
   margin-left: -200vh;
   width: 400vh;
   height: 400vh; }
+
+.navbar-circle-static {
+  position: absolute;
+  background-color: #005BC6;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -225px;
+  width: 300px;
+  height: 300px;
+  display: block;
+  border-radius: 50%; }
+
+.navbar-logo-static img {
+  position: absolute;
+  left: 50%;
+  width: 87px;
+  margin-left: -43.5px; }
 
 #navbar-icon {
   width: 30px;
@@ -3025,9 +3056,6 @@ input[type="button"].btn-block {
 #a0-lock.a0-theme-default .a0-panel #a0-change_password .a0-collapse-reset .a0-instructions {
   display: none; }
 
-.vcenter {
-  margin-top: 12.5%; }
-
 .icon-primary i {
   color: #005BC6; }
 
@@ -3165,7 +3193,8 @@ code {
   color: #005BC6; }
 
 .theme-light code {
-  background-color: #005BC6; }
+  background-color: #005BC6;
+  color: #fff; }
 
 .theme-dark * {
   background-color: #005BC6;
@@ -3179,8 +3208,8 @@ code {
   background-color: #FCB829; }
 
 .theme-warning * {
-  background-color: #FCB829 !important;
-  color: #2750C8 !important;
+  background-color: #FCB829;
+  color: #2750C8;
   transition: .2s ease-in-out; }
 
 .theme-warning a {
@@ -3191,7 +3220,7 @@ code {
   background-color: #2750C8; }
 
 .theme-error * {
-  background-color: #DE344F !important;
+  background-color: #DE344F;
   color: #fff !important;
   transition: .2s ease-in-out; }
 
@@ -3215,7 +3244,7 @@ code {
   color: #fff; }
 
 .theme-error code {
-  color: #DE344F;
+  color: #DE344F !important;
   background-color: #fff; }
 
 .theme-success * {

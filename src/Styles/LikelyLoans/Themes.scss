@@ -33,6 +33,7 @@ code {
 
 .theme-light code {
     background-color: $brand-primary-1;
+    color: #fff;
 }
 
 // .theme-dark //
@@ -54,8 +55,8 @@ code {
 // .theme-warning //
 
 .theme-warning *{
-    background-color: $brand-primary-3 !important;
-    color: $brand-primary-3-font !important;
+    background-color: $brand-primary-3;
+    color: $brand-primary-3-font;
     -webkit-transition: .2s ease-in-out;
     -moz-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
@@ -74,7 +75,7 @@ code {
 // .theme-error //
 
 .theme-error *{
-    background-color: $brand-secondary-1 !important;
+    background-color: $brand-secondary-1;
     color: #fff !important;
     -webkit-transition: .2s ease-in-out;
     -moz-transition: .2s ease-in-out;
@@ -112,7 +113,7 @@ code {
 }
 
 .theme-error code {
-    color: $brand-secondary-1;
+    color: $brand-secondary-1 !important;;
     background-color: #fff;
 }
 

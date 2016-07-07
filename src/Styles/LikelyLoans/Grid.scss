@@ -1,0 +1,15 @@
+body {
+    height: 100%;
+}
+
+.vcenter-container {
+    position: relative;
+    width:100%; 
+    height:100vh;
+}
+
+.vcenter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,22 @@
+.loader {
+  height: 100px;
+  width: 200px;
+  border-radius: 0px 0px 250px 250px;
+//   -moz-border-radius: 0px 250px 0 0;
+//   -webkit-border-radius: 0px 250px 0 0;
+  margin: 0 auto;
+  background-color: $brand-primary-3;
+  animation-name: stretch;
+  animation-duration: .5s; 
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes stretch {
+  0% {
+  }
+  100% {
+    height: 110px;
+    width: 220px;
+  }
+}

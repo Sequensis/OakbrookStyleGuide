@@ -3324,13 +3324,20 @@ body {
     text-align: left;
     margin: 10px 0; }
 
+.footer-fixed-bottom {
+  position: relative; }
+
 @media (min-width: 768px) {
   .footer-links {
     float: right;
     margin-bottom: 0; }
     .footer-links a {
       display: inline;
-      margin: 0; } }
+      margin: 0; }
+  .footer-fixed-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0; } }
 
 a {
   text-decoration: underline; }

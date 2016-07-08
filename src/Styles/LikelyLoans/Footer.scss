@@ -31,6 +31,10 @@
 		  }
 }
 
+.footer-fixed-bottom {
+	position: relative;
+}
+
 @media(min-width:768px) {
 
 	.footer-links {
@@ -41,4 +45,10 @@
 			margin: 0;
 		}
 	}
+
+	.footer-fixed-bottom {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
 }

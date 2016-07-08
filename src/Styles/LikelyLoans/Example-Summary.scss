@@ -2,15 +2,16 @@
     color: $brand-primary-1;
 }
 
-.summary-payment {
+.remaining-payment {
     background-color: $brand-tint-1;
     color: $brand-primary-1;
+    margin: 20px auto 40px auto;
 }
 
-.summary-payment p {
+.remaining-payment p {
     padding: 20px 0;
 }
 
-.summary-payment span{
+.remaining-payment span{
     font-size: $font-size-h1;
 }

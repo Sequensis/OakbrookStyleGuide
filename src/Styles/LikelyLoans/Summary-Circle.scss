@@ -2,6 +2,7 @@ $circle: 3vw;
 
 .circle {
     position: relative;
+    display: inline-block;
 }
 
 .circle-container {
@@ -10,38 +11,11 @@ $circle: 3vw;
 }
 
 .circle-primary {
-    margin: 0 auto;
     width: $circle*15;
     height: $circle*15;
     border-radius: 50%;
     background-color: #fff;
     border: 5px solid $brand-primary-3
-}
-
-.circle-primary:hover {
-    background-color: #feeac0; 
-}
-
-.circle-secondary:hover {
-    background-color: #c6e0ff; 
-}
-
-.circle-secondary {
-    margin: 0 auto;
-    width: $circle*10;
-    height: $circle*10;
-    border-radius: 50%;
-    background-color: $brand-primary-1;
-    border:5px solid #fff;
-    margin-left: -5%;
-}
-
-.circle-inner  {
-    text-align: center;
-    display: inline-block;
-    margin: 0;
-    width: 100%;
-    height: 100px;
 }
 
 .circle-primary .circle-amount p {
@@ -51,6 +25,18 @@ $circle: 3vw;
     line-height: 100px;
     font-family: 'Montserrat', sans-serif;
     color: $brand-primary-3-font;
+}
+
+.circle-primary:hover {
+    background-color: lighten($brand-primary-3, 30)
+}
+
+.circle-secondary {
+    width: $circle*10;
+    height: $circle*10;
+    border-radius: 50%;
+    background-color: $brand-primary-1;
+    border:5px solid #fff;
 }
 
 .circle-secondary .circle-amount p {
@@ -66,6 +52,18 @@ $circle: 3vw;
     font-size: $circle*1.2;
 }
 
+.circle-secondary:hover {
+    background-color: darken($brand-primary-1, 10)
+}
+
+.circle-inner  {
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+}
+
 @media(min-width:768px) {
     
     .circle-primary {
@@ -75,15 +73,15 @@ $circle: 3vw;
         background-color: #fff;
     }
 
+    .circle-primary .circle-amount p {
+        font-size: $circle*1.5;
+    }
+
     .circle-secondary {
         width: $circle*4;
         height: $circle*4;
         margin-top: -8.5%;
         margin-right: 33.5%;
-    }
-
-    .circle-primary .circle-amount p {
-        font-size: $circle*1.5;
     }
 
     .circle-secondary .circle-amount p {

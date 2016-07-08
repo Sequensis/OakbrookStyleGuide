@@ -2354,7 +2354,8 @@ body {
   font-weight: 700;
   border-radius: 4px;
   padding: auto 20px;
-  text-decoration: none; }
+  text-decoration: none;
+  margin: 20px auto; }
 
 .btn:hover, .btn:focus, .btn.focus {
   text-decoration: none; }
@@ -2567,6 +2568,7 @@ body {
   position: fixed;
   top: 60px;
   left: 0;
+  z-index: -1;
   transition: .2s; }
 
 .overlay.overlay-open {
@@ -3213,52 +3215,31 @@ body {
 .icon-primary i {
   color: #005BC6; }
 
-.summary-payment {
+.remaining-payment {
   background-color: #F0EDC8;
-  color: #005BC6; }
+  color: #005BC6;
+  margin: 20px auto 40px auto; }
 
-.summary-payment p {
+.remaining-payment p {
   padding: 20px 0; }
 
-.summary-payment span {
+.remaining-payment span {
   font-size: 35px; }
 
 .circle {
-  position: relative; }
+  position: relative;
+  display: inline-block; }
 
 .circle-container {
   margin-top: 60px;
   margin-bottom: 60px; }
 
 .circle-primary {
-  margin: 0 auto;
   width: 45vw;
   height: 45vw;
   border-radius: 50%;
   background-color: #fff;
   border: 5px solid #FCB829; }
-
-.circle-primary:hover {
-  background-color: #feeac0; }
-
-.circle-secondary:hover {
-  background-color: #c6e0ff; }
-
-.circle-secondary {
-  margin: 0 auto;
-  width: 30vw;
-  height: 30vw;
-  border-radius: 50%;
-  background-color: #005BC6;
-  border: 5px solid #fff;
-  margin-left: -5%; }
-
-.circle-inner {
-  text-align: center;
-  display: inline-block;
-  margin: 0;
-  width: 100%;
-  height: 100px; }
 
 .circle-primary .circle-amount p {
   margin: 0;
@@ -3267,6 +3248,16 @@ body {
   line-height: 100px;
   font-family: 'Montserrat', sans-serif;
   color: #2750C8; }
+
+.circle-primary:hover {
+  background-color: #feeac0; }
+
+.circle-secondary {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+  background-color: #005BC6;
+  border: 5px solid #fff; }
 
 .circle-secondary .circle-amount p {
   margin: 0;
@@ -3279,19 +3270,29 @@ body {
 .circle-secondary .circle-amount span {
   font-size: 3.6vw; }
 
+.circle-secondary:hover {
+  background-color: #004493; }
+
+.circle-inner {
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+  height: 100px; }
+
 @media (min-width: 768px) {
   .circle-primary {
     width: 18vw;
     height: 18vw;
     border-radius: 50%;
     background-color: #fff; }
+  .circle-primary .circle-amount p {
+    font-size: 4.5vw; }
   .circle-secondary {
     width: 12vw;
     height: 12vw;
     margin-top: -8.5%;
     margin-right: 33.5%; }
-  .circle-primary .circle-amount p {
-    font-size: 4.5vw; }
   .circle-secondary .circle-amount p {
     font-size: 2.4vw; }
   .circle-secondary .circle-amount span {

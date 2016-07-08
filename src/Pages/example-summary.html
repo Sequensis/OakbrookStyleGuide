@@ -13,10 +13,31 @@
             </div>
         </ul>
         <ul class="nav col-xs-6">
-            <li><button type="button" class="btn btn-primary-3 navbar-btn btn-sign-in">Sign in</button></li>
+            <li><button type="button" class="btn btn-primary-3 navbar-btn btn-sign-out">Sign out</button></li>
+            <li><button type="button" class="btn btn-primary-3 navbar-btn btn-username">Daniel Humenko</button></li>
         </ul>
     </div>
 </nav>
+
+<div class="overlay" id="overlay-sign-in">
+    <div class="overlay-profile col-lg-12 text-center">
+        <img src="https://www.gravatar.com/avatar/8354b54d2797197e860e139e97737ec6?d=404&amp;s=320" class="img-circle">
+
+        <ul class="list-unstyled text-center">
+            <li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Profile Settings</a></li>
+            <hr>
+        </ul>
+    </div>
+    <div class="overlay-content col-lg-12 text-center">
+        <ul class="list-unstyled text-center">
+            <li><a href="#"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>Summary</a></li>
+            <li><a href="#"><i class="fa fa-folder-o fa-2x" aria-hidden="true"></i>Documents</a></li>
+            <li><a href="#"><i class="fa fa-money fa-2x" aria-hidden="true"></i>Payments</a></li>
+            <li><a href="#"><i class="fa fa-calculator fa-2x" aria-hidden="true"></i>Borrow</a></li>
+            <li><a href="#"><i class="fa fa-check fa-2x" aria-hidden="true"></i>Credit score</a></li>
+        </ul>
+    </div>
+</div>
 
 <div class="container-fluid padding-top">
     <div class="row">
@@ -29,23 +50,10 @@
     </div>
 
     <div class="row">
-        <div class="col-sm-6 col-sm-offset-4 text-center">
+        <div class="col-sm-6 col-sm-offset-3 text-center">
             <div class="circle-container">
-            <button class="circle-primary">
-                <div class="circle-inner">
-                    <div class="circle-amount">
-                        <p>£1000</p>
-                    </div>
-                </div>
-            </button>
-            <button class="circle-secondary">
-                <div class="circle-inner">
-                    <div class="circle-amount">
-                        <p>£87.<span>46</span></p>
-                    </div>
-                </div>
-            </button>
-        </div>
+
+            </div>
         </div>
     </div>
     <div class="row">
@@ -56,16 +64,22 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3 text-center">
             <ul class="list-unstyled">
-                <li class="theme-light"><p><strong>Your next payment is due on</strong></p></li>
-                <li class="theme-light"><h2><strong>Tuesday 5th July 2016</strong></h2></li>
-                <li class="theme-light"><p>If you have a direct debit set up this will be collected automatically</p></li>
+                <li class="theme-light">
+                    <p><strong>Your next payment is due on</strong></p>
+                </li>
+                <li class="theme-light">
+                    <h2><strong>Tuesday 5th July 2016</strong></h2>
+                </li>
+                <li class="theme-light">
+                    <p>If you have a direct debit set up this will be collected automatically</p>
+                </li>
                 <button class="btn btn-primary-1">Make a payment</button>
             </ul>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12 text-center">
-            <div class="summary-payment">
+            <div class="remaining-payment">
                 <p class="lead">After this payment has been made, you will have <span>9</span> payments remaining.</p>
             </div>
         </div>
@@ -74,33 +88,33 @@
 
 
 
-    <footer class="footer-distributed row">
-        <div class="row footer-top-row">
+<footer class="footer-distributed row">
+    <div class="row footer-top-row">
 
-            <div class="col-sm-9 footer-links text-muted text-right">
+        <div class="col-sm-9 footer-links text-muted text-right">
 
-                <a href="#">Personal loans</a>
-                <a href="#">Contact us</a>
-                <a href="#">Terms of use</a>
-                <a href="#">Privacy policy</a>
-                <a href="#">Site map</a>
-
-            </div>
-            <div class="col-sm-3">
-                <div class="footer-img">
-                    <img src="/img/LikelyLoansFooter.svg">
-                </div>
-            </div>
-
+            <a href="#">Personal loans</a>
+            <a href="#">Contact us</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Site map</a>
 
         </div>
-        <div class="row">
-            <div class="col-sm-8 text-muted">
-                <p>Likely Loans is a trading name of Oakbrook Finance Limited, Registered in England and Wales No. 07831517.
-                    Registered Office: The Poynt North, 45 Wollaton Street, Nottingham, NG1 5FW. Authorised and regulated
-                    by the Financial Conduct Authority, 25 N Colonnade, London E14 5HS</p>
+        <div class="col-sm-3">
+            <div class="footer-img">
+                <img src="/img/LikelyLoansFooter.svg">
             </div>
         </div>
-    </footer>
+
+
+    </div>
+    <div class="row">
+        <div class="col-sm-8 text-muted">
+            <p>Likely Loans is a trading name of Oakbrook Finance Limited, Registered in England and Wales No. 07831517. Registered
+                Office: The Poynt North, 45 Wollaton Street, Nottingham, NG1 5FW. Authorised and regulated by the Financial
+                Conduct Authority, 25 N Colonnade, London E14 5HS</p>
+        </div>
+    </div>
+</footer>
 
 <div class="sidebar-arrow-container"><a href="/#footer" class="sidebar-arrow"><i class="fa fa-arrow-left fa-2x"></i></a></div>

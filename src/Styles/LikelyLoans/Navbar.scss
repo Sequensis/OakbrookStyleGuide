@@ -1,9 +1,5 @@
-.section-container {
-    width: 100%;
-    height: 50vh;
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
+.section-container nav.navbar .navbar-circle {
+    position: absolute;
 }
 
 .navbar {
@@ -16,19 +12,40 @@
     -moz-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
-}
 
-.navbar a:hover{
-    background-color: #fff;
+        a{
+            text-transform: none;
+            color: $brand-primary-1;
+        }
+
+        a:hover{
+            background-color: #fff;
+        }
 }
 
 .nav {
     padding: 0;
+    li:first-child {
+        margin-right:10px;
+    }
 }
 
-.navbar a{
-    text-transform: none;
-    color: $brand-primary-1;
+.navbar-btn {
+    padding: auto 0px;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    font-family: 'Monsterrat', sans-serif;
+    font-weight: 700;
+    outline: 0 !important;
+    box-shadow: none;
+}
+
+.navbar-toggle {
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
 .navbar-logo {
@@ -38,13 +55,12 @@
     position: absolute;
     left: 50%;
     margin-left: -43.5px;
-}
-
-.navbar-logo img{
-    height: 100%;
-    width: 100%;
-    display: inline-block;
-    vertical-align: middle;
+        img{
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
 }
 
 .navbar-circle {
@@ -85,6 +101,55 @@
     width: 87px;
     margin-left: -43.5px;
 }
+
+
+// Navbar Buttons 
+
+.btn-sign-in, .btn-sign-out {
+    float: right;
+    color: #fff;
+}
+
+.btn-sign-out:hover, .btn-sign-in:hover {
+    color: #fff;
+}
+
+.btn-sign-in:focus, .btn-username:focus {
+    color: #fff !important;
+}
+
+.btn-sign-in-open, .btn-sign-out-open {
+    color: $brand-primary-1;
+    background-color: #fff;
+}
+
+.btn-sign-in-open:hover, .btn-sign-out-open:hover {
+    color: $brand-primary-1 !important;
+}
+
+
+.btn-username {
+    display: none;
+    float: right;
+    color: $brand-primary-1;
+    margin-right: 10px;
+}
+
+.btn-username:hover {
+    color: $brand-primary-1;
+    text-decoration: underline;
+}
+
+.btn-username-open {
+    color: #fff;
+}
+
+.btn-username-open:hover {
+    color: #fff;
+}
+
+
+// Navbar Burger Icon
 
 #navbar-icon {
     width: 30px;
@@ -173,34 +238,7 @@
     left: 8px;
 }
 
-.navbar-btn {
-    padding: auto 0px;
-    -webkit-transition: .2s ease-in-out;
-    -moz-transition: .2s ease-in-out;
-    -o-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
-    font-family: 'Monsterrat', sans-serif;
-    font-weight: 700;
-}
-
-.navbar-toggle {
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-
-.btn-sign-in {
-    float: right;
-    color: #fff;
-}
-
-.btn-sign-in-open {
-    color: #fff !important;
-}
-
-.section-container nav.navbar .navbar-circle {
-    position: absolute;
-}
+// Nav Overlay
 
 .overlay {
     opacity: 0;
@@ -209,11 +247,19 @@
     position: fixed;
     top: 60px;
     left: 0;
-    -webkit-transition: .2s ease-in-out;
-    -moz-transition: .2s ease-in-out;
-    -o-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+
+.overlay.overlay-open {
+    opacity: 1;
     z-index: 101;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
 }
 
 .overlay-content {
@@ -302,17 +348,11 @@
     border:2px solid #fff;
 }
 
-.overlay.overlay-open {
-    opacity: 1;
-    -webkit-transition-delay: .2s;
-    -moz-transition-delay: .2s;
-    -o-transition-delay: .2s;
-    transition-delay: .2s;
-}
-
 @media(min-width:992px) {
+
     .navbar {
         padding-top: 10px;
+        background-color: #fff;
     }
 
     .navbar-right {
@@ -335,39 +375,13 @@
     }
 
     #navbar-icon span {
-    background: $brand-primary-1;
-    }
-
-    .navbar {
-        background-color: #fff;
-    }
-    
-    .btn-sign-in {
-        float: right;
-        color: $brand-primary-1;
-    }
-
-    .overlay-profile {   
-    position: relative;
-    top: 20%;
-    transform: translateY(-20%);
-    }
-
-    .overlay-content {
-    
-    position: relative;
-    top: 30%;
-    transform: translateY(-30%);
-    }
-    .navbar-circle.circle-open {
-        margin-top: -150vw;
-        margin-left: -150vw;
-        width: 300vw;
-        height: 300vw;
-    }
+        background: $brand-primary-1;
+        }
 
 .overlay-content {
-
+        position: relative;
+        top: 30%;
+        transform: translateY(-30%);
     li {
         display: inline-block;
         min-width: 160px;
@@ -377,25 +391,45 @@
         padding: 20px 0;
         display: block;
     }
-    
 }
 
-.overlay-profile {
-    
-}
+    .overlay-profile {   
+        position: relative;
+        top: 20%;
+        transform: translateY(-20%);
+        }
 
-    // .btn-application {
-    //     display: block;
-    // }
+    .navbar-circle.circle-open {
+        margin-top: -150vw;
+        margin-left: -150vw;
+        width: 300vw;
+        height: 300vw;
+    }
 
-    // .btn-application-open {
-    //     background-color: #fff;
-    //     color: $brand-primary-1;
-    // }
-    
-}
+    .btn-username {
+        display: block;
+    }
 
-// remove at later date //
-body {
+    .btn-sign-in {
+        color: $brand-primary-1;
+    }
 
+    .btn-sign-out {
+        float: right;
+        color: #fff;
+        background-color: $brand-primary-1;
+    }
+
+    .btn-sign-in:hover {
+        color: $brand-primary-1;
+    }
+
+    .btn-sign-in-open, .btn-sign-out-open {
+        color: $brand-primary-1;
+        background-color: #fff;
+    }
+
+    .btn-sign-in:focus, .btn-username:focus, .btn-sign-in:focus {
+        color: $brand-primary-1 !important;
+    }
 }

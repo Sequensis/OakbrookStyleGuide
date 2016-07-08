@@ -1,1 +1,141 @@
-{{> auth0-login-modal}} {{> auth0-typography}}
+<h2 id="auth0">
+    Auth0 Login
+</h2>
+<br>
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="modal-container theme-light">
+            <div class="modal-login text-center ">
+                <div class="modal-login-header">
+                    <a class="modal-padlock"><i class="fa fa-lock fa-4x"></i></a>
+                    <h1>Welcome to Likely Loans</h1>
+                    <p>Currently this service is only available by invitation only
+                        <br>
+                        <a href="#">Register your interest</a></p>
+                </div>
+                <div id="lock-widget">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<a class="btn btn-primary-1 btn-showcase" href="example-login.html">Example Modal</a>
+<script src="https://cdn.auth0.com/js/lock-9.0.js"></script>
+<script>
+       var lock = new Auth0Lock('wgX0JYnX2B7VWRy5WjiAKfGxnaup9l4S', 'likelyloans.eu.auth0.com');
+       var failedAttempts = 0;
+
+       lock.show({
+           authParams: {
+               scope: 'openid profile'
+           },
+           container: 'lock-widget',
+           callbackURL: window.location.origin + '/signin-auth0',
+           disableSignupAction: true,
+           responseType: 'code',
+           closable: true
+       });
+
+       lock.on('signin error', function () {
+           failedAttempts++;
+
+           if (failedAttempts == 2) {
+               $('.a0-password').append( $('<div class = "modal-validate"><p>Your password will contain a minimum of 6 characters and at least 1 number</p></div>'));
+           }
+
+           if (failedAttempts > 3) {
+               $('.modal-container').addClass('theme-warning');
+               $(".modal-login-header h1").text("Check your details and try again!");
+               $('.modal-padlock i').removeClass('fa-lock');
+               $('.modal-padlock i').addClass('fa-exclamation');
+           }
+
+            if (failedAttempts > 6) {
+               $(".modal-login-header h1").text("You have 1 more attempt before you are locked out of your account");
+           }
+
+            if (failedAttempts > 9) {
+                $('.modal-container').removeClass('theme-warning');
+                $('.modal-container').addClass('theme-error');
+                $('.modal-container').addClass('shake');
+                $('.modal-login #a0-lock.a0-theme-default .a0-panel .a0-all, #a0-lock.a0-theme-default .a0-panel .a0-forgot-pass').toggleClass('theme-error');
+                $(".modal-login-header h1").text("For security, your account has been locked!");
+           }
+
+            if (failedAttempts > 10) {
+                $('.modal-container').addClass('shake');
+                $(".modal-login-header h1").text("Access to your account is currently unavailable");
+                $(".modal-login-header p").text("If you cannot remember your registered email address, please call us on 0208 080 6450");
+                $('.a0-emailPassword').empty();
+                $('.a0-body-content').empty();
+                $('.bottom-content').empty();
+           }
+       });
+   </script>
+
+<pre><code>&lt;div class=&quot;modal-container theme-light&quot;&gt;
+    &lt;div class=&quot;modal-login text-center &quot;&gt;
+        &lt;div class=&quot;modal-login-header&quot;&gt;
+            &lt;a class=&quot;modal-padlock&quot;&gt;&lt;i class=&quot;fa fa-lock fa-4x&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;h1&gt;...&lt;/h1&gt;
+            &lt;p&gt;...&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div id=&quot;lock-widget&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;https://cdn.auth0.com/js/lock-9.0.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+       var lock = new Auth0Lock(&#39;wgX0JYnX2B7VWRy5WjiAKfGxnaup9l4S&#39;, &#39;likelyloans.eu.auth0.com&#39;);
+       var failedAttempts = 0;
+
+       lock.show({
+           authParams: {
+               scope: &#39;openid profile&#39;
+           },
+           container: &#39;lock-widget&#39;,
+           callbackURL: window.location.origin + &#39;/signin-auth0&#39;,
+           disableSignupAction: true,
+           responseType: &#39;code&#39;,
+           closable: true
+       });
+
+       lock.on(&#39;signin error&#39;, function () {
+           failedAttempts++;
+
+           if (failedAttempts == 2) {
+               $(&#39;.a0-password&#39;).append( $(&#39;&lt;div class = &quot;modal-validate&quot;&gt;&lt;p&gt;Your password will contain a minimum of 6 characters and at least 1 number&lt;/p&gt;&lt;/div&gt;&#39;));
+           }
+
+           if (failedAttempts &gt; 3) {
+               $(&#39;.modal-container&#39;).addClass(&#39;theme-warning&#39;);
+               $(&quot;.modal-login-header h1&quot;).text(&quot;Check your details and try again!&quot;);
+               $(&#39;.modal-padlock i&#39;).removeClass(&#39;fa-lock&#39;);
+               $(&#39;.modal-padlock i&#39;).addClass(&#39;fa-exclamation&#39;);
+           }
+
+            if (failedAttempts &gt; 6) {
+               $(&quot;.modal-login-header h1&quot;).text(&quot;You have 1 more attempt before you are locked out of your account&quot;);
+           }
+
+            if (failedAttempts &gt; 9) {
+                $(&#39;.modal-container&#39;).removeClass(&#39;theme-warning&#39;);
+                $(&#39;.modal-container&#39;).addClass(&#39;theme-error&#39;);
+                $(&#39;.modal-container&#39;).addClass(&#39;shake&#39;);
+                $(&#39;.modal-login #a0-lock.a0-theme-default .a0-panel .a0-all, #a0-lock.a0-theme-default .a0-panel .a0-forgot-pass&#39;).toggleClass(&#39;theme-error&#39;);
+                $(&quot;.modal-login-header h1&quot;).text(&quot;For security, your account has been locked!&quot;);
+           }
+
+            if (failedAttempts &gt; 10) {
+                $(&#39;.modal-container&#39;).addClass(&#39;shake&#39;);
+                $(&quot;.modal-login-header h1&quot;).text(&quot;Access to your account is currently unavailable&quot;);
+                $(&quot;.modal-login-header p&quot;).text(&quot;If you cannot remember your registered email address, please call us on 0208 080 6450&quot;);
+                $(&#39;.a0-emailPassword&#39;).empty();
+                $(&#39;.a0-body-content&#39;).empty();
+                $(&#39;.bottom-content&#39;).empty();
+           }
+       });
+   &lt;/script&gt;</code></pre>
+
+       <hr>

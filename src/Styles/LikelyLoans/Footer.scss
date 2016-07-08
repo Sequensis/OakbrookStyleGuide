@@ -7,7 +7,6 @@
 }
 
 .footer-distributed a{
-	display:inline-block;
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
@@ -18,30 +17,28 @@
     opacity: 0.5;
 }
 
-
-.footer-img {
-    margin-bottom: 20px;
+.footer-top-row {
+	margin-bottom: 20px;
 }
+
 
 .footer-links {
-    float: right;
+	margin-bottom: 30px;
+		a {
+			display: block;
+			text-align: left;
+			margin: 10px 0;
+		  }
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+@media(min-width:768px) {
 
-@media (max-width: 600px) {
-
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-right{
-		text-align: center;
-	}
-
-	.footer-distributed .footer-right{
-		float: none;
-		margin: 0 auto 20px;
-	}
-
-	.footer-distributed .footer-left p.footer-links{
-		line-height: 1.8;
+	.footer-links {
+		    float: right;
+			margin-bottom: 0;
+		a {
+			display: inline;
+			margin: 0;
+		}
 	}
 }

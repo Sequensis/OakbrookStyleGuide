@@ -1,0 +1,33 @@
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: $brand-tint-1-opacity;
+}
+
+.theme-default {
+  all: unset;
+}
+
+.modal-table {
+    padding-bottom: 10px !important;
+}
+
+.table {
+            padding-bottom: 30px;
+    tbody {
+
+        th {
+            border-top: none !important;
+            padding: 20px 4px;
+        }
+
+        td {
+            border-top: none !important;
+            font-weight: 700;
+        }
+
+        td:nth-child(2) {
+             color: $brand-primary-1; 
+        }
+
+    }
+}
+

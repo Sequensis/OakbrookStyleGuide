@@ -1,0 +1,22 @@
+.full-width-list {
+
+    ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    }
+
+    li a {
+    border-top: 1px solid $brand-tint-2;
+    display: block;
+    font-weight: 700;
+    color: $brand-primary-2;
+    padding: 20px 0 20px 0;
+    text-decoration: none;
+    }   
+
+    li a:hover {
+    background-color: $brand-primary-1;
+    color: #fff;
+    }
+}

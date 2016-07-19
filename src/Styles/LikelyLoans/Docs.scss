@@ -31,3 +31,11 @@
 @import "Modal-Overlay";
 
 @import "Lists";
+
+@import "Typography";
+
+// Delete this //
+
+*:focus {
+    outline: -webkit-focus-ring-color auto 0px !important;
+}

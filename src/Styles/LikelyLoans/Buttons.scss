@@ -15,7 +15,7 @@
     color: #fff;
 }
 
-.btn-primary-1:hover {
+.btn-primary-1:focus, .btn-primary-1:hover {
     background-color: darken($brand-primary-1, 5%);
     color: #fff;
 }

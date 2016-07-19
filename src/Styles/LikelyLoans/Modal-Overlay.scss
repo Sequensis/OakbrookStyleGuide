@@ -11,17 +11,20 @@
 .modal-body {
     margin: 0;
     padding: 0;
+    p {
+        padding: 0 20px;
+    }
 }
 
 .modal-header {
     border-bottom: none;
     padding: 0;
-    h3 {
+    h2 {
         padding: 40px 0 40px 0;
     }
 
     p {
-        padding: 0 0 40px 0;
+        padding: 0 20px 40px 20px;
         margin-top: -20px;
         margin-bottom: 0;
     }

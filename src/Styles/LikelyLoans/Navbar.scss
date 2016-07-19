@@ -24,9 +24,11 @@
 }
 
 .nav {
-    padding: 0;
     li:first-child {
         margin-right:10px;
+    }
+    .col-xs-6 {
+        padding: 0 10px !important;
     }
 }
 
@@ -350,6 +352,12 @@
 }
 
 @media(min-width:992px) {
+
+    .nav {
+        .col-xs-6 {
+        padding: 0 30px !important;
+        }
+    }
 
     .navbar {
         padding-top: 10px;

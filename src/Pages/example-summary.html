@@ -13,8 +13,8 @@
             </div>
         </ul>
         <ul class="nav col-xs-6">
-            <li><button type="button" class="btn btn-primary-3 navbar-btn btn-sign-out">Sign out</button></li>
-            <li><button type="button" class="btn btn-primary-3 navbar-btn btn-username">Daniel Humenko</button></li>
+            <li><button type="button" class="btn btn-primary-3 navbar-btn btn-sign-out body-md">Sign out</button></li>
+            <li><button type="button" class="btn btn-primary-3 navbar-btn btn-username body-md">Daniel Humenko</button></li>
         </ul>
     </div>
 </nav>
@@ -42,69 +42,189 @@
 <div class="container-fluid padding-top">
     <div class="row">
         <div class="col-md-6 col-md-offset-3 text-center">
-            <div class="theme-light">
+            <div class="theme-light summary-header">
                 <h1>Your loan summary</h1>
             </div>
-            <p class="text-muted">Last updated 11:28am on 5th July 2016</p>
+            <p class="text-muted body-sm">Last updated 11:28am on 5th July 2016</p>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-sm-6 col-sm-offset-3 text-center">
+        <div class="col-sm-4 col-sm-offset-4 text-center">
             <div class="circle-container">
-                <button class="circle-primary">
-                    <div class="circle-inner">
-                        <div class="circle-amount">
-                            <p>£1000</p>
+                <a data-toggle="modal" href="#SummaryTable">
+                    <div class="circle-primary">
+                        <div class="circle-inner">
+                            <div class="circle-amount font-light">
+                                <h2 class="body-sm">Amount borrowed</h2>
+                                <p>£1000</p>
+                            </div>
                         </div>
                     </div>
-                </button>
-                <button class="circle-secondary">
-                    <div class="circle-inner">
-                        <div class="circle-amount">
-                            <p>£100.<span>46</span></p>
+                </a>
+                <a data-toggle="modal" href="#MonthlyList">
+                    <div class="circle-secondary">
+                        <div class="circle-inner">
+                            <div class="circle-amount font-dark">
+                                <h2 class="body-sm">Monthly amount</h2>
+                                <p>£100.<span>46</span></p>
+                            </div>
                         </div>
                     </div>
-                </button>
+                </a>
             </div>
         </div>
     </div>
-<div class="row">
-    <div class="cold-md-3 text-center">
-        <a class="summary-credit-card icon-primary"><i class="fa fa-credit-card fa-2x"></i></a>
+
+    <div class="modal fade" id="SummaryTable" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-table">
+                <div class="modal-header theme-light text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  &#10060
+</button>
+                    <h2 class="modal-title" id="myModalLabel">Amount borrowed<br>£1000</h2>
+                </div>
+                <div class="modal-body theme-default">
+                    <table class="table table-striped body-lg">
+                        <tbody>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Agreement number</td>
+                                <td>Ipsum</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Total charge for credit</td>
+                                <td>Ipsum</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Total amout to pay</td>
+                                <td>Ipsum</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Loan interest (APR)</td>
+                                <td>Ipsum</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Monthly payment amount</td>
+                                <td>Ipsum</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Number of payments</td>
+                                <td>Ipsum</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-6 col-md-offset-3 text-center">
-        <ul class="list-unstyled">
-            <li class="theme-light">
-                <p><strong>Your next payment is due on</strong></p>
-            </li>
-            <li class="theme-light">
-                <h2><strong>Tuesday 5th July 2016</strong></h2>
-            </li>
-            <li class="theme-light">
-                <p>If you have a direct debit set up this will be collected automatically</p>
-            </li>
-            <button class="btn btn-primary-1">Make a payment</button>
-        </ul>
+
+    <div class="modal fade" id="MonthlyList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header theme-light text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">&#10060</button>
+                    <h2 class="modal-title" id="myModalLabel">Beta service feedback</h2>
+                    <p class="body-lg">This option is not currently available, however we'd really like to understand what you were expecting
+                        to see or do here.</p>
+                </div>
+                <div class="modal-body theme-default">
+
+                    <div class="full-width-list text-center body-lg">
+                        <ul>
+                            <li><a href="#">Too see my payment schedule</a></li>
+                            <li><a href="#">To make a payment</a></li>
+                            <li><a href="#">To change my payment date</a></li>
+                            <li><a href="#">Other</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-md-12 text-center">
-        <div class="remaining-payment">
-            <p class="lead">After this payment has been made, you will have <span>9</span> payments remaining.</p>
+
+
+    <div class="row">
+        <div class="cold-md-3 text-center">
+            <a class="summary-credit-card icon-primary"><i class="fa fa-credit-card fa-2x"></i></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 text-center">
+            <ul class="list-unstyled">
+                <li class="theme-light">
+                    <p><strong>Your next payment is due on</strong></p>
+                </li>
+                <li class="theme-light summary-change-date">
+                    <h2><strong>Tuesday 5th July 2016</strong><a data-toggle="modal" href="#ChangeDate"><span><i class="fa fa-pencil fa fa-lg"></i>change</span></a></h2>
+                </li>
+                <li class="theme-light">
+                    <p>If you have a direct debit set up this will be collected automatically</p>
+                </li>
+                <button class="btn btn-primary-1 body-md">Make a payment</button>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ChangeDate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content padding-bottom">
+                <div class="modal-header theme-light text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">&#10060</button>
+                    <h2 class="modal-title" id="myModalLabel">Change your payment date</h2>
+                </div>
+                <div class="modal-body theme-light text-center body-lg">
+                    <p>You can change your payment date to any day between the 1st and the 28th of each month.</p>
+                    <p>If you would like to change your payment date, please call us on</p>
+                    <p class="lead"><strong>0800 123456</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="panel-beige text-center">
+            <p class="body-lg">After this payment has been made, you will have <a data-toggle="modal" href="#PaymentList"><span>9</span></a>                payments remaining.</p>
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="PaymentList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header theme-light text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">&#10060</button>
+                <h2 class="modal-title" id="myModalLabel">Beta service feedback</h2>
+                <p class="body-lg">This option is not currently available, however we'd really like to understand what you were expecting to
+                    see or do here.</p>
+            </div>
+            <div class="modal-body theme-default">
+
+                <div class="full-width-list text-center body-lg">
+                    <ul>
+                        <li><a href="#">Too see my payment schedule</a></li>
+                        <li><a href="#">To make a payment</a></li>
+                        <li><a href="#">To change my payment date</a></li>
+                        <li><a href="#">Other</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>
 
-
-
-<footer class="footer-distributed row">
+<footer class="footer-distributed row footer-fixed-bottom">
     <div class="row footer-top-row">
 
-        <div class="col-sm-9 footer-links text-muted text-right">
+        <div class="col-sm-9 footer-links text-muted text-right body-sm">
 
             <a href="#">Personal loans</a>
             <a href="#">Contact us</a>
@@ -118,11 +238,11 @@
                 <img src="/img/LikelyLoansFooter.svg">
             </div>
         </div>
-
-
     </div>
+
+
     <div class="row">
-        <div class="col-sm-8 text-muted">
+        <div class="col-sm-8 text-muted body-xs">
             <p>Likely Loans is a trading name of Oakbrook Finance Limited, Registered in England and Wales No. 07831517. Registered
                 Office: The Poynt North, 45 Wollaton Street, Nottingham, NG1 5FW. Authorised and regulated by the Financial
                 Conduct Authority, 25 N Colonnade, London E14 5HS</p>

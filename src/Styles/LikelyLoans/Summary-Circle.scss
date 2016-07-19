@@ -10,11 +10,13 @@ $circle: 3vw;
     height: $circle*20;
     border-radius: 50%;
     background-color: #fff;
-    border: 5px solid $brand-primary-3;
+    box-shadow: inset 0 0 0 5px $brand-primary-3;
+    transition: background-color 0.25s, box-shadow 0.25s;;
 }
 
 .circle-primary:hover {
-    background-color: lighten($brand-primary-3, 30);
+    background-color: lighten($brand-primary-3, 35);
+    box-shadow: inset 0 0 0 7.5px $brand-primary-3;
 }
 
 .circle-secondary {
@@ -25,10 +27,12 @@ $circle: 3vw;
     background-color: $brand-primary-1;
     border:5px solid #fff;
     margin-top: -20%;
+    transition: background-color 0.25s, box-shadow 0.25s;;
 }
 
 .circle-secondary:hover {
-    background-color: darken($brand-primary-1, 10);
+    background-color: darken($brand-primary-1, 5);
+    box-shadow: inset 0 0 0 7.5px darken($brand-primary-1, 10);
 }
 
 .circle-inner  {

@@ -35,7 +35,14 @@
 	position: relative;
 }
 
+
 @media(min-width:768px) {
+	
+	.footer-fixed-bottom {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
 
 	.footer-links {
 		    float: right;

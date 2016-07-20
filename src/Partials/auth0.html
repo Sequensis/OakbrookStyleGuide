@@ -7,7 +7,7 @@
         <div class="modal-container theme-light">
             <div class="modal-login text-center ">
                 <div class="modal-login-header">
-                    <a class="modal-padlock"><i class="fa fa-lock fa-4x"></i></a>
+                    <a class="modal-padlock"><i class="fa icon-lock fa-4x"></i></a>
                     <h1>Welcome to Likely Loans</h1>
                     <p>Currently this service is only available by invitation only
                         <br>
@@ -46,8 +46,8 @@
            if (failedAttempts > 3) {
                $('.modal-container').addClass('theme-warning');
                $(".modal-login-header h1").text("Check your details and try again!");
-               $('.modal-padlock i').removeClass('fa-lock');
-               $('.modal-padlock i').addClass('fa-exclamation');
+               $('.modal-padlock i').removeClass('icon-lock');
+               $('.modal-padlock i').addClass('icon-exclamation');
            }
 
             if (failedAttempts > 6) {
@@ -76,7 +76,7 @@
 <pre><code class="html">&lt;div class=&quot;modal-container theme-light&quot;&gt;
     &lt;div class=&quot;modal-login text-center &quot;&gt;
         &lt;div class=&quot;modal-login-header&quot;&gt;
-            &lt;a class=&quot;modal-padlock&quot;&gt;&lt;i class=&quot;fa fa-lock fa-4x&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+            &lt;a class=&quot;modal-padlock&quot;&gt;&lt;i class=&quot;fa icon-lock fa-4x&quot;&gt;&lt;/i&gt;&lt;/a&gt;
             &lt;h1&gt;...&lt;/h1&gt;
             &lt;p&gt;...&lt;/p&gt;
         &lt;/div&gt;
@@ -111,8 +111,8 @@
            if (failedAttempts &gt; 3) {
                $(&#39;.modal-container&#39;).addClass(&#39;theme-warning&#39;);
                $(&quot;.modal-login-header h1&quot;).text(&quot;Check your details and try again!&quot;);
-               $(&#39;.modal-padlock i&#39;).removeClass(&#39;fa-lock&#39;);
-               $(&#39;.modal-padlock i&#39;).addClass(&#39;fa-exclamation&#39;);
+               $(&#39;.modal-padlock i&#39;).removeClass(&#39;icon-lock&#39;);
+               $(&#39;.modal-padlock i&#39;).addClass(&#39;icon-exclamation&#39;);
            }
 
             if (failedAttempts &gt; 6) {

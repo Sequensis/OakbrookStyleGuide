@@ -52,7 +52,7 @@ gulp.task('browser:reload', function (done) {
     return done();
 });
 
-gulp.task('fonts', ['fonts:font-awesome']);
+gulp.task('fonts', ['fonts:font-awesome', 'fonts:likely-loans-font']);
 
 gulp.task('fonts:font-awesome', function () {
     return gulp.src(
@@ -61,6 +61,16 @@ gulp.task('fonts:font-awesome', function () {
         .pipe(gulp.dest(config.paths.docs.fonts))
         .pipe(gulp.dest(config.paths.dist.fonts));
 });
+
+gulp.task('fonts:likely-loans-font', function () {
+    return gulp.src(config.paths.src.fonts + '/**/*')
+        .pipe($.imagemin({
+            progressive: true
+        }))
+        .pipe(gulp.dest(config.paths.docs.fonts))
+        .pipe(gulp.dest(config.paths.dist.fonts));
+});
+
 
 gulp.task('icons', function (done) {
     return runSequence('icons:generate-favicon', 'icons:inject-favicon-markups', 'icons:check-for-favicon-update', function () {

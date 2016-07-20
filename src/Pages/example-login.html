@@ -10,7 +10,7 @@
             <div class="modal-container theme-light">
                 <div class="modal-login text-center ">
                     <div class="modal-login-header">
-                        <a class="modal-padlock"><i class="fa fa-lock fa-4x"></i></a>
+                        <a class="modal-padlock"><i class="fa icon-lock fa-4x"></i></a>
                         <h1>Welcome to Likely Loans</h1>
                         <p>Currently this service is only available by invitation only
                             <br>
@@ -51,8 +51,8 @@
            if (failedAttempts > 3) {
                $('.modal-container').addClass('theme-warning');
                $(".modal-login-header h1").text("Check your details and try again!");
-               $('.modal-padlock i').removeClass('fa-lock');
-               $('.modal-padlock i').addClass('fa-exclamation');
+               $('.modal-padlock i').removeClass('icon-lock');
+               $('.modal-padlock i').addClass('icon-exclamation');
            }
 
             if (failedAttempts > 6) {

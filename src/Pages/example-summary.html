@@ -14,7 +14,7 @@
         </ul>
         <ul class="nav col-xs-6">
             <li><button type="button" class="btn btn-primary-3 navbar-btn btn-sign-out body-md">Sign out</button></li>
-            <li><button type="button" class="btn btn-primary-3 navbar-btn btn-username body-md">Daniel Humenko</button></li>
+            <li><button type="button" class="btn btn-primary-3 navbar-btn btn-username body-md" onClick="location.href='example-personal.html'">Daniel Humenko</button></li>
         </ul>
     </div>
 </nav>
@@ -30,11 +30,11 @@
     </div>
     <div class="overlay-content col-lg-12 text-center">
         <ul class="list-unstyled text-center">
-            <li><a href="example-summary.html"><i class="fa fa-file-text-o fa-2x" aria-hidden="true"></i>Summary</a></li>
-            <li><a href="example-documents.html"><i class="fa fa-folder-o fa-2x" aria-hidden="true"></i>Documents</a></li>
-            <li><a href="example-payments.html"><i class="fa fa-money fa-2x" aria-hidden="true"></i>Payments</a></li>
-            <li><a href="example-borrow.html"><i class="fa fa-calculator fa-2x" aria-hidden="true"></i>Borrow</a></li>
-            <li><a href="example-credit-score.html"><i class="fa fa-check fa-2x" aria-hidden="true"></i>Credit score</a></li>
+            <li><a href="example-summary.html"><i class="fa icon-document fa-2x" aria-hidden="true"></i>Summary</a></li>
+            <li><a href="example-documents.html"><i class="fa icon-folder fa-2x" aria-hidden="true"></i>Documents</a></li>
+            <li><a href="example-payments.html"><i class="fa icon-money fa-2x" aria-hidden="true"></i>Payments</a></li>
+            <li><a href="example-borrow.html"><i class="fa icon-calculator fa-2x" aria-hidden="true"></i>Borrow</a></li>
+            <li><a href="example-credit-score.html"><i class="fa icon-tick fa-2x" aria-hidden="true"></i>Credit score</a></li>
         </ul>
     </div>
 </div>
@@ -57,7 +57,7 @@
                         <div class="circle-inner">
                             <div class="circle-amount font-light">
                                 <h2 class="body-sm">Amount borrowed</h2>
-                                <p>£1000</p>
+                                <p>£3000</p>
                             </div>
                         </div>
                     </div>
@@ -67,7 +67,7 @@
                         <div class="circle-inner">
                             <div class="circle-amount font-dark">
                                 <h2 class="body-sm">Monthly amount</h2>
-                                <p>£100.<span>46</span></p>
+                                <p>£183.<span>40</span></p>
                             </div>
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   &#10060
 </button>
-                    <h2 class="modal-title" id="myModalLabel">Amount borrowed<br>£1000</h2>
+                    <h2 class="modal-title" id="myModalLabel">Amount borrowed<br>£3000</h2>
                 </div>
                 <div class="modal-body theme-default">
                     <table class="table table-striped body-lg">
@@ -91,32 +91,37 @@
                             <tr>
                                 <th scope="row"></th>
                                 <td>Agreement number</td>
-                                <td>Ipsum</td>
+                                <td>10000123</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"></th>
+                                <td>Amount borrowed</td>
+                                <td>£3000</td>
                             </tr>
                             <tr>
                                 <th scope="row"></th>
                                 <td>Total charge for credit</td>
-                                <td>Ipsum</td>
+                                <td>£1442.10</td>
                             </tr>
                             <tr>
                                 <th scope="row"></th>
-                                <td>Total amout to pay</td>
-                                <td>Ipsum</td>
+                                <td>Total amount to pay</td>
+                                <td>£4539.12</td>
                             </tr>
                             <tr>
                                 <th scope="row"></th>
                                 <td>Loan interest (APR)</td>
-                                <td>Ipsum</td>
+                                <td>47.9%</td>
                             </tr>
                             <tr>
                                 <th scope="row"></th>
                                 <td>Monthly payment amount</td>
-                                <td>Ipsum</td>
+                                <td>£183.40</td>
                             </tr>
                             <tr>
                                 <th scope="row"></th>
                                 <td>Number of payments</td>
-                                <td>Ipsum</td>
+                                <td>24</td>
                             </tr>
                         </tbody>
                     </table>
@@ -168,7 +173,7 @@
                 <li class="theme-light">
                     <p>If you have a direct debit set up this will be collected automatically</p>
                 </li>
-                <button class="btn btn-primary-1 body-md">Make a payment</button>
+                <button class="btn btn-primary-1 body-md" data-toggle="modal" data-target="#MakePayment">Make a payment</button>
             </ul>
         </div>
     </div>
@@ -184,6 +189,23 @@
                     <p>You can change your payment date to any day between the 1st and the 28th of each month.</p>
                     <p>If you would like to change your payment date, please call us on</p>
                     <p class="lead"><strong>0800 0 123 456</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="MakePayment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content padding-bottom">
+                <div class="modal-header theme-light text-center">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">&#10060</button>
+                    <h2 class="modal-title" id="myModalLabel">Make a payment</h2>
+                </div>
+                <div class="modal-body theme-light text-center body-lg">
+                    <p>You can make a debit card payment using Payments Place.</p>
+                    <a href="https://paymentsplace.com/oakbrook/" target="_blank"> <img src="/img/PaymentsPlace.png"></a>
+                    <p><strong>If you have recieved a letter</strong> about the payment you are making, please use the reference
+                        number when making your payment, <strong>otherwise</strong> please use reference: <strong>123</strong></p>
                 </div>
             </div>
         </div>
@@ -223,15 +245,12 @@
 
 <footer class="footer-distributed row">
     <div class="row footer-top-row">
-
         <div class="col-sm-9 footer-links text-muted text-right body-sm">
-
             <a href="#">Personal loans</a>
             <a href="#">Contact us</a>
             <a href="#">Terms of use</a>
             <a href="#">Privacy policy</a>
             <a href="#">Site map</a>
-
         </div>
         <div class="col-sm-3">
             <div class="footer-img">
@@ -239,7 +258,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="row">
         <div class="col-sm-8 text-muted body-xs">

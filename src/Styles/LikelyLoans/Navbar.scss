@@ -438,7 +438,13 @@
         background-color: #fff;
     }
 
-    .btn-sign-in:focus, .btn-username:focus, .btn-sign-in:focus {
+    .btn-sign-in:focus, .btn-username:focus {
         color: $brand-primary-1 !important;
     }
+
+    .btn-username-open:focus {
+        color: #fff !important;
+    }
+
+
 }

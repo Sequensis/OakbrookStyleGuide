@@ -1,6 +1,6 @@
 .modal-dialog {
     z-index: 1000;
-    margin: 20vh auto 0 auto;
+    margin-top: 10vh;
 }
 
 .modal-content {
@@ -13,6 +13,10 @@
     padding: 0;
     p {
         padding: 0 20px;
+    }
+    img {
+        padding: 10px 0 20px;
+        width: 182px;
     }
 }
 
@@ -46,8 +50,15 @@
 .close:hover {
     opacity: 0.5;
 }
-
     button:focus {
     outline: 0;
     box-shadow: none;
+}
+
+@media (min-width: 768px) {
+
+    .modal-dialog {
+    margin-top: 25vh;
+    }
+
 }

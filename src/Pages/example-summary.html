@@ -43,7 +43,7 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3 text-center">
             <div class="theme-light summary-header">
-                <h1>Your loan summary</h1>
+                <h1>Daniel,<br> here is your loan summary</h1>
             </div>
             <p class="text-muted body-sm">Last updated 11:28am on 5th July 2016</p>
         </div>
@@ -130,31 +130,29 @@
         </div>
     </div>
 
-    <div class="modal fade" id="MonthlyList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header theme-light text-center">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">&#10060</button>
-                    <h2 class="modal-title" id="myModalLabel">Beta service feedback</h2>
-                    <p class="body-lg">This option is not currently available, however we'd really like to understand what you were expecting
-                        to see or do here.</p>
-                </div>
-                <div class="modal-body theme-default">
+<div class="modal fade" id="MonthlyList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header theme-light text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">&#10060</button>
+                <h2 class="modal-title" id="myModalLabel">Beta service feedback</h2>
+                <p class="body-lg">This option is not currently available, however we'd really like to understand what you were expecting to see or do here.</p>
+            </div>
+            <div class="modal-body theme-default">
 
-                    <div class="full-width-list text-center body-lg">
-                        <ul>
-                            <li><a href="#">Too see my payment schedule</a></li>
-                            <li><a href="#">To make a payment</a></li>
-                            <li><a href="#">To change my payment date</a></li>
-                            <li><a href="#">Other</a></li>
-                        </ul>
-                    </div>
-
+                <div class="full-width-list text-center body-lg">
+                    <ul>
+                        <li><a data-toggle="modal" href="#ThankyouModal">Too see my payment schedule</a></li>
+                        <li><a data-toggle="modal" href="#ThankyouModal">To make a payment</a></li>
+                        <li><a data-toggle="modal" href="#ThankyouModal">To change my payment date</a></li>
+                        <li><a data-toggle="modal" href="#ThankyouModal">Other</a></li>
+                    </ul>
                 </div>
+
             </div>
         </div>
     </div>
-
+</div>
 
     <div class="row">
         <div class="cold-md-3 text-center">
@@ -204,8 +202,7 @@
                 <div class="modal-body theme-light text-center body-lg">
                     <p>You can make a debit card payment using Payments Place.</p>
                     <a href="https://paymentsplace.com/oakbrook/" target="_blank"> <img src="/img/PaymentsPlace.png"></a>
-                    <p><strong>If you have recieved a letter</strong> about the payment you are making, please use the reference
-                        number when making your payment, <strong>otherwise</strong> please use reference: <strong>123</strong></p>
+                    <p><strong>If you have received a letter</strong> about the payment you are making, please use the reference number when making your payment, <strong>otherwise</strong> please use reference: <strong>123</strong></p>
                 </div>
             </div>
         </div>
@@ -213,7 +210,7 @@
 
     <div class="row">
         <div class="panel-beige text-center">
-            <p class="body-lg">After this payment has been made, you will have <a data-toggle="modal" href="#PaymentList"><span>9</span></a>                payments remaining.</p>
+            <p class="body-lg">After this payment has been made, you will have <a data-toggle="modal" href="#PaymentList"><span>9</span></a> payments remaining.</p>
         </div>
     </div>
 </div>
@@ -224,17 +221,16 @@
             <div class="modal-header theme-light text-center">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">&#10060</button>
                 <h2 class="modal-title" id="myModalLabel">Beta service feedback</h2>
-                <p class="body-lg">This option is not currently available, however we'd really like to understand what you were expecting to
-                    see or do here.</p>
+                <p class="body-lg">This option is not currently available, however we'd really like to understand what you were expecting to see or do here.</p>
             </div>
             <div class="modal-body theme-default">
 
                 <div class="full-width-list text-center body-lg">
                     <ul>
-                        <li><a href="#">Too see my payment schedule</a></li>
-                        <li><a href="#">To make a payment</a></li>
-                        <li><a href="#">To change my payment date</a></li>
-                        <li><a href="#">Other</a></li>
+                        <li><a data-toggle="modal" href="#ThankyouModal">Too see my payment schedule</a></li>
+                        <li><a data-toggle="modal" href="#ThankyouModal">To make a payment</a></li>
+                        <li><a data-toggle="modal" href="#ThankyouModal">To change my payment date</a></li>
+                        <li><a data-toggle="modal" href="#ThankyouModal">Other</a></li>
                     </ul>
                 </div>
 
@@ -242,6 +238,24 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="ThankyouModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content padding-bottom">
+            <div class="modal-header theme-light text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">&#10060</button>
+                <h2 class="modal-title" id="myModalLabel">Thank you</h2>
+            </div>
+            <div class="modal-body theme-light text-center body-lg">
+                <p>Your feedback will be looked at individually by our customer service team and will help us improve the level of service we give you.
+                </p>
+                <p>If you have a specific payment query please call us on</p>
+                <p class="lead"><strong>0800 0 123 456</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <footer class="footer-distributed row">
     <div class="row footer-top-row">
@@ -261,9 +275,8 @@
 
     <div class="row">
         <div class="col-sm-8 text-muted body-xs">
-            <p>Likely Loans is a trading name of Oakbrook Finance Limited, Registered in England and Wales No. 07831517. Registered
-                Office: The Poynt North, 45 Wollaton Street, Nottingham, NG1 5FW. Authorised and regulated by the Financial
-                Conduct Authority, 25 N Colonnade, London E14 5HS</p>
+            <p>Likely Loans is a trading name of Oakbrook Finance Limited, Registered in England and Wales No. 07831517. Registered Office: The Poynt North, 45 Wollaton Street, Nottingham, NG1 5FW. Authorised and regulated by the Financial Conduct Authority,
+                25 N Colonnade, London E14 5HS</p>
         </div>
     </div>
 </footer>

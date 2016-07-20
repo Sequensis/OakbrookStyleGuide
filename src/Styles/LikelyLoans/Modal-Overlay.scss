@@ -1,6 +1,7 @@
 .modal-dialog {
     z-index: 1000;
     margin-top: 10vh;
+    min-height: 500px;
 }
 
 .modal-content {
@@ -53,6 +54,14 @@
     button:focus {
     outline: 0;
     box-shadow: none;
+}
+
+.modal-link {
+    cursor: pointer; 
+}
+
+.modal-hidden {
+    visibility: hidden;
 }
 
 @media (min-width: 768px) {

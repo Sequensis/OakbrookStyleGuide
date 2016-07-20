@@ -2354,7 +2354,7 @@ body {
 
 @media (min-width: 992px) {
   .padding-top {
-    padding-top: 150px; } }
+    padding-top: 130px; } }
 
 .btn {
   font-weight: 700;
@@ -3338,7 +3338,7 @@ body {
   .circle-secondary .circle-amount p {
     font-size: 1.5vw; }
   .circle-secondary .circle-amount span {
-    font-size: 1.5vw; }
+    font-size: 1vw; }
   .circle-inner {
     top: 25%; }
   .circle-inner h2 {

@@ -43,8 +43,8 @@
 
 .close {
     position: absolute;
-    right: 5px;
-    top: 15px;
+    right: 0;
+    top: 0;
     border: 0px;
     color: $brand-tint-2;
         i {
@@ -80,4 +80,8 @@
     filter: alpha(opacity=80);
     }
 
+    .close {
+    right: 5px;
+    top: 15px;
+    }
 }

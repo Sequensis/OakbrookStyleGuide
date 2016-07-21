@@ -169,7 +169,7 @@ gulp.task('panini', ['panini:layouts', 'panini:pages', 'panini:partials'], funct
 gulp.task('panini:layouts', function () {
     return gulp.src(config.paths.src.layouts + '/**/*.{html,hbs,handlebars}')
         .pipe($.htmlmin({
-            collapseWhitespace: true
+            collapseWhitespace: false
         }))
         .pipe(gulp.dest(config.paths.bin.layouts));
 });
@@ -177,7 +177,7 @@ gulp.task('panini:layouts', function () {
 gulp.task('panini:pages', function () {
     return gulp.src(config.paths.src.pages + '/**/*.{html,hbs,handlebars}')
         .pipe($.htmlmin({
-            collapseWhitespace: true
+            collapseWhitespace: false
         }))
         .pipe(gulp.dest(config.paths.bin.pages));
 });
@@ -185,7 +185,7 @@ gulp.task('panini:pages', function () {
 gulp.task('panini:partials', function () {
     return gulp.src(config.paths.src.partials + '/**/*.{html,hbs,handlebars}')
         .pipe($.htmlmin({
-            collapseWhitespace: true
+            collapseWhitespace: false
         }))
         .pipe(gulp.dest(config.paths.bin.partials));
 });

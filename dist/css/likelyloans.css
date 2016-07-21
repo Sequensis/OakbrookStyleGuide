@@ -3523,8 +3523,8 @@ code {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../../Fonts/icomoon.eot?uya71r");
-  src: url("../../Fonts/icomoon.eot?uya71r#iefix") format("embedded-opentype"), url("../../Fonts/icomoon.ttf?uya71r") format("truetype"), url("../../Fonts/icomoon.woff?uya71r") format("woff"), url("../../Fonts/icomoon.svg?uya71r#icomoon") format("svg");
+  src: url("../Fonts/icomoon.eot?uya71r");
+  src: url("../Fonts/icomoon.eot?uya71r#iefix") format("embedded-opentype"), url("../Fonts/icomoon.ttf?uya71r") format("truetype"), url("../Fonts/icomoon.woff?uya71r") format("woff"), url("../Fonts/icomoon.svg?uya71r#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 

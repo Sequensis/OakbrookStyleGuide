@@ -14,7 +14,7 @@
         </ul>
         <ul class="nav col-xs-6">
             <li><button type="button" class="btn btn-primary-3 navbar-btn btn-sign-out body-md">Sign out</button></li>
-            <li><button type="button" class="btn btn-primary-3 navbar-btn btn-username body-md" onClick="location.href='example-personal.html'">Daniel Humenko</button></li>
+            <li><button type="button" class="btn btn-primary-3 navbar-btn btn-username body-md" onClick="location.href='example-personal.html'">Hello <span>Daniel Humenko</span></button></li>
         </ul>
     </div>
 </nav>
@@ -23,9 +23,8 @@
     <div class="overlay-profile col-lg-12 text-center">
         <a href="example-personal.html"><img src="https://www.gravatar.com/avatar/8354b54d2797197e860e139e97737ec6?d=404&amp;s=320" class="img-circle">
         </a>
-        <ul class="list-unstyled text-center">
+        <ul class="list-unstyled text-center body-md">
             <li><a href="example-personal.html"><i class="fa fa-cog" aria-hidden="true"></i>Profile Settings</a></li>
-            <hr>
         </ul>
     </div>
     <div class="overlay-content col-lg-12 text-center">
@@ -50,7 +49,7 @@
     </div>
 
     <div class="row">
-        <div class="col-sm-4 col-sm-offset-4 text-center">
+        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 text-center">
             <div class="circle-container">
                 <a data-toggle="modal" href="#SummaryTable">
                     <div class="circle-primary">
@@ -62,7 +61,7 @@
                         </div>
                     </div>
                 </a>
-                <a data-toggle="modal" href="#MonthlyList">
+                <a href="example-payments.html">
                     <div class="circle-secondary">
                         <div class="circle-inner">
                             <div class="circle-amount font-dark">
@@ -81,7 +80,7 @@
             <div class="modal-content modal-table">
                 <div class="modal-header theme-light text-center">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  &#10060
+                 	<i class="fa icon-close fa-3x"></i>
 </button>
                     <h2 class="modal-title" id="myModalLabel">Amount borrowed<br>£3000</h2>
                 </div>
@@ -130,33 +129,9 @@
         </div>
     </div>
 
-<div class="modal fade" id="MonthlyList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header theme-light text-center">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">&#10060</button>
-                <h2 class="modal-title" id="myModalLabel">Beta service feedback</h2>
-                <p class="body-lg">This option is not currently available, however we'd really like to understand what you were expecting to see or do here.</p>
-            </div>
-            <div class="modal-body theme-default">
-
-                <div class="full-width-list text-center body-lg">
-                    <ul>
-                        <li><a data-toggle="modal" href="#ThankyouModal">Too see my payment schedule</a></li>
-                        <li><a data-toggle="modal" href="#ThankyouModal">To make a payment</a></li>
-                        <li><a data-toggle="modal" href="#ThankyouModal">To change my payment date</a></li>
-                        <li><a data-toggle="modal" href="#ThankyouModal">Other</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
     <div class="row">
         <div class="cold-md-3 text-center">
-            <a class="summary-credit-card icon-primary"><i class="fa fa-credit-card fa-2x"></i></a>
+            <a class="summary-credit-card icon-primary"><i class="fa icon-money fa-2x"></i></a>
         </div>
     </div>
     <div class="row">
@@ -171,7 +146,7 @@
                 <li class="theme-light">
                     <p>If you have a direct debit set up this will be collected automatically</p>
                 </li>
-                <button class="btn btn-primary-1 body-md" data-toggle="modal" data-target="#MakePayment">Make a payment</button>
+                <a class="btn btn-primary-1 body-md" data-toggle="modal" href="#ChangeDate">Make a payment</a>
             </ul>
         </div>
     </div>
@@ -180,13 +155,14 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content padding-bottom">
                 <div class="modal-header theme-light text-center">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">&#10060</button>
-                    <h2 class="modal-title" id="myModalLabel">Change your payment date</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 	<i class="fa icon-close fa-3x"></i>
+</button>                    <h2 class="modal-title" id="myModalLabel">Change your payment date</h2>
                 </div>
                 <div class="modal-body theme-light text-center body-lg">
                     <p>You can change your payment date to any day between the 1st and the 28th of each month.</p>
                     <p>If you would like to change your payment date, please call us on</p>
-                    <p class="lead"><strong>0800 0 123 456</strong></p>
+                    <p class="lead"><strong>0208 080 6450</strong></p>
                 </div>
             </div>
         </div>
@@ -196,8 +172,9 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content padding-bottom">
                 <div class="modal-header theme-light text-center">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">&#10060</button>
-                    <h2 class="modal-title" id="myModalLabel">Make a payment</h2>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                 	<i class="fa icon-close fa-3x"></i>
+</button>                    <h2 class="modal-title" id="myModalLabel">Make a payment</h2>
                 </div>
                 <div class="modal-body theme-light text-center body-lg">
                     <p>You can make a debit card payment using Payments Place.</p>
@@ -209,53 +186,13 @@
     </div>
 
     <div class="row">
-        <div class="panel-beige text-center">
-            <p class="body-lg">After this payment has been made, you will have <a data-toggle="modal" href="#PaymentList"><span>9</span></a> payments remaining.</p>
-        </div>
+        <a href="example-payments.html" class="remove-underline">
+            <div class="panel-beige text-center">
+                <p class="body-lg">After this payment has been made, you will have <span>9</span> payments remaining.</p>
+            </div>
+        </a>
     </div>
 </div>
-
-<div class="modal fade" id="PaymentList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header theme-light text-center">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">&#10060</button>
-                <h2 class="modal-title" id="myModalLabel">Beta service feedback</h2>
-                <p class="body-lg">This option is not currently available, however we'd really like to understand what you were expecting to see or do here.</p>
-            </div>
-            <div class="modal-body theme-default">
-
-                <div class="full-width-list text-center body-lg">
-                    <ul>
-                        <li><a data-toggle="modal" href="#ThankyouModal">Too see my payment schedule</a></li>
-                        <li><a data-toggle="modal" href="#ThankyouModal">To make a payment</a></li>
-                        <li><a data-toggle="modal" href="#ThankyouModal">To change my payment date</a></li>
-                        <li><a data-toggle="modal" href="#ThankyouModal">Other</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="ThankyouModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content padding-bottom">
-            <div class="modal-header theme-light text-center">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">&#10060</button>
-                <h2 class="modal-title" id="myModalLabel">Thank you</h2>
-            </div>
-            <div class="modal-body theme-light text-center body-lg">
-                <p>Your feedback will be looked at individually by our customer service team and will help us improve the level of service we give you.
-                </p>
-                <p>If you have a specific payment query please call us on</p>
-                <p class="lead"><strong>0800 0 123 456</strong></p>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 <footer class="footer-distributed row">
     <div class="row footer-top-row">

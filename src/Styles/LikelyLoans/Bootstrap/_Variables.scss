@@ -27,9 +27,8 @@ $brand-secondary-3:     #33D167 !default;
 $brand-primary-3-font: #2750C8 !default;
 $brand-secondary-3-font: #023A15 !default;
 
-$brand-tint-1:          #F0EDC8 !default;
+$brand-tint-1:          #FAF9ED !default;
 $brand-tint-2:          #E3DFDA !default;
-$brand-tint-1-opacity:  rgba(240, 237, 200, 0.8) !default;
 
 $brand-success:         $brand-secondary-3 !default;
 $brand-warning:         $brand-primary-3 !default;
@@ -86,7 +85,7 @@ $line-height-computed:    floor(($font-size-base * $line-height-base)) !default;
 //** By default, this inherits from the `<body>`.
 $headings-font-family:    'Montserrat', sans-serif !default;
 $headings-font-weight:    700 !default;
-$headings-line-height:    1.25 !default;
+$headings-line-height:    1em !default;
 $headings-color:          inherit !default;
 
 

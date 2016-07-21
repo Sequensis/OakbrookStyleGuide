@@ -33,7 +33,6 @@
 }
 
 .navbar-btn {
-    padding: auto 0px;
     -webkit-transition: .2s ease-in-out;
     -moz-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
@@ -42,6 +41,7 @@
     font-weight: 700;
     outline: 0 !important;
     box-shadow: none;
+    padding: 10px 20px;
 }
 
 .navbar-toggle {
@@ -53,10 +53,10 @@
 .navbar-logo {
     height: 100%;
     z-index: 2;
-    width: 87px;
+    width: 75px;
     position: absolute;
     left: 50%;
-    margin-left: -43.5px;
+    margin-left: -37.5px;
         img{
             height: 100%;
             width: 100%;
@@ -69,7 +69,7 @@
     position: absolute;
     width: 125%;
     left: -25%;
-    height: 50px;
+    height: 58px;
     background-color: $brand-primary-1;
     -webkit-transition: .2s ease-in-out;
     -moz-transition: .2s ease-in-out;
@@ -110,6 +110,7 @@
 .btn-sign-in, .btn-sign-out {
     float: right;
     color: #fff;
+    margin-right: -18px;
 }
 
 .btn-sign-out:hover, .btn-sign-in:hover {
@@ -134,12 +135,15 @@
     display: none;
     float: right;
     color: $brand-primary-1;
-    margin-right: 10px;
+    text-decoration: none;
+
+        span {
+            text-decoration: underline;
+        }
 }
 
 .btn-username:hover {
     color: $brand-primary-1;
-    text-decoration: underline;
 }
 
 .btn-username-open {
@@ -166,8 +170,7 @@
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
     cursor: pointer;
-    margin-top: 12.5px;
-    margin-left: 5px;
+    margin-top: 18.5px;
 }
 
 #navbar-icon.icon-open span{
@@ -284,7 +287,7 @@
     a {
         text-decoration: none;
         color: #fff;
-        font-size: 2em;
+        font-size: 25px;
         z-index: 101;
         -webkit-transition: .2s ease-in-out;
         -moz-transition: .2s ease-in-out;
@@ -324,7 +327,6 @@
     a {
         text-decoration: none;
         color: #fff;
-        font-size: 1em;
         -webkit-transition: .2s ease-in-out;
         -moz-transition: .2s ease-in-out;
         -o-transition: .2s ease-in-out;
@@ -336,18 +338,12 @@
         padding: 0 10px 0 0px;
     }
 
-    hr {
-        width: 200px;
-        margin: 20px auto;
-        border:1px solid #fff;
-    }
-
 }
 
 .overlay-profile img {
     margin: 20px auto;
-    width: 150px;
-    height: 150px;
+    width: 85px;
+    height: 85px;
     border:2px solid #fff;
 }
 
@@ -357,6 +353,10 @@
         .col-xs-6 {
         padding: 0 30px !important;
         }
+    }
+
+    .navbar-fixed-top {
+        position: relative !important;
     }
 
     .navbar {
@@ -369,8 +369,8 @@
     }
 
     .navbar-logo {
-        width: 87px;
-        margin-left: -43.5px;
+        width: 125px;
+        margin-left: -62.5px;
     }
 
     .navbar-circle {
@@ -404,7 +404,7 @@
 
     .overlay-profile {   
         position: relative;
-        top: 20%;
+        top: 25%;
         transform: translateY(-20%);
         }
 
@@ -427,6 +427,7 @@
         float: right;
         color: #fff;
         background-color: $brand-primary-1;
+        margin-right: -10px;
     }
 
     .btn-sign-in:hover {

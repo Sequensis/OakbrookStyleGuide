@@ -6,6 +6,8 @@
 
     span {
         font-size: 14px;
+        font-family: $font-family-base;
+        font-weight: 400;
         display: block;
         position: relative;
         text-decoration: underline;
@@ -15,6 +17,13 @@
         margin-top: -10px;
         margin-bottom: 20px;
     }
+    i {
+        margin-right: 5px;
+    }
+}
+
+a.remove-underline {
+    text-decoration: none;
 }
 
 .panel-beige {
@@ -31,9 +40,6 @@
         font-weight: 700;
         padding: 0 5px;
     }  
-    a {
-        text-decoration: none;
-    }
 }
 
 .form-input-other {
@@ -44,7 +50,7 @@
         .summary-change-date {
             span {
             display: inline-block;
-            margin-top: 5px;
+            margin-top: 0;
             margin-left: 10px;
             position: absolute;
             }

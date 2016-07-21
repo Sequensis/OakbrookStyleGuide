@@ -1,0 +1,119 @@
+// $circle: 3vw;
+
+// .circle-container {
+//     margin: 20px 0;
+
+//     a {
+//         cursor: default;
+//     }
+// }
+
+// .circle-primary {
+//     margin: 0 auto;
+//     width: $circle*20;
+//     height: $circle*20;
+//     border-radius: 50%;
+//     background-color: #fff;
+//     box-shadow: inset 0 0 0 5px $brand-primary-3;
+//     transition: background-color 0.25s, box-shadow 0.25s;;
+// }
+
+// .circle-primary:hover {
+//     box-shadow: inset 0 0 0 7.5px $brand-primary-3;
+//     cursor: pointer;
+// }
+
+// .circle-secondary {
+//     margin: 0 auto;
+//     width: $circle*12.5;
+//     height: $circle*12.5;
+//     border-radius: 50%;
+//     background-color: $brand-primary-1;
+//     border:5px solid #fff;
+//     margin-top: -20%;
+//     transition: background-color 0.25s, box-shadow 0.25s;;
+// }
+
+// .circle-secondary:hover {
+//     box-shadow: inset 0 0 0 7.5px darken($brand-primary-1, 10);
+//     cursor: pointer;
+// }
+
+// .circle-inner  {
+//     text-align: center;
+//     display: inline-block;
+//     margin: 0;
+//     position: relative;
+//     top: 30%;
+// }
+
+// .circle-inner h2 {
+//     margin: 0;
+//     font-weight: 700;
+//     padding: 0 5px;
+// }
+
+// .circle-primary .circle-amount p {
+//     margin-top: -10px;
+//     font-size: $circle*5;
+//     font-weight: 700;
+//     font-family: 'Montserrat', sans-serif;
+//     color: $brand-primary-3-font;
+// }
+
+// .circle-secondary .circle-amount p {
+//     margin: 0;
+//     font-size: $circle*2.5;
+//     font-weight: 700;
+//     font-family: 'Montserrat', sans-serif;
+//     color: #fff;
+// }
+
+// .circle-secondary .circle-amount span {
+//     font-size: $circle*1.2;
+// }
+
+// @media(min-width:768px) {
+    
+//     .circle-primary {
+//         margin: 0 auto;
+//         width: $circle*5;
+//         height: $circle*5;
+//         border-radius: 50%;
+//         background-color: #fff;
+//     }
+
+//     .circle-secondary {
+//         width: $circle*3;
+//         height: $circle*3;
+//         margin-right: 10%;
+//         margin-top: -20%;
+//         float:right;
+//     }
+
+//     .circle-primary .circle-amount p {
+//         font-size: $circle*1.25;
+//         height: 0;
+//     }
+
+//     .circle-secondary .circle-amount p {
+//         font-size: $circle*0.5;
+//     }
+
+//     .circle-secondary .circle-amount span {
+//         font-size: $circle/3;
+//     }
+
+//     .circle-inner {
+//         top: 25%;
+//     }
+//     .circle-inner h2 {
+//         font-size: $circle/3.75;
+//         margin-top: 10px;
+//     }
+
+//     .circle-container {
+//     margin-bottom: 0;
+//     }
+
+// }

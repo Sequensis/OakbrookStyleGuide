@@ -1,6 +1,6 @@
 {{> navbar}}
 <div class="container-fluid padding-top-mobile">
-    <div class="vcenter-container">
+    <div class="vcenter-container-one-page">
         <div class="col-md-4 col-md-offset-4 vcenter text-center">
             <div class="theme-light">
                 <h1>Profile</h1>
@@ -8,13 +8,64 @@
             </div>
             <div class="full-width-list full-width-list-border text-center body-lg">
                 <ul>
-                    <li><a href="example-profile-address.html">Change my home address</a></li>
-                    <li><a href="example-profile-email.html">Change my email address</a></li>
-                    <li><a href="example-profile-phone.html">Change my phone number</a></li>
+                    <li><a data-toggle="modal" href="#ChangeHomeAddress">Change my home address</a></li>
+                    <li><a data-toggle="modal" href="#ChangeEmailAddress">Change my email address</a></li>
+                    <li><a data-toggle="modal" href="#ChangePhoneNumber">Change my phone number</a></li>
                     <li><a href="example-profile-other.html">Other</a></li>
                 </ul>
             </div>
             <a class="btn btn-primary-1 btn-lg" href="example-summary.html">Return to loan summary</a>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="ChangeHomeAddress" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content padding-bottom">
+            <div class="modal-header theme-light text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      	<i class="fa icon-close fa-3x"></i></button>
+                <h2 class="modal-title" id="myModalLabel">Change my home address</h2>
+            </div>
+            <div class="modal-body theme-light text-center body-lg">
+                <p>This feature will be coming soon, in the meantime if you would like to change your home address, please email us at <a href="mailto:loans@likelyloans.com" target="_blank"><strong>loans@likelyloans.com</strong></a> or call us on</p>
+                <p class="lead"><strong>0208 080 6450</strong></p>
+                <p class="muted body-sm">Lines are open Monday- Friday 8am-8pm</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="ChangeEmailAddress" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content padding-bottom">
+            <div class="modal-header theme-light text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      	<i class="fa icon-close fa-3x"></i></button>
+                <h2 class="modal-title" id="myModalLabel">Change my email address</h2>
+            </div>
+            <div class="modal-body theme-light text-center body-lg">
+                <p>This feature will be coming soon, in the meantime if you would like to change your email address, please email us atprofile <a href="mailto:loans@likelyloans.com" target="_blank"><strong>loans@likelyloans.com</strong></a> or call us on</p>
+                <p class="lead"><strong>0208 080 6450</strong></p>
+                <p class="muted body-sm">Lines are open Monday- Friday 8am-8pm</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="ChangePhoneNumber" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content padding-bottom">
+            <div class="modal-header theme-light text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      	<i class="fa icon-close fa-3x"></i></button>
+                <h2 class="modal-title" id="myModalLabel">Change my phone number</h2>
+            </div>
+            <div class="modal-body theme-light text-center body-lg">
+                <p>This feature will be coming soon, in the meantime if you would like to change your phone number, please email us atprofile <a href="mailto:loans@likelyloans.com" target="_blank"><strong>loans@likelyloans.com</strong></a> or call us on</p>
+                <p class="lead"><strong>0208 080 6450</strong></p>
+                <p class="muted body-sm">Lines are open Monday- Friday 8am-8pm</p>
+            </div>
         </div>
     </div>
 </div>

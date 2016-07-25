@@ -1,16 +1,11 @@
-<div class="header">
-<h2 id="navbar">
-    Navbar
-</h2>
-</div>
-
-<div class="section-container">
-<nav class="navbar">
+<nav class="navbar navbar-fixed-top">
     <div class="navbar-circle">
     </div>
-    <div class="navbar-logo">
-        <img src="/img/LikelyLoans.svg">
-    </div>
+    <a href="example-summary.html">
+        <div class="navbar-logo">
+            <img src="/img/LikelyLoans.svg">
+        </div>
+    </a>
     <div class="nav">
         <ul class="nav col-xs-6">
             <div id="navbar-icon">
@@ -20,54 +15,34 @@
             </div>
         </ul>
         <ul class="nav col-xs-6">
-            <li><button type="button" class="btn btn-primary-3 navbar-btn btn-sign-out">Sign out</button></li>
-            <li><button type="button" class="btn btn-primary-3 navbar-btn btn-username">Daniel Humenko</button></li>
+            <li><button type="button" class="btn btn-primary-3 navbar-btn btn-sign-out body-md">Sign out</button></li>
+            <li><button type="button" class="btn btn-primary-3 navbar-btn btn-username body-md" onClick="location.href='example-personal.html'">Hello <span>Daniel Humenko</span></button></li>
         </ul>
     </div>
 </nav>
+
+<div class="overlay" id="overlay-sign-in">
+    <div class="overlay-profile col-lg-12 text-center">
+        <div class="circle-profile">
+            <a href="example-personal.html">
+                <div class="circle-inner">
+                    <div class="circle-amount font-dark">
+                        <h2>D.H</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <ul class="list-unstyled text-center body-md">
+            <li><a href="example-personal.html"><i class="fa fa-cog" aria-hidden="true"></i>Profile Settings</a></li>
+        </ul>
+    </div>
+    <div class="overlay-content col-lg-12 text-center">
+        <ul class="list-unstyled text-center">
+            <li><a href="example-summary.html"><i class="fa icon-document fa-2x" aria-hidden="true"></i>Summary</a></li>
+            <li><a href="example-payments.html"><i class="fa icon-money fa-2x" aria-hidden="true"></i>Payments</a></li>
+            <li><a href="example-documents.html"><i class="fa icon-folder fa-2x" aria-hidden="true"></i>Documents</a></li>
+            <li><a href="example-borrow.html"><i class="fa icon-calculator fa-2x" aria-hidden="true"></i>Borrow</a></li>
+            <li><a href="example-credit-score.html"><i class="fa icon-tick fa-2x" aria-hidden="true"></i>Credit score</a></li>
+        </ul>
+    </div>
 </div>
-
-<a class="btn btn-showcase btn-primary-1" href="example-navbar.html">Example Navbar</a>
-
-
-<pre><code class="html">&lt;nav class=&quot;navbar navbar-fixed-top&quot;&gt;
-    &lt;div class=&quot;navbar-circle&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;navbar-logo&quot;&gt;
-        &lt;img src=&quot;/img/LikelyLoans.svg&quot;&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;nav&quot;&gt;
-        &lt;ul class=&quot;nav col-xs-6&quot;&gt;
-            &lt;div id=&quot;navbar-icon&quot;&gt;
-                &lt;span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;/span&gt;
-                &lt;span&gt;&lt;/span&gt;
-            &lt;/div&gt;
-        &lt;/ul&gt;
-        &lt;ul class=&quot;nav col-xs-6&quot;&gt;
-            &lt;li&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary-3 navbar-btn btn-sign-out&quot;&gt;...&lt;/button&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-primary-3 navbar-btn btn-username&quot;&gt;...&lt;/button&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/nav&gt;
-
-&lt;div class=&quot;overlay&quot; id=&quot;overlay-sign-in&quot;&gt;
-    &lt;div class=&quot;overlay-profile col-lg-12 text-center&quot;&gt;
-        &lt;img src=&quot;YourImage&quot; class=&quot;img-circle&quot;&gt;
-
-        &lt;ul class=&quot;list-unstyled text-center&quot;&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-cog&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Profile Settings&lt;/a&gt;&lt;/li&gt;
-            &lt;hr&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;overlay-content col-lg-12 text-center&quot;&gt;
-        &lt;ul class=&quot;list-unstyled text-center&quot;&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-file-text-o fa-2x&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Summary&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-folder-o fa-2x&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Documents&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-money fa-2x&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Payments&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-calculator fa-2x&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Borrow&lt;/a&gt;&lt;/li&gt;
-            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-check fa-2x&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;Credit score&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-    &lt;/div&gt;
-&lt;/div&gt;</code></pre>
-<hr>

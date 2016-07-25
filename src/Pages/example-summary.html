@@ -1,9 +1,11 @@
-<nav class="navbar navbar-fixed-top">
+<nav class="navbar navbar-relative-top navbar-fixed-top">
     <div class="navbar-circle">
     </div>
-    <div class="navbar-logo">
-        <img src="/img/LikelyLoans.svg">
-    </div>
+    <a href="example-summary.html">
+        <div class="navbar-logo">
+            <img src="/img/LikelyLoans.svg">
+        </div>
+    </a>
     <div class="nav">
         <ul class="nav col-xs-6">
             <div id="navbar-icon">
@@ -21,8 +23,15 @@
 
 <div class="overlay" id="overlay-sign-in">
     <div class="overlay-profile col-lg-12 text-center">
-        <a href="example-personal.html"><img src="https://www.gravatar.com/avatar/8354b54d2797197e860e139e97737ec6?d=404&amp;s=320" class="img-circle">
-        </a>
+        <div class="circle-profile">
+            <a href="example-personal.html">
+                <div class="circle-inner">
+                    <div class="circle-amount font-dark">
+                        <h2>D.H</h2>
+                    </div>
+                </div>
+            </a>
+        </div>
         <ul class="list-unstyled text-center body-md">
             <li><a href="example-personal.html"><i class="fa fa-cog" aria-hidden="true"></i>Profile Settings</a></li>
         </ul>
@@ -30,8 +39,8 @@
     <div class="overlay-content col-lg-12 text-center">
         <ul class="list-unstyled text-center">
             <li><a href="example-summary.html"><i class="fa icon-document fa-2x" aria-hidden="true"></i>Summary</a></li>
-            <li><a href="example-documents.html"><i class="fa icon-folder fa-2x" aria-hidden="true"></i>Documents</a></li>
             <li><a href="example-payments.html"><i class="fa icon-money fa-2x" aria-hidden="true"></i>Payments</a></li>
+            <li><a href="example-documents.html"><i class="fa icon-folder fa-2x" aria-hidden="true"></i>Documents</a></li>
             <li><a href="example-borrow.html"><i class="fa icon-calculator fa-2x" aria-hidden="true"></i>Borrow</a></li>
             <li><a href="example-credit-score.html"><i class="fa icon-tick fa-2x" aria-hidden="true"></i>Credit score</a></li>
         </ul>
@@ -42,9 +51,8 @@
     <div class="row">
         <div class="col-md-6 col-md-offset-3 text-center">
             <div class="theme-light summary-header">
-                <h1>Daniel,<br> here is your loan summary</h1>
+                <h1>Daniel,<br> your loan summary</h1>
             </div>
-            <p class="text-muted body-sm">Last updated 11:28am on 5th July 2016</p>
         </div>
     </div>
 
@@ -157,7 +165,8 @@
                 <div class="modal-header theme-light text-center">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                  	<i class="fa icon-close fa-3x"></i>
-</button>                    <h2 class="modal-title" id="myModalLabel">Change your payment date</h2>
+</button>
+                    <h2 class="modal-title" id="myModalLabel">Change your payment date</h2>
                 </div>
                 <div class="modal-body theme-light text-center body-lg">
                     <p>You can change your payment date to any day between the 1st and the 28th of each month.</p>
@@ -174,11 +183,12 @@
                 <div class="modal-header theme-light text-center">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                  	<i class="fa icon-close fa-3x"></i>
-</button>                    <h2 class="modal-title" id="myModalLabel">Make a payment</h2>
+</button>
+                    <h2 class="modal-title" id="myModalLabel">Make a payment</h2>
                 </div>
                 <div class="modal-body theme-light text-center body-lg">
                     <p>You can make a debit card payment using Payments Place.</p>
-                    <a href="https://paymentsplace.com/oakbrook/" target="_blank"> <img src="/img/PaymentsPlace.png"></a>
+                    <a href="https://paymentsplace.com/likelyloans/" target="_blank"> <img src="/img/PaymentsPlace.png" class="payments-place-img"></a>
                     <p><strong>If you have received a letter</strong> about the payment you are making, please use the reference number when making your payment, <strong>otherwise</strong> please use reference: <strong>123</strong></p>
                 </div>
             </div>
@@ -193,27 +203,4 @@
         </a>
     </div>
 </div>
-
-<footer class="footer-distributed row">
-    <div class="row footer-top-row">
-        <div class="col-sm-9 footer-links text-muted text-right body-sm">
-            <a href="#">Personal loans</a>
-            <a href="#">Contact us</a>
-            <a href="#">Terms of use</a>
-            <a href="#">Privacy policy</a>
-            <a href="#">Site map</a>
-        </div>
-        <div class="col-sm-3">
-            <div class="footer-img">
-                <img src="/img/LikelyLoansFooter.svg">
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-8 text-muted body-xs">
-            <p>Likely Loans is a trading name of Oakbrook Finance Limited, Registered in England and Wales No. 07831517. Registered Office: The Poynt North, 45 Wollaton Street, Nottingham, NG1 5FW. Authorised and regulated by the Financial Conduct Authority,
-                25 N Colonnade, London E14 5HS</p>
-        </div>
-    </div>
-</footer>
+{{> footer}}

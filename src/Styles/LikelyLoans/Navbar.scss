@@ -57,12 +57,20 @@
     position: absolute;
     left: 50%;
     margin-left: -37.5px;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
         img{
             height: 100%;
             width: 100%;
             display: inline-block;
             vertical-align: middle;
         }
+}
+
+.navbar-logo:hover {
+    width: 80px;
 }
 
 .navbar-circle {
@@ -121,13 +129,8 @@
     color: #fff !important;
 }
 
-.btn-sign-in-open, .btn-sign-out-open {
-    color: $brand-primary-1;
-    background-color: #fff;
-}
-
 .btn-sign-in-open:hover, .btn-sign-out-open:hover {
-    color: $brand-primary-1 !important;
+    color: #fff !important;
 }
 
 
@@ -340,10 +343,11 @@
 
 }
 
-.overlay-profile img {
+.circle-profile {
     margin: 20px auto;
     width: 85px;
     height: 85px;
+    border-radius: 50%;
     border:2px solid #fff;
 }
 
@@ -355,7 +359,7 @@
         }
     }
 
-    .navbar-fixed-top {
+    .navbar-relative-top {
         position: relative !important;
     }
 
@@ -371,6 +375,11 @@
     .navbar-logo {
         width: 125px;
         margin-left: -62.5px;
+    }
+
+    .navbar-logo:hover {
+        width: 135px;
+        margin-left: -67.5px;
     }
 
     .navbar-circle {
@@ -400,7 +409,7 @@
         padding: 20px 0;
         display: block;
     }
-}
+    }
 
     .overlay-profile {   
         position: relative;
@@ -447,5 +456,38 @@
         color: #fff !important;
     }
 
+
+}
+
+@media (max-width: 992px) and (orientation: landscape) { 
+
+.overlay-content {
+        position: relative;
+        top: 10%;
+        transform: translateY(-10%);
+    li {
+        display: inline-block;
+        min-width: 160px;
+    }
+
+    i {
+        padding: 20px 0;
+        display: block;
+    }
+    }
+
+    .overlay-profile {   
+        position: relative;
+        top: 0%;
+        transform: translateY(0%);
+        display: none;
+        }
+
+    .navbar-circle.circle-open {
+        margin-top: -150vw;
+        margin-left: -150vw;
+        width: 300vw;
+        height: 300vw;
+    }
 
 }

@@ -291,7 +291,8 @@
     a {
         text-decoration: none;
         color: #fff;
-        font-size: 25px;
+        font-size: 20px;
+        line-height: 2.5em;
         z-index: 101;
         -webkit-transition: .2s ease-in-out;
         -moz-transition: .2s ease-in-out;
@@ -405,7 +406,10 @@
         display: inline-block;
         min-width: 160px;
     }
-
+    a {
+        font-size: 25px;
+        line-height: 0;
+    }
     i {
         padding: 20px 0;
         display: block;
@@ -460,7 +464,7 @@
 
 }
 
-@media (max-width: 992px) and (orientation: landscape) { 
+@media (max-device-width: 992px) and (orientation: landscape) { 
 
 .overlay-content {
         position: relative;
@@ -470,7 +474,6 @@
         display: inline-block;
         min-width: 160px;
     }
-
     i {
         padding: 20px 0;
         display: block;

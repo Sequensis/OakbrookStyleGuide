@@ -8914,7 +8914,8 @@ body {
   height: 100%; }
 
 .padding-top-mobile {
-  padding-top: 55px; }
+  padding-top: 6em;
+  padding-bottom: 6em; }
 
 .padding-top {
   padding-top: 70px; }
@@ -9199,7 +9200,8 @@ body {
   .overlay-content a {
     text-decoration: none;
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 2.5em;
     z-index: 101;
     transition: .2s ease-in-out; }
   .overlay-content a:hover i {
@@ -9264,6 +9266,9 @@ body {
     .overlay-content li {
       display: inline-block;
       min-width: 160px; }
+    .overlay-content a {
+      font-size: 25px;
+      line-height: 0; }
     .overlay-content i {
       padding: 20px 0;
       display: block; }
@@ -9296,7 +9301,7 @@ body {
   .btn-username-open:focus {
     color: #fff !important; } }
 
-@media (max-width: 992px) and (orientation: landscape) {
+@media (max-device-width: 992px) and (orientation: landscape) {
   .overlay-content {
     position: relative;
     top: 10%;
@@ -9899,7 +9904,8 @@ a.remove-underline {
     position: absolute; } }
 
 .circle-container {
-  margin: 20px 0; }
+  margin: 40px 0 0 0;
+  min-height: 370px; }
   .circle-container a {
     cursor: default; }
 
@@ -9909,12 +9915,12 @@ a.remove-underline {
   height: 250px;
   border-radius: 50%;
   background-color: #fff;
-  box-shadow: inset 0 0 0 5px #FCB829;
-  transition: background-color 0.25s, box-shadow 0.25s; }
+  box-shadow: 0 0 0 5px #FCB829;
+  transition: all 0.25s ease; }
 
 .circle-primary:hover {
-  box-shadow: inset 0 0 0 7.5px #FCB829;
-  cursor: pointer; }
+  cursor: pointer;
+  box-shadow: 0 0 0 10px #FCB829; }
 
 .circle-secondary {
   margin: -75px auto 0 auto;
@@ -9923,11 +9929,13 @@ a.remove-underline {
   border-radius: 50%;
   background-color: #005BC6;
   border: 5px solid #fff;
-  transition: background-color 0.25s, box-shadow 0.25s; }
+  transition: all 0.25s ease; }
 
 .circle-secondary:hover {
-  box-shadow: inset 0 0 0 7.5px #004493;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 170px;
+  height: 170px;
+  margin-top: -80px; }
 
 .circle-inner {
   text-align: center;
@@ -9960,13 +9968,19 @@ a.remove-underline {
 @media (min-width: 992px) {
   .circle-primary {
     height: 270px;
-    width: 270px; }
+    width: 270px;
+    padding-top: 5px; }
   .circle-secondary {
     height: 170px;
     width: 170px;
     margin-right: 10%;
     margin-top: -20%;
     float: right; }
+  .circle-secondary:hover {
+    height: 180px;
+    width: 180px;
+    margin-right: calc(10% - 5px);
+    margin-top: calc(-20% - 5px); }
   .circle-inner {
     position: relative;
     top: 50%;

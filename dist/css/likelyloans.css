@@ -10168,21 +10168,58 @@ code {
     border: 1px solid #E6E5E3; } }
 
 .loader {
-  height: 100px;
-  width: 200px;
-  border-radius: 0px 0px 250px 250px;
-  margin: 0 auto;
+  border-radius: 50%;
   background-color: #FCB829;
-  animation-name: stretch;
-  animation-duration: .75s;
-  animation-direction: alternate;
+  height: 30px;
+  margin: 0 auto;
+  opacity: 0;
+  width: 30px;
+  animation: pulse 1.5s ease-out;
   animation-iteration-count: infinite; }
 
-@keyframes stretch {
-  0% { }
+@keyframes pulse {
+  0% {
+    transform: scale(0.1);
+    opacity: 0.0; }
+  50% {
+    opacity: 1; }
   100% {
-    height: 110px;
-    width: 220px; } }
+    transform: scale(1.2);
+    opacity: 0; } }
+
+.prompt h2 {
+  margin: 100px 20px;
+  position: absolute;
+  left: 0;
+  right: 0; }
+
+@keyframes first-prompt-animation {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 1; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes second-prompt-animation {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 1; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+
+.first-prompt {
+  opacity: 0;
+  animation: first-prompt-animation 4s ease-in 2s forwards; }
+
+.second-prompt {
+  opacity: 0;
+  animation: second-prompt-animation 4s ease-in 6s forwards; }
 
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #FAF9ED; }

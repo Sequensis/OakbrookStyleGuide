@@ -2,7 +2,7 @@ $brand-login-outline: #E6E5E3;
 $brand-login-modal: #FAF9F7;
 
 .modal-login {
-    border: 1px solid $brand-login-outline;
+    border: none;
     border-radius: 3px;
     margin: 0;
     padding: 0;
@@ -43,6 +43,10 @@ $brand-login-modal: #FAF9F7;
 
     .modal-login-header h1 {
     font-size: $font-size-h1;
+    }
+
+    .modal-login {
+    border: 1px solid $brand-login-outline;
     }
 
 }

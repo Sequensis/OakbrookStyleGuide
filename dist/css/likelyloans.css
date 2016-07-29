@@ -10133,7 +10133,7 @@ code {
   color: #fff; }
 
 .modal-login {
-  border: 1px solid #E6E5E3;
+  border: none;
   border-radius: 3px;
   margin: 0;
   padding: 0;
@@ -10163,7 +10163,9 @@ code {
 
 @media (min-width: 768px) {
   .modal-login-header h1 {
-    font-size: 35px; } }
+    font-size: 35px; }
+  .modal-login {
+    border: 1px solid #E6E5E3; } }
 
 .loader {
   height: 100px;

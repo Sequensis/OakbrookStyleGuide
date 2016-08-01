@@ -5,13 +5,17 @@
     margin: 0 auto;
     opacity: 0;
     width: 30px;
-    animation: pulse 1.5s ease-out;
-    animation-iteration-count: infinite;
+    -webkit-animation: pulse 1.5s ease-out;
+            animation: pulse 1.5s ease-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 
-@keyframes pulse {
+@-webkit-keyframes pulse {
     0% {
       transform: scale(.1);
+      -ms-transform: scale(.1);
+      -webkit-transform: scale(.1);
       opacity: 0.0;
     }
     50% {
@@ -19,6 +23,26 @@
     }
     100% {
       transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      opacity: 0;
+    }
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(.1);
+      -ms-transform: scale(.1);
+      -webkit-transform: scale(.1);
+      opacity: 0.0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -webkit-transform: scale(1.2);
       opacity: 0;
     }
 }
@@ -29,36 +53,7 @@
     left: 0;
     right: 0;
 }
-
-@-moz-keyframes first-prompt-animation {
-    0% {
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
 @-webkit-keyframes first-prompt-animation {
-    0% {
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@-o-keyframes first-prompt-animation {
     0% {
         opacity: 0;
     }
@@ -86,36 +81,7 @@
         opacity: 0;
     }
 }
-
-@-moz-keyframes second-prompt-animation {
-    0% {
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 @-webkit-keyframes second-prompt-animation {
-    0% {
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    90% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-@-o-keyframes second-prompt-animation {
     0% {
         opacity: 0;
     }
@@ -146,17 +112,13 @@
 
 .first-prompt{
     opacity: 0;
-    -moz-animation: first-prompt-animation 4s ease-in 2s forwards;
     -webkit-animation: first-prompt-animation 4s ease-in 2s forwards;
-    -o-animation: first-prompt-animation 4s ease-in 2s forwards;
     animation: first-prompt-animation 4s ease-in 2s forwards;
 }
 
 
 .second-prompt{
     opacity: 0;
-    -moz-animation: second-prompt-animation 4s ease-in 6s forwards;
     -webkit-animation: second-prompt-animation 4s ease-in 6s forwards;
-    -o-animation: second-prompt-animation 4s ease-in 6s forwards;
     animation: second-prompt-animation 4s ease-in 6s forwards;
 }

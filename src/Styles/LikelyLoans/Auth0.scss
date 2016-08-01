@@ -1,7 +1,7 @@
 $brand-login-outline: #E6E5E3;
 $brand-login-modal: #FAF9F7;
 
-//Body//
+/*Body//*/
 
 #a0-lock.a0-theme-default * {
     font-family: 'Source Sans Pro', sans-serif !important;
@@ -16,7 +16,7 @@ $brand-login-modal: #FAF9F7;
     display: none;
 }
 
-// Container //
+/* Container //*/
 
 #a0-lock.a0-theme-default .a0-panel {
     box-shadow: none !important;
@@ -26,7 +26,7 @@ $brand-login-modal: #FAF9F7;
     width: 100% !important;
 }
 
-// Header // 
+/* Header // */
 
 #a0-lock.a0-theme-default .a0-panel .a0-header {
     min-height: 20px !important;
@@ -73,14 +73,14 @@ $brand-login-modal: #FAF9F7;
 }
 
 
-// Forgot Password //
+/* Forgot Password //*/
 
 #a0-lock.a0-theme-default .a0-forgot-pass {
     color: $brand-primary !important;
     text-decoration: underline;
 }
 
-// Input Box //
+/* Input Box //*/
 
 #a0-lock.a0-theme-default .a0-emailPassword {
     margin: 0 auto !important;
@@ -95,7 +95,7 @@ $brand-login-modal: #FAF9F7;
     z-index: 1 !important;
 }
 
-// Submit //
+/* Submit //*/
 
 #a0-lock.a0-theme-default .a0-primary {
     background-color: $gray-lighter !important;
@@ -105,13 +105,13 @@ $brand-login-modal: #FAF9F7;
     background-color: $brand-secondary-3 !important;
 }
 
-// Footer //
+/* Footer //*/
 
 #a0-lock.a0-theme-default .a0-panel .a0-footer {
     display: none !important;
 }
 
-// Styleguide Showcase //
+/* Styleguide Showcase //*/
 
 .theme-warning #a0-lock.a0-theme-default .a0-primary {
     background-color: darken($brand-primary-3, 10%) !important;

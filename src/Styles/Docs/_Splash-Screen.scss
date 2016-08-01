@@ -18,6 +18,8 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
 
 .splash-screen-header h2 {
@@ -47,6 +49,8 @@
     position: absolute;
     top: 90%;
     transform: translateY(-90%);
+    -ms-transform: translateY(-90%);
+    -webkit-transform: translateY(-90%);
     height:50px;
     position:absolute;
     width:50px;
@@ -62,6 +66,8 @@
   0%   { opacity: 0; }
   50%  {opacity: 1;}
   100% { transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -webkit-transform: translateY(20px);
   opacity: 0; }
 }
 
@@ -69,6 +75,8 @@
   0%   { opacity: 0; }
   50%  {opacity: 1;}
   100% { transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -webkit-transform: translateY(20px);
   opacity: 0; }
 }
 
@@ -76,6 +84,8 @@
   0%   { opacity: 0; }
   50%  {opacity: 1;}
   100% { transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -webkit-transform: translateY(20px);
   opacity: 0; }
 }
 
@@ -83,6 +93,8 @@
   0%   { opacity: 0; }
   50%  {opacity: 1;}
   100% { transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -webkit-transform: translateY(20px);
   opacity: 0; }
 }
 

@@ -15,6 +15,7 @@
     position: relative;
     top: 100%;
     transform: translateY(-75%);
+    -ms-transform: scale(-75%);
     -webkit-transform: translateY(-75%);
     display: block;
     text-align: left;

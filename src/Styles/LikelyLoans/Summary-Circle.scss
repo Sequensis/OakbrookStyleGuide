@@ -17,8 +17,6 @@ $circle: 3vw;
     background-color: #fff;
     box-shadow: 0 0 0 5px $brand-primary-3;
     -webkit-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 
@@ -35,8 +33,6 @@ $circle: 3vw;
     background-color: $brand-primary-1;
     border:5px solid #fff;    
     -webkit-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
 
@@ -107,6 +103,8 @@ $circle: 3vw;
         position: relative;
         top: 50%;
         transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
     }
 
     .circle-container {

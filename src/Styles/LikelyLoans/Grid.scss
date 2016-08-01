@@ -52,6 +52,8 @@ body {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
     }
 
     .vcenter-40 {
@@ -59,6 +61,8 @@ body {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
     }
 
     .padding-top-mobile {

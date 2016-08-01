@@ -124,6 +124,7 @@
 
 .btn-sign-out:hover, .btn-sign-in:hover {
     color: #fff;
+    background-color: darken($brand-primary-1, 5%);
 }
 
 .btn-sign-in:focus, .btn-username:focus {
@@ -132,6 +133,7 @@
 
 .btn-sign-in-open:hover, .btn-sign-out-open:hover {
     color: $brand-primary-1 !important;
+    background-color: darken(#fff, 5%);
 }
 
 

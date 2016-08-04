@@ -10355,7 +10355,8 @@ button:focus {
 
 .full-width-list li a:hover {
   background-color: #005BC6;
-  color: #fff; }
+  color: #fff;
+  cursor: pointer; }
 
 .full-width-list-border ul {
   margin: 20px 0; }

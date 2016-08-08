@@ -10268,6 +10268,15 @@ code {
   opacity: 0;
   animation: second-prompt-animation 4s ease-in 6s forwards; }
 
+@keyframes load-in {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.load-fade-in {
+  animation: load-in ease-in 0.25s; }
+
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #FAF9ED; }
 

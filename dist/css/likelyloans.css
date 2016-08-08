@@ -9087,19 +9087,23 @@ body {
   margin-left: -43.5px; }
 
 /* Navbar Buttons */
-.btn-sign-in, .btn-sign-out {
+.btn-sign-in,
+.btn-sign-out {
   float: right;
   color: #fff;
   margin-right: -18px; }
 
-.btn-sign-out:hover, .btn-sign-in:hover {
+.btn-sign-out:hover,
+.btn-sign-in:hover {
   color: #fff;
   background-color: #004fad; }
 
-.btn-sign-in:focus, .btn-username:focus {
+.btn-sign-in:focus,
+.btn-username:focus {
   color: #fff !important; }
 
-.btn-sign-in-open:hover, .btn-sign-out-open:hover {
+.btn-sign-in-open:hover,
+.btn-sign-out-open:hover {
   color: #005BC6 !important;
   background-color: #f2f2f2; }
 
@@ -9221,6 +9225,12 @@ body {
     display: none;
     transition: .2s ease-in-out; }
 
+a.active {
+  color: #FCB829;
+  cursor: default; }
+  a.active i {
+    text-shadow: none !important; }
+
 .overlay-profile {
   position: relative;
   top: 5%;
@@ -9305,10 +9315,12 @@ body {
     margin-right: -10px; }
   .btn-sign-in:hover {
     color: #005BC6; }
-  .btn-sign-in-open, .btn-sign-out-open {
+  .btn-sign-in-open,
+  .btn-sign-out-open {
     color: #005BC6;
     background-color: #fff; }
-  .btn-sign-in:focus, .btn-username:focus {
+  .btn-sign-in:focus,
+  .btn-username:focus {
     color: #005BC6 !important; }
   .btn-username-open:focus {
     color: #fff !important; } }

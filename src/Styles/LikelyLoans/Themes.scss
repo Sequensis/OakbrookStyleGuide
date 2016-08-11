@@ -170,3 +170,15 @@ code {
 .font-dark {
     color: #fff;
 }
+
+.modal-error {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: $brand-secondary-3 !important;
+}
+
+.modal-warning {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: $brand-primary-3 !important;
+}

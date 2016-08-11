@@ -8932,7 +8932,7 @@ body {
 .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   padding: 0 30px !important; }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .padding-top {
     padding-top: 80px; }
   .vcenter-container {
@@ -9259,7 +9259,7 @@ a.active {
     position: relative !important; }
   .navbar {
     padding-top: 10px;
-    background-color: #fff; }
+    background-color: transparent; }
   .navbar-right {
     margin-right: 0px !important; }
   .navbar-logo {
@@ -9840,7 +9840,7 @@ a.active {
 /* Input Box //*/
 #a0-lock.a0-theme-default .a0-emailPassword {
   margin: 0 auto !important;
-  width: 75%; }
+  width: 100%; }
 
 #a0-lock.a0-theme-default .a0-input-box {
   background-color: #fff !important; }
@@ -9850,10 +9850,15 @@ a.active {
 
 /* Submit //*/
 #a0-lock.a0-theme-default .a0-primary {
-  background-color: #eeeeee !important; }
+  background-color: #33D167 !important;
+  border-radius: 3px !important;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; }
 
 #a0-lock.a0-theme-default .a0-primary:hover {
-  background-color: #33D167 !important; }
+  background-color: #26ab52 !important; }
 
 /* Footer //*/
 #a0-lock.a0-theme-default .a0-panel .a0-footer {
@@ -10176,9 +10181,8 @@ code {
   color: #fff; }
 
 .modal-login {
-  border: none;
   border-radius: 3px;
-  margin: 0;
+  margin: 80px auto 0 auto;
   padding: 0;
   width: 100%; }
 
@@ -10194,7 +10198,8 @@ code {
 .modal-login-header a:hover {
   color: #005BC6 !important; }
 
-.modal-login-header h1, .modal-login-header p {
+.modal-login-header h1,
+.modal-login-header p {
   color: #005BC6; }
 
 .modal-login-header h1 {
@@ -10204,11 +10209,24 @@ code {
 .modal-validate {
   background-color: #fff !important; }
 
+.modal-background-mobile {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  transition: .2s ease-in-out; }
+
 @media (min-width: 768px) {
   .modal-login-header h1 {
     font-size: 35px; }
   .modal-login {
-    border: 1px solid #E6E5E3; } }
+    width: 500px;
+    margin: 0 auto; }
+  .modal-background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #333; } }
 
 .loader {
   border-radius: 50%;

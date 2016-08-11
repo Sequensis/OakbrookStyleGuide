@@ -1,10 +1,8 @@
 $brand-login-outline: #E6E5E3;
 $brand-login-modal: #FAF9F7;
-
 .modal-login {
-    border: none;
     border-radius: 3px;
-    margin: 0;
+    margin: 80px auto 0 auto;
     padding: 0;
     width: 100%;
 }
@@ -25,7 +23,8 @@ $brand-login-modal: #FAF9F7;
     color: $brand-primary !important;
 }
 
-.modal-login-header h1, .modal-login-header p {
+.modal-login-header h1,
+.modal-login-header p {
     color: $brand-primary;
 }
 
@@ -38,15 +37,27 @@ $brand-login-modal: #FAF9F7;
     background-color: #fff !important;
 }
 
+.modal-background-mobile {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+}
 
 @media (min-width: 768px) {
-
     .modal-login-header h1 {
-    font-size: $font-size-h1;
+        font-size: $font-size-h1;
     }
-
     .modal-login {
-    border: 1px solid $brand-login-outline;
+        width: 500px;
+        margin: 0 auto;
     }
-
+    .modal-background {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #333;
+    }
 }

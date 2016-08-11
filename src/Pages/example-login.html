@@ -5,78 +5,80 @@
         <img src="/img/LikelyLoans.svg">
     </div>
 </nav>
-<div class="vcenter-container padding-top">
-    <div class="col-md-6 col-md-offset-3 vcenter">
-            <div class="modal-container theme-light">
-                <div class="modal-login text-center ">
-                    <div class="modal-login-header">
-                        <a class="modal-padlock"><i class="fa icon-lock fa-4x"></i></a>
-                        <h1>Welcome to Likely Loans</h1>
-                        <p>Currently this service is only available by invitation only
-                            <br>
-                            <a href="#">Register your interest</a></p>
-                    </div>
-                    <div id="lock-widget">
-                    </div>
+<div class="vcenter-container modal-background-mobile">
+    <div class="col-md-12 vcenter">
+        <div class="modal-container theme-light">
+            <div class="modal-login text-center ">
+                <div class="modal-login-header">
+                    <a class="modal-padlock"><i class="fa icon-lock fa-4x"></i></a>
+                    <h1>Welcome to Likely Loans</h1>
+                    <p>Currently this service is only available by invitation only.
+                        <br>
+                        <a href="#">Register your interest</a></p>
+                </div>
+                <div id="lock-widget">
                 </div>
             </div>
         </div>
+    </div>
 </div>
 
 
 <script src="https://cdn.auth0.com/js/lock-9.0.js"></script>
 <script>
+    var lock = new Auth0Lock('wgX0JYnX2B7VWRy5WjiAKfGxnaup9l4S', 'likelyloans.eu.auth0.com');
+    var failedAttempts = 0;
 
-       var lock = new Auth0Lock('wgX0JYnX2B7VWRy5WjiAKfGxnaup9l4S', 'likelyloans.eu.auth0.com');
-       var failedAttempts = 0;
+    lock.show({
+        authParams: {
+            scope: 'openid profile'
+        },
+        container: 'lock-widget',
+        callbackURL: window.location.origin + '/signin-auth0',
+        disableSignupAction: true,
+        responseType: 'code',
+        closable: true,
 
-       lock.show({
-           authParams: {
-               scope: 'openid profile'
-           },
-           container: 'lock-widget',
-           callbackURL: window.location.origin + '/signin-auth0',
-           disableSignupAction: true,
-           responseType: 'code',
-           closable: true
-       });
+    });
 
-       lock.on('signin error', function () {
-           failedAttempts++;
+    lock.on('signin error', function() {
+        failedAttempts++;
 
-           if (failedAttempts == 2) {
-               $('.a0-password').append( $('<div class = "modal-validate"><p>Your password will contain a minimum of 6 characters and at least 1 number</p></div>'));
-           }
+        if (failedAttempts == 2) {
+            $('.a0-password').append($('<div class = "modal-validate"><p>Your password will contain a minimum of 6 characters and at least 1 number</p></div>'));
+        }
 
-           if (failedAttempts > 3) {
-               $('.modal-container').addClass('theme-warning');
-               $(".modal-login-header h1").text("Check your details and try again!");
-               $('.modal-padlock i').removeClass('icon-lock');
-               $('.modal-padlock i').addClass('icon-exclamation');
-           }
+        if (failedAttempts > 3) {
+            $('.modal-container').addClass('theme-warning');
+            $(".modal-login-header h1").text("Check your details and try again!");
+            $(".modal-login-header p").text("We do not recognise the details you have entered.");
+            $('.modal-padlock i').removeClass('icon-lock');
+            $('.modal-padlock i').addClass('icon-exclamation');
+            $('.modal-background-mobile').css("background-color", "#FCB829");
+        }
 
-            if (failedAttempts > 6) {
-               $(".modal-login-header h1").text("You have 1 more attempt before you are locked out of your account");
-           }
+        if (failedAttempts > 6) {
+            $(".modal-login-header h1").text("You have 1 more attempt before you are locked out of your account");
+        }
 
-            if (failedAttempts > 9) {
-                $('.modal-container').removeClass('theme-warning');
-                $('.modal-container').addClass('theme-error');
-                $('.modal-container').addClass('shake');
-                $('.modal-login #a0-lock.a0-theme-default .a0-panel .a0-all, #a0-lock.a0-theme-default .a0-panel .a0-forgot-pass').toggleClass('theme-error');
-                $(".modal-login-header h1").text("For security, your account has been locked!");
-           }
+        if (failedAttempts > 9) {
+            $('.modal-container').removeClass('theme-warning');
+            $('.modal-container').addClass('theme-error');
+            $('.modal-container').addClass('shake');
+            $('.modal-background-mobile').css("background-color", "#DE344F");
+            $('.modal-login #a0-lock.a0-theme-default .a0-panel .a0-all, #a0-lock.a0-theme-default .a0-panel .a0-forgot-pass').toggleClass('theme-error');
+            $(".modal-login-header h1").text("For security, your account has been locked!");
+        }
 
-            if (failedAttempts > 10) {
-                $('.modal-container').addClass('shake');
-                $(".modal-login-header h1").text("Access to your account is currently unavailable");
-                $(".modal-login-header p").text("If you cannot remember your registered email address, please call us on 0208 080 6450");
-                $('.a0-emailPassword').empty();
-                $('.a0-body-content').empty();
-                $('.bottom-content').empty();
-           }
-       });
+        if (failedAttempts > 10) {
+            $('.modal-container').addClass('shake');
+            $(".modal-login-header h1").text("Access to your account is currently unavailable");
+            $(".modal-login-header p").text("If you cannot remember your registered email address, please call us on 0208 080 6450");
+            $('.a0-emailPassword').empty();
+            $('.a0-body-content').empty();
+            $('.bottom-content').empty();
+        }
+    });
+</script>
 
-   </script>
-
-   <div class="sidebar-arrow-container"><a href="/#auth0" class="sidebar-arrow"><i class="fa fa-arrow-left fa-2x"></i></a></div>
+<div class="sidebar-arrow-container"><a href="/#auth0" class="sidebar-arrow"><i class="fa fa-arrow-left fa-2x"></i></a></div>

@@ -59,12 +59,19 @@ $brand-login-modal: #FAF9F7;
     display: none;
 }
 
+.modal-padlock {
+    display: none;
+}
+
 #a0-lock.a0-theme-default .a0-panel .a0-top-header {
     display: none;
 }
 
 @media (min-width: 768px) {
     .modal-exclamation {
+        display: block;
+    }
+    .modal-padlock {
         display: block;
     }
     #a0-lock.a0-theme-default .a0-panel .a0-mode form .a0-body-content {
@@ -125,6 +132,7 @@ $brand-login-modal: #FAF9F7;
 #a0-lock.a0-theme-default .a0-primary:hover {
     background-color: darken($brand-secondary-3, 10%) !important;
 }
+
 
 /* Footer //*/
 

@@ -9824,11 +9824,16 @@ a.active {
 .modal-exclamation {
   display: none; }
 
+.modal-padlock {
+  display: none; }
+
 #a0-lock.a0-theme-default .a0-panel .a0-top-header {
   display: none; }
 
 @media (min-width: 768px) {
   .modal-exclamation {
+    display: block; }
+  .modal-padlock {
     display: block; }
   #a0-lock.a0-theme-default .a0-panel .a0-mode form .a0-body-content {
     padding: 30px 0px !important; } }

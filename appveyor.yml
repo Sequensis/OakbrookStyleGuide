@@ -6,7 +6,7 @@
       
   skip_tags: true
 
-  version: 1.5.1
+  version: 1.5.2
   
   init:
     - git config --global core.autocrlf input

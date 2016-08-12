@@ -10183,12 +10183,12 @@ code {
 .modal-error {
   width: 100% !important;
   height: 100% !important;
-  background-color: #33D167 !important; }
+  background-color: #DE344F !important; }
 
 .modal-warning {
   width: 100% !important;
   height: 100% !important;
-  background-color: #005BC6 !important; }
+  background-color: #FCB829 !important; }
 
 .modal-login {
   border-radius: 3px;

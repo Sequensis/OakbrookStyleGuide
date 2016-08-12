@@ -54,7 +54,7 @@
             $(".modal-login-header p").text("We do not recognise the details you have entered.");
             $('.modal-padlock i').removeClass('icon-lock');
             $('.modal-padlock i').addClass('icon-exclamation');
-            $('.modal-background').css("background-color", "#FCB829");
+            $('.modal-background').addClass('modal-warning');
         }
 
         if (failedAttempts > 6) {
@@ -65,7 +65,8 @@
             $('.modal-container').removeClass('theme-warning');
             $('.modal-container').addClass('theme-error');
             $('.modal-container').addClass('shake');
-            $('.modal-background').css("background-color", "#DE344F");
+            $('.modal-background').removeClass('modal-warning');
+            $('.modal-background').addClass('modal-error');
             $('.modal-login #a0-lock.a0-theme-default .a0-panel .a0-all, #a0-lock.a0-theme-default .a0-panel .a0-forgot-pass').toggleClass('theme-error');
             $(".modal-login-header h1").text("For security, your account has been locked!");
         }

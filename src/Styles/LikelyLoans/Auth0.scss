@@ -8,13 +8,15 @@ $brand-login-modal: #FAF9F7;
     background-color: transparent !important;
 }
 
-#a0-lock.a0-theme-default .a0-header h1, #a0-lock.a0-theme-default .a0-forgot-pass {
+#a0-lock.a0-theme-default .a0-header h1,
+#a0-lock.a0-theme-default .a0-forgot-pass {
     color: $brand-primary !important;
 }
 
 #a0-lock.a0-theme-default .a0-panel .a0-error {
     display: none;
 }
+
 
 /* Container //*/
 
@@ -25,6 +27,7 @@ $brand-login-modal: #FAF9F7;
 #a0-lock.a0-theme-default .a0-panel {
     width: 100% !important;
 }
+
 
 /* Header // */
 
@@ -61,15 +64,12 @@ $brand-login-modal: #FAF9F7;
 }
 
 @media (min-width: 768px) {
-
     .modal-exclamation {
-    display: block;
+        display: block;
     }
-
     #a0-lock.a0-theme-default .a0-panel .a0-mode form .a0-body-content {
-    padding: 30px 0px !important;
-}
-
+        padding: 30px 0px !important;
+    }
 }
 
 
@@ -79,6 +79,7 @@ $brand-login-modal: #FAF9F7;
     color: $brand-primary !important;
     text-decoration: underline;
 }
+
 
 /* Input Box //*/
 
@@ -91,23 +92,38 @@ $brand-login-modal: #FAF9F7;
     background-color: #fff !important;
 }
 
-#a0-lock.a0-theme-default .a0-panel .a0-email .a0-input-box i, #a0-lock.a0-theme-default .a0-panel .a0-password .a0-input-box i, #a0-lock.a0-theme-default .a0-panel .a0-repeatPassword .a0-input-box i, #a0-lock.a0-theme-default .a0-panel .a0-username .a0-input-box i {
+#a0-lock.a0-theme-default .a0-panel .a0-email .a0-input-box i,
+#a0-lock.a0-theme-default .a0-panel .a0-password .a0-input-box i,
+#a0-lock.a0-theme-default .a0-panel .a0-repeatPassword .a0-input-box i,
+#a0-lock.a0-theme-default .a0-panel .a0-username .a0-input-box i {
     z-index: 1 !important;
 }
+
+#a0-lock.a0-theme-default .a0-panel .a0-email input,
+#a0-lock.a0-theme-default .a0-panel .a0-password input,
+#a0-lock.a0-theme-default .a0-panel .a0-repeatPassword input,
+#a0-lock.a0-theme-default .a0-panel .a0-username input {
+    font-size: 16px !important;
+}
+
 
 /* Submit //*/
 
 #a0-lock.a0-theme-default .a0-primary {
     background-color: $brand-secondary-3 !important;
     border-radius: 3px !important;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto !important;
+    bottom: 0;
+    z-index: 1000 !important;
+}
+
+#a0-lock.a0-theme-default .a0-panel button.a0-primary {
+    position: fixed !important;
+    width: 10% !important;
 }
 
 #a0-lock.a0-theme-default .a0-primary:hover {
-    background-color:  darken($brand-secondary-3, 10%) !important;
+    background-color: darken($brand-secondary-3, 10%) !important;
 }
 
 /* Footer //*/
@@ -115,6 +131,7 @@ $brand-login-modal: #FAF9F7;
 #a0-lock.a0-theme-default .a0-panel .a0-footer {
     display: none !important;
 }
+
 
 /* Styleguide Showcase //*/
 
@@ -126,7 +143,10 @@ $brand-login-modal: #FAF9F7;
     color: $brand-primary-3-font !important;
 }
 
-.theme-warning #a0-lock.a0-theme-default .a0-panel .a0-email .a0-input-box i, #a0-lock.a0-theme-default .a0-panel .a0-password .a0-input-box i, #a0-lock.a0-theme-default .a0-panel .a0-repeatPassword .a0-input-box i, #a0-lock.a0-theme-default .a0-panel .a0-username .a0-input-box i {
+.theme-warning #a0-lock.a0-theme-default .a0-panel .a0-email .a0-input-box i,
+#a0-lock.a0-theme-default .a0-panel .a0-password .a0-input-box i,
+#a0-lock.a0-theme-default .a0-panel .a0-repeatPassword .a0-input-box i,
+#a0-lock.a0-theme-default .a0-panel .a0-username .a0-input-box i {
     color: #222 !important;
 }
 
@@ -138,7 +158,8 @@ $brand-login-modal: #FAF9F7;
     color: #222 !important;
 }
 
-.theme-error #a0-lock.a0-theme-default .a0-panel .a0-password input, #a0-lock.a0-theme-default .a0-panel .a0-repeatPassword input {
+.theme-error #a0-lock.a0-theme-default .a0-panel .a0-password input,
+#a0-lock.a0-theme-default .a0-panel .a0-repeatPassword input {
     color: $brand-secondary-1 !important;
 }
 
@@ -146,7 +167,10 @@ $brand-login-modal: #FAF9F7;
     margin-top: 20px !important;
 }
 
-.theme-error #a0-lock.a0-theme-default .a0-panel .a0-email .a0-input-box i, #a0-lock.a0-theme-default .a0-panel .a0-password .a0-input-box i, #a0-lock.a0-theme-default .a0-panel .a0-repeatPassword .a0-input-box i, #a0-lock.a0-theme-default .a0-panel .a0-username .a0-input-box i {
+.theme-error #a0-lock.a0-theme-default .a0-panel .a0-email .a0-input-box i,
+#a0-lock.a0-theme-default .a0-panel .a0-password .a0-input-box i,
+#a0-lock.a0-theme-default .a0-panel .a0-repeatPassword .a0-input-box i,
+#a0-lock.a0-theme-default .a0-panel .a0-username .a0-input-box i {
     color: #222 !important;
 }
 

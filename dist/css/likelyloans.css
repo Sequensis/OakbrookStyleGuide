@@ -10166,13 +10166,18 @@ code {
   perspective: 1000px; }
 
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0); }
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0); }
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-4px, 0, 0); }
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(4px, 0, 0); } }
 
 .theme-error a {
@@ -10208,12 +10213,14 @@ code {
 .modal-error {
   width: 100% !important;
   height: 100% !important;
-  background-color: #DE344F !important; }
+  background-color: #DE344F !important;
+  transition: .2s ease-in-out; }
 
 .modal-warning {
   width: 100% !important;
   height: 100% !important;
-  background-color: #FCB829 !important; }
+  background-color: #FCB829 !important;
+  transition: .2s ease-in-out; }
 
 .modal-login {
   border-radius: 3px;

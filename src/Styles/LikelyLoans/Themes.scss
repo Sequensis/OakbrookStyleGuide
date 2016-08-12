@@ -12,13 +12,19 @@ code {
     color: $brand-primary-1;
 }
 
+
 /* h1,h2,h3,h4,h5,h6 {*/
+
+
 /*     line-height: 1.4;*/
+
+
 /* }*/
+
 
 /* .theme-light //*/
 
-.theme-light *{
+.theme-light * {
     background-color: #fff;
     color: $brand-primary-1;
     -webkit-transition: .2s ease-in-out;
@@ -34,9 +40,10 @@ code {
     color: #fff;
 }
 
+
 /* .theme-dark //*/
 
-.theme-dark *{
+.theme-dark * {
     background-color: $brand-primary-1;
     color: #fff;
 }
@@ -50,9 +57,10 @@ code {
     background-color: $brand-primary-3;
 }
 
+
 /* .theme-warning //*/
 
-.theme-warning *{
+.theme-warning * {
     background-color: $brand-primary-3;
     color: $brand-primary-3-font;
     -webkit-transition: .2s ease-in-out;
@@ -68,9 +76,10 @@ code {
     background-color: $brand-primary-3-font;
 }
 
+
 /* .theme-error //*/
 
-.theme-error *{
+.theme-error * {
     background-color: $brand-secondary-1;
     color: #fff !important;
     -webkit-transition: .2s ease-in-out;
@@ -78,58 +87,62 @@ code {
 }
 
 .shake {
-    -webkit-animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-            animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    -webkit-animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
+    backface-visibility: hidden;
     -webkit-perspective: 1000px;
-            perspective: 1000px;
+    perspective: 1000px;
 }
 
 @-webkit-keyframes shake {
-  10%, 90% {
-    -webkit-transform: translate3d(-1px, 0, 0);
-            transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    -webkit-transform: translate3d(2px, 0, 0);
-            transform: translate3d(2px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    -webkit-transform: translate3d(-4px, 0, 0);
-            transform: translate3d(-4px, 0, 0);
-  }
-
-  40%, 60% {
-    -webkit-transform: translate3d(4px, 0, 0);
-            transform: translate3d(4px, 0, 0);
-  }
+    10%,
+    90% {
+        -webkit-transform: translate3d(-1px, 0, 0);
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        -webkit-transform: translate3d(2px, 0, 0);
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translate3d(-4px, 0, 0);
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        -webkit-transform: translate3d(4px, 0, 0);
+        transform: translate3d(4px, 0, 0);
+    }
 }
 
 @keyframes shake {
-  10%, 90% {
-    -webkit-transform: translate3d(-1px, 0, 0);
-            transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    -webkit-transform: translate3d(2px, 0, 0);
-            transform: translate3d(2px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    -webkit-transform: translate3d(-4px, 0, 0);
-            transform: translate3d(-4px, 0, 0);
-  }
-
-  40%, 60% {
-    -webkit-transform: translate3d(4px, 0, 0);
-            transform: translate3d(4px, 0, 0);
-  }
+    10%,
+    90% {
+        -webkit-transform: translate3d(-1px, 0, 0);
+        transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+        -webkit-transform: translate3d(2px, 0, 0);
+        transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translate3d(-4px, 0, 0);
+        transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+        -webkit-transform: translate3d(4px, 0, 0);
+        transform: translate3d(4px, 0, 0);
+    }
 }
 
 .theme-error a {
@@ -137,13 +150,15 @@ code {
 }
 
 .theme-error code {
-    color: $brand-secondary-1 !important;;
+    color: $brand-secondary-1 !important;
+    ;
     background-color: #fff;
 }
 
+
 /* .theme-success //*/
 
-.theme-success *{
+.theme-success * {
     background-color: $brand-secondary-3;
     color: $brand-secondary-3-font;
 }
@@ -175,10 +190,14 @@ code {
     width: 100% !important;
     height: 100% !important;
     background-color: $brand-secondary-1 !important;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
 }
 
 .modal-warning {
     width: 100% !important;
     height: 100% !important;
     background-color: $brand-primary-3 !important;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
 }

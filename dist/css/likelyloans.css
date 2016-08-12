@@ -9872,8 +9872,7 @@ a.active {
   z-index: 1000 !important; }
 
 #a0-lock.a0-theme-default .a0-panel button.a0-primary {
-  position: fixed !important;
-  width: 10% !important; }
+  position: fixed !important; }
 
 #a0-lock.a0-theme-default .a0-primary:hover {
   background-color: #26ab52 !important; }
@@ -10262,7 +10261,7 @@ code {
   .modal-login-header h1 {
     font-size: 35px; }
   .modal-login {
-    width: 500px;
+    width: 600px;
     margin: 0 auto; } }
 
 .loader {

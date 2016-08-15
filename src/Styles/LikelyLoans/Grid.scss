@@ -69,6 +69,21 @@ body {
     padding-top: 0;
     }
 
+}
 
+@media(max-height:800px) {
+
+    .vcenter {
+        margin-top: 6em;
+    }
+
+}
+
+
+@media(max-device-height:800px) {
+
+    .vcenter {
+        margin-top: 0;
+    }
 
 }

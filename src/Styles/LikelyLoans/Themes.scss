@@ -27,8 +27,6 @@ code {
 .theme-light * {
     background-color: #fff;
     color: $brand-primary-1;
-    -webkit-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
 }
 
 .theme-light a {
@@ -63,8 +61,6 @@ code {
 .theme-warning * {
     background-color: $brand-primary-3;
     color: $brand-primary-3-font;
-    -webkit-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
 }
 
 .theme-warning a {
@@ -82,8 +78,6 @@ code {
 .theme-error * {
     background-color: $brand-secondary-1;
     color: #fff !important;
-    -webkit-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
 }
 
 .shake {
@@ -190,14 +184,10 @@ code {
     width: 100% !important;
     height: 100% !important;
     background-color: $brand-secondary-1 !important;
-    -webkit-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
 }
 
 .modal-warning {
     width: 100% !important;
     height: 100% !important;
     background-color: $brand-primary-3 !important;
-    -webkit-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
 }

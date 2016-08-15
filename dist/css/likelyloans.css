@@ -8959,6 +8959,14 @@ body {
   .padding-top-mobile {
     padding-top: 0; } }
 
+@media (max-height: 800px) {
+  .vcenter {
+    margin-top: 6em; } }
+
+@media (max-device-height: 800px) {
+  .vcenter {
+    margin-top: 0; } }
+
 .btn {
   font-weight: 700;
   border-radius: 4px;
@@ -9838,6 +9846,12 @@ a.active {
   #a0-lock.a0-theme-default .a0-panel .a0-mode form .a0-body-content {
     padding: 30px 0px !important; } }
 
+@media (max-width: 768px) {
+  #a0-lock.a0-theme-default .a0-panel .a0-action {
+    bottom: 0;
+    position: fixed;
+    width: 100%; } }
+
 /* Forgot Password //*/
 #a0-lock.a0-theme-default .a0-forgot-pass {
   color: #005BC6 !important;
@@ -9863,6 +9877,16 @@ a.active {
 #a0-lock.a0-theme-default .a0-panel .a0-username input {
   font-size: 16px !important; }
 
+#a0-lock.a0-theme-default .a0-btn-small.a0-back {
+  background: #fff !important;
+  position: relative !important;
+  top: 0px !important;
+  left: 0px !important;
+  box-shadow: none !important;
+  border: 1px solid #efefef !important;
+  padding: 16px !important;
+  margin-bottom: 20px !important; }
+
 /* Submit //*/
 #a0-lock.a0-theme-default .a0-primary {
   background-color: #33D167 !important;
@@ -9870,9 +9894,6 @@ a.active {
   margin: 0 auto !important;
   bottom: 0;
   z-index: 1000 !important; }
-
-#a0-lock.a0-theme-default .a0-panel button.a0-primary {
-  position: fixed !important; }
 
 #a0-lock.a0-theme-default .a0-primary:hover {
   background-color: #26ab52 !important; }
@@ -10117,8 +10138,7 @@ code {
 /* .theme-light //*/
 .theme-light * {
   background-color: #fff;
-  color: #005BC6;
-  transition: .2s ease-in-out; }
+  color: #005BC6; }
 
 .theme-light a {
   color: #005BC6; }
@@ -10142,8 +10162,7 @@ code {
 /* .theme-warning //*/
 .theme-warning * {
   background-color: #FCB829;
-  color: #2750C8;
-  transition: .2s ease-in-out; }
+  color: #2750C8; }
 
 .theme-warning a {
   color: #2750C8; }
@@ -10155,8 +10174,7 @@ code {
 /* .theme-error //*/
 .theme-error * {
   background-color: #DE344F;
-  color: #fff !important;
-  transition: .2s ease-in-out; }
+  color: #fff !important; }
 
 .shake {
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
@@ -10212,14 +10230,12 @@ code {
 .modal-error {
   width: 100% !important;
   height: 100% !important;
-  background-color: #DE344F !important;
-  transition: .2s ease-in-out; }
+  background-color: #DE344F !important; }
 
 .modal-warning {
   width: 100% !important;
   height: 100% !important;
-  background-color: #FCB829 !important;
-  transition: .2s ease-in-out; }
+  background-color: #FCB829 !important; }
 
 .modal-login {
   border-radius: 3px;
@@ -10254,8 +10270,7 @@ code {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #fff;
-  transition: .2s ease-in-out; }
+  background-color: #fff; }
 
 @media (min-width: 768px) {
   .modal-login-header h1 {

@@ -77,8 +77,16 @@ $brand-login-modal: #FAF9F7;
     #a0-lock.a0-theme-default .a0-panel .a0-mode form .a0-body-content {
         padding: 30px 0px !important;
     }
+
 }
 
+@media (max-width: 768px) {
+    #a0-lock.a0-theme-default .a0-panel .a0-action {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+}
 
 /* Forgot Password //*/
 
@@ -113,6 +121,17 @@ $brand-login-modal: #FAF9F7;
     font-size: 16px !important;
 }
 
+#a0-lock.a0-theme-default .a0-btn-small.a0-back {
+    background: #fff !important;
+    position: relative !important;
+    top: 0px !important;
+    left: 0px !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #efefef !important;
+    padding: 16px !important;
+    margin-bottom: 20px !important;
+}
 
 /* Submit //*/
 
@@ -122,10 +141,6 @@ $brand-login-modal: #FAF9F7;
     margin: 0 auto !important;
     bottom: 0;
     z-index: 1000 !important;
-}
-
-#a0-lock.a0-theme-default .a0-panel button.a0-primary {
-    position: fixed !important;
 }
 
 #a0-lock.a0-theme-default .a0-primary:hover {

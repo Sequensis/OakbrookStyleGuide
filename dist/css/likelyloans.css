@@ -8961,7 +8961,11 @@ body {
 
 @media (max-height: 800px) {
   .vcenter {
-    margin-top: 6em; } }
+    margin-top: 8em;
+    top: 0%;
+    transform: none;
+    -ms-transform: none;
+    -webkit-transform: none; } }
 
 @media (max-device-height: 800px) {
   .vcenter {
@@ -9827,6 +9831,9 @@ a.active {
   display: none; }
 
 #a0-lock.a0-theme-default .a0-header h1 {
+  display: none; }
+
+.modal-exclamation {
   display: none; }
 
 #a0-lock.a0-theme-default .a0-panel .a0-top-header {

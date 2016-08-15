@@ -3,6 +3,10 @@ $brand-login-modal: #FAF9F7;
 
 /*Body//*/
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+}
+
 #a0-lock.a0-theme-default * {
     font-family: 'Source Sans Pro', sans-serif !important;
     background-color: transparent !important;

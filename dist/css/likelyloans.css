@@ -10161,12 +10161,6 @@ a.remove-underline {
   border: 5px solid #fff;
   transition: width 0.25s ease, height 0.25s ease; }
 
-.circle-secondary:hover {
-  cursor: pointer;
-  width: 170px;
-  height: 170px;
-  margin-top: -80px; }
-
 .circle-inner {
   text-align: center;
   display: inline-block;
@@ -10206,12 +10200,6 @@ a.remove-underline {
     margin-right: 10%;
     margin-top: -20%;
     float: right; }
-  .circle-secondary:hover {
-    height: 180px;
-    width: 180px;
-    margin-right: calc(10% - 5px);
-    margin-top: calc(-20% - 5px);
-    color: #fff !important; }
   .circle-inner {
     position: relative;
     top: 50%;

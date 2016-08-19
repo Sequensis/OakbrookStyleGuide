@@ -16,13 +16,14 @@ $circle: 3vw;
     border-radius: 50%;
     background-color: #fff;
     box-shadow: 0 0 0 5px $brand-primary-3;
-    -webkit-transition: all 0.25s ease;
-    transition: all 0.25s ease;
+    -webkit-transition: 0.25s ease;
+    transition: 0.25s ease;
 }
 
 .circle-primary:hover {
     cursor: pointer;
     box-shadow: 0 0 0 10px $brand-primary-3;
+    color: $brand-primary-1 !important;
 }
 
 .circle-secondary {
@@ -32,8 +33,8 @@ $circle: 3vw;
     border-radius: 50%;
     background-color: $brand-primary-1;
     border:5px solid #fff;    
-    -webkit-transition: all 0.25s ease;
-    transition: all 0.25s ease;
+    -webkit-transition: width 0.25s ease, height 0.25s ease;
+    transition: width 0.25s ease, height 0.25s ease;
 }
 
 .circle-secondary:hover {
@@ -97,6 +98,7 @@ $circle: 3vw;
         width: 180px;
         margin-right: calc(10% - 5px);
         margin-top: calc(-20% - 5px);
+        color: #fff !important;
     }
 
     .circle-inner {

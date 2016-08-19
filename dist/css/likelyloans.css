@@ -9991,7 +9991,7 @@ input:-webkit-autofill {
   #a0-lock.a0-theme-default .a0-panel .a0-mode form .a0-body-content {
     padding: 30px 0px !important; } }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   #a0-lock.a0-theme-default .a0-panel .a0-action {
     bottom: 0;
     position: fixed;
@@ -10145,11 +10145,12 @@ a.remove-underline {
   border-radius: 50%;
   background-color: #fff;
   box-shadow: 0 0 0 5px #FCB829;
-  transition: all 0.25s ease; }
+  transition: 0.25s ease; }
 
 .circle-primary:hover {
   cursor: pointer;
-  box-shadow: 0 0 0 10px #FCB829; }
+  box-shadow: 0 0 0 10px #FCB829;
+  color: #005BC6 !important; }
 
 .circle-secondary {
   margin: -75px auto 0 auto;
@@ -10158,7 +10159,7 @@ a.remove-underline {
   border-radius: 50%;
   background-color: #005BC6;
   border: 5px solid #fff;
-  transition: all 0.25s ease; }
+  transition: width 0.25s ease, height 0.25s ease; }
 
 .circle-secondary:hover {
   cursor: pointer;
@@ -10209,7 +10210,8 @@ a.remove-underline {
     height: 180px;
     width: 180px;
     margin-right: calc(10% - 5px);
-    margin-top: calc(-20% - 5px); }
+    margin-top: calc(-20% - 5px);
+    color: #fff !important; }
   .circle-inner {
     position: relative;
     top: 50%;
@@ -10421,7 +10423,7 @@ code {
   .modal-login-header h1 {
     font-size: 35px; }
   .modal-login {
-    width: 600px;
+    width: 500px;
     margin: 0 auto; } }
 
 .loader {

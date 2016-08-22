@@ -55,17 +55,13 @@ input:-webkit-autofill {
     display: none;
 }
 
-#a0-lock.a0-theme-default .a0-header h1 {
-    display: none;
-}
-
 .modal-exclamation {
     display: none;
 }
 
-
-#a0-lock.a0-theme-default .a0-panel .a0-top-header {
-    display: none;
+#a0-lock.a0-theme-default .a0-panel .a0-success {
+    background: #33D167 !important;
+    color: #fff;
 }
 
 @media (min-width: 768px) {

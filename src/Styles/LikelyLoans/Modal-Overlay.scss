@@ -1,6 +1,7 @@
 .modal-dialog {
     z-index: 1000;
-    margin: 10vh 0 0 0;
+    padding: 10vh 0 0 0;
+    margin: 0;
 }
 
 .modal-content {
@@ -38,13 +39,13 @@
 }
 
 .close {
-    position: absolute;
+    position: fixed;
     right: 0;
-    top: 0;
+    top: 5px;
     border: 0px;
-    color: $brand-tint-2;
+    color: $brand-secondary-2;
         i {
-            color: $brand-tint-2;
+            color: $brand-secondary-2;
         }
 }
 
@@ -68,6 +69,7 @@
 
     .modal-dialog {
     margin: 25vh auto 0 auto;
+    padding: 0;
     }
 
     .modal-backdrop.in {
@@ -77,6 +79,7 @@
     }
 
     .close {
+    position: absolute;
     right: 5px;
     top: 15px;
     }

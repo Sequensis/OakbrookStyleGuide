@@ -8,7 +8,7 @@ body {
 }
 
 .padding-top {
-    padding-top: 70px;
+    padding-top: 80px;
 }
 
 .padding-bottom {
@@ -174,7 +174,7 @@ body {
 
 @media(min-width:768px) {
     .padding-top {
-        padding-top: 80px;
+        padding-top: 70px;
     }
     .vcenter-container {
         position: relative;
@@ -208,7 +208,7 @@ body {
 
 @media(max-height:800px) {
     .vcenter {
-        margin-top: 8em;
+        margin-top: 70px;
         top: 0%;
         transform: none;
         -ms-transform: none;

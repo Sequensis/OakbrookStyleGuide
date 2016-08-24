@@ -9102,7 +9102,7 @@ body {
 
 @media (max-height: 800px) {
   .vcenter {
-    margin-top: 70px;
+    margin-top: 150px;
     top: 0%;
     transform: none;
     -ms-transform: none;

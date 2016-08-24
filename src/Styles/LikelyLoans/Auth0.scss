@@ -71,16 +71,12 @@ input:-webkit-autofill {
     .modal-padlock {
         display: block;
     }
-    #a0-lock.a0-theme-default .a0-panel .a0-mode form .a0-body-content {
-        padding: 30px 0px !important;
-    }
 
 }
 
 @media (max-width:640px) {
     #a0-lock.a0-theme-default .a0-panel .a0-action {
     bottom: 0;
-    position: fixed;
     width: 100%;
 }
 }
@@ -94,6 +90,10 @@ input:-webkit-autofill {
 
 
 /* Input Box //*/
+
+#a0-lock.a0-theme-default .a0-panel .a0-mode form .a0-body-content {
+    padding: 10px 30px 30px 30px !important;
+}
 
 #a0-lock.a0-theme-default .a0-emailPassword {
     margin: 0 auto !important;

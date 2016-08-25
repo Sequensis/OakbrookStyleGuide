@@ -39,11 +39,17 @@
         authParams: {
             scope: 'openid profile'
         },
+
         container: 'lock-widget',
         callbackURL: window.location.origin + '/signin-auth0',
         disableSignupAction: true,
         responseType: 'code',
-        closable: true,
+        closable: false,
+        dict: {
+            signin: {
+                'forgotText': "Forgotten your password?"
+            }
+        }
 
     });
 

@@ -2,13 +2,17 @@ body {
     height: 100%;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.25em !important;
+}
+
 .padding-top-mobile {
-    padding-top: 6em;
-    padding-bottom: 6em;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 .padding-top {
-    padding-top: 80px;
+    padding-top: 6em;
 }
 
 .padding-bottom {

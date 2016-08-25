@@ -1,9 +1,7 @@
 $circle: 3vw;
-
 .circle-container {
     margin: 40px 0 0 0;
     min-height: 370px;
-
     a {
         cursor: default;
     }
@@ -32,17 +30,20 @@ $circle: 3vw;
     height: 160px;
     border-radius: 50%;
     background-color: $brand-primary-1;
-    border:5px solid #fff;    
+    border: 5px solid #fff;
     -webkit-transition: width 0.25s ease, height 0.25s ease;
     transition: width 0.25s ease, height 0.25s ease;
 }
 
-.circle-inner  {
+.circle-inner {
     text-align: center;
     display: inline-block;
     margin: 0;
     position: relative;
-    top: 30%;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
 
 .circle-inner h2 {
@@ -71,21 +72,18 @@ $circle: 3vw;
 }
 
 @media(min-width:992px) {
-
     .circle-primary {
         height: 270px;
         width: 270px;
         padding-top: 5px;
     }
-
     .circle-secondary {
         height: 170px;
         width: 170px;
         margin-right: 10%;
         margin-top: -20%;
-        float:right;
+        float: right;
     }
-
     .circle-inner {
         position: relative;
         top: 50%;
@@ -93,21 +91,16 @@ $circle: 3vw;
         -ms-transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
     }
-
     .circle-container {
         margin-bottom: 0;
     }
-
     .circle-primary .circle-amount p {
         font-size: 60px;
     }
-
     .circle-secondary .circle-amount p {
         font-size: 40px;
     }
-
     .circle-secondary .circle-amount span {
         font-size: 25px;
     }
-
 }

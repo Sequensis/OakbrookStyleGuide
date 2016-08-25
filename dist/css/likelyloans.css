@@ -8913,12 +8913,15 @@ a.thumbnail.active {
 body {
   height: 100%; }
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25em !important; }
+
 .padding-top-mobile {
-  padding-top: 6em;
-  padding-bottom: 6em; }
+  padding-top: 5em;
+  padding-bottom: 5em; }
 
 .padding-top {
-  padding-top: 80px; }
+  padding-top: 6em; }
 
 .padding-bottom {
   padding-bottom: 20px; }
@@ -10164,7 +10167,10 @@ a.remove-underline {
   display: inline-block;
   margin: 0;
   position: relative;
-  top: 30%; }
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%); }
 
 .circle-inner h2 {
   margin: 0;
@@ -10224,7 +10230,7 @@ a.remove-underline {
   line-height: 1.8;
   text-decoration: none;
   color: inherit;
-  padding: 0 5px; }
+  padding: 0; }
 
 .footer-distributed a:hover {
   opacity: 0.5; }
@@ -10252,7 +10258,12 @@ a.remove-underline {
     margin-bottom: 0; }
     .footer-links a {
       display: inline;
-      margin: 0; } }
+      margin: 0; }
+  .footer-distributed a {
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    padding: 0 5px; } }
 
 a {
   text-decoration: underline; }
@@ -10266,7 +10277,7 @@ code {
   color: #005BC6; }
 
 .summary-header h1 {
-  margin: 0; }
+  margin: 10px 0 0 0; }
 
 .theme-light * {
   background-color: #fff;

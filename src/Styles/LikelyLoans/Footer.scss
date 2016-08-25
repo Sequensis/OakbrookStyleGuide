@@ -10,7 +10,7 @@
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
-    padding: 0 5px;
+    padding: 0;
 }
 
 .footer-distributed a:hover{
@@ -52,5 +52,12 @@
 			margin: 0;
 		}
 	}
+
+	.footer-distributed a{
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+    padding: 0 5px;
+}
 
 }

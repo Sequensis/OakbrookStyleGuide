@@ -11,6 +11,31 @@
     animation-iteration-count: infinite;
 }
 
+.prompt h2 {
+    margin: 100px 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.first-prompt {
+    opacity: 0;
+    -webkit-animation: first-prompt-animation 4s ease-in 2s forwards;
+    animation: first-prompt-animation 4s ease-in 2s forwards;
+}
+
+.second-prompt {
+    opacity: 0;
+    -webkit-animation: second-prompt-animation 4s ease-in 6s forwards;
+    animation: second-prompt-animation 4s ease-in 6s forwards;
+}
+
+.load-fade-in {
+    -webkit-animation: load-in ease-in 0.25s;
+    -moz-animation: load-in ease-in 0.25s;
+    animation: load-in ease-in 0.25s;
+}
+
 @-webkit-keyframes pulse {
     0% {
         transform: scale(.1);
@@ -45,13 +70,6 @@
         -webkit-transform: scale(1.2);
         opacity: 0;
     }
-}
-
-.prompt h2 {
-    margin: 100px 20px;
-    position: absolute;
-    left: 0;
-    right: 0;
 }
 
 @-webkit-keyframes first-prompt-animation {
@@ -114,18 +132,6 @@
     }
 }
 
-.first-prompt {
-    opacity: 0;
-    -webkit-animation: first-prompt-animation 4s ease-in 2s forwards;
-    animation: first-prompt-animation 4s ease-in 2s forwards;
-}
-
-.second-prompt {
-    opacity: 0;
-    -webkit-animation: second-prompt-animation 4s ease-in 6s forwards;
-    animation: second-prompt-animation 4s ease-in 6s forwards;
-}
-
 @-webkit-keyframes load-in {
     0% {
         opacity: 0;
@@ -151,10 +157,4 @@
     100% {
         opacity: 1;
     }
-}
-
-.load-fade-in {
-    -webkit-animation: load-in ease-in 0.25s;
-    -moz-animation: load-in ease-in 0.25s;
-    animation: load-in ease-in 0.25s;
 }

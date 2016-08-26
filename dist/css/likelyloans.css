@@ -10382,19 +10382,24 @@ code {
   background-color: #FCB829 !important; }
 
 .white-bg {
-  background-color: #fff !important; }
+  background-color: #fff !important;
+  transition: 0; }
 
 .blue-bg {
-  background-color: #005BC6 !important; }
+  background-color: #005BC6 !important;
+  transition: 0; }
 
 .yellow-bg {
-  background-color: #FCB829 !important; }
+  background-color: #FCB829 !important;
+  transition: 0; }
 
 .red-bg {
-  background-color: #DE344F !important; }
+  background-color: #DE344F !important;
+  transition: 0; }
 
 .green-bg {
-  background-color: #33D167 !important; }
+  background-color: #33D167 !important;
+  transition: 0; }
 
 .modal-login {
   border-radius: 3px;

@@ -6,47 +6,44 @@
     margin: 20px auto;
     -webkit-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
-}
-
-.btn:hover, .btn:focus, .btn.focus {
-    text-decoration: none;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
 }
 
 .btn-primary-1 {
     background-color: $brand-primary-1;
     color: #fff;
-}
-
-.btn-primary-1:focus, .btn-primary-1:hover {
-    background-color: darken($brand-primary-1, 5%);
-    color: #fff;
+    &:focus,
+    &:hover {
+        background-color: darken($brand-primary-1, 5%);
+        color: #fff;
+    }
 }
 
 .btn-primary-2 {
     background-color: $brand-primary-3;
     color: $brand-primary-3-font;
-}
-
-.btn-primary-2:hover {
-    background-color: darken($brand-primary-3, 5%);
-    color: $brand-primary-3-font;
+    &:hover {
+        background-color: darken($brand-primary-3, 5%);
+        color: $brand-primary-3-font;
+    }
 }
 
 .btn-primary-3 {
     background-color: transparent;
     color: $brand-primary-1;
-}
-
-.btn-primary-3:hover {
-    color: $brand-primary-1;
+    &:hover {
+        color: $brand-primary-1;
+    }
 }
 
 .btn-primary-4 {
     background-color: $brand-secondary-1;
     color: #fff;
-}
-
-.btn-primary-4:hover {
-    background-color: darken($brand-secondary-1, 5%);
-    color: #fff;
+    &:hover {
+        background-color: darken($brand-secondary-1, 5%);
+        color: #fff;
+    }
 }

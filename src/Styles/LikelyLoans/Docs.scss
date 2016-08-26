@@ -1,43 +1,22 @@
 @import "Bootstrap/Bootstrap";
-
 @import "Grid";
-
 @import "Buttons";
-
 @import "Navbar";
-
 @import "Colour-Scheme";
-
 @import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
-
 @import "../Docs/Docs";
-
 @import "Auth0";
-
-@import "Example-Summary";
-
+@import "Change-Date-Summary";
 @import "Summary-Circle";
-
 @import "Footer";
-
 @import "Themes";
-
 @import "Modal-Login";
-
 @import "Loader";
-
 @import "Tables";
-
 @import "Modal-Overlay";
-
 @import "Lists";
-
 @import "Typography";
-
-@import "Fonts";
-
-// Delete this //
-
-*:focus {
-    outline: -webkit-focus-ring-color auto 0px !important;
-}
+@import "LikelyLoans-Icons";
+@import "Panels";
+@import "Padding";
+@import "Misc";

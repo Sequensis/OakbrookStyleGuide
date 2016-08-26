@@ -1,0 +1,19 @@
+.padding-top-bottom {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.padding-top {
+    padding-top: 5em;
+}
+
+.modal-padding-bottom {
+    padding-bottom: 20px;
+}
+
+
+@media(min-width:768px) {
+    .padding-top {
+        padding-top: 70px;
+    }
+}

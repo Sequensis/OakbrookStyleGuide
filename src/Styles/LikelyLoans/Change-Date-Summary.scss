@@ -1,0 +1,29 @@
+.summary-change-date {
+    span {
+        font-size: 14px;
+        font-family: $font-family-base;
+        font-weight: 400;
+        display: block;
+        position: relative;
+        text-decoration: underline;
+    }
+    h2 {
+        font-size: 24px;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+    i {
+        margin-right: 5px;
+    }
+}
+
+@media(min-width:992px) {
+    .summary-change-date {
+        span {
+            display: inline-block;
+            margin-top: 0;
+            margin-left: 10px;
+            position: absolute;
+        }
+    }
+}

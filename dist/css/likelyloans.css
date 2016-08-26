@@ -9503,38 +9503,20 @@ a.active {
     width: 300vw;
     height: 300vw; } }
 
-.bg-primary-1 {
-  background-color: #005BC6; }
+.white-bg {
+  background-color: #fff !important; }
 
-.bg-primary-2 {
-  background-color: #162A53; }
+.blue-bg {
+  background-color: #005BC6 !important; }
 
-.bg-primary-3 {
-  background-color: #FCB829; }
+.yellow-bg {
+  background-color: #FCB829 !important; }
 
-.bg-secondary-1 {
-  background-color: #DE344F; }
+.red-bg {
+  background-color: #DE344F !important; }
 
-.bg-secondary-2 {
-  background-color: #767676; }
-
-.bg-secondary-3 {
-  background-color: #33D167; }
-
-.bg-tint-1 {
-  background-color: #FAF9ED; }
-
-.bg-tint-2 {
-  background-color: #E3DFDA; }
-
-.bg-success {
-  background-color: #33D167; }
-
-.bg-error {
-  background-color: #DE344F; }
-
-.bg-warning {
-  background-color: #FCB829; }
+.green-bg {
+  background-color: #33D167 !important; }
 
 .navbar {
   position: relative;
@@ -10082,9 +10064,6 @@ input:-webkit-autofill {
 #a0-lock.a0-theme-default .a0-panel #a0-change_password .a0-collapse-reset .a0-instructions {
   display: none; }
 
-.icon-primary i {
-  color: #005BC6; }
-
 .summary-change-date span {
   font-size: 14px;
   font-family: "Source Sans Pro", sans-serif;
@@ -10101,9 +10080,6 @@ input:-webkit-autofill {
 .summary-change-date i {
   margin-right: 5px; }
 
-a.remove-underline {
-  text-decoration: none; }
-
 .panel-beige {
   background-color: #FAF9ED;
   color: #005BC6;
@@ -10114,13 +10090,6 @@ a.remove-underline {
     font-size: 30px;
     font-weight: 700;
     padding: 0 5px; }
-
-.payments-place-img {
-  padding: 10px 0 20px;
-  width: 182px; }
-
-.form-input-other {
-  margin: 40px 0 20px 0; }
 
 @media (min-width: 992px) {
   .summary-change-date span {
@@ -10375,21 +10344,6 @@ code {
   width: 100% !important;
   height: 100% !important;
   background-color: #FCB829 !important; }
-
-.white-bg {
-  background-color: #fff !important; }
-
-.blue-bg {
-  background-color: #005BC6 !important; }
-
-.yellow-bg {
-  background-color: #FCB829 !important; }
-
-.red-bg {
-  background-color: #DE344F !important; }
-
-.green-bg {
-  background-color: #33D167 !important; }
 
 .modal-login {
   border-radius: 3px;

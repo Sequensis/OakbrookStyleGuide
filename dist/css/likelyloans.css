@@ -9419,17 +9419,18 @@ a.active {
   .navbar-right {
     margin-right: 0px !important; }
   .navbar-logo {
-    width: 125px;
-    margin-left: -62.5px; }
+    width: 106px;
+    margin-left: -53px;
+    margin-top: 7px; }
   .navbar-logo:hover {
-    width: 135px;
-    margin-left: -67.5px; }
+    width: 116px;
+    margin-left: -58px; }
   .navbar-circle {
     left: 50%;
-    margin-left: -250px;
-    margin-top: -400px;
-    width: 500px;
-    height: 500px;
+    margin-left: -123px;
+    margin-top: -123px;
+    width: 246px;
+    height: 226px;
     display: block;
     border-radius: 50%; }
   #navbar-icon span {
@@ -10379,6 +10380,21 @@ code {
   width: 100% !important;
   height: 100% !important;
   background-color: #FCB829 !important; }
+
+.white-bg {
+  background-color: #fff !important; }
+
+.blue-bg {
+  background-color: #005BC6 !important; }
+
+.yellow-bg {
+  background-color: #FCB829 !important; }
+
+.red-bg {
+  background-color: #DE344F !important; }
+
+.green-bg {
+  background-color: #33D167 !important; }
 
 .modal-login {
   border-radius: 3px;

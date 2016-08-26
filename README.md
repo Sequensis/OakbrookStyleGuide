@@ -64,9 +64,9 @@ dist/
 │   ├── fontawesome-webfont.woff
 │   └── fontawesome-webfont.woff2
 ├── img/
-│   ├── LikelyLoans.svg
+│   ├── LikelyLoansWhite.svg
 │   ├── LikelyLoansFooter.svg
-│   └── LikelyLoansNav.svg 
+│   └── LikelyLoansSm.svg 
 └── js/
     ├── oakbrookstyleguide.js
     ├── oakbrookstyleguide.min.js

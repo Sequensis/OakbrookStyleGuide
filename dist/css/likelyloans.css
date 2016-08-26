@@ -8916,14 +8916,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.25em !important; }
 
-.padding-top-mobile {
+.padding-top-bottom {
   padding-top: 5em;
   padding-bottom: 5em; }
 
 .padding-top {
-  padding-top: 6em; }
+  padding-top: 5em; }
 
-.padding-bottom {
+.modal-padding-bottom {
   padding-bottom: 20px; }
 
 .vcenter-container .col-lg-1,
@@ -9122,40 +9122,35 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   margin: 20px auto;
   transition: .2s ease-in-out; }
-
-.btn:hover, .btn:focus, .btn.focus {
-  text-decoration: none; }
+  .btn:hover, .btn:focus {
+    text-decoration: none; }
 
 .btn-primary-1 {
   background-color: #005BC6;
   color: #fff; }
-
-.btn-primary-1:focus, .btn-primary-1:hover {
-  background-color: #004fad;
-  color: #fff; }
+  .btn-primary-1:focus, .btn-primary-1:hover {
+    background-color: #004fad;
+    color: #fff; }
 
 .btn-primary-2 {
   background-color: #FCB829;
   color: #2750C8; }
-
-.btn-primary-2:hover {
-  background-color: #fcb010;
-  color: #2750C8; }
+  .btn-primary-2:hover {
+    background-color: #fcb010;
+    color: #2750C8; }
 
 .btn-primary-3 {
   background-color: transparent;
   color: #005BC6; }
-
-.btn-primary-3:hover {
-  color: #005BC6; }
+  .btn-primary-3:hover {
+    color: #005BC6; }
 
 .btn-primary-4 {
   background-color: #DE344F;
   color: #fff; }
-
-.btn-primary-4:hover {
-  background-color: #d6233f;
-  color: #fff; }
+  .btn-primary-4:hover {
+    background-color: #d6233f;
+    color: #fff; }
 
 .section-container nav.navbar .navbar-circle {
   position: absolute; }
@@ -10382,24 +10377,19 @@ code {
   background-color: #FCB829 !important; }
 
 .white-bg {
-  background-color: #fff !important;
-  transition: 0; }
+  background-color: #fff !important; }
 
 .blue-bg {
-  background-color: #005BC6 !important;
-  transition: 0; }
+  background-color: #005BC6 !important; }
 
 .yellow-bg {
-  background-color: #FCB829 !important;
-  transition: 0; }
+  background-color: #FCB829 !important; }
 
 .red-bg {
-  background-color: #DE344F !important;
-  transition: 0; }
+  background-color: #DE344F !important; }
 
 .green-bg {
-  background-color: #33D167 !important;
-  transition: 0; }
+  background-color: #33D167 !important; }
 
 .modal-login {
   border-radius: 3px;

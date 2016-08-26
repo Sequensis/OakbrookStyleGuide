@@ -1,0 +1,13 @@
+.panel-beige {
+    background-color: $brand-tint-1;
+    color: $brand-primary-1;
+    margin: 20px auto 40px auto;
+    p {
+        padding: 20px;
+    }
+    span {
+        font-size: $font-size-h2;
+        font-weight: 700;
+        padding: 0 5px;
+    }
+}

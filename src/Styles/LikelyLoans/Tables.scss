@@ -3,7 +3,7 @@
 }
 
 .theme-default {
-  all: unset;
+    all: unset;
 }
 
 .modal-table {
@@ -11,24 +11,18 @@
 }
 
 .table {
-            padding-bottom: 30px;
-            
+    padding-bottom: 30px;
     tbody {
-
         th {
             border-top: none !important;
             padding: 20px 4px;
         }
-
         td {
             border-top: none !important;
             font-weight: 700;
         }
-
         td:nth-child(2) {
-             color: $brand-primary-1; 
+            color: $brand-primary-1;
         }
-
     }
 }
-

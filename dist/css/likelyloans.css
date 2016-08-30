@@ -10080,6 +10080,9 @@ input:-webkit-autofill {
 .theme-error #a0-lock.a0-theme-default .a0-panel .a0-forgot-pass {
   color: #fff !important; }
 
+#a0-lock.a0-theme-default .a0-panel #a0-change_password .a0-collapse-reset .a0-instructions {
+  display: none; }
+
 .icon-primary i {
   color: #005BC6; }
 

@@ -1661,7 +1661,7 @@ if(document.documentMode>8){return createStandardXHR();}// Support: IE<9
 // and http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html#sec9
 // Although this check for six methods instead of eight
 // since IE also does not support "trace" and "connect"
-return /^(get|post|head|put|delete|options)$/i.test(this.type)&&createStandardXHR()||createActiveXHR();}:// For all other browsers, use the standard XMLHttpRequest object
+return (/^(get|post|head|put|delete|options)$/i.test(this.type)&&createStandardXHR()||createActiveXHR());}:// For all other browsers, use the standard XMLHttpRequest object
 createStandardXHR;var xhrId=0,xhrCallbacks={},xhrSupported=jQuery.ajaxSettings.xhr();// Support: IE<10
 // Open requests must be manually aborted on unload (#5280)
 // See https://support.microsoft.com/kb/2856746 for more info
@@ -1818,8 +1818,8 @@ _$=window.$;jQuery.noConflict=function(deep){if(window.$===jQuery){window.$=_$;}
 // and CommonJS for browser emulators (#13566)
 if(!noGlobal){window.jQuery=window.$=jQuery;}return jQuery;});
 /*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under the MIT license
  */
 
@@ -1831,16 +1831,16 @@ if (typeof jQuery === 'undefined') {
   'use strict';
 
   var version = $.fn.jquery.split(' ')[0].split('.');
-  if (version[0] < 2 && version[1] < 9 || version[0] == 1 && version[1] == 9 && version[2] < 1 || version[0] > 3) {
-    throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher, but lower than version 4');
+  if (version[0] < 2 && version[1] < 9 || version[0] == 1 && version[1] == 9 && version[2] < 1 || version[0] > 2) {
+    throw new Error('Bootstrap\'s JavaScript requires jQuery version 1.9.1 or higher, but lower than version 3');
   }
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: transition.js v3.3.7
+ * Bootstrap: transition.js v3.3.6
  * http://getbootstrap.com/javascript/#transitions
  * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -1899,10 +1899,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: alert.js v3.3.7
+ * Bootstrap: alert.js v3.3.6
  * http://getbootstrap.com/javascript/#alerts
  * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -1917,7 +1917,7 @@ if (typeof jQuery === 'undefined') {
     $(el).on('click', dismiss, this.close);
   };
 
-  Alert.VERSION = '3.3.7';
+  Alert.VERSION = '3.3.6';
 
   Alert.TRANSITION_DURATION = 150;
 
@@ -1930,7 +1930,7 @@ if (typeof jQuery === 'undefined') {
       selector = selector && selector.replace(/.*(?=#[^\s]*$)/, ''); // strip for ie7
     }
 
-    var $parent = $(selector === '#' ? [] : selector);
+    var $parent = $(selector);
 
     if (e) e.preventDefault();
 
@@ -1985,10 +1985,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: button.js v3.3.7
+ * Bootstrap: button.js v3.3.6
  * http://getbootstrap.com/javascript/#buttons
  * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -2004,7 +2004,7 @@ if (typeof jQuery === 'undefined') {
     this.isLoading = false;
   };
 
-  Button.VERSION = '3.3.7';
+  Button.VERSION = '3.3.6';
 
   Button.DEFAULTS = {
     loadingText: 'loading...'
@@ -2026,10 +2026,10 @@ if (typeof jQuery === 'undefined') {
 
       if (state == 'loadingText') {
         this.isLoading = true;
-        $el.addClass(d).attr(d, d).prop(d, true);
+        $el.addClass(d).attr(d, d);
       } else if (this.isLoading) {
         this.isLoading = false;
-        $el.removeClass(d).removeAttr(d).prop(d, false);
+        $el.removeClass(d).removeAttr(d);
       }
     }, this), 0);
   };
@@ -2088,24 +2088,20 @@ if (typeof jQuery === 'undefined') {
   // ===============
 
   $(document).on('click.bs.button.data-api', '[data-toggle^="button"]', function (e) {
-    var $btn = $(e.target).closest('.btn');
+    var $btn = $(e.target);
+    if (!$btn.hasClass('btn')) $btn = $btn.closest('.btn');
     Plugin.call($btn, 'toggle');
-    if (!$(e.target).is('input[type="radio"], input[type="checkbox"]')) {
-      // Prevent double click on radios, and the double selections (so cancellation) on checkboxes
-      e.preventDefault();
-      // The target component still receive the focus
-      if ($btn.is('input,button')) $btn.trigger('focus');else $btn.find('input:visible,button:visible').first().trigger('focus');
-    }
+    if (!($(e.target).is('input[type="radio"]') || $(e.target).is('input[type="checkbox"]'))) e.preventDefault();
   }).on('focus.bs.button.data-api blur.bs.button.data-api', '[data-toggle^="button"]', function (e) {
     $(e.target).closest('.btn').toggleClass('focus', /^focus(in)?$/.test(e.type));
   });
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: carousel.js v3.3.7
+ * Bootstrap: carousel.js v3.3.6
  * http://getbootstrap.com/javascript/#carousel
  * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -2130,7 +2126,7 @@ if (typeof jQuery === 'undefined') {
     this.options.pause == 'hover' && !('ontouchstart' in document.documentElement) && this.$element.on('mouseenter.bs.carousel', $.proxy(this.pause, this)).on('mouseleave.bs.carousel', $.proxy(this.cycle, this));
   };
 
-  Carousel.VERSION = '3.3.7';
+  Carousel.VERSION = '3.3.6';
 
   Carousel.TRANSITION_DURATION = 600;
 
@@ -2329,14 +2325,12 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: collapse.js v3.3.7
+ * Bootstrap: collapse.js v3.3.6
  * http://getbootstrap.com/javascript/#collapse
  * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
-
-/* jshint latedef: false */
 
 +function ($) {
   'use strict';
@@ -2359,7 +2353,7 @@ if (typeof jQuery === 'undefined') {
     if (this.options.toggle) this.toggle();
   };
 
-  Collapse.VERSION = '3.3.7';
+  Collapse.VERSION = '3.3.6';
 
   Collapse.TRANSITION_DURATION = 350;
 
@@ -2510,10 +2504,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: dropdown.js v3.3.7
+ * Bootstrap: dropdown.js v3.3.6
  * http://getbootstrap.com/javascript/#dropdowns
  * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -2529,7 +2523,7 @@ if (typeof jQuery === 'undefined') {
     $(element).on('click.bs.dropdown', this.toggle);
   };
 
-  Dropdown.VERSION = '3.3.7';
+  Dropdown.VERSION = '3.3.6';
 
   function getParent($this) {
     var selector = $this.attr('data-target');
@@ -2661,10 +2655,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: modal.js v3.3.7
+ * Bootstrap: modal.js v3.3.6
  * http://getbootstrap.com/javascript/#modals
  * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -2692,7 +2686,7 @@ if (typeof jQuery === 'undefined') {
     }
   };
 
-  Modal.VERSION = '3.3.7';
+  Modal.VERSION = '3.3.6';
 
   Modal.TRANSITION_DURATION = 300;
   Modal.BACKDROP_TRANSITION_DURATION = 150;
@@ -2786,7 +2780,7 @@ if (typeof jQuery === 'undefined') {
   Modal.prototype.enforceFocus = function () {
     $(document).off('focusin.bs.modal') // guard against infinite focus loop
     .on('focusin.bs.modal', $.proxy(function (e) {
-      if (document !== e.target && this.$element[0] !== e.target && !this.$element.has(e.target).length) {
+      if (this.$element[0] !== e.target && !this.$element.has(e.target).length) {
         this.$element.trigger('focus');
       }
     }, this));
@@ -2966,11 +2960,11 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: tooltip.js v3.3.7
+ * Bootstrap: tooltip.js v3.3.6
  * http://getbootstrap.com/javascript/#tooltip
  * Inspired by the original jQuery.tipsy by Jason Frame
  * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -2992,7 +2986,7 @@ if (typeof jQuery === 'undefined') {
     this.init('tooltip', element, options);
   };
 
-  Tooltip.VERSION = '3.3.7';
+  Tooltip.VERSION = '3.3.6';
 
   Tooltip.TRANSITION_DURATION = 150;
 
@@ -3260,10 +3254,7 @@ if (typeof jQuery === 'undefined') {
 
     function complete() {
       if (that.hoverState != 'in') $tip.detach();
-      if (that.$element) {
-        // TODO: Check whether guarding this code with this `if` is really necessary.
-        that.$element.removeAttr('aria-describedby').trigger('hidden.bs.' + that.type);
-      }
+      that.$element.removeAttr('aria-describedby').trigger('hidden.bs.' + that.type);
       callback && callback();
     }
 
@@ -3302,10 +3293,7 @@ if (typeof jQuery === 'undefined') {
       // width and height are missing in IE8, so compute them manually; see https://github.com/twbs/bootstrap/issues/14093
       elRect = $.extend({}, elRect, { width: elRect.right - elRect.left, height: elRect.bottom - elRect.top });
     }
-    var isSvg = window.SVGElement && el instanceof window.SVGElement;
-    // Avoid using $.offset() on SVGs since it gives incorrect results in jQuery 3.
-    // See https://github.com/twbs/bootstrap/issues/20280
-    var elOffset = isBody ? { top: 0, left: 0 } : isSvg ? null : $element.offset();
+    var elOffset = isBody ? { top: 0, left: 0 } : $element.offset();
     var scroll = { scroll: isBody ? document.documentElement.scrollTop || document.body.scrollTop : $element.scrollTop() };
     var outerDims = isBody ? { width: $(window).width(), height: $(window).height() } : null;
 
@@ -3419,7 +3407,6 @@ if (typeof jQuery === 'undefined') {
       that.$tip = null;
       that.$arrow = null;
       that.$viewport = null;
-      that.$element = null;
     });
   };
 
@@ -3453,10 +3440,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: popover.js v3.3.7
+ * Bootstrap: popover.js v3.3.6
  * http://getbootstrap.com/javascript/#popovers
  * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -3472,7 +3459,7 @@ if (typeof jQuery === 'undefined') {
 
   if (!$.fn.tooltip) throw new Error('Popover requires tooltip.js');
 
-  Popover.VERSION = '3.3.7';
+  Popover.VERSION = '3.3.6';
 
   Popover.DEFAULTS = $.extend({}, $.fn.tooltip.Constructor.DEFAULTS, {
     placement: 'right',
@@ -3553,10 +3540,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: scrollspy.js v3.3.7
+ * Bootstrap: scrollspy.js v3.3.6
  * http://getbootstrap.com/javascript/#scrollspy
  * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -3581,7 +3568,7 @@ if (typeof jQuery === 'undefined') {
     this.process();
   }
 
-  ScrollSpy.VERSION = '3.3.7';
+  ScrollSpy.VERSION = '3.3.6';
 
   ScrollSpy.DEFAULTS = {
     offset: 10
@@ -3705,10 +3692,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: tab.js v3.3.7
+ * Bootstrap: tab.js v3.3.6
  * http://getbootstrap.com/javascript/#tabs
  * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -3724,7 +3711,7 @@ if (typeof jQuery === 'undefined') {
     // jscs:enable requireDollarBeforejQueryAssignment
   };
 
-  Tab.VERSION = '3.3.7';
+  Tab.VERSION = '3.3.6';
 
   Tab.TRANSITION_DURATION = 150;
 
@@ -3834,10 +3821,10 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 /* ========================================================================
- * Bootstrap: affix.js v3.3.7
+ * Bootstrap: affix.js v3.3.6
  * http://getbootstrap.com/javascript/#affix
  * ========================================================================
- * Copyright 2011-2016 Twitter, Inc.
+ * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * ======================================================================== */
 
@@ -3860,7 +3847,7 @@ if (typeof jQuery === 'undefined') {
     this.checkPosition();
   };
 
-  Affix.VERSION = '3.3.7';
+  Affix.VERSION = '3.3.6';
 
   Affix.RESET = 'affix affix-top affix-bottom';
 

@@ -10053,11 +10053,11 @@ input:-webkit-autofill {
     position: absolute; } }
 
 @media (max-width: 480px) {
-  .summary-header {
+  .summary-header h1 {
     font-size: 30px; } }
 
 @media (min-width: 480px) {
-  .summary-header {
+  .summary-header h1 {
     font-size: 35px; } }
 
 .circle-container {

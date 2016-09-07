@@ -27,3 +27,15 @@
         }
     }
 }
+
+@media (max-width: 480px) {
+        .summary-header {
+            font-size: 30px;
+        }
+}
+
+@media (min-width: 480px) {
+        .summary-header {
+            font-size: 35px;
+        }
+}

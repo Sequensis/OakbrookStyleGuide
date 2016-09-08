@@ -10602,7 +10602,7 @@ button:focus {
     font-weight: 700;
     padding: 0 5px; }
 
-.padding-top-bottom {
+.padding-mobile {
   padding-top: 5em;
   padding-bottom: 5em; }
 
@@ -10614,7 +10614,9 @@ button:focus {
 
 @media (min-width: 768px) {
   .padding-top {
-    padding-top: 70px; } }
+    padding-top: 70px; }
+  .padding-mobile {
+    padding: 0; } }
 
 .p-t-10 {
   padding: 10px 0 0 0; }
@@ -10657,6 +10659,10 @@ button:focus {
 
 .p-20 {
   margin: 20px; }
+
+.p-x-mobile-5em {
+  padding-top: 5em;
+  padding-bottom: 5em; }
 
 *:focus {
   outline: -webkit-focus-ring-color auto 0px !important; }
@@ -10788,7 +10794,7 @@ h6 {
 .m-20 {
   margin: 20px; }
 
-.padding-top-bottom {
+.padding-mobile {
   padding-top: 5em;
   padding-bottom: 5em; }
 
@@ -10800,7 +10806,9 @@ h6 {
 
 @media (min-width: 768px) {
   .padding-top {
-    padding-top: 70px; } }
+    padding-top: 70px; }
+  .padding-mobile {
+    padding: 0; } }
 
 .p-t-10 {
   padding: 10px 0 0 0; }
@@ -10843,3 +10851,7 @@ h6 {
 
 .p-20 {
   margin: 20px; }
+
+.p-x-mobile-5em {
+  padding-top: 5em;
+  padding-bottom: 5em; }

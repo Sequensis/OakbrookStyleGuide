@@ -1,4 +1,4 @@
-.padding-top-bottom {
+.padding-mobile {
     padding-top: 5em;
     padding-bottom: 5em;
 }
@@ -11,10 +11,12 @@
     padding-bottom: 20px;
 }
 
-
 @media(min-width:768px) {
     .padding-top {
         padding-top: 70px;
+    }
+    .padding-mobile {
+        padding: 0
     }
 }
 

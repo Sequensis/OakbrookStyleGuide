@@ -1,0 +1,59 @@
+.payment-textbox {
+    width: 100%;
+    border-radius: 3px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    >.row {
+        margin: 0;
+    }
+    .x-large {
+        font-size: 50px;
+        color: #4a4a4a;
+        font-weight: 700;
+    }
+    .large {
+        font-size: 30px;
+        font-weight: 700;
+        color: #4a4a4a //?????????? stu //
+    }
+    .large-blue {
+        font-size: 30px;
+        font-weight: 700;
+        color: $brand-primary //?????????? stu //
+    }
+    .small {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.53;
+        color: $brand-primary;
+    }
+    hr.dash {
+        margin: 5px 0;
+        width: 30px;
+        border: solid 1px $brand-primary;
+    }
+    .btn-black-hollow {
+        margin: 0;
+    }
+    hr.dotted-line {
+        border: none;
+        border-top: 4px dotted #cfcfcf; //??? stu //
+        margin: 30px auto 0 auto;
+        width: 95%;
+    }
+    .fa {
+        color: $brand-primary;
+    }
+    .payment-day {
+        p {
+            display: inline;
+            position: absolute;
+        }
+        .btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin: 20px;
+        }
+    }
+}

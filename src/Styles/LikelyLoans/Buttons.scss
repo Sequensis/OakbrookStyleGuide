@@ -13,29 +13,29 @@
 }
 
 .btn-primary-1 {
-    background-color: $brand-primary-1;
+    background-color: $brand-blue;
     color: #fff;
     &:focus,
     &:hover {
-        background-color: darken($brand-primary-1, 5%);
+        background-color: darken($brand-blue, 5%);
         color: #fff;
     }
 }
 
 .btn-primary-2 {
-    background-color: $brand-primary-3;
-    color: $brand-primary-3-font;
+    background-color: $brand-yellow;
+    color: $brand-yellow-font;
     &:hover {
-        background-color: darken($brand-primary-3, 5%);
-        color: $brand-primary-3-font;
+        background-color: darken($brand-yellow, 5%);
+        color: $brand-yellow-font;
     }
 }
 
 .btn-primary-3 {
     background-color: transparent;
-    color: $brand-primary-1;
+    color: $brand-blue;
     &:hover {
-        color: $brand-primary-1;
+        color: $brand-blue;
     }
 }
 

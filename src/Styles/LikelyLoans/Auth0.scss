@@ -14,7 +14,7 @@ input:-webkit-autofill {
 
 #a0-lock.a0-theme-default .a0-header h1,
 #a0-lock.a0-theme-default .a0-forgot-pass {
-    color: $brand-primary !important;
+    color: $brand-blue !important;
 }
 
 #a0-lock.a0-theme-default .a0-panel .a0-error {
@@ -84,7 +84,7 @@ input:-webkit-autofill {
 /* Forgot Password //*/
 
 #a0-lock.a0-theme-default .a0-forgot-pass {
-    color: $brand-primary !important;
+    color: $brand-blue !important;
     text-decoration: underline;
 }
 
@@ -155,11 +155,11 @@ input:-webkit-autofill {
 /* Styleguide Showcase //*/
 
 .theme-warning #a0-lock.a0-theme-default .a0-primary {
-    background-color: darken($brand-primary-3, 10%) !important;
+    background-color: darken($brand-yellow, 10%) !important;
 }
 
 .theme-warning #a0-lock.a0-theme-default .a0-panel .a0-forgot-pass {
-    color: $brand-primary-3-font !important;
+    color: $brand-yellow-font !important;
 }
 
 .theme-warning #a0-lock.a0-theme-default .a0-panel .a0-email .a0-input-box i,

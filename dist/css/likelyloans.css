@@ -9468,26 +9468,35 @@ a.active {
     width: 300vw;
     height: 300vw; } }
 
-.white-bg {
+.bg-white {
   background-color: #fff !important; }
 
-.blue-bg {
+.bg-blue {
   background-color: #005BC6 !important; }
 
-.yellow-bg {
+.bg-yellow {
   background-color: #FCB829 !important; }
 
-.red-bg {
+.bg-red {
   background-color: #DE344F !important; }
 
-.green-bg {
+.bg-green {
   background-color: #33D167 !important; }
 
-.font-light {
-  color: #005BC6; }
+.color-white {
+  color: #fff !important; }
 
-.font-dark {
-  color: #fff; }
+.color-blue {
+  color: #005BC6 !important; }
+
+.color-yellow {
+  color: #FCB829 !important; }
+
+.color-red {
+  color: #DE344F !important; }
+
+.color-green {
+  color: #33D167 !important; }
 
 .navbar {
   position: relative;

@@ -12,7 +12,7 @@
     transition: .2s ease-in-out;
     a {
         text-transform: none;
-        color: $brand-primary-1;
+        color: $brand-blue;
     }
     a:hover {
         background-color: #fff;
@@ -70,7 +70,7 @@
     width: 125%;
     left: -25%;
     height: 58px;
-    background-color: $brand-primary-1;
+    background-color: $brand-blue;
     -webkit-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
     &.circle-open {
@@ -84,7 +84,7 @@
 
 .navbar-circle-static {
     position: absolute;
-    background-color: $brand-primary-1;
+    background-color: $brand-blue;
     left: 50%;
     margin-left: -150px;
     margin-top: -225px;
@@ -111,7 +111,7 @@
 .btn-sign-out:hover,
 .btn-sign-in:hover {
     color: #fff;
-    background-color: darken($brand-primary-1, 5%);
+    background-color: darken($brand-blue, 5%);
 }
 
 .btn-sign-in:focus,
@@ -121,20 +121,20 @@
 
 .btn-sign-in-open:hover,
 .btn-sign-out-open:hover {
-    color: $brand-primary-1 !important;
+    color: $brand-blue !important;
     background-color: darken(#fff, 5%);
 }
 
 .btn-username {
     display: none;
     float: right;
-    color: $brand-primary-1;
+    color: $brand-blue;
     text-decoration: none;
     span {
         text-decoration: underline;
     }
     &:hover {
-        color: $brand-primary-1;
+        color: $brand-blue;
     }
 }
 
@@ -267,7 +267,7 @@
 }
 
 a.active {
-    color: $brand-primary-3;
+    color: $brand-yellow;
     cursor: default;
     i {
         text-shadow: none !important;
@@ -341,7 +341,7 @@ a.active {
         }
     }
     #navbar-icon span {
-        background: $brand-primary-1;
+        background: $brand-blue;
     }
     .overlay-content {
         position: relative;
@@ -373,25 +373,25 @@ a.active {
         display: block;
     }
     .btn-sign-in {
-        color: $brand-primary-1;
+        color: $brand-blue;
         &:hover {
-            color: $brand-primary-1;
+            color: $brand-blue;
         }
     }
     .btn-sign-out {
         float: right;
         color: #fff;
-        background-color: $brand-primary-1;
+        background-color: $brand-blue;
         margin-right: -10px;
     }
     .btn-sign-in-open,
     .btn-sign-out-open {
-        color: $brand-primary-1;
+        color: $brand-blue;
         background-color: #fff;
     }
     .btn-sign-in:focus,
     .btn-username:focus {
-        color: $brand-primary-1 !important;
+        color: $brand-blue !important;
     }
     .btn-username-open:focus {
         color: #fff !important;

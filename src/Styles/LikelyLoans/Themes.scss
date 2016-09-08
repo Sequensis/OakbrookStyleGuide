@@ -4,12 +4,12 @@ a {
 
 code {
     color: #fff;
-    background-color: $brand-primary-1;
+    background-color: $brand-blue;
     border-radius: 0px;
 }
 
 .theme-header {
-    color: $brand-primary-1;
+    color: $brand-blue;
 }
 
 .summary-header h1 {
@@ -19,42 +19,42 @@ code {
 .theme-light {
     * {
         background-color: #fff;
-        color: $brand-primary-1;
+        color: $brand-blue;
     }
     a {
-        color: $brand-primary-1;
+        color: $brand-blue;
     }
     code {
-        background-color: $brand-primary-1;
+        background-color: $brand-blue;
         color: #fff;
     }
 }
 
 .theme-dark {
     * {
-        background-color: $brand-primary-1;
+        background-color: $brand-blue;
         color: #fff;
     }
     a {
-        color: $brand-primary-3;
+        color: $brand-yellow;
     }
     code {
-        color: $brand-primary-1;
-        background-color: $brand-primary-3;
+        color: $brand-blue;
+        background-color: $brand-yellow;
     }
 }
 
 .theme-warning {
     * {
-        background-color: $brand-primary-3;
-        color: $brand-primary-3-font;
+        background-color: $brand-yellow;
+        color: $brand-yellow-font;
     }
     a {
-        color: $brand-primary-3-font;
+        color: $brand-yellow-font;
     }
     code {
         color: #fff;
-        background-color: $brand-primary-3-font;
+        background-color: $brand-yellow-font;
     }
 }
 

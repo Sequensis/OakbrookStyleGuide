@@ -19,18 +19,18 @@
     .large-blue {
         font-size: 30px;
         font-weight: 700;
-        color: $brand-primary //?????????? stu //
+        color: $brand-blue //?????????? stu //
     }
     .small {
         font-size: 15px;
         font-weight: 700;
         line-height: 1.53;
-        color: $brand-primary;
+        color: $brand-blue;
     }
     hr.dash {
         margin: 5px 0;
         width: 30px;
-        border: solid 1px $brand-primary;
+        border: solid 1px $brand-blue;
     }
     .btn-black-hollow {
         margin: 0;
@@ -42,7 +42,7 @@
         width: 95%;
     }
     .fa {
-        color: $brand-primary;
+        color: $brand-blue;
     }
     .payment-day {
         p {

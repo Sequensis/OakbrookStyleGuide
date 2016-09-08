@@ -1,27 +1,39 @@
-.white-bg {
+.bg-white {
     background-color: #fff !important;
 }
 
-.blue-bg {
-    background-color: $brand-primary-1 !important;
+.bg-blue {
+    background-color: $brand-blue !important;
 }
 
-.yellow-bg {
-    background-color: $brand-primary-3 !important;
+.bg-yellow {
+    background-color: $brand-yellow !important;
 }
 
-.red-bg {
+.bg-red {
     background-color: $brand-secondary-1 !important;
 }
 
-.green-bg {
+.bg-green {
     background-color: $brand-secondary-3 !important;
 }
 
-.font-light {
-    color: $brand-primary;
+.color-white {
+    color: #fff !important;
 }
 
-.font-dark {
-    color: #fff;
+.color-blue {
+    color: $brand-blue !important;
+}
+
+.color-yellow {
+    color: $brand-yellow !important;
+}
+
+.color-red {
+    color: $brand-secondary-1 !important;
+}
+
+.color-green {
+    color: $brand-secondary-3 !important;
 }

@@ -1,6 +1,6 @@
 .splash-screen-container {
     position: relative;
-    background: $brand-primary;  
+    background: $brand-blue;  
     width:100%; 
     height:100vh; 
 }
@@ -34,7 +34,7 @@
     -webkit-margin-after: 0.5em;
     -webkit-margin-start: auto;
     -webkit-margin-end: auto;
-    border-color: $brand-secondary;
+    border-color: $brand-yellow;
     border-width: 2px;
     width: 5vw;
     float: left

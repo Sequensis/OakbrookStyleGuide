@@ -10609,6 +10609,9 @@ button:focus {
 .padding-top {
   padding-top: 5em; }
 
+.padding-bottom {
+  padding-bottom: 20px; }
+
 .modal-padding-bottom {
   padding-bottom: 20px; }
 
@@ -10659,10 +10662,6 @@ button:focus {
 
 .p-20 {
   margin: 20px; }
-
-.p-x-mobile-5em {
-  padding-top: 5em;
-  padding-bottom: 5em; }
 
 *:focus {
   outline: -webkit-focus-ring-color auto 0px !important; }
@@ -10801,6 +10800,9 @@ h6 {
 .padding-top {
   padding-top: 5em; }
 
+.padding-bottom {
+  padding-bottom: 20px; }
+
 .modal-padding-bottom {
   padding-bottom: 20px; }
 
@@ -10851,7 +10853,3 @@ h6 {
 
 .p-20 {
   margin: 20px; }
-
-.p-x-mobile-5em {
-  padding-top: 5em;
-  padding-bottom: 5em; }

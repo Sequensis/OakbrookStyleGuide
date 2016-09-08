@@ -9483,6 +9483,12 @@ a.active {
 .green-bg {
   background-color: #33D167 !important; }
 
+.font-light {
+  color: #005BC6; }
+
+.font-dark {
+  color: #fff; }
+
 .navbar {
   position: relative;
   min-height: 50px;
@@ -10272,12 +10278,6 @@ code {
     color: #fff;
     background-color: #023A15; }
 
-.font-light {
-  color: #005BC6; }
-
-.font-dark {
-  color: #fff; }
-
 .modal-login {
   border-radius: 3px;
   margin: 80px auto 0 auto;
@@ -10517,12 +10517,6 @@ button:focus {
 .body-xs {
   font-size: 11px; }
 
-.no-m-t-b {
-  margin: 0 auto; }
-
-.no-m-t {
-  margin-top: 0px; }
-
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?uya71r");
@@ -10613,6 +10607,48 @@ button:focus {
   .padding-top {
     padding-top: 70px; } }
 
+.p-t-10 {
+  padding: 10px 0 0 0; }
+
+.p-b-10 {
+  padding: 0 0 10px 0; }
+
+.p-r-10 {
+  padding: 0 10px 0 0; }
+
+.p-l-10 {
+  padding: 0 0 0 10px; }
+
+.p-y-10 {
+  padding: 10px 0 10px 0; }
+
+.p-x-10 {
+  padding: 0 10px 0 10px; }
+
+.p-10 {
+  padding: 10px; }
+
+.p-t-20 {
+  padding: 20px 0 0 0; }
+
+.p-b-20 {
+  padding: 0 0 20px 0; }
+
+.p-r-20 {
+  padding: 0 20px 0 0; }
+
+.p-l-20 {
+  padding: 0 0 0 20px; }
+
+.p-y-20 {
+  padding: 20px 0 20px 0; }
+
+.p-x-20 {
+  padding: 0 20px 0 20px; }
+
+.p-20 {
+  margin: 20px; }
+
 *:focus {
   outline: -webkit-focus-ring-color auto 0px !important; }
 
@@ -10645,9 +10681,18 @@ h6 {
 .font-yellow {
   color: #FCB829; }
 
+.btn-black-hollow {
+  background-color: #fff;
+  color: #4a4a4a;
+  border: 2px solid #4a4a4a; }
+  .btn-black-hollow:focus, .btn-black-hollow:hover {
+    background-color: #f2f2f2; }
+
+.fa-7x {
+  font-size: 7em; }
+
 .payment-textbox {
   width: 100%;
-  height: 427px;
   border-radius: 3px;
   background-color: #ffffff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2); }
@@ -10661,6 +10706,10 @@ h6 {
     font-size: 30px;
     font-weight: 700;
     color: #4a4a4a; }
+  .payment-textbox .large-blue {
+    font-size: 30px;
+    font-weight: 700;
+    color: #005BC6; }
   .payment-textbox .small {
     font-size: 15px;
     font-weight: 700;
@@ -10675,15 +10724,18 @@ h6 {
   .payment-textbox hr.dotted-line {
     border: none;
     border-top: 4px dotted #cfcfcf;
-    margin: 30px auto;
+    margin: 30px auto 0 auto;
     width: 95%; }
-
-.btn-black-hollow {
-  background-color: #fff;
-  color: #4a4a4a;
-  border: 2px solid #4a4a4a; }
-  .btn-black-hollow:focus, .btn-black-hollow:hover {
-    background-color: #f2f2f2; }
+  .payment-textbox .fa {
+    color: #005BC6; }
+  .payment-textbox .payment-day p {
+    display: inline;
+    position: absolute; }
+  .payment-textbox .payment-day .btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px; }
 
 .m-t-10 {
   margin: 10px 0 0 0; }
@@ -10726,6 +10778,20 @@ h6 {
 
 .m-20 {
   margin: 20px; }
+
+.padding-top-bottom {
+  padding-top: 5em;
+  padding-bottom: 5em; }
+
+.padding-top {
+  padding-top: 5em; }
+
+.modal-padding-bottom {
+  padding-bottom: 20px; }
+
+@media (min-width: 768px) {
+  .padding-top {
+    padding-top: 70px; } }
 
 .p-t-10 {
   padding: 10px 0 0 0; }

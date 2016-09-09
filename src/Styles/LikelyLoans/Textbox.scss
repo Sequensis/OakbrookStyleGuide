@@ -1,5 +1,6 @@
 .payment-textbox {
     width: 100%;
+    height: 100%;
     border-radius: 3px;
     background-color: #ffffff;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
@@ -12,7 +13,7 @@
         font-weight: 700;
     }
     .large {
-        font-size: 30px;
+        font-size: 30px !important;
         font-weight: 700;
         color: #4a4a4a //?????????? stu //
     }
@@ -20,6 +21,10 @@
         font-size: 30px;
         font-weight: 700;
         color: $brand-blue //?????????? stu //
+    }
+    .medium {
+        font-size: 25px;
+        font-weight: 700;
     }
     .small {
         font-size: 15px;
@@ -33,7 +38,10 @@
         border: solid 1px $brand-blue;
     }
     .btn-black-hollow {
-        margin: 0;
+        margin: 20px 0 0 0;
+    }
+    .btn-green {
+        margin: 20px 0 0 0;
     }
     hr.dotted-line {
         border: none;
@@ -49,11 +57,18 @@
             display: inline;
             position: absolute;
         }
-        .btn {
-            position: absolute;
-            right: 0;
-            top: 0;
-            margin: 20px;
+    }
+    ol,
+    ul {
+        margin: 0;
+        li {
+            padding: 0 0 0 10px;
         }
+    }
+}
+
+@media (min-width: 1200px) {
+    .payment-textbox {
+        height: 427px;
     }
 }

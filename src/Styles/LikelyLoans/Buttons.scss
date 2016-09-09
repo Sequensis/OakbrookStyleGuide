@@ -47,3 +47,25 @@
         color: #fff;
     }
 }
+
+.btn-black-hollow {
+    background-color: #fff;
+    color: #4a4a4a;
+    border: 2px solid #4a4a4a;
+    &:focus,
+    &:hover {
+        background-color: darken(#fff, 5%);
+    }
+}
+
+.btn-green {
+    background-color: $brand-secondary-3;
+    color: #fff;
+    border: 2px solid $brand-secondary-3;
+    &:focus,
+    &:hover {
+        background-color: darken($brand-secondary-3, 5%);
+        color: #fff;
+        border: 2px solid darken($brand-secondary-3, 5%);
+    }
+}

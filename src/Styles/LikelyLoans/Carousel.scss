@@ -1,0 +1,42 @@
+.calendar-carousel {
+    width: 100%;
+    margin: 50px auto;
+    .calender-carousel-date {
+        cursor: pointer;
+        text-align: center;
+        width: 65px;
+        height: 65px;
+        border-radius: 3px;
+        border: solid 2px $brand-secondary-2;
+        line-height: 65px;
+        color: $brand-secondary-2;
+    }
+}
+
+.calender-carousel-date-active {
+    color: $brand-blue !important;
+    border: solid 2px $brand-blue !important;
+    width: 85px !important;
+    height: 85px !important;
+    line-height: 85px !important;
+    margin-left: -10px;
+}
+
+.blur-l {
+    width: 15%;
+    height: 80px;
+    position: absolute;
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 10;
+}
+
+.blur-r {
+    width: 15%;
+    height: 80px;
+    position: absolute;
+    right: 20px;
+    background: -webkit-linear-gradient(right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 10;
+}

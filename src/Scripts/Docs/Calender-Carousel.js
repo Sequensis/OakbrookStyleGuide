@@ -14,9 +14,9 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
- $(document).on('click', '.calender-carousel-date', function (e) {
-   $('.calender-carousel-date').removeClass('calender-carousel-date-active');
-   $('.calender-carousel-date').removeClass('large');
-   $(this).addClass('calender-carousel-date-active');
+ $(document).on('click', '.calendar-carousel-date', function (e) {
+   $('.calendar-carousel-date').removeClass('calendar-carousel-date-active');
+   $('.calendar-carousel-date').removeClass('large');
+   $(this).addClass('calendar-carousel-date-active');
    $(this).addClass('large');
  });

@@ -11001,7 +11001,7 @@ h6 {
 .calendar-carousel {
   width: 100%;
   margin: 50px auto; }
-  .calendar-carousel .calender-carousel-date {
+  .calendar-carousel .calendar-carousel-date {
     cursor: pointer;
     text-align: center;
     width: 65px;
@@ -11011,13 +11011,13 @@ h6 {
     line-height: 65px;
     color: #767676; }
 
-.calender-carousel-date-active {
+.calendar-carousel-date-active {
   color: #005BC6 !important;
   border: solid 2px #005BC6 !important;
   width: 85px !important;
   height: 85px !important;
   line-height: 85px !important;
-  margin-left: -10px; }
+  margin: -10px 0 0 -10px; }
 
 .blur-l {
   width: 15%;
@@ -11033,3 +11033,6 @@ h6 {
   right: 20px;
   background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 100%);
   z-index: 10; }
+
+.owl-carousel .owl-stage-outer {
+  padding-top: 10px; }

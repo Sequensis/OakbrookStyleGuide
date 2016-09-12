@@ -10040,7 +10040,8 @@ input:-webkit-autofill {
   box-shadow: none !important; }
 
 #a0-lock.a0-theme-default .a0-panel {
-  width: 100% !important; }
+  width: 90% !important;
+  margin: 0 auto; }
 
 /* Header // */
 #a0-lock.a0-theme-default .a0-panel .a0-header {
@@ -10083,7 +10084,7 @@ input:-webkit-autofill {
 
 /* Input Box //*/
 #a0-lock.a0-theme-default .a0-panel .a0-mode form .a0-body-content {
-  padding: 10px 30px 30px 30px !important; }
+  padding: 10px 0 30px 0 !important; }
 
 #a0-lock.a0-theme-default .a0-emailPassword {
   margin: 0 auto !important;
@@ -10416,7 +10417,7 @@ code {
     font-size: 15px !important; }
 
 .modal-login-header {
-  margin: 30px 20px 0px 30px; }
+  margin: 30px 0 0 0; }
   .modal-login-header a {
     font-weight: 400; }
   .modal-login-header a:hover {

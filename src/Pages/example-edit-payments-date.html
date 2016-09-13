@@ -9,16 +9,38 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-5">
-            <div class="font-yellow">
-                <h2>Recent History</h2>
-            </div>
-        </div>
-        <div class="col-md-7">
+        <div class="col-md-7 col-md-offset-5 payment">
             <div class="theme-light">
                 <h2>Make a payment</h2>
             </div>
-            <div class="payment-textbox m-y-20">
+            <div class="payment-textbox m-t-20">
+                <div class="row" id="change-payment-top">
+                    <div class="col-md-12">
+                        <div class="small title m-t-20">
+                            Next payment due
+                        </div>
+                        <hr class="dash">
+                        <div class="m-y-10">
+                            <span class="x-large">8</span> <span class="large m-l--5">th September 2016</span>
+                        </div>
+                        <a class="btn btn-black-hollow" id="change-payment">Change payment day</a>
+                    </div>
+                </div>
+                <hr class="dotted-line" id="change-payment-dotted-line">
+                <div class="row" id="change-payment-bottom">
+                    <div class="col-md-5">
+                        <div class="small title m-t-10">
+                            Payment amount
+                        </div>
+                        <hr class="dash">
+                        <div class="m-y-10">
+                            <span class="x-large">£183.</span> <span class="large">20</span>
+                        </div>
+                        <a class="btn btn-black-hollow">Make a payment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-textbox-active" id="change-payment-active">
                 <div class="payment-day">
                     <div class="row m-y-20">
                         <div class="col-xs-5">
@@ -29,8 +51,7 @@
                         </div>
                         <div class="col-xs-7">
                             <ul class="list-inline text-right">
-                                <li><a class="btn btn-black-hollow" href="example-edit-payments.html">Cancel</a></li>
-                                <li><a class=" btn btn-green" href="# ">Update</a></li>
+                                <li><a class="btn btn-black-hollow" id="change-payment">Cancel</a></li>
                             </ul>
                         </div>
                     </div>
@@ -103,5 +124,3 @@
         </div>
     </div>
 </div>
-
-{{> footer}}

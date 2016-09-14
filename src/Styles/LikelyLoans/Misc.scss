@@ -50,3 +50,17 @@ h6 {
     top: 0;
     right: 0;
 }
+
+.vertical-line {
+    height: 100px;
+    width: 2px;
+    border-left: solid 2px $brand-yellow;
+}
+
+.vertical-line-circle {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: -9px;
+    background-color: $brand-yellow;
+}

@@ -85,6 +85,7 @@
     -webkit-transition: visibility 0s ease-in-out 0.25s, opacity 0.25s ease-in-out;
     transition: visibility 0s ease-in-out 0.25s, opacity 0.25s ease-in-out;
     margin-top: -447px;
+    box-shadow: none;
     .row {
         margin-left: 0;
         margin-right: 0;
@@ -166,6 +167,17 @@
     transition-delay: .25s;
 }
 
-.payment-textbox-active {
-    box-shadow: none;
+.recent-history-textbox {
+    height: 90px;
+    border-radius: 3px;
+}
+
+.textbox-white {
+    background-color: #fff;
+    border: none;
+}
+
+.textbox-yellow {
+    background-color: #fff;
+    border: solid 2px $brand-yellow;
 }

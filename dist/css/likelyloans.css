@@ -10827,17 +10827,59 @@ h6 {
   top: 0;
   right: 0; }
 
-.vertical-line {
+.recent-history .large {
+  font-size: 35px;
+  font-weight: 700;
+  color: #4a4a4a;
+  /*?????????? stu //*/
+  margin-top: -10px; }
+
+.recent-history .medium-yellow {
+  font-size: 25px;
+  font-weight: 700;
+  color: #FCB829; }
+
+.recent-history .small-yellow {
+  font-size: 15px;
+  font-weight: 700;
+  color: #FCB829; }
+
+.recent-history .vertical-line {
   height: 100px;
   width: 2px;
+  margin-left: 9px;
   border-left: solid 2px #FCB829; }
 
-.vertical-line-circle {
+.recent-history .vertical-line-circle {
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  margin-left: -9px;
   background-color: #FCB829; }
+
+.recent-history .vertical-line-circle:first-child {
+  margin-top: 40px; }
+
+.recent-history ul {
+  padding: 0;
+  list-style: none; }
+  .recent-history ul li {
+    margin-top: 34px; }
+  .recent-history ul li:first-child {
+    margin-top: 0; }
+
+.recent-history hr.dash {
+  width: 10px;
+  border: solid 1px #FCB829;
+  text-align: left;
+  position: absolute;
+  margin: 40px 0 0 -14px; }
+
+.v-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%); }
 
 .payment-textbox {
   height: 427px;
@@ -10907,7 +10949,8 @@ h6 {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s ease-in-out 0.25s, opacity 0.25s ease-in-out;
-  margin-top: -447px; }
+  margin-top: -447px;
+  box-shadow: none; }
   .payment-textbox-active .row {
     margin-left: 0;
     margin-right: 0; }
@@ -10971,8 +11014,17 @@ h6 {
   opacity: 1;
   transition-delay: .25s; }
 
-.payment-textbox-active {
-  box-shadow: none; }
+.recent-history-textbox {
+  height: 90px;
+  border-radius: 3px; }
+
+.textbox-white {
+  background-color: #fff;
+  border: none; }
+
+.textbox-yellow {
+  background-color: #fff;
+  border: solid 2px #FCB829; }
 
 .m-t-10 {
   margin: 10px 0 0 0; }
@@ -11018,6 +11070,9 @@ h6 {
 
 .m-l--5 {
   margin-left: -5px; }
+
+.m-t--5 {
+  margin-top: -5px; }
 
 .m-t--20 {
   margin-top: -20px; }

@@ -10537,7 +10537,7 @@ code {
 
 .modal-dialog {
   z-index: 1000;
-  padding: 10vh 0 0 0;
+  padding: 0;
   margin: 0; }
 
 .modal-content {
@@ -10547,9 +10547,10 @@ code {
 
 .modal-header {
   border-bottom: none;
-  padding: 0; }
+  padding: 0;
+  padding: 50px 0 0 0; }
   .modal-header h2 {
-    padding: 40px 0 20px 0; }
+    padding: 10px 30px 20px 30px; }
   .modal-header p {
     padding: 0 20px 40px 20px;
     margin-top: -20px;
@@ -10608,7 +10609,12 @@ button:focus {
   .close {
     position: absolute;
     right: 5px;
-    top: 15px; } }
+    top: 15px; }
+  .modal-body {
+    margin: 0;
+    padding: 0; }
+    .modal-body p {
+      padding: 0 100px; } }
 
 .full-width-list ul {
   padding: 0;
@@ -10741,7 +10747,7 @@ button:focus {
 
 @media (min-width: 768px) {
   .padding-top {
-    padding-top: 70px; }
+    padding-top: 100px; }
   .padding-mobile {
     padding: 0; } }
 
@@ -10881,6 +10887,12 @@ h6 {
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%); }
 
+.header-icon {
+  padding-bottom: 10px; }
+
+.payment {
+  padding: 0; }
+
 .payment-textbox {
   height: 427px;
   width: 100%;
@@ -10896,7 +10908,7 @@ h6 {
     color: #4a4a4a;
     font-weight: 700; }
   .payment-textbox .large {
-    font-size: 30px !important;
+    font-size: 25px !important;
     font-weight: 700;
     color: #4a4a4a; }
   .payment-textbox .large-blue {
@@ -11026,6 +11038,10 @@ h6 {
   background-color: #fff;
   border: solid 2px #FCB829; }
 
+@media (min-width: 480px) {
+  .large {
+    font-size: 30px !important; } }
+
 .m-t-10 {
   margin: 10px 0 0 0; }
 
@@ -11092,7 +11108,7 @@ h6 {
 
 @media (min-width: 768px) {
   .padding-top {
-    padding-top: 70px; }
+    padding-top: 100px; }
   .padding-mobile {
     padding: 0; } }
 
@@ -11165,29 +11181,18 @@ h6 {
 
 .calendar-carousel-date-active {
   color: #005BC6 !important;
+  font-size: 30px !important;
   width: 85px !important;
   height: 85px !important;
-  line-height: 85px !important;
-  border: solid 4px #005BC6 !important;
-  margin: -10px 0 0 -10px; }
+  line-height: 88px !important;
+  border: none !important;
+  background-image: url(../img/calendar-carousel.svg);
+  background-size: 80px;
+  background-repeat: no-repeat;
+  margin: -10px 0 0 -7.5px; }
 
 .carousel-navigation {
   display: none; }
-
-.blur-l {
-  width: 15%;
-  height: 150px;
-  position: absolute;
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-  z-index: 10; }
-
-.blur-r {
-  width: 15%;
-  height: 150px;
-  position: absolute;
-  right: 20px;
-  background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 100%);
-  z-index: 10; }
 
 .owl-carousel .owl-stage-outer {
   padding-top: 10px; }
@@ -11202,8 +11207,6 @@ h6 {
   .calendar-carousel {
     margin-top: -10px;
     width: 80%; }
-  .blur-r {
-    right: 10%; }
   .carousel-navigation {
     display: block; }
     .carousel-navigation a {
@@ -11223,3 +11226,23 @@ h6 {
       float: right; }
     .carousel-navigation .fa-chevron-right {
       margin-left: 2px; } }
+
+@media (min-width: 768px) {
+  .blur-l {
+    width: 25%;
+    left: 0;
+    height: 90px;
+    position: absolute;
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 10;
+    margin-top: 40px;
+    pointer-events: none; }
+  .blur-r {
+    width: 25%;
+    height: 90px;
+    position: absolute;
+    right: 0;
+    background: linear-gradient(to left, white 0%, rgba(255, 255, 255, 0) 100%);
+    z-index: 10;
+    margin-top: 40px;
+    pointer-events: none; } }

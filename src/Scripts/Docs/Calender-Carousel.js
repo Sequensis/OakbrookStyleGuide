@@ -5,11 +5,14 @@ $(document).ready(function() {
     paymentCarousel.owlCarousel({
         loop: true,
         margin: 10,
-        center:true,
+        center: true,
         responsive: {
             0: {
-                items: 4
+                items: 3
             },
+            340: {
+                items: 4
+            },            
             550: {
                 items: 7
             },
@@ -36,7 +39,5 @@ $(document).ready(function() {
 
 $(document).on('click', '.calendar-carousel-date', function(e) {
     $('.calendar-carousel-date').removeClass('calendar-carousel-date-active');
-    $('.calendar-carousel-date').removeClass('large');
     $(this).addClass('calendar-carousel-date-active');
-    $(this).addClass('large');
 });

@@ -15,34 +15,19 @@
     
     .calendar-carousel-date-active {
         color: $brand-blue !important;
+        font-size: 30px !important;
         width: 85px !important;
         height: 85px !important;
-        line-height: 85px !important;
-        border: solid 4px $brand-blue !important;
-        margin: -10px 0 0 -10px;
+        line-height: 88px !important;
+        border: none !important;
+        background-image: url(../img/calendar-carousel.svg);
+        background-size: 80px;
+        background-repeat: no-repeat;
+        margin: -10px 0 0 -7.5px;
     }
     
     .carousel-navigation {
         display: none;
-    }
-    
-    .blur-l {
-        width: 15%;
-        height: 150px;
-        position: absolute;
-        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-        z-index: 10;
-    }
-    
-    .blur-r {
-        width: 15%;
-        height: 150px;
-        position: absolute;
-        right: 20px;
-        background: -webkit-linear-gradient(right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-        background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-        z-index: 10;
     }
     
     .owl-carousel .owl-stage-outer {
@@ -64,9 +49,6 @@
         .calendar-carousel {
             margin-top: -10px;
             width: 80%;
-        }
-        .blur-r {
-            right: 10%;
         }
         .carousel-navigation {
             display: block;
@@ -92,5 +74,30 @@
             .fa-chevron-right {
                 margin-left: 2px;
             }
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .blur-l {
+            width: 25%;
+            left: 0;
+            height: 90px;
+            position: absolute;
+            background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+            z-index: 10;
+            margin-top: 40px;
+            pointer-events: none;
+        }
+        .blur-r {
+            width: 25%;
+            height: 90px;
+            position: absolute;
+            right: 0;
+            background: -webkit-linear-gradient(right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+            background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+            z-index: 10;
+            margin-top: 40px;  
+            pointer-events: none;          
         }
     }

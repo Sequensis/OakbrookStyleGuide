@@ -77,7 +77,12 @@
         }
     }
     
-    @media (min-width: 768px) {
+    #payment-change-effective {
+        -webkit-transition: 0.25s ease-in-out;
+        transition: 0.25s ease-in-out;
+    }
+    
+    @media (min-width: 992px) {
         .blur-l {
             width: 25%;
             left: 0;
@@ -97,7 +102,7 @@
             background: -webkit-linear-gradient(right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
             background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
             z-index: 10;
-            margin-top: 40px;  
-            pointer-events: none;          
+            margin-top: 40px;
+            pointer-events: none;
         }
     }

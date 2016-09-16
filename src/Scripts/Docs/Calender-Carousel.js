@@ -40,4 +40,5 @@ $(document).ready(function() {
 $(document).on('click', '.calendar-carousel-date', function(e) {
     $('.calendar-carousel-date').removeClass('calendar-carousel-date-active');
     $(this).addClass('calendar-carousel-date-active');
+    $('#payment-change-effective').removeClass('invisible');
 });

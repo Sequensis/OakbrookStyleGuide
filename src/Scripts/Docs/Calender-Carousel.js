@@ -3,7 +3,6 @@ $(document).ready(function() {
     var paymentCarousel = $(".owl-carousel");
 
     paymentCarousel.owlCarousel({
-        loop: true,
         margin: 10,
         center: true,
         responsive: {

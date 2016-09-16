@@ -2923,6 +2923,52 @@ a.thumbnail:focus,
 a.thumbnail.active {
   border-color: #005BC6; }
 
+.media {
+  margin-top: 15px; }
+  .media:first-child {
+    margin-top: 0; }
+
+.media,
+.media-body {
+  zoom: 1;
+  overflow: hidden; }
+
+.media-body {
+  width: 10000px; }
+
+.media-object {
+  display: block; }
+  .media-object.img-thumbnail {
+    max-width: none; }
+
+.media-right,
+.media > .pull-right {
+  padding-left: 10px; }
+
+.media-left,
+.media > .pull-left {
+  padding-right: 10px; }
+
+.media-left,
+.media-right,
+.media-body {
+  display: table-cell;
+  vertical-align: top; }
+
+.media-middle {
+  vertical-align: middle; }
+
+.media-bottom {
+  vertical-align: bottom; }
+
+.media-heading {
+  margin-top: 0;
+  margin-bottom: 5px; }
+
+.media-list {
+  padding-left: 0;
+  list-style: none; }
+
 .panel {
   margin-bottom: 21px;
   background-color: #fff;
@@ -10889,6 +10935,69 @@ h6 {
 
 .header-icon {
   padding-bottom: 10px; }
+
+.no-underline {
+  text-decoration: none; }
+
+.no-underline:hover,
+.no-underline:focus {
+  text-decoration: none; }
+
+.toast {
+  width: 100%;
+  height: 150px;
+  border-radius: 3px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.48); }
+  .toast i {
+    margin: 20px;
+    color: #33D167; }
+  .toast p {
+    padding: 0 20px 0 0; }
+  .toast .toast-timer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 3px 3px 0 0;
+    background-color: #33D167; }
+  .toast .toast-timer-go {
+    animation: timer-go linear 7s; }
+
+@keyframes timer-go {
+  0% {
+    width: 100%; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    width: 0%; } }
+
+.toast-fade-out {
+  animation: fade-out-7 linear 7s; }
+
+@keyframes fade-out-7 {
+  0% {
+    opacity: 1; }
+  95% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.toast-success {
+  background-color: #FAF9ED; }
+  .toast-success p {
+    color: #023a15; }
+
+@media (min-width: 768px) {
+  .toast {
+    width: 586px;
+    height: 121px;
+    right: 20px;
+    bottom: 20px; } }
 
 .payment {
   padding: 0; }

@@ -209,7 +209,9 @@
                             <div class="calendar-carousel-date medium"> 28th </div>
                             <div class="calendar-carousel-date medium"> 29th </div>
                             <div class="calendar-carousel-date medium"> 30th </div>
-                            <div class="calendar-carousel-date medium"> 31st </div>
+                            <a class="no-underline" data-toggle="modal" href="#Warning2931">
+                                <div class="calendar-carousel-date medium"> 31st</div>
+                            </a>
                         </div>
                     </div>
                     <div class="text-center invisible" id="payment-change-effective">
@@ -231,7 +233,7 @@
             <a class="btn btn-black-hollow" data-toggle="modal" href="#Warning2931">Warning 29th-31st</a>
             <a class="btn btn-black-hollow" data-toggle="modal" href="#WarningCloseTogether">Warning close together</a>
             <a class="btn btn-black-hollow" data-toggle="modal" href="#WarningNextPayment">Warning effective next payment</a>
-            <a class="btn btn-green" data-toggle="modal" href="#Success">Success</a>            
+            <a class="btn btn-green" data-toggle="modal" href="#Success">Success</a>
 
             <div class="modal fade" id="Warning2931" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
@@ -246,9 +248,9 @@
                             <p>For example, if there are only 28 days in a month and the 28th falls on a Saturday, we will collect payment on Friday 27th.</p>
                             <br>
                             <span class="theme-light"><p><strong>Do you wish to continue?</strong></p></span>
-                            <a class="btn btn-primary-1">Continue</a>
+                            <a id="change-payment-success" class="btn btn-primary-1" data-dismiss="modal">Continue</a>
                             <br>
-                            <span class="body-sm"><a href="#">Cancel</a></span>
+                            <span class="body-sm"><a href="" data-dismiss="modal">Cancel</a></span>
                         </div>
                     </div>
                 </div>
@@ -267,7 +269,7 @@
                             <span class="theme-light"><p><strong>Do you wish to continue?</strong></p></span>
                             <a class="btn btn-primary-1">Continue</a>
                             <br>
-                            <span class="body-sm"><a href="#">Cancel</a></span>
+                            <span class="body-sm"><a href="#" data-dismiss="modal">Cancel</a></span>
                         </div>
                     </div>
                 </div>
@@ -290,7 +292,7 @@
                         </div>
                     </div>
                 </div>
-            </div>            
+            </div>
             <div class="modal fade" id="Success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content modal-padding-bottom">
@@ -300,7 +302,7 @@
                             <h2 class="modal-title" id="myModalLabel">Your payment date has been submitted</h2>
                         </div>
                         <div class="modal-body text-center body-lg">
-                            <p>We will send you an email to  <span class="theme-light"><strong>test@test.com</strong></span> when this has been confirmed</p>
+                            <p>We will send you an email to <span class="theme-light"><strong>test@test.com</strong></span> when this has been confirmed</p>
                             <a class="btn btn-primary-1">OK</a>
                         </div>
                     </div>
@@ -308,5 +310,23 @@
             </div>
         </div>
     </div>
-</div>
-{{> footer}}
+    <div class="toast toast-success invisible" id="toast-successful">
+        </i>
+        <div class="m-t-20">
+            <div class="media">
+                <div class="media-left">
+                    <a>
+                        <i class="icon-tick fa fa-2x">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <p class="body-lg media-heading"><strong>Your payment day request has been submitted</strong></p>
+            <p class="body-sm">Your current payment day will change to the Nth of each month from .... We will confirm this change by email shortly.</p>
+                </div>
+            </div>
+        </div>
+        <span class="toast-timer">
+        </span>
+    </div>
+    </div>
+    {{> footer}}

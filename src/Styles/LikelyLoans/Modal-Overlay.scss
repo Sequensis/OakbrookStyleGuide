@@ -1,3 +1,12 @@
+.modal {
+    padding: 0 !important;
+}
+
+.modal.fade .modal-dialog {
+    transform: translateY(0%);
+    transition: transform 0s;
+}
+
 .modal-dialog {
     z-index: 1000;
     width: 100%;
@@ -34,12 +43,14 @@
     }
 }
 
-// .modal-link {
-//     cursor: pointer;
-// }
-// .modal-hidden {
-//     visibility: hidden;
-// }
+.modal-link {
+    cursor: pointer;
+}
+
+.modal-hidden {
+    visibility: hidden;
+}
+
 .close {
     position: fixed;
     right: 0;
@@ -73,25 +84,27 @@ button:focus {
 
 @media (min-width: 768px) {
     .modal-dialog {
+        position: fixed;
         top: 50%;
-        transform: translateY(-50%);
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%) !important;
+        width: 600px;
+        height: auto;
     }
     .modal-backdrop.in {
         background-color: #000;
         opacity: .8;
     }
+    .close {
+        position: absolute;
+        right: 5px;
+        top: 15px;
+    }
+    .modal-body {
+        margin: 0;
+        padding: 0;
+        p {
+            padding: 0 100px;
+        }
+    }
 }
-
-//     .close {
-//         position: absolute;
-//         right: 5px;
-//         top: 15px;
-//     }
-//     .modal-body {
-//         margin: 0;
-//         padding: 0;
-//         p {
-//             padding: 0 100px;
-//         }
-//     }
-// }

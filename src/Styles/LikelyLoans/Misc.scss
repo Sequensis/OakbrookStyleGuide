@@ -1,4 +1,4 @@
-// Need to move these //
+    // Need to move these //
 *:focus {
     outline: -webkit-focus-ring-color auto 0px !important;
 }
@@ -169,11 +169,10 @@ h6 {
 }
 
 .toast-fade-out {
-        -webkit-animation: fade-out-7 linear 7s;
-        -moz-animation: fade-out-7 linear 7s;
-        animation: fade-out-7 linear 7s;
-
-        @keyframes fade-out-7 {
+    -webkit-animation: fade-out-7 linear 7s;
+    -moz-animation: fade-out-7 linear 7s;
+    animation: fade-out-7 linear 7s;
+    @keyframes fade-out-7 {
         0% {
             opacity: 1;
         }
@@ -199,5 +198,37 @@ h6 {
         height: 121px;
         right: 20px;
         bottom: 20px;
+    }
+}
+
+hr.dotted-line {
+    border: none;
+    border-top: 4px dotted #cfcfcf;
+    /*??? stu //*/
+    margin: 30px auto 0 auto;
+    width: 95%;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+    -webkit-transition-delay: .25s;
+    transition-delay: .25s;
+}
+
+#important.modal-dialog {
+    background-color: $brand-blue;
+    color: #fff;
+    .modal-title {
+        color: #fff;
+    }
+    .modal-content {
+        background-color: $brand-blue;
+    }
+    .change-payment-textbox {
+        background-color: $brand-blue;
+        .payment-navigation {
+            background-color: $brand-blue;
+            border-top: 4px dotted #fff;
+        }
     }
 }

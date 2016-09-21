@@ -4,25 +4,14 @@ $(document).ready(function() {
 
     paymentCarousel.owlCarousel({
         margin: 10,
+        slideBy: 3,
         center: true,
         responsive: {
             0: {
                 items: 3
             },
-            340: {
-                items: 4
-            },            
-            550: {
-                items: 7
-            },
-            768: {
-                items: 9
-            },
-            992: {
+            600: {
                 items: 5
-            },
-            1200: {
-                items: 6
             }
         }
     });

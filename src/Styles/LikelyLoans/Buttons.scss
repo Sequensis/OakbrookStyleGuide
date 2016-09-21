@@ -58,6 +58,17 @@
     }
 }
 
+.btn-blue-hollow {
+    background-color: #fff;
+    color: $brand-blue;
+    border: 2px solid $brand-blue;
+    &:focus,
+    &:hover {
+        background-color: darken(#fff, 5%);
+    }
+}
+
+
 .btn-green {
     background-color: $brand-secondary-3;
     color: #fff;

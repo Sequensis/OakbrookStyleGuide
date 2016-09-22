@@ -16,7 +16,7 @@
     .calendar-chevron {
         left: 50%;
         -webkit-transform: translateX(-50%);
-                transform: translateX(-50%);
+        transform: translateX(-50%);
         position: absolute;
     }
 }
@@ -24,7 +24,7 @@
 .calendar-carousel-date-active {
     color: $brand-blue !important;
     font-size: 26px;
-    font-weight: 700 !important; 
+    font-weight: 700 !important;
     width: 23vw !important;
     height: 23vw !important;
     line-height: 25vw !important;
@@ -41,7 +41,7 @@
 
 .owl-carousel {
     .owl-stage {
-        margin-left: 12px;
+        margin-left: 3vw;
     }
     .owl-stage-outer {
         padding-top: 5vw;
@@ -59,10 +59,34 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
+    .owl-carousel {
+        .owl-stage-outer {
+            padding-top: 10px;
+        }
+        .owl-stage {
+            margin-left: 20px;
+        }
+    }
     .calendar-carousel {
-        margin-top: -10px;
+        margin-top: -50px;
         width: 80%;
+        .calendar-carousel-date {
+            font: 25px;
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+        }
+        .calendar-carousel-date-active {
+            color: $brand-blue !important;
+            font-size: 30px;
+            font-weight: 700 !important;
+            width: 85px !important;
+            height: 85px !important;
+            line-height: 90px !important;
+            background-size: 84px 85px;
+            margin: -10px 0 0 -10px;
+        }
     }
     .carousel-navigation {
         display: block;

@@ -134,9 +134,16 @@ h6 {
     bottom: 0;
     z-index: 100;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.48);
-    i {
+    .close {
+        position: absolute;
+        top: 0;
+    }
+    i.icon-tick {
         margin: 20px;
         color: $brand-secondary-3;
+    }
+    i.icon-close {
+        color: $brand-secondary-3;        
     }
     p {
         padding: 0 20px 0 0;

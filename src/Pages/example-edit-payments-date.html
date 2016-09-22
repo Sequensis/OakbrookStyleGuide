@@ -228,7 +228,7 @@
         </div>
     </div>
     <div class="toast toast-success invisible" id="toast-successful">
-        </i>
+        <a class="close" id="toast-close"><i class="fa icon-close fa-3x"></i></a>
         <div class="m-t-20">
             <div class="media">
                 <div class="media-left">
@@ -242,8 +242,6 @@
                 </div>
             </div>
         </div>
-        <span class="toast-timer">
-        </span>
     </div>
 
                 <div class="modal fade" id="change-payment-day" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -251,8 +249,10 @@
                     <div class="modal-content modal-padding-bottom">
 <div class="change-payment-textbox">
     <div class="modal-header theme-light text-left">
-                                        <span class="body-md text-center"><a data-dismiss="modal" aria-label="Close">
-                                <i class="fa-chevron-left fa fa-2x m-x-10"></i><strong><p>Select a new payment day</p></strong></a>
+                
+                <button type="button" class="back color-blue" data-dismiss="modal" aria-label="Close"><i class="fa fa-chevron-left fa-2x"></i></button>
+                        <span class="body-md text-center">
+                                <strong><p>Select a new payment day</p></strong>
                         </span>
                 </div>
                 <div class="calendar-carousel">
@@ -269,37 +269,37 @@
                         </a>
                     </div>
                     <div class="owl-carousel">
-                        <div class="calendar-carousel-date calendar-carousel-date-active medium"> 1st </div>
-                        <div class="calendar-carousel-date medium"> 2nd </div>
-                        <div class="calendar-carousel-date medium"> 3rd </div>
-                        <div class="calendar-carousel-date medium"> 4th </div>
-                        <div class="calendar-carousel-date medium"> 5th </div>
-                        <div class="calendar-carousel-date medium"> 6th </div>
-                        <div class="calendar-carousel-date medium"> 7th </div>
-                        <div class="calendar-carousel-date medium"> 8th </div>
-                        <div class="calendar-carousel-date medium"> 9th </div>
-                        <div class="calendar-carousel-date medium"> 10th </div>
-                        <div class="calendar-carousel-date medium"> 11th </div>
-                        <div class="calendar-carousel-date medium"> 12th </div>
-                        <div class="calendar-carousel-date medium"> 13th </div>
-                        <div class="calendar-carousel-date medium"> 14th </div>
-                        <div class="calendar-carousel-date medium"> 15th </div>
-                        <div class="calendar-carousel-date medium"> 16th </div>
-                        <div class="calendar-carousel-date medium"> 17th </div>
-                        <div class="calendar-carousel-date medium"> 18th </div>
-                        <div class="calendar-carousel-date medium"> 19th </div>
-                        <div class="calendar-carousel-date medium"> 20th </div>
-                        <div class="calendar-carousel-date medium"> 21st </div>
-                        <div class="calendar-carousel-date medium"> 22nd </div>
-                        <div class="calendar-carousel-date medium"> 23rd </div>
-                        <div class="calendar-carousel-date medium"> 24th </div>
-                        <div class="calendar-carousel-date medium"> 25th </div>
-                        <div class="calendar-carousel-date medium"> 26th </div>
-                        <div class="calendar-carousel-date medium"> 27th </div>
-                        <div class="calendar-carousel-date medium"> 28th </div>
-                        <div class="calendar-carousel-date medium"> 29th </div>
-                        <div class="calendar-carousel-date medium"> 30th </div>
-                        <div class="calendar-carousel-date medium"> 31st</div>
+                        <div class="calendar-carousel-date calendar-carousel-date-active"> 1st </div>
+                        <div class="calendar-carousel-date"> 2nd </div>
+                        <div class="calendar-carousel-date"> 3rd </div>
+                        <div class="calendar-carousel-date"> 4th </div>
+                        <div class="calendar-carousel-date"> 5th </div>
+                        <div class="calendar-carousel-date"> 6th </div>
+                        <div class="calendar-carousel-date"> 7th </div>
+                        <div class="calendar-carousel-date"> 8th </div>
+                        <div class="calendar-carousel-date"> 9th </div>
+                        <div class="calendar-carousel-date"> 10th </div>
+                        <div class="calendar-carousel-date"> 11th </div>
+                        <div class="calendar-carousel-date"> 12th </div>
+                        <div class="calendar-carousel-date"> 13th </div>
+                        <div class="calendar-carousel-date"> 14th </div>
+                        <div class="calendar-carousel-date"> 15th </div>
+                        <div class="calendar-carousel-date"> 16th </div>
+                        <div class="calendar-carousel-date"> 17th </div>
+                        <div class="calendar-carousel-date"> 18th </div>
+                        <div class="calendar-carousel-date"> 19th </div>
+                        <div class="calendar-carousel-date"> 20th </div>
+                        <div class="calendar-carousel-date"> 21st </div>
+                        <div class="calendar-carousel-date"> 22nd </div>
+                        <div class="calendar-carousel-date"> 23rd </div>
+                        <div class="calendar-carousel-date"> 24th </div>
+                        <div class="calendar-carousel-date"> 25th </div>
+                        <div class="calendar-carousel-date"> 26th </div>
+                        <div class="calendar-carousel-date"> 27th </div>
+                        <div class="calendar-carousel-date"> 28th </div>
+                        <div class="calendar-carousel-date"> 29th </div>
+                        <div class="calendar-carousel-date"> 30th </div>
+                        <div class="calendar-carousel-date"> 31st</div>
                     </div>
                     <span class="calendar-chevron"><i class="color-blue fa fa-chevron-up fa-2x" aria-hidden="true"></i></span>
                 </div>
@@ -315,7 +315,7 @@
                 </div>
                 <div class="payment-navigation">
                     <ul class="list-inline text-center">
-                        <li><a class="btn btn-block btn-primary-1" data-toggle="modal" href="#stack2">Update</a></li>
+                        <li><a class="btn btn-block btn-primary-1" data-toggle="modal" href="#important-1">Update</a></li>
                     </ul>
                 </div>
 
@@ -325,7 +325,7 @@
     </div>
 </div>
 
-<div class="modal fade" id="stack2" tabindex="-1" data-focus-on="input:first" aria-labelledby="myModalLabel">
+<div class="modal fade" id="important-1" tabindex="-1" data-focus-on="input:first" aria-labelledby="myModalLabel">
     <div class="modal-dialog" id="important" role="document">
         <div class="modal-content modal-padding-bottom">
             <div class="change-payment-textbox">
@@ -341,7 +341,7 @@
                 </div>
                 <div class="payment-navigation">
                     <ul class="list-inline text-center">
-                        <li><a class="btn btn-blue-hollow" id="change-payment">Continue</a></li>
+                        <li><a class="btn btn-blue-hollow" id="change-payment-success">Continue</a></li>
                         <li><a class="color-white" data-dismiss="modal" aria-label="Close">Cancel</a></li>
                     </ul>
                 </div>

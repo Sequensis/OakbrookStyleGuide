@@ -1,118 +1,122 @@
-    .calendar-carousel {
-        width: 100%;
-        margin: 50px auto 50px auto;
-        .calendar-carousel-date {
-            cursor: pointer;
-            text-align: center;
-            width: 25vw;
-            height: 25vw;
-            border-radius: 3px;
-            border: solid 2px $brand-secondary-2;
-            line-height: 25vw;
-            color: $brand-secondary-2;
-        }
-        .calendar-chevron {
-            left: 50%;
-            transform: translateX(-50%);
-            position: absolute;
-        }
+.calendar-carousel {
+    width: 100%;
+    margin: 50px auto 50px auto;
+    .calendar-carousel-date {
+        cursor: pointer;
+        font: 22px;
+        font-weight: 700;
+        text-align: center;
+        width: 15vw;
+        height: 15vw;
+        border-radius: 3px;
+        border: solid 2px $brand-secondary-2;
+        line-height: 15vw;
+        color: $brand-secondary-2;
     }
-    
-    .calendar-carousel-date-active {
-        color: $brand-blue !important;
-        font-size: 45px !important;
-        width: 35vw !important;
-        height: 35vw !important;
-        line-height: 37vw !important;
-        border: none !important;
-        background-image: url(../img/calendar-carousel.svg);
-        background-size: 34vw 35vw;
-        background-repeat: no-repeat;
-        margin: -5vw 0 0 -4vw;
+    .calendar-chevron {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        position: absolute;
     }
-    
+}
+
+.calendar-carousel-date-active {
+    color: $brand-blue !important;
+    font-size: 26px;
+    font-weight: 700 !important; 
+    width: 23vw !important;
+    height: 23vw !important;
+    line-height: 25vw !important;
+    border: none !important;
+    background-image: url(../img/calendar-carousel.svg);
+    background-size: 22vw 23vw;
+    background-repeat: no-repeat;
+    margin: -4vw 0 0 -3.5vw;
+}
+
+.carousel-navigation {
+    display: none;
+}
+
+.owl-carousel {
+    .owl-stage {
+        margin-left: 12px;
+    }
+    .owl-stage-outer {
+        padding-top: 5vw;
+    }
+}
+
+@media (min-width: 1200px) {
     .carousel-navigation {
-        display: none;
-    }
-    
-    .owl-carousel {
-        .owl-stage {
-            margin-left: 10px;
+        .prev {
+            margin-top: 0 !important;
         }
-        .owl-stage-outer {
-            padding-top: 5vw;
+        .next {
+            margin-top: 0 !important;
         }
     }
-    
-    @media (min-width: 1200px) {
-        .carousel-navigation {
-            .prev {
-                margin-top: 0 !important;
+}
+
+@media (min-width: 992px) {
+    .calendar-carousel {
+        margin-top: -10px;
+        width: 80%;
+    }
+    .carousel-navigation {
+        display: block;
+        a {
+            text-decoration: none !important;
+            z-index: 11;
+            cursor: pointer;
+        }
+        .prev {
+            position: relative;
+            top: 65px;
+            left: -50px;
+            .fa-chevron-left {
+                margin-left: -2px;
             }
-            .next {
-                margin-top: 0 !important;
-            }
+        }
+        .next {
+            position: relative;
+            top: 65px;
+            left: 50px;
+            float: right;
+        }
+        .fa-chevron-right {
+            margin-left: 2px;
         }
     }
-    
-    @media (min-width: 992px) {
-        .calendar-carousel {
-            margin-top: -10px;
-            width: 80%;
-        }
-        .carousel-navigation {
-            display: block;
-            a {
-                text-decoration: none !important;
-                z-index: 11;
-                cursor: pointer;
-            }
-            .prev {
-                position: relative;
-                top: 65px;
-                left: -50px;
-                .fa-chevron-left {
-                    margin-left: -2px;
-                }
-            }
-            .next {
-                position: relative;
-                top: 65px;
-                left: 50px;
-                float: right;
-            }
-            .fa-chevron-right {
-                margin-left: 2px;
-            }
-        }
+}
+
+#payment-change-effective {
+    -webkit-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+
+@media (min-width: 992px) {
+    .blur-l {
+        width: 25%;
+        left: 0;
+        height: 90px;
+        position: absolute;
+        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        z-index: 10;
+        margin-top: 40px;
+        pointer-events: none;
     }
-    
-    #payment-change-effective {
-        -webkit-transition: 0.25s ease-in-out;
-        transition: 0.25s ease-in-out;
+    .blur-r {
+        width: 25%;
+        height: 90px;
+        position: absolute;
+        right: 0;
+        background: -webkit-linear-gradient(right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        z-index: 10;
+        margin-top: 40px;
+        pointer-events: none;
     }
-    
-    @media (min-width: 992px) {
-        .blur-l {
-            width: 25%;
-            left: 0;
-            height: 90px;
-            position: absolute;
-            background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-            background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-            z-index: 10;
-            margin-top: 40px;
-            pointer-events: none;
-        }
-        .blur-r {
-            width: 25%;
-            height: 90px;
-            position: absolute;
-            right: 0;
-            background: -webkit-linear-gradient(right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-            background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-            z-index: 10;
-            margin-top: 40px;
-            pointer-events: none;
-        }
-    }
+}

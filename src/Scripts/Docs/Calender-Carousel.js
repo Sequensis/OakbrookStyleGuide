@@ -3,12 +3,15 @@ $(document).ready(function() {
     var paymentCarousel = $(".owl-carousel");
 
     paymentCarousel.owlCarousel({
-        margin: 10,
+        margin: -10,
         slideBy: 3,
         center: true,
         responsive: {
             0: {
                 items: 3
+            },
+            320: {
+                items: 5
             },
             600: {
                 items: 5

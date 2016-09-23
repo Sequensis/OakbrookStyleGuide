@@ -11205,6 +11205,10 @@ hr.dotted-line {
   .payment-navigation {
     position: relative !important; } }
 
+@media (max-width: 320px) {
+  .change-payment-textbox .modal-header .header-icon {
+    display: none; } }
+
 .m-t-10 {
   margin: 10px 0 0 0; }
 

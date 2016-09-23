@@ -230,3 +230,9 @@
         position: relative !important;
     }
 }
+
+@media (max-width: 320px) {
+    .change-payment-textbox .modal-header .header-icon {
+        display: none;
+    } 
+}

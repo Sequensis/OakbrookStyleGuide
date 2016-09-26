@@ -11055,6 +11055,11 @@ hr.dotted-line {
       background-color: #005BC6;
       border-top: 4px dotted #fff; }
 
+.owl-carousel.owl-hidden {
+  height: 85px;
+  opacity: 0;
+  transition: opacity 1s; }
+
 .payment {
   padding: 0; }
 

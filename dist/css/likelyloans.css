@@ -11431,6 +11431,10 @@ hr.dotted-line {
 #payment-change-effective {
   transition: 0.25s ease-in-out; }
 
+#calendar-carousel-date-disabled {
+  border: solid 2px #ccc;
+  color: #ccc; }
+
 @media (min-width: 992px) {
   .blur-l {
     width: 25%;

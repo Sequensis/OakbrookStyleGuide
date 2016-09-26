@@ -10096,7 +10096,7 @@ input:-webkit-autofill {
   box-shadow: none !important; }
 
 #a0-lock.a0-theme-default .a0-panel {
-  width: 90% !important;
+  width: 100% !important;
   margin: 0 auto; }
 
 /* Header // */
@@ -10126,7 +10126,9 @@ input:-webkit-autofill {
   .modal-exclamation {
     display: block; }
   .modal-padlock {
-    display: block; } }
+    display: block; }
+  #a0-lock.a0-theme-default .a0-emailPassword {
+    width: 100% !important; } }
 
 @media (max-width: 640px) {
   #a0-lock.a0-theme-default .a0-panel .a0-action {
@@ -10144,7 +10146,7 @@ input:-webkit-autofill {
 
 #a0-lock.a0-theme-default .a0-emailPassword {
   margin: 0 auto !important;
-  width: 100%; }
+  width: 90%; }
 
 #a0-lock.a0-theme-default .a0-input-box {
   background-color: #fff !important; }

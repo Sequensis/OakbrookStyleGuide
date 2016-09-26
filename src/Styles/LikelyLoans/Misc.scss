@@ -239,3 +239,9 @@ hr.dotted-line {
         }
     }
 }
+
+.owl-carousel.owl-hidden {
+    height: 85px;
+    opacity: 0;
+    transition: opacity 1s;
+}

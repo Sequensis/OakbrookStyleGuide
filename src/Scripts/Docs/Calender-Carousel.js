@@ -11,10 +11,7 @@ $(document).ready(function() {
                 items: 3
             },
             320: {
-                items: 5
-            },
-            600: {
-                items: 5
+                items: 5,
             }
         }
     });

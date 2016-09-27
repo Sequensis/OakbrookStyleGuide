@@ -6,12 +6,13 @@ $(document).ready(function() {
         margin: -10,
         slideBy: 3,
         center: true,
+        mouseDrag: false,
         responsive: {
             0: {
-                items: 3
+                items: 2
             },
-            320: {
-                items: 5,
+            768: {
+                items: 5
             }
         }
     });
@@ -26,7 +27,7 @@ $(document).ready(function() {
 });
 
 $(document).on('click', '.calendar-carousel-date', function(e) {
-    $('.calendar-carousel-date').removeClass('calendar-carousel-date-active');
-    $(this).addClass('calendar-carousel-date-active');
+    $('.calendar-carousel-date').removeAttr('id','calendar-carousel-date-active');
+    $(this).attr('id','calendar-carousel-date-active');
     $('#payment-change-effective').removeClass('invisible');
 });

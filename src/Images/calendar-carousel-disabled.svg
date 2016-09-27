@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="43px" viewBox="0 0 40 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>Calendar no smile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Style-guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-703.000000, -1952.000000)" fill="#767676">
+            <g id="Calendar-no-smile" transform="translate(703.000000, 1952.000000)">
+                <path d="M36,42.5 L4,42.5 C1.794,42.5 0,40.706 0,38.5 L0,6.5 C0,4.294 1.794,2.5 4,2.5 L36,2.5 C38.206,2.5 40,4.294 40,6.5 L40,27.962 C40,28.515 39.553,28.962 39,28.962 C38.447,28.962 38,28.515 38,27.962 L38,6.5 C38,5.397 37.103,4.5 36,4.5 L4,4.5 C2.897,4.5 2,5.397 2,6.5 L2,38.5 C2,39.603 2.897,40.5 4,40.5 L36,40.5 C37.103,40.5 38,39.603 38,38.5 L38,34.393 C38,33.84 38.447,33.393 39,33.393 C39.553,33.393 40,33.84 40,34.393 L40,38.5 C40,40.706 38.206,42.5 36,42.5" id="Fill-84"></path>
+                <polygon id="Fill-85" points="1.4996 11.0004 38.4996 11.0004 38.4996 9.0004 1.4996 9.0004"></polygon>
+                <path d="M11.287,8 C10.459,8 9.787,7.329 9.787,6.5 L9.787,1.5 C9.787,0.671 10.459,0 11.287,0 C12.115,0 12.787,0.671 12.787,1.5 L12.787,6.5 C12.787,7.329 12.115,8 11.287,8" id="Fill-86"></path>
+                <path d="M29.287,8 C28.459,8 27.787,7.329 27.787,6.5 L27.787,1.5 C27.787,0.671 28.459,0 29.287,0 C30.115,0 30.787,0.671 30.787,1.5 L30.787,6.5 C30.787,7.329 30.115,8 29.287,8" id="Fill-87"></path>
+            </g>
+        </g>
+    </g>
+</svg>

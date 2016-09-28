@@ -160,8 +160,10 @@
                             <h2 class="modal-title" id="myModalLabel">Important</h2>
                         </div>
                         <div class="modal-body text-center body-lg">
-                            <p>If there are less than 31 days in a particular month, we will collect payment on the last working day of that month.</p>
-                            <p>For example, if there are only 28 days in a month and the 28th falls on a Saturday, we will collect payment on Friday 27th.</p>
+                            <p>If there are less than 31 days in a particular month, we will collect payment on the last working
+                                day of that month.</p>
+                            <p>For example, if there are only 28 days in a month and the 28th falls on a Saturday, we will collect
+                                payment on Friday 27th.</p>
                             <br>
                             <span class="theme-light"><p><strong>Do you wish to continue?</strong></p></span>
                             <a id="change-payment-success" class="btn btn-primary-1" data-dismiss="modal">Continue</a>
@@ -180,7 +182,8 @@
                             <h2 class="modal-title" id="myModalLabel">Important</h2>
                         </div>
                         <div class="modal-body text-center body-lg">
-                            <p>You have opted to bring your payment date forward, therefore your next payment will be taken on the ... (n days after your ... payment)</p>
+                            <p>You have opted to bring your payment date forward, therefore your next payment will be taken
+                                on the ... (n days after your ... payment)</p>
                             <br>
                             <span class="theme-light"><p><strong>Do you wish to continue?</strong></p></span>
                             <a class="btn btn-primary-1">Continue</a>
@@ -218,7 +221,7 @@
                             <h2 class="modal-title" id="myModalLabel">Your payment date has been submitted</h2>
                         </div>
                         <div class="modal-body text-center body-lg">
-                            <p>We will send you an email to <span class="theme-light"><strong>test@test.com</strong></span> when this has been confirmed</p>
+                            <p>We will send you an email to <span class="theme-light"><strong>test@test.com</strong></span>                                when this has been confirmed</p>
                             <a class="btn btn-primary-1">OK</a>
                         </div>
                     </div>
@@ -255,9 +258,40 @@
                         </span>
                 </div>
                 <div class="calendar-carousel">
-                    <!--<span class="blur-l"></span>
-                    <span class="blur-r"></span>-->
-                    <div class="carousel-navigation">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> 1st </div>
+                            <div class="swiper-slide"> 2nd </div>
+                            <div class="swiper-slide"> 3rd </div>
+                            <div class="swiper-slide"> 4th </div>
+                            <div class="swiper-slide"> 5th </div>
+                            <div class="swiper-slide"> 6th </div>
+                            <div class="swiper-slide"> 7th </div>
+                            <div class="swiper-slide" id="calendar-carousel-date-active"> 8th </div>
+                            <div class="swiper-slide"> 9th </div>
+                            <div class="swiper-slide"> 10th </div>
+                            <div class="swiper-slide"> 11th </div>
+                            <div class="swiper-slide"> 12th </div>
+                            <div class="swiper-slide"> 13th </div>
+                            <div class="swiper-slide"> 14th </div>
+                            <div class="swiper-slide" id="calendar-carousel-date-disabled"> 15th </div>
+                            <div class="swiper-slide"> 16th </div>
+                            <div class="swiper-slide"> 17th </div>
+                            <div class="swiper-slide"> 18th </div>
+                            <div class="swiper-slide"> 19th </div>
+                            <div class="swiper-slide"> 20th </div>
+                            <div class="swiper-slide"> 21st </div>
+                            <div class="swiper-slide"> 22nd </div>
+                            <div class="swiper-slide"> 23rd </div>
+                            <div class="swiper-slide"> 24th </div>
+                            <div class="swiper-slide"> 25th </div>
+                            <div class="swiper-slide"> 26th </div>
+                            <div class="swiper-slide"> 27th </div>
+                            <div class="swiper-slide"> 28th </div>
+                            <div class="swiper-slide"> 29th </div>
+                            <div class="swiper-slide"> 30th </div>
+                            <div class="swiper-slide"> 31st </div>
+                        </div>
                         <a class="prev">
                             <span class='fa-stack fa-lg'><i class='fa fa-circle-o fa-stack-2x color-grey'></i><i class='fa fa-chevron-left fa-stack-1x color-grey'></i>
                         </span>
@@ -266,39 +300,6 @@
                             <span class='fa-stack fa-lg'><i class='fa fa-circle-o fa-stack-2x color-grey'></i><i class='fa fa-chevron-right fa-stack-1x color-grey'></i>
                                 </span>
                         </a>
-                    </div>
-                    <div class="owl-carousel owl-hidden fade in">
-                        <div class="calendar-carousel-date"> 1st </div>
-                        <div class="calendar-carousel-date"> 2nd </div>
-                        <div class="calendar-carousel-date"> 3rd </div>
-                        <div class="calendar-carousel-date"> 4th </div>
-                        <div class="calendar-carousel-date"> 5th </div>
-                        <div class="calendar-carousel-date"> 6th </div>
-                        <div class="calendar-carousel-date"> 7th </div>
-                        <div class="calendar-carousel-date" id="calendar-carousel-date-disabled"> 8th </div>
-                        <div class="calendar-carousel-date"> 9th </div>
-                        <div class="calendar-carousel-date"> 10th </div>
-                        <div class="calendar-carousel-date"> 11th </div>
-                        <div class="calendar-carousel-date"> 12th </div>
-                        <div class="calendar-carousel-date"> 13th </div>
-                        <div class="calendar-carousel-date"> 14th </div>
-                        <div class="calendar-carousel-date"> 15th </div>
-                        <div class="calendar-carousel-date"> 16th </div>
-                        <div class="calendar-carousel-date"> 17th </div>
-                        <div class="calendar-carousel-date"> 18th </div>
-                        <div class="calendar-carousel-date"> 19th </div>
-                        <div class="calendar-carousel-date"> 20th </div>
-                        <div class="calendar-carousel-date"> 21st </div>
-                        <div class="calendar-carousel-date"> 22nd </div>
-                        <div class="calendar-carousel-date"> 23rd </div>
-                        <div class="calendar-carousel-date"> 24th </div>
-                        <div class="calendar-carousel-date"> 25th </div>
-                        <div class="calendar-carousel-date"> 26th </div>
-                        <div class="calendar-carousel-date"> 27th </div>
-                        <div class="calendar-carousel-date"> 28th </div>
-                        <div class="calendar-carousel-date"> 29th </div>
-                        <div class="calendar-carousel-date"> 30th </div>
-                        <div class="calendar-carousel-date"> 31st</div>
                     </div>
                     <span class="calendar-chevron" id="calendar-carousel-chevron"><i class="color-blue fa fa-chevron-up fa-2x" aria-hidden="true"></i></span>
                 </div>
@@ -317,9 +318,7 @@
                         <li><a class="btn btn-block btn-primary-1" data-toggle="modal" href="#important-1">Update</a></li>
                     </ul>
                 </div>
-
             </div>
-
         </div>
     </div>
 </div>
@@ -333,10 +332,14 @@
                     <h2 class="modal-title" id="myModalLabel">Important</h2>
                 </div>
                 <div class="modal-body text-center body-lg">
-                    <p>If there are less than 31 days in a particular month, we will collect payment on the last working day of that month.</p>
-                    <p>For example, if there are only 28 days in a month and the 28th falls on a Saturday, we will collect payment on Friday 27th.</p>
+                    <p>If there are less than 31 days in a particular month, we will collect payment on the last working day
+                        of that month.</p>
+                    <p>For example, if there are only 28 days in a month and the 28th falls on a Saturday, we will collect payment
+                        on Friday 27th.</p>
                     <br>
-                    <div class="m-y-20"><p><strong>Do you wish to continue?</strong></p></div>
+                    <div class="m-y-20">
+                        <p><strong>Do you wish to continue?</strong></p>
+                    </div>
                 </div>
                 <div class="payment-navigation">
                     <ul class="list-inline text-center">

@@ -4,7 +4,7 @@ $(document).ready(function () {
     })
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 'auto',
-        spaceBetween: 30,
+        spaceBetween: 10,
         nextButton: '.next',
         prevButton: '.prev',
         freeMode: true,

@@ -17,4 +17,5 @@ $(document).on('click', '.swiper-slide', function (e) {
     $('.swiper-slide').removeAttr('id', 'calendar-carousel-date-active');
     $(this).attr('id', 'calendar-carousel-date-active');
     $('#payment-change-effective').removeClass('invisible');
+    $('#payment-loader').addClass('d-none');
 });

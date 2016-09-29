@@ -1,5 +1,6 @@
 .swiper-container {
     margin: 0 auto;
+    padding-top: 13px;
     .swiper-wrapper {
         width: 100%;
         margin: 50px auto 10px auto;
@@ -20,7 +21,7 @@
             height: 21vw;
             margin: -4vw auto 4vw auto;
             color: $brand-blue;
-            font-size: 32px;
+            font-size: 30px;
             line-height: 25vw;
             border: none;
             background-image: url(../img/calendar-carousel.svg);
@@ -78,6 +79,8 @@
                 background-size: 65px 74px;
                 height: 75px;
                 margin-top: -15px;
+                -webkit-transition: none;
+                transition: none;
             }
             .swiper-slide#calendar-carousel-date-disabled {
                 font-size: 25px;
@@ -148,9 +151,4 @@
             margin-left: 2px;
         }
     }
-}
-
-#payment-change-effective {
-    -webkit-transition: 0.25s ease-in-out;
-    transition: 0.25s ease-in-out;
 }

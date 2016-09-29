@@ -1,55 +1,56 @@
 .swiper-container {
-    margin:-50px auto 0 auto;
+    margin: 0 auto;
     .swiper-wrapper {
         width: 100%;
         margin: 50px auto 10px auto;
         padding-top: 10px;
         .swiper-slide {
             cursor: pointer;
-            font-size: 52px;
+            font-size: 28px;
             font-weight: 700;
             text-align: center;
-            width: 45vw;
-            height: 40vw;
+            width: 20vw;
+            height: 20vw;
             border-radius: 3px;
             border: solid 2px $brand-secondary-2;
-            line-height: 40vw;
+            line-height: 20vw;
             color: $brand-secondary-2;
         }
         .swiper-slide#calendar-carousel-date-active {
-            height: 45vw;
-            margin-top: -10px;
+            height: 21vw;
+            margin: -4vw auto 4vw auto;
             color: $brand-blue;
-            font-size: 52px;
-            line-height: 45vw;
+            font-size: 32px;
+            line-height: 25vw;
             border: none;
             background-image: url(../img/calendar-carousel.svg);
-            background-size: 44vw 45vw;
+            background-size: 19.5vw 22vw;
             background-repeat: no-repeat;
+            -webkit-transition: margin .25s ease-in-out;
+            transition: margin .25s ease-in-out;
         }
         .swiper-slide#calendar-carousel-date-disabled {
             opacity: 0.5;
+            margin-top: -1vw;
             color: $brand-secondary-2;
-            font-size: 52px;
-            line-height: 50vw;
-            height: 46vw;
+            font-size: 28px;
+            line-height: 25vw;
+            height: 21vw;
             border: none;
             background-image: url(../img/calendar-carousel-disabled.svg);
-            background-size: 44.5vw 46vw;
+            background-size: 19.5vw 21vw;
             background-repeat: no-repeat;
-            margin: -4vw 0 0;
         }
     }
 }
 
 .calendar-carousel {
     width: 100%;
-    margin: 0 auto 50px auto;
+    margin: 0 auto;
     .calendar-chevron {
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        position: absolute;
+        width: 100%;
+        margin: 20px auto;
+        position: relative;
     }
 }
 
@@ -57,22 +58,11 @@
     display: none;
 }
 
-@media (min-width: 1200px) {
-        .prev {
-            margin-top: 0 !important;
-        }
-        .next {
-            margin-top: 0 !important;
-        }
-}
-
-@media (min-width: 768px) {
-    .calendar-carousel {
-    width: 80%;
-    margin: 0 auto 50px auto;
+@media (max-device-width: 992px) and (orientation: landscape) {
+    .payment-navigation {
+        position: relative !important;
     }
     .swiper-container {
-        margin: 0;
         .swiper-wrapper {
             .swiper-slide {
                 font-size: 25px;
@@ -98,6 +88,43 @@
             }
         }
     }
+}
+
+@media (min-width: 768px) {
+    .calendar-carousel {
+        width: 80%;
+    }
+    .swiper-container {
+        margin: 0 auto;
+        .swiper-wrapper {
+            .swiper-slide {
+                font-size: 25px;
+                line-height: 65px;
+                background-size: 64px 65px;
+                height: 65px;
+                width: 65px;
+                margin-top: -10px;
+            }
+            .swiper-slide#calendar-carousel-date-active {
+                font-size: 25px;
+                line-height: 75px;
+                background-size: 65px 74px;
+                height: 75px;
+                margin: -25px auto 0 auto;
+                -webkit-transition: none;
+                transition: none;
+            }
+            .swiper-slide#calendar-carousel-date-disabled {
+                font-size: 25px;
+                line-height: 85px;
+                background-size: 65px 74px;
+                height: 75px;
+                margin: -17px auto 0 auto;
+            }
+        }
+    }
+    .carousel-navigation {
+        display: block;
         a {
             text-decoration: none !important;
             z-index: 11;
@@ -120,6 +147,7 @@
         .fa-chevron-right {
             margin-left: 2px;
         }
+    }
 }
 
 #payment-change-effective {

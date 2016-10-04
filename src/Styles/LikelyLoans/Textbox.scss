@@ -202,11 +202,10 @@
         margin: 0;
     }
     .payment-navigation {
-        position: fixed;
         background-color: #fff;
         bottom: 0;
-        border-top: 4px dotted #cfcfcf;
         width: 100%;
+        position: fixed;
         li {
             display: block;
             padding: 20px 0;

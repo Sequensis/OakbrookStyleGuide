@@ -110,9 +110,9 @@ button:focus {
         width: 600px;
         height: auto;
     }
-    .modal-backdrop.in {
+    .modal-backdrop {
         background-color: #000;
-        opacity: .8;
+        opacity: 1;
     }
     .close {
         position: absolute;

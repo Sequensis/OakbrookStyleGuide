@@ -1,4 +1,4 @@
-    // Need to move these //
+    /* Need to move these //*/
 *:focus {
     outline: -webkit-focus-ring-color auto 0px !important;
 }
@@ -124,7 +124,7 @@ h6 {
     text-decoration: none;
 }
 
-// toast (clean this up)
+/* toast (clean this up)*/
 .toast {
     width: 100%;
     height: 150px;
@@ -158,8 +158,19 @@ h6 {
     }
     .toast-timer-go {
         -webkit-animation: timer-go linear 7s;
-        -moz-animation: timer-go linear 7s;
         animation: timer-go linear 7s;
+    }
+    @-webkit-keyframes timer-go {
+        0% {
+            width: 100%;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            width: 0%;
+        }
     }
     @keyframes timer-go {
         0% {
@@ -177,8 +188,18 @@ h6 {
 
 .toast-fade-out {
     -webkit-animation: fade-out-7 linear 7s;
-    -moz-animation: fade-out-7 linear 7s;
     animation: fade-out-7 linear 7s;
+    @-webkit-keyframes fade-out-7 {
+        0% {
+            opacity: 1;
+        }
+        95% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+        }
+    }
     @keyframes fade-out-7 {
         0% {
             opacity: 1;
@@ -195,7 +216,7 @@ h6 {
 .toast-success {
     background-color: $brand-tint-1;
     p {
-        color: #023a15; //dan
+        color: #023a15; /*dan*/
     }
 }
 
@@ -235,7 +256,10 @@ hr.dotted-line {
         background-color: $brand-blue;
         .payment-navigation {
             background-color: $brand-blue;
-            border-top: 4px dotted #fff;
+            position: relative;
+            li {
+                padding: 10px 0;
+            }
         }
     }
 }
@@ -243,5 +267,68 @@ hr.dotted-line {
 .owl-carousel.owl-hidden {
     height: 85px;
     opacity: 0;
+    -webkit-transition: opacity 1s;
     transition: opacity 1s;
+}
+
+/* Keyframes //*/
+
+// .modal.up {
+//     -webkit-animation: modal-up .5s ease-in-out;
+//             animation: modal-up .5s ease-in-out;
+// }
+
+// @keyframes modal-up { 
+//     0% {
+//         transform: translate(0, 100%);
+//     }
+
+//     100% {
+//         transform: translate(0, 0);
+//     }
+// }
+
+// @-webkit-keyframes modal-up { 
+//     0% {
+//         transform: translate(0, 100%);
+//     }
+
+//     100% {
+//         transform: translate(0, 0);
+//     }
+// }
+
+// .up.in {
+//     -webkit-animation: modal-up .5s ease-in-out;
+//             animation: modal-up .5s ease-in-out;
+// }
+
+// @keyframes modal-down { 
+//     0% {
+//         transform: translate(0, 0%);
+//     }
+
+//     100% {
+//         transform: translate(0, 100%);
+//         display: none;        
+//     }
+// }
+
+// @-webkit-keyframes modal-down { 
+//     0% {
+//         transform: translate(0, 0%);
+//     }
+
+//     100% {
+//         transform: translate(0, 100%);
+//     }
+// }
+
+.up {
+    transform: translate(0, 100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.up.in {
+    transform: translate(0, 0);
 }

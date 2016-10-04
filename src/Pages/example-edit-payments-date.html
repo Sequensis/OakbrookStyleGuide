@@ -258,6 +258,16 @@
                         </span>
                 </div>
                 <div class="calendar-carousel">
+                    <div class="carousel-navigation">
+                        <a class="prev">
+                            <span class='fa-stack fa-lg'><i class='fa fa-circle-o fa-stack-2x color-grey'></i><i class='fa fa-chevron-left fa-stack-1x color-grey'></i>
+                        </span>
+                        </a>
+                        <a class="next">
+                            <span class='fa-stack fa-lg'><i class='fa fa-circle-o fa-stack-2x color-grey'></i><i class='fa fa-chevron-right fa-stack-1x color-grey'></i>
+                                </span>
+                        </a>
+                    </div>
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide"> 1st </div>
@@ -292,20 +302,12 @@
                             <div class="swiper-slide"> 30th </div>
                             <div class="swiper-slide"> 31st </div>
                         </div>
-                        <!--<a class="prev">
-                            <span class='fa-stack fa-lg'><i class='fa fa-circle-o fa-stack-2x color-grey'></i><i class='fa fa-chevron-left fa-stack-1x color-grey'></i>
-                        </span>
-                        </a>
-                        <a class="next">
-                            <span class='fa-stack fa-lg'><i class='fa fa-circle-o fa-stack-2x color-grey'></i><i class='fa fa-chevron-right fa-stack-1x color-grey'></i>
-                                </span>
-                        </a>-->
                     </div>
                     <div class="calendar-chevron text-center" id="calendar-carousel-chevron"><i class="color-blue fa fa-chevron-up fa-2x" aria-hidden="true"></i></div>
                 </div>
-                <div class="text-center" id="payment-loader">
+                <!--<div class="text-center" id="payment-loader">
                     <i class="fa fa-spinner fa-spin fa-4x color-blue" aria-hidden="true"></i>
-                </div>
+                </div>-->
                 <div class="text-center invisible m-x-50" id="payment-change-effective">
 
                     <span class="body-md text-center">
@@ -328,7 +330,7 @@ This change will be effective from 2nd October</strong>
     </div>
 </div>
 
-<div class="modal fade" id="important-1" tabindex="-1" data-focus-on="input:first" aria-labelledby="myModalLabel">
+<div class="modal up" id="important-1" tabindex="-1" data-focus-on="input:first" aria-labelledby="myModalLabel">
     <div class="modal-dialog" id="important" role="document">
         <div class="modal-content">
             <div class="change-payment-textbox">
@@ -346,10 +348,10 @@ This change will be effective from 2nd October</strong>
                         <p><strong>Do you wish to continue?</strong></p>
                     </div>
                 </div>
-                <div class="payment-navigation">
+                <div class="payment-navigation m-t-20">
                     <ul class="list-inline text-center">
                         <li><a class="btn btn-blue-hollow" id="change-payment-success">Continue</a></li>
-                        <li><a class="color-white" data-dismiss="modal" aria-label="Close">Cancel</a></li>
+                        <li><a class="color-white" id="close-modal">Cancel</a></li>
                     </ul>
                 </div>
 

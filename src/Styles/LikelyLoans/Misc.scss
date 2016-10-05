@@ -51,58 +51,6 @@ h6 {
     right: 0;
 }
 
-.recent-history {
-    .large {
-        font-size: 35px;
-        font-weight: 700;
-        color: #4a4a4a;
-        /*?????????? stu //*/
-        margin-top: -10px;
-    }
-    .medium-yellow {
-        font-size: 25px;
-        font-weight: 700;
-        color: $brand-yellow;
-    }
-    .small-yellow {
-        font-size: 15px;
-        font-weight: 700;
-        color: $brand-yellow;
-    }
-    .vertical-line {
-        height: 100px;
-        width: 2px;
-        margin-left: 9px;
-        border-left: solid 2px $brand-yellow;
-    }
-    .vertical-line-circle {
-        border-radius: 50%;
-        width: 20px;
-        height: 20px;
-        background-color: $brand-yellow;
-    }
-    .vertical-line-circle:first-child {
-        margin-top: 40px;
-    }
-    ul {
-        padding: 0;
-        list-style: none;
-        li {
-            margin-top: 34px;
-        }
-        li:first-child {
-            margin-top: 0;
-        }
-    }
-    hr.dash {
-        width: 10px;
-        border: solid 1px $brand-yellow;
-        text-align: left;
-        position: absolute;
-        margin: 40px 0 0 -14px;
-    }
-}
-
 .v-center {
     position: relative;
     top: 50%;
@@ -331,4 +279,9 @@ hr.dotted-line {
 
 .up.in {
     transform: translate(0, 0);
+}
+
+
+.ob-ss-bold {
+    font-weight: 700;
 }

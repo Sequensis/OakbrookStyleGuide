@@ -9,91 +9,7 @@
         </div>
     </div>
     <div class="row m-y-20">
-        <!--<div class="col-md-5">
-            <div class="font-yellow">
-                <h2>Recent History</h2>
-            </div>
-            <div class="m-t-20">
-                <div class="row">
-                    <div class="recent-history">
-                        <div class="col-xs-1">
-                            <div class="recent-history-vertical-line">
-                                <div class="vertical-line-circle">
-                                </div>
-                                <div class="vertical-line">
-                                </div>
-                                <div class="vertical-line-circle">
-                                </div>
-                                <div class="vertical-line">
-                                </div>
-                                <div class="vertical-line-circle">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-2 text-center">
-                            <ul>
-                                <li>
-                                    <div class="recent-history-textbox textbox-white">
-                                        <div class="v-center">
-                                            <span class="medium-yellow">8</span><span class="small-yellow">th
-                                        <br>August</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="recent-history-textbox textbox-white">
-                                        <div class="v-center">
-                                            <span class="medium-yellow">8</span><span class="small-yellow">th
-                                        <br>July</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="recent-history-textbox textbox-white">
-                                        <div class="v-center">
-                                            <span class="medium-yellow">8</span><span class="small-yellow">th
-                                        <br>June</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-xs-8 text-center">
-                            <ul>
-                                <li>
-                                    <div class="recent-history-textbox textbox-yellow">
-                                        <hr class="dash">
-                                        <div class="v-center">
-                                            <span class="body-sm">Direct Debit</span>
-                                            <div class="large">£133<span class="body-md">.70</span></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="recent-history-textbox textbox-yellow">
-                                        <hr class="dash">
-                                        <div class="v-center">
-                                            <span class="body-sm">Direct Debit</span>
-                                            <div class="large">£133<span class="body-md">.70</span></div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="recent-history-textbox textbox-yellow">
-                                        <hr class="dash">
-                                        <div class="v-center">
-                                            <span class="body-sm">Direct Debit</span>
-                                            <div class="large">£133<span class="body-md">.70</span></div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <div class="col-md-7 col-md-offset-5 payment">
+        <div class="col-md-7 payment">
             <div class="theme-light">
                 <h2>Make a payment</h2>
             </div>
@@ -143,8 +59,18 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-4 col-md-offset-1 recent-history">
+            <div class="font-yellow">
+                <h2>Recent History</h2>
+            </div>
+            <div class="m-t-20">
+                <div class="row">
+                    {{> recent-history}}
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="row m-y-20">
+    <!--<div class="row m-y-20">
         <div class="col-md-12">
             <a class="btn btn-black-hollow" data-toggle="modal" href="#Warning2931">Warning 29th-31st</a>
             <a class="btn btn-black-hollow" data-toggle="modal" href="#WarningCloseTogether">Warning close together</a>
@@ -228,7 +154,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
     <div class="toast toast-success invisible" id="toast-successful">
         <a class="close" id="toast-close"><i class="fa icon-close fa-3x"></i></a>
         <div class="m-t-20">
@@ -305,13 +231,15 @@
                     </div>
                     <div class="calendar-chevron text-center" id="calendar-carousel-chevron"><i class="color-blue fa fa-chevron-up fa-2x" aria-hidden="true"></i></div>
                 </div>
-                <!--<div class="text-center" id="payment-loader">
-                    <i class="fa fa-spinner fa-spin fa-4x color-blue" aria-hidden="true"></i>
-                </div>-->
-                <div class="text-center invisible m-x-50" id="payment-change-effective">
 
+                <div id="payment-ajax-loader">
+                    <i class="fa fa-4x fa-spinner fa-spin color-blue" aria-hidden="true"></i>
+                </div>
+
+
+                <div class="text-center invisible m-x-50" id="payment-change-effective">
                     <span class="body-md text-center">
-                                <i class="icon-exclamation m-x-10 color-yellow"></i><strong>You have chosen 27th.<br>
+                                <i class="icon-exclamation m-x-10 color-yellow"></i><strong>You have chosen 27th<br>
 This change will be effective from 2nd October</strong>
                         </span>
                     <span class="body-md text-center d-block m-y-10">

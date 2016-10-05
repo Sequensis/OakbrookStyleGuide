@@ -1,5 +1,5 @@
 {{> navbar}}
-<div class="container padding-top">
+<div class="container padding-top" id="payment-page">
     <div class="row">
         <div class="col-md-8 col-md-offset-2 text-center">
             <div class="theme-light">
@@ -9,57 +9,14 @@
         </div>
     </div>
     <div class="row m-y-20">
-        <div class="col-md-7 payment">
+        <div class="col-md-7 col-md-push-5 payment">
             <div class="theme-light">
                 <h2>Make a payment</h2>
             </div>
-            <div class="payment-textbox m-t-20">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="small title m-t-20">
-                            Next payment due
-                        </div>
-                        <hr class="dash">
-                        <div class="m-y-10">
-                            <span class="x-large">8</span> <span class="large m-l--5">th September 2016</span>
-                        </div>
-                        <a class="btn btn-black-hollow m-b-20" data-toggle="modal" href="#change-payment-day">Change payment day</a>
-                    </div>
-                </div>
-                <hr class="dotted-line">
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="small title m-t-10">
-                            Payment amount
-                        </div>
-                        <hr class="dash">
-                        <div class="m-y-10">
-                            <span class="x-large">£133.</span> <span class="large">70</span>
-                        </div>
-                        <a class="btn btn-black-hollow m-b-20" data-toggle="modal" href="#MakePayment">Make a payment</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="MakePayment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content modal-padding-bottom">
-                        <div class="modal-header theme-light text-center">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa icon-close fa-3x"></i></button>
-                            <h2 class="modal-title" id="myModalLabel">Make a payment</h2>
-                        </div>
-                        <div class="modal-body text-center body-lg">
-                            <p>You can make a card payment using Payments Place, with your reference number: <span class="theme-light"><strong>123</strong></span></p>
-                            <a href="https://paymentsplace.com/likelyloans/" target="_blank"> <img src="/img/PaymentsPlace.png" class="payments-place-img"></a>
-                            <p>Alternatively, you can do this by calling us on</p>
-                            <p class="lead theme-light"><strong>0208 080 6450</strong></p>
-                            <p>Please note that if you have a Direct Debit your automatic payment will still be made.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {{> textbox-payment}}
         </div>
-        <div class="col-md-4 col-md-offset-1 recent-history">
+        {{> make-payment-modal}}
+        <div class="col-md-4 col-md-pull-6 recent-history">
             <div class="font-yellow">
                 <h2>Recent History</h2>
             </div>
@@ -70,224 +27,36 @@
             </div>
         </div>
     </div>
-    <!--<div class="row m-y-20">
-        <div class="col-md-12">
-            <a class="btn btn-black-hollow" data-toggle="modal" href="#Warning2931">Warning 29th-31st</a>
-            <a class="btn btn-black-hollow" data-toggle="modal" href="#WarningCloseTogether">Warning close together</a>
-            <a class="btn btn-black-hollow" data-toggle="modal" href="#WarningNextPayment">Warning effective next payment</a>
-            <a class="btn btn-green" data-toggle="modal" href="#Success">Success</a>
-
-            <div class="modal fade" id="Warning2931" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content modal-padding-bottom">
-                        <div class="modal-header theme-light text-center">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa icon-close fa-3x"></i></button>
-                            <div class="header-icon"><img src="/img/exclamation.svg"></div>
-                            <h2 class="modal-title" id="myModalLabel">Important</h2>
-                        </div>
-                        <div class="modal-body text-center body-lg">
-                            <p>If there are less than 31 days in a particular month, we will collect payment on the last working
-                                day of that month.</p>
-                            <p>For example, if there are only 28 days in a month and the 28th falls on a Saturday, we will collect
-                                payment on Friday 27th.</p>
-                            <br>
-                            <span class="theme-light"><p><strong>Do you wish to continue?</strong></p></span>
-                            <a id="change-payment-success" class="btn btn-primary-1" data-dismiss="modal">Continue</a>
-                            <br>
-                            <span class="body-sm"><a href="" data-dismiss="modal">Cancel</a></span>
-                        </div>
+    {{> toast-success}}
+    <div class="modal fade" id="change-payment-day" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="change-payment-textbox">
+                    <div class="modal-header theme-light text-left">
+                        <button type="button" class="back color-blue" data-dismiss="modal" aria-label="Close"><i class="fa fa-chevron-left fa-2x"></i></button>
+                        <span class="body-md text-center"><strong><p>Select a new payment day</p></strong></span>
                     </div>
-                </div>
-            </div>
-            <div class="modal fade" id="WarningCloseTogether" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content modal-padding-bottom">
-                        <div class="modal-header theme-light text-center">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa icon-close fa-3x"></i></button>
-                            <div class="header-icon"><img src="/img/exclamation.svg"></div>
-                            <h2 class="modal-title" id="myModalLabel">Important</h2>
-                        </div>
-                        <div class="modal-body text-center body-lg">
-                            <p>You have opted to bring your payment date forward, therefore your next payment will be taken
-                                on the ... (n days after your ... payment)</p>
-                            <br>
-                            <span class="theme-light"><p><strong>Do you wish to continue?</strong></p></span>
-                            <a class="btn btn-primary-1">Continue</a>
-                            <br>
-                            <span class="body-sm"><a href="#" data-dismiss="modal">Cancel</a></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="WarningNextPayment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content modal-padding-bottom">
-                        <div class="modal-header theme-light text-center">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa icon-close fa-3x"></i></button>
-                            <div class="header-icon"><img src="/img/exclamation.svg"></div>
-                            <h2 class="modal-title" id="myModalLabel">Important</h2>
-                        </div>
-                        <div class="modal-body text-center body-lg">
-                            <p>date change not effective until after next payment</p>
-                            <br>
-                            <span class="theme-light"><p><strong>Do you wish to continue?</strong></p></span>
-                            <a class="btn btn-primary-1">Continue</a>
-                            <br>
-                            <span class="body-sm"><a href="#">Cancel</a></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="Success" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content modal-padding-bottom">
-                        <div class="modal-header theme-light text-center">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa icon-close fa-3x"></i></button>
-                            <div class="header-icon"><img src="/img/tick.svg"></div>
-                            <h2 class="modal-title" id="myModalLabel">Your payment date has been submitted</h2>
-                        </div>
-                        <div class="modal-body text-center body-lg">
-                            <p>We will send you an email to <span class="theme-light"><strong>test@test.com</strong></span>                                when this has been confirmed</p>
-                            <a class="btn btn-primary-1">OK</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <div class="toast toast-success invisible" id="toast-successful">
-        <a class="close" id="toast-close"><i class="fa icon-close fa-3x"></i></a>
-        <div class="m-t-20">
-            <div class="media">
-                <div class="media-left">
-                    <a>
-                        <i class="icon-tick fa fa-2x">
-                    </a>
-                </div>
-                <div class="media-body">
-                    <p class="body-lg media-heading"><strong>Your payment day request has been submitted</strong></p>
-            <p class="body-sm">Your current payment day will change to the Nth of each month from .... We will confirm this change by email shortly.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-                <div class="modal fade" id="change-payment-day" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-<div class="change-payment-textbox">
-    <div class="modal-header theme-light text-left">
-                
-                <button type="button" class="back color-blue" data-dismiss="modal" aria-label="Close"><i class="fa fa-chevron-left fa-2x"></i></button>
+                    {{> carousel}}
+                    <div class="text-center invisible m-x-50" id="payment-change-effective">
                         <span class="body-md text-center">
-                                <strong><p>Select a new payment day</p></strong>
+                            <i class="icon-exclamation m-x-10 color-yellow"></i><strong>You have chosen 27th
+                                <br>This change will be effective from 2nd October</strong>
                         </span>
-                </div>
-                <div class="calendar-carousel">
-                    <div class="carousel-navigation">
-                        <a class="prev">
-                            <span class='fa-stack fa-lg'><i class='fa fa-circle-o fa-stack-2x color-grey'></i><i class='fa fa-chevron-left fa-stack-1x color-grey'></i>
-                        </span>
-                        </a>
-                        <a class="next">
-                            <span class='fa-stack fa-lg'><i class='fa fa-circle-o fa-stack-2x color-grey'></i><i class='fa fa-chevron-right fa-stack-1x color-grey'></i>
-                                </span>
-                        </a>
-                    </div>
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"> 1st </div>
-                            <div class="swiper-slide"> 2nd </div>
-                            <div class="swiper-slide"> 3rd </div>
-                            <div class="swiper-slide"> 4th </div>
-                            <div class="swiper-slide"> 5th </div>
-                            <div class="swiper-slide"> 6th </div>
-                            <div class="swiper-slide"> 7th </div>
-                            <div class="swiper-slide" id="calendar-carousel-date-active"> 8th </div>
-                            <div class="swiper-slide"> 9th </div>
-                            <div class="swiper-slide"> 10th </div>
-                            <div class="swiper-slide"> 11th </div>
-                            <div class="swiper-slide"> 12th </div>
-                            <div class="swiper-slide"> 13th </div>
-                            <div class="swiper-slide"> 14th </div>
-                            <div class="swiper-slide" id="calendar-carousel-date-disabled"> 15th </div>
-                            <div class="swiper-slide"> 16th </div>
-                            <div class="swiper-slide"> 17th </div>
-                            <div class="swiper-slide"> 18th </div>
-                            <div class="swiper-slide"> 19th </div>
-                            <div class="swiper-slide"> 20th </div>
-                            <div class="swiper-slide"> 21st </div>
-                            <div class="swiper-slide"> 22nd </div>
-                            <div class="swiper-slide"> 23rd </div>
-                            <div class="swiper-slide"> 24th </div>
-                            <div class="swiper-slide"> 25th </div>
-                            <div class="swiper-slide"> 26th </div>
-                            <div class="swiper-slide"> 27th </div>
-                            <div class="swiper-slide"> 28th </div>
-                            <div class="swiper-slide"> 29th </div>
-                            <div class="swiper-slide"> 30th </div>
-                            <div class="swiper-slide"> 31st </div>
-                        </div>
-                    </div>
-                    <div class="calendar-chevron text-center" id="calendar-carousel-chevron"><i class="color-blue fa fa-chevron-up fa-2x" aria-hidden="true"></i></div>
-                </div>
-
-                <!--<div id="payment-ajax-loader">
-                    <i class="fa fa-4x fa-spinner fa-spin color-blue" aria-hidden="true"></i>
-                </div>-->
-
-
-                <div class="text-center invisible m-x-50" id="payment-change-effective">
-                    <span class="body-md text-center">
-                                <i class="icon-exclamation m-x-10 color-yellow"></i><strong>You have chosen 27th<br>
-This change will be effective from 2nd October</strong>
-                        </span>
-                    <span class="body-md text-center d-block m-y-10">
+                        <span class="body-md text-center d-block m-y-10">
                             <span class="body-sm">Your next three payments will be:<br>
-                            <ul class="list-unstyled"><li>Nth September 2016,</li> <li>Nth October 2016,</li> <li>Nth November 2016</li></ul>
+                                <ul class="list-unstyled"><li>Nth September 2016,</li> <li>Nth October 2016,</li> <li>Nth November 2016</li></ul>
+                            </span>
                         </span>
-                    </span>
-                </div>
-                <div class="payment-navigation">
-                    <ul class="list-inline text-center">
-                        <li><a class="btn btn-block btn-primary-1" data-toggle="modal" href="#important-1">Update</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal up" id="important-1" tabindex="-1" data-focus-on="input:first" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" id="important" role="document">
-        <div class="modal-content">
-            <div class="change-payment-textbox">
-                <div class="modal-header text-center">
-                    <div class="header-icon"><img src="/img/exclamation-alt.svg"></div>
-                    <h2 class="modal-title" id="myModalLabel">Important</h2>
-                </div>
-                <div class="modal-body text-center body-lg">
-                    <p>If there are less than 31 days in a particular month, we will collect payment on the last working day
-                        of that month.</p>
-                    <p>For example, if there are only 28 days in a month and the 28th falls on a Saturday, we will collect payment
-                        on Friday 27th.</p>
-                    <br>
-                    <div class="m-y-20">
-                        <p><strong>Do you wish to continue?</strong></p>
+                    </div>
+                    <div class="payment-navigation">
+                        <ul class="list-inline text-center">
+                            <li><a class="btn btn-block btn-primary-1" data-toggle="modal" href="#important-1">Update</a></li>
+                        </ul>
                     </div>
                 </div>
-                <div class="payment-navigation m-t-20">
-                    <ul class="list-inline text-center">
-                        <li><a class="btn btn-blue-hollow" id="change-payment-success">Continue</a></li>
-                        <li><a class="color-white" id="close-modal">Cancel</a></li>
-                    </ul>
-                </div>
-
             </div>
-
         </div>
     </div>
-</div>
-
+    {{> modal-important-28-31}}
 </div>
 {{> footer}}

@@ -1,287 +1,254 @@
     /* Need to move these //*/
-*:focus {
-    outline: -webkit-focus-ring-color auto 0px !important;
-}
-
-.payments-place-img {
-    padding: 10px 0 20px;
-    width: 182px;
-}
-
-.form-input-other {
-    margin: 40px 0 20px 0;
-}
-
-body {
-    height: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    line-height: 1.25em !important;
-}
-
-@media (max-width: 480px) {
-    .summary-header h1 {
-        font-size: 30px;
+    
+    *:focus {
+        outline: -webkit-focus-ring-color auto 0px !important;
     }
-}
-
-@media (min-width: 480px) {
-    .summary-header h1 {
-        font-size: 35px;
+    
+    .payments-place-img {
+        padding: 10px 0 20px;
+        width: 182px;
     }
-}
-
-.font-yellow {
-    color: $brand-yellow;
-}
-
-.fa-7x {
-    font-size: 7em;
-}
-
-.absolute-t-r {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.v-center {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-}
-
-.header-icon {
-    padding-bottom: 10px;
-}
-
-.no-underline {
-    text-decoration: none;
-}
-
-.no-underline:hover,
-.no-underline:focus {
-    text-decoration: none;
-}
-
-/* toast (clean this up)*/
-.toast {
-    width: 100%;
-    height: 150px;
-    border-radius: 3px;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.48);
-    .close {
+    
+    .form-input-other {
+        margin: 40px 0 20px 0;
+    }
+    
+    body {
+        height: 100%;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        line-height: 1.25em !important;
+    }
+    
+    @media (max-width: 480px) {
+        .summary-header h1 {
+            font-size: 30px;
+        }
+    }
+    
+    @media (min-width: 480px) {
+        .summary-header h1 {
+            font-size: 35px;
+        }
+    }
+    
+    .font-yellow {
+        color: $brand-yellow;
+    }
+    
+    .fa-7x {
+        font-size: 7em;
+    }
+    
+    .absolute-t-r {
         position: absolute;
         top: 0;
+        right: 0;
     }
-    i.icon-tick {
-        margin: 20px;
-        color: $brand-secondary-3;
+    
+    .v-center {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
     }
-    i.icon-close {
-        color: $brand-secondary-2;        
+    
+    .header-icon {
+        padding-bottom: 10px;
     }
-    p {
-        padding: 0 20px 0 0;
+    
+    .no-underline {
+        text-decoration: none;
     }
-    .toast-timer {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 5px;
-        border-radius: 3px 3px 0 0;
-        background-color: $brand-secondary-3;
+    
+    .no-underline:hover,
+    .no-underline:focus {
+        text-decoration: none;
     }
-    .toast-timer-go {
-        -webkit-animation: timer-go linear 7s;
-        animation: timer-go linear 7s;
-    }
-    @-webkit-keyframes timer-go {
-        0% {
-            width: 100%;
-        }
-        50% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-            width: 0%;
-        }
-    }
-    @keyframes timer-go {
-        0% {
-            width: 100%;
-        }
-        50% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-            width: 0%;
-        }
-    }
-}
-
-.toast-fade-out {
-    -webkit-animation: fade-out-7 linear 7s;
-    animation: fade-out-7 linear 7s;
-    @-webkit-keyframes fade-out-7 {
-        0% {
-            opacity: 1;
-        }
-        95% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
-    }
-    @keyframes fade-out-7 {
-        0% {
-            opacity: 1;
-        }
-        95% {
-            opacity: 1;
-        }
-        100% {
-            opacity: 0;
-        }
-    }
-}
-
-.toast-success {
-    background-color: $brand-tint-1;
-    p {
-        color: #023a15; /*dan*/
-    }
-}
-
-@media(min-width:768px) {
+    /* toast (clean this up)*/
+    
     .toast {
-        width: 586px;
-        height: 121px;
-        right: 20px;
-        bottom: 20px;
-    }
-}
-
-hr.dotted-line {
-    border: none;
-    border-top: 4px dotted #cfcfcf;
-    /*??? stu //*/
-    margin: 10px auto;
-    width: 95%;
-    visibility: visible;
-    opacity: 1;
-    -webkit-transition: 0.25s ease-in-out;
-    transition: 0.25s ease-in-out;
-    -webkit-transition-delay: .25s;
-    transition-delay: .25s;
-}
-
-#important.modal-dialog {
-    background-color: $brand-blue;
-    color: #fff;
-    .modal-title {
-        color: #fff;
-    }
-    .modal-content {
-        background-color: $brand-blue;
-    }
-    .change-payment-textbox {
-        background-color: $brand-blue;
-        .payment-navigation {
-            background-color: $brand-blue;
-            position: relative;
-            li {
-                padding: 10px 0;
+        width: 100%;
+        height: 150px;
+        border-radius: 3px;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.48);
+        .close {
+            position: absolute;
+            top: 0;
+        }
+        i.icon-tick {
+            margin: 20px;
+            color: $brand-secondary-3;
+        }
+        i.icon-close {
+            color: $brand-secondary-2;
+        }
+        p {
+            padding: 0 20px 0 0;
+        }
+        .toast-timer {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 5px;
+            border-radius: 3px 3px 0 0;
+            background-color: $brand-secondary-3;
+        }
+        .toast-timer-go {
+            -webkit-animation: timer-go linear 7s;
+            animation: timer-go linear 7s;
+        }
+        @-webkit-keyframes timer-go {
+            0% {
+                width: 100%;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                width: 0%;
+            }
+        }
+        @keyframes timer-go {
+            0% {
+                width: 100%;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                width: 0%;
             }
         }
     }
-}
-
-.owl-carousel.owl-hidden {
-    height: 85px;
-    opacity: 0;
-    -webkit-transition: opacity 1s;
-    transition: opacity 1s;
-}
-
-/* Keyframes //*/
-
-// .modal.up {
-//     -webkit-animation: modal-up .5s ease-in-out;
-//             animation: modal-up .5s ease-in-out;
-// }
-
-// @keyframes modal-up { 
-//     0% {
-//         transform: translate(0, 100%);
-//     }
-
-//     100% {
-//         transform: translate(0, 0);
-//     }
-// }
-
-// @-webkit-keyframes modal-up { 
-//     0% {
-//         transform: translate(0, 100%);
-//     }
-
-//     100% {
-//         transform: translate(0, 0);
-//     }
-// }
-
-// .up.in {
-//     -webkit-animation: modal-up .5s ease-in-out;
-//             animation: modal-up .5s ease-in-out;
-// }
-
-// @keyframes modal-down { 
-//     0% {
-//         transform: translate(0, 0%);
-//     }
-
-//     100% {
-//         transform: translate(0, 100%);
-//         display: none;        
-//     }
-// }
-
-// @-webkit-keyframes modal-down { 
-//     0% {
-//         transform: translate(0, 0%);
-//     }
-
-//     100% {
-//         transform: translate(0, 100%);
-//     }
-// }
-
-.up {
-    transform: translate(0, 100%);
-    transition: transform 0.5s ease-in-out;
-}
-
-.up.in {
-    transform: translate(0, 0);
-}
-
-
-.ob-ss-bold {
-    font-weight: 700;
-}
+    
+    .toast-fade-out {
+        -webkit-animation: fade-out-7 linear 7s;
+        animation: fade-out-7 linear 7s;
+        @-webkit-keyframes fade-out-7 {
+            0% {
+                opacity: 1;
+            }
+            95% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        @keyframes fade-out-7 {
+            0% {
+                opacity: 1;
+            }
+            95% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    }
+    
+    .toast-success {
+        background-color: $brand-tint-1;
+        p {
+            color: #023a15;
+            /*dan*/
+        }
+    }
+    
+    @media(min-width:768px) {
+        .toast {
+            width: 586px;
+            height: 121px;
+            right: 20px;
+            bottom: 20px;
+        }
+    }
+    
+    hr.dotted-line {
+        border: none;
+        border-top: 4px dotted #cfcfcf;
+        /*??? stu //*/
+        margin: 10px auto;
+        width: 95%;
+        visibility: visible;
+        opacity: 1;
+        -webkit-transition: 0.25s ease-in-out;
+        transition: 0.25s ease-in-out;
+        -webkit-transition-delay: .25s;
+        transition-delay: .25s;
+    }
+    
+    #important.modal-dialog {
+        background-color: $brand-blue;
+        color: #fff;
+        .modal-title {
+            color: #fff;
+        }
+        .modal-content {
+            background-color: $brand-blue;
+        }
+        .change-payment-textbox {
+            background-color: $brand-blue;
+            .payment-navigation {
+                background-color: $brand-blue;
+                position: relative;
+                li {
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+    
+    .owl-carousel.owl-hidden {
+        height: 85px;
+        opacity: 0;
+        -webkit-transition: opacity 1s;
+        transition: opacity 1s;
+    }
+    
+    .up {
+        transform: translate(0, 100%);
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .up.in {
+        transform: translate(0, 0);
+    }
+    
+    // bold // 
+    .ob-ss-bold {
+        font-weight: 700;
+    }
+    
+    // payments h2 //
+    #payment-page {
+        h2 {
+            font-size: 18px;
+            text-align: center;
+            margin: 30px auto;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        #payment-page {
+            h2 {
+                font-size: 30px;
+                text-align: left;
+            }
+        }
+    }

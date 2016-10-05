@@ -11,7 +11,7 @@ $(document).ready(function () {
         centeredSlides: true,
         freeModeSticky: true,
         breakpoints: {
-            768: {
+            767: {
                 slidesPerView: 'auto',
                 spaceBetween: 10,
             },

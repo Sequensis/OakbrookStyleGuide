@@ -9502,6 +9502,9 @@ a.active {
 .bg-green {
   background-color: #33D167 !important; }
 
+.bg-beige {
+  background-color: #FAF9ED; }
+
 .color-white {
   color: #fff !important; }
 
@@ -10570,6 +10573,18 @@ code {
   100% {
     opacity: 1; } }
 
+/* payment-loader //*/
+#payment-ajax-loader {
+  position: absolute;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  left: 50%;
+  top: 80%; }
+
+@media (max-width: 768px) {
+  #payment-ajax-loader {
+    top: 60%; } }
+
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: #FAF9ED; }
 
@@ -10909,53 +10924,6 @@ h6 {
   top: 0;
   right: 0; }
 
-.recent-history .large {
-  font-size: 35px;
-  font-weight: 700;
-  color: #4a4a4a;
-  /*?????????? stu //*/
-  margin-top: -10px; }
-
-.recent-history .medium-yellow {
-  font-size: 25px;
-  font-weight: 700;
-  color: #FCB829; }
-
-.recent-history .small-yellow {
-  font-size: 15px;
-  font-weight: 700;
-  color: #FCB829; }
-
-.recent-history .vertical-line {
-  height: 100px;
-  width: 2px;
-  margin-left: 9px;
-  border-left: solid 2px #FCB829; }
-
-.recent-history .vertical-line-circle {
-  border-radius: 50%;
-  width: 20px;
-  height: 20px;
-  background-color: #FCB829; }
-
-.recent-history .vertical-line-circle:first-child {
-  margin-top: 40px; }
-
-.recent-history ul {
-  padding: 0;
-  list-style: none; }
-  .recent-history ul li {
-    margin-top: 34px; }
-  .recent-history ul li:first-child {
-    margin-top: 0; }
-
-.recent-history hr.dash {
-  width: 10px;
-  border: solid 1px #FCB829;
-  text-align: left;
-  position: absolute;
-  margin: 40px 0 0 -14px; }
-
 .v-center {
   position: relative;
   top: 50%;
@@ -11076,6 +11044,9 @@ hr.dotted-line {
 .up.in {
   -ms-transform: translate(0, 0);
       transform: translate(0, 0); }
+
+.ob-ss-bold {
+  font-weight: 700; }
 
 .payment {
   padding: 0; }
@@ -11457,7 +11428,7 @@ hr.dotted-line {
     .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-disabled {
       font-size: 25px;
       line-height: 98px;
-      background-size: 88px 89px;
+      background-size: 87px 89px;
       height: 88px;
       margin: -17px auto 0 auto; }
   .carousel-navigation {
@@ -11478,6 +11449,7 @@ hr.dotted-line {
       left: 50px;
       float: right; } }
 
+/* Owl // */
 .calendar-carousel-owl {
   width: 100%;
   margin: 0 auto 50px auto; }
@@ -11573,3 +11545,55 @@ hr.dotted-line {
         float: right; }
       .calendar-carousel-owl .carousel-navigation .fa-chevron-right {
         margin-left: 2px; } }
+
+.recent-history-timeline {
+  margin: 50px 0; }
+  .recent-history-timeline .timeline-line {
+    height: 120px;
+    width: 2px;
+    border-left: solid 2px #FCB829;
+    list-style: none;
+    padding: 0;
+    color: #4a4a4a; }
+    .recent-history-timeline .timeline-line:last-child {
+      border-left: none; }
+    .recent-history-timeline .timeline-line .timeline-point {
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      background-color: #FCB829;
+      margin-left: -10px; }
+    .recent-history-timeline .timeline-line hr.timeline-dash {
+      width: 40px;
+      border: solid 1px #FCB829;
+      margin: -10px 0 0 10px; }
+    .recent-history-timeline .timeline-line ul {
+      margin: -55px 0 0 80px; }
+      .recent-history-timeline .timeline-line ul li {
+        display: inline-block;
+        width: 200px; }
+      .recent-history-timeline .timeline-line ul .large {
+        font-size: 35px;
+        font-weight: 700;
+        margin-top: -10px; }
+      .recent-history-timeline .timeline-line ul .medium {
+        font-size: 18px; }
+      .recent-history-timeline .timeline-line ul .small {
+        font-size: 13px;
+        display: inline-block;
+        width: 116px;
+        height: 30px;
+        text-align: center;
+        border-radius: 6px;
+        line-height: 30px; }
+        .recent-history-timeline .timeline-line ul .small i {
+          margin: 0 10px 0 0; }
+
+.recent-history {
+  padding: 0; }
+
+.timeline-point {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #000; }

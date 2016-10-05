@@ -158,7 +158,7 @@
     top: 80%;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     #payment-ajax-loader {
         top: 60%;
     }

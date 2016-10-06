@@ -250,16 +250,16 @@
         transition: .2s ease-in-out;
     }
     a:hover {
-        i {
+        img {
             text-shadow: 1px 1px 20px rgb(22, 42, 83);
         }
     }
     a:focus {
-        i {
+        img {
             text-shadow: 4px 2px 20px rgba(22, 42, 83, 0.7);
         }
     }
-    i {
+    img {
         display: none;
         -webkit-transition: .2s ease-in-out;
         transition: .2s ease-in-out;
@@ -269,7 +269,7 @@
 a.active {
     color: $brand-yellow;
     cursor: default;
-    i {
+    img {
         text-shadow: none !important;
     }
 }
@@ -286,7 +286,7 @@ a.active {
         -webkit-transition: .2s ease-in-out;
         transition: .2s ease-in-out;
     }
-    i {
+    img {
         display: inline-block;
         padding: 0 10px 0 0px;
     }
@@ -357,8 +357,9 @@ a.active {
             font-size: 25px;
             line-height: 0;
         }
-        i {
-            padding: 20px 0;
+        img {
+            padding: 20px;
+            margin: 0 auto;
             display: block;
         }
     }
@@ -409,8 +410,8 @@ a.active {
             display: inline-block;
             min-width: 160px;
         }
-        i {
-            padding: 20px 0;
+        img {
+            margin: 0 auto;
             display: block;
         }
     }

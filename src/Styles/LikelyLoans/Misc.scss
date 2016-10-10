@@ -85,13 +85,13 @@
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.48);
         .close {
             position: absolute;
-            top: 0;
+            top: 5px;
         }
-        i.icon-tick {
+        i.icon-tick-circle {
             margin: 20px;
             color: $brand-secondary-3;
         }
-        i.icon-close {
+        i.icon-cross {
             color: $brand-secondary-2;
         }
         p {

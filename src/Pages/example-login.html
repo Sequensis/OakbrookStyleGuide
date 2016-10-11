@@ -17,7 +17,11 @@
         <div class="modal-container theme-light">
             <div class="modal-login text-center ">
                 <div class="modal-login-header">
-                    <a class="hidden-sm hidden-xs modal-padlock"><i class="fa icon-lock fa-4x"></i></a>
+                    <a class="hidden-sm hidden-xs modal-padlock">
+                        <img class="lock-svg" src="/img/lock-smile.svg">
+                        <img class="lock-warning-svg" src="/img/exclamation-smile-lock-warning.svg" style="display:none">
+                        <img class="lock-error-svg" src="/img/exclamation-smile-lock-error.svg" style="display:none">
+                        </a>
                     <h1>Welcome to Likely Loans</h1>
                     <p>Currently this service is only available by invitation only.
                     </p>
@@ -64,8 +68,8 @@
             $('.modal-container').addClass('theme-warning');
             $(".modal-login-header h1").text("Check your details and try again!");
             $(".modal-login-header p").text("We do not recognise the details you have entered.");
-            $('.modal-padlock i').removeClass('icon-lock');
-            $('.modal-padlock i').addClass('icon-exclamation');
+            $('.modal-padlock .lock-svg').hide();
+            $('.modal-padlock .lock-warning-svg').show();
             $('.modal-background').addClass('modal-warning');
         }
 
@@ -77,6 +81,8 @@
             $('.modal-container').removeClass('theme-warning');
             $('.modal-container').addClass('theme-error');
             $('.modal-container').addClass('shake');
+            $('.modal-padlock .lock-warning-svg').hide();
+            $('.modal-padlock .lock-error-svg').show();
             $('.modal-background').removeClass('modal-warning');
             $('.modal-background').addClass('modal-error');
             $('.modal-login #a0-lock.a0-theme-default .a0-panel .a0-all, #a0-lock.a0-theme-default .a0-panel .a0-forgot-pass').toggleClass('theme-error');

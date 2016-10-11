@@ -10974,7 +10974,7 @@ h6 {
   right: 0;
   bottom: 0;
   z-index: 100;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.48); }
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
   .toast .close {
     position: absolute;
     top: 5px; }
@@ -11288,6 +11288,9 @@ hr.dotted-line {
 .m-x-50 {
   margin: 0 50px; }
 
+.m-y-50 {
+  margin: 50px 0; }
+
 .padding-mobile {
   padding-top: 5em;
   padding-bottom: 5em; }
@@ -11361,128 +11364,56 @@ hr.dotted-line {
 .d-none {
   display: none; }
 
-.swiper-container {
-  margin: 0 auto;
-  padding-top: 13px; }
-  .swiper-container .swiper-wrapper {
-    width: 100%;
-    margin: 50px auto 10px auto;
-    padding-top: 10px; }
-    .swiper-container .swiper-wrapper .swiper-slide {
-      cursor: pointer;
-      font-size: 28px;
-      font-weight: 700;
-      text-align: center;
-      width: 20vw;
-      height: 20vw;
-      border-radius: 3px;
-      border: solid 2px #767676;
-      line-height: 20vw;
-      color: #767676; }
-    .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-active {
-      height: 21vw;
-      margin: -4vw auto 4vw auto;
-      color: #005BC6;
-      font-size: 30px;
-      line-height: 25vw;
-      border: none;
-      background-image: url(../img/calendar-carousel.svg);
-      background-size: 19.5vw 22vw;
-      background-repeat: no-repeat;
-      transition: margin .25s ease-in-out; }
-    .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-disabled {
-      opacity: 0.5;
-      margin-top: -1vw;
-      color: #767676;
-      font-size: 28px;
-      line-height: 25vw;
-      height: 21vw;
-      border: none;
-      background-image: url(../img/calendar-carousel-disabled.svg);
-      background-size: 19.5vw 21vw;
-      background-repeat: no-repeat; }
-  .swiper-container .prev,
-  .swiper-container .next {
-    display: none; }
-
 .calendar-carousel {
   width: 100%;
   margin: 0 auto; }
+  .calendar-carousel .carousel-navigation {
+    display: none; }
   .calendar-carousel .calendar-chevron {
     width: 100%;
     margin: 20px auto;
     position: relative; }
+  .calendar-carousel .swiper-container {
+    margin: 0 auto;
+    padding-top: 13px; }
+    .calendar-carousel .swiper-container .swiper-wrapper {
+      width: 100%;
+      margin: 0 auto 10px auto;
+      padding-top: 10px; }
+      .calendar-carousel .swiper-container .swiper-wrapper .swiper-slide {
+        cursor: pointer;
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        width: 20vw;
+        height: 20vw;
+        border-radius: 3px;
+        border: solid 2px #767676;
+        line-height: 20vw;
+        color: #767676; }
+        .calendar-carousel .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-active {
+          height: 21vw;
+          margin: -4vw auto 4vw auto;
+          color: #005BC6;
+          font-size: 30px;
+          line-height: 25vw;
+          border: none;
+          background-image: url(../img/calendar-carousel.svg);
+          background-size: 19.5vw 22vw;
+          background-repeat: no-repeat;
+          transition: margin 0.25s ease-in-out; }
+        .calendar-carousel .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-disabled {
+          opacity: 0.5;
+          margin-top: -1vw;
+          color: #767676;
+          font-size: 28px;
+          line-height: 25vw;
+          height: 21vw;
+          border: none;
+          background-image: url(../img/calendar-carousel-disabled.svg);
+          background-size: 19.5vw 21vw;
+          background-repeat: no-repeat; }
 
-.carousel-navigation {
-  display: none; }
-
-@media (max-device-width: 992px) and (orientation: landscape) {
-  .payment-navigation {
-    position: relative !important; }
-  .swiper-container .swiper-wrapper .swiper-slide {
-    font-size: 25px;
-    line-height: 65px;
-    background-size: 64px 65px;
-    height: 65px;
-    width: 65px;
-    margin-top: -10px; }
-  .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-active {
-    font-size: 25px;
-    line-height: 75px;
-    background-size: 65px 74px;
-    height: 75px;
-    margin-top: -15px;
-    transition: none; }
-  .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-disabled {
-    font-size: 25px;
-    line-height: 75px;
-    background-size: 65px 74px;
-    height: 75px;
-    margin-top: -15px; } }
-
-@media (min-width: 768px) {
-  .calendar-carousel {
-    margin-top: -40px;
-    width: 80%; }
-  .swiper-container {
-    margin: 0 auto; }
-    .swiper-container .swiper-wrapper .swiper-slide {
-      font-size: 25px;
-      line-height: 80px;
-      height: 80px;
-      margin-top: -10px; }
-    .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-active {
-      font-size: 34px;
-      height: 88px;
-      line-height: 95px;
-      background-size: 87px 89px;
-      margin: -25px auto 0 auto;
-      transition: none; }
-    .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-disabled {
-      font-size: 25px;
-      line-height: 98px;
-      background-size: 87px 89px;
-      height: 88px;
-      margin: -17px auto 0 auto; }
-  .carousel-navigation {
-    display: block; }
-    .carousel-navigation a {
-      text-decoration: none !important;
-      z-index: 11;
-      cursor: pointer; }
-    .carousel-navigation .prev {
-      position: relative;
-      top: 75px;
-      left: -50px; }
-      .carousel-navigation .prev .fa-chevron-left {
-        margin-left: -2px; }
-    .carousel-navigation .next {
-      position: relative;
-      top: 75px;
-      left: 50px;
-      float: right; } }
-
-/* Owl // */
 .calendar-carousel-owl {
   width: 100%;
   margin: 0 auto 50px auto; }
@@ -11511,7 +11442,7 @@ hr.dotted-line {
     background-image: url(../img/calendar-carousel.svg);
     background-size: 44.5vw 46vw;
     background-repeat: no-repeat;
-    margin: -4vw 0 0 0; }
+    margin: -4vw 0 0; }
   .calendar-carousel-owl #calendar-carousel-date-disabled {
     opacity: 0.5;
     color: #767676;
@@ -11530,7 +11461,71 @@ hr.dotted-line {
   .calendar-carousel-owl .owl-carousel .owl-stage-outer {
     padding-top: 5vw; }
 
+@media (max-device-width: 992px) and (orientation: landscape) {
+  .swiper-container .swiper-wrapper .swiper-slide {
+    font-size: 25px;
+    line-height: 65px;
+    background-size: 64px 65px;
+    height: 65px;
+    width: 65px;
+    margin-top: -10px; }
+    .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-active {
+      font-size: 25px;
+      line-height: 75px;
+      background-size: 65px 74px;
+      height: 75px;
+      margin-top: -15px;
+      transition: none; }
+    .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-disabled {
+      font-size: 25px;
+      line-height: 75px;
+      background-size: 65px 74px;
+      height: 75px;
+      margin-top: -15px; }
+  .payment-navigation {
+    position: relative !important; } }
+
 @media (min-width: 768px) {
+  .calendar-carousel {
+    margin-top: -40px;
+    width: 80%; }
+    .calendar-carousel .carousel-navigation {
+      display: block; }
+      .calendar-carousel .carousel-navigation .prev {
+        position: relative;
+        top: 75px;
+        left: -50px; }
+        .calendar-carousel .carousel-navigation .prev .fa-chevron-left {
+          margin-left: -2px; }
+      .calendar-carousel .carousel-navigation .next {
+        position: relative;
+        top: 75px;
+        left: 50px;
+        float: right; }
+      .calendar-carousel .carousel-navigation a {
+        text-decoration: none;
+        z-index: 11;
+        cursor: pointer; }
+    .calendar-carousel .swiper-container {
+      margin: 0 auto; }
+      .calendar-carousel .swiper-container .swiper-wrapper .swiper-slide {
+        font-size: 25px;
+        line-height: 80px;
+        height: 80px;
+        margin-top: -10px; }
+        .calendar-carousel .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-active {
+          font-size: 34px;
+          height: 88px;
+          line-height: 95px;
+          background-size: 87px 89px;
+          margin: -25px auto 0 auto;
+          transition: none; }
+        .calendar-carousel .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-disabled {
+          font-size: 25px;
+          line-height: 98px;
+          background-size: 87px 89px;
+          height: 88px;
+          margin: -17px auto 0 auto; }
   .calendar-carousel-owl {
     margin-top: -50px;
     width: 80%; }
@@ -11630,3 +11625,65 @@ hr.dotted-line {
   width: 20px;
   height: 20px;
   background-color: #000; }
+
+.panel-group .panel:nth-child(2) {
+  margin: 30px 0; }
+
+.ob-panel-default {
+  border-color: #fff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 3px; }
+  .ob-panel-default > .panel-heading {
+    color: #005BC6;
+    background-color: #ffffff;
+    border-color: #fff; }
+    .ob-panel-default > .panel-heading + .panel-collapse > .panel-body {
+      border-top-color: #fff; }
+    .ob-panel-default > .panel-heading .badge {
+      color: #ffffff;
+      background-color: #005BC6; }
+  .ob-panel-default > .panel-footer + .panel-collapse > .panel-body {
+    border-bottom-color: #fff; }
+  .ob-panel-default .panel-heading {
+    padding: 0; }
+    .ob-panel-default .panel-heading .panel-title {
+      font-size: 15px;
+      padding: 15px; }
+    .ob-panel-default .panel-heading hr.dash {
+      margin: 0; }
+    .ob-panel-default .panel-heading .panel-btn {
+      padding: 12.5px 15px 0 0; }
+      .ob-panel-default .panel-heading .panel-btn .btn-black-hollow {
+        display: none; }
+      .ob-panel-default .panel-heading .panel-btn i {
+        color: #4a4a4a; }
+  .ob-panel-default .panel-body {
+    font-size: 18px;
+    color: #4a4a4a; }
+    .ob-panel-default .panel-body ul {
+      margin: 0; }
+      .ob-panel-default .panel-body ul li:nth-child(2) {
+        margin: 10px 0; }
+      .ob-panel-default .panel-body ul li i {
+        text-align: center;
+        width: 30px; }
+
+@media (min-width: 768px) {
+  .ob-panel-default .panel-heading .panel-title {
+    padding: 15px 15px 7.5px 15px; }
+  .ob-panel-default .panel-heading hr.dash {
+    margin: 0 15px 5px;
+    width: 30px;
+    border: solid 1px #005BC6;
+    text-align: left; }
+  .ob-panel-default .panel-heading .panel-btn .btn-black-hollow {
+    margin: 0;
+    display: block; }
+  .ob-panel-default .panel-heading .panel-btn i {
+    display: none; }
+  .ob-panel-default .panel-body ul li {
+    margin: 0;
+    display: inline-block; }
+  .ob-panel-default .panel-body ul li:nth-child(2) {
+    margin: 0 30px;
+    display: inline-block; } }

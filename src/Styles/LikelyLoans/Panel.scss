@@ -1,0 +1,84 @@
+    $ob-panel-default-text: $brand-blue !default;
+    $ob-panel-default-border: #fff !default;
+    $ob-panel-default-heading-bg: #ffffff !default;
+    .panel-group {
+        .panel:nth-child(2) {
+            margin: 30px 0;
+        }
+    }
+    
+    .ob-panel-default {
+        @include panel-variant($ob-panel-default-border, $ob-panel-default-text, $ob-panel-default-heading-bg, $ob-panel-default-border);
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 3px;
+        .panel-heading {
+            padding: 0;
+            .panel-title {
+                font-size: 15px;
+                padding: 15px;
+            }
+            hr.dash {
+                margin: 0;
+            }
+            .panel-btn {
+                padding: 12.5px 15px 0 0;
+                .btn-black-hollow {
+                    display: none;
+                }
+                i {
+                    color: #4a4a4a; //change
+                }
+            }
+        }
+        .panel-body {
+            font-size: 18px;
+            color: #4a4a4a; //change
+            ul {
+                margin: 0;
+                li:nth-child(2) {
+                    margin: 10px 0;
+                }
+                li i {
+                    text-align: center;
+                    width: 30px;
+                }
+            }
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .ob-panel-default {
+            .panel-heading {
+                .panel-title {
+                    padding: 15px 15px 7.5px 15px;
+                }
+                hr.dash {
+                    margin: 0 15px 5px;
+                    width: 30px;
+                    border: solid 1px $brand-blue;
+                    text-align: left;
+                }
+                .panel-btn {
+                    .btn-black-hollow {
+                        margin: 0;
+                        display: block;
+                    }
+                    i {
+                        display: none;
+                    }
+                }
+            }
+            .panel-body {
+                ul {
+                    li {
+                        margin: 0;
+                        display: inline-block;
+                    }
+                    li:nth-child(2) {
+                        margin: 0 30px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }

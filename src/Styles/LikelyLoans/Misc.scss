@@ -1,5 +1,14 @@
     /* Need to move these //*/
     
+    $radius: 3px;
+    $transform-x-center: translateX(-50%);
+    $transform-t-center: translateY(-50%);
+    $transform-center: translateX(-50%, -50%);
+    $transition-250ms: .25s ease-in-out;
+    $calendar-carousel: url(../img/calendar-carousel.svg);
+    $calendar-carousel-disabled: url(../img/calendar-carousel-disabled.svg);
+
+
     *:focus {
         outline: -webkit-focus-ring-color auto 0px !important;
     }
@@ -82,7 +91,7 @@
         right: 0;
         bottom: 0;
         z-index: 100;
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.48);
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
         .close {
             position: absolute;
             top: 5px;

@@ -6,7 +6,7 @@
       
   skip_tags: true
 
-  version: 1.25.0
+  version: 1.25.1
   
   init:
     - git config --global core.autocrlf input
@@ -25,6 +25,8 @@
   artifacts:
     - path: docs
       name: Oakbrook Style Guide
+    - path: dist
+      name: Oakbrook Style Guide Distribution
 
   deploy:
     - provider: Environment

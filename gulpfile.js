@@ -249,7 +249,7 @@ gulp.task('scripts:docs', function () {
 gulp.task('styles', ['styles:likelyloans', 'styles:docs']);
 
 gulp.task('styles:likelyloans', function () {
-    return gulp.src(config.paths.src.styles + '/LikelyLoans/LikelyLoans.scss')
+    return gulp.src([config.paths.src.styles + '/LikelyLoans/Docs.scss',config.paths.bower.root+'/Swiper/dist/css/swiper.css'])
         .pipe($.sourcemaps.init({ loadMaps: true }))
         .pipe($.sass({
             includePaths: config.paths.src.styles + '/LikelyLoans'

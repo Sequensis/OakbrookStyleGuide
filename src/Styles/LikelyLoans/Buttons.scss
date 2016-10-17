@@ -15,6 +15,7 @@
 .btn-primary-1 {
     background-color: $brand-blue;
     color: #fff;
+    border: 2px solid $brand-blue;
     &:focus,
     &:hover {
         background-color: darken($brand-blue, 5%);

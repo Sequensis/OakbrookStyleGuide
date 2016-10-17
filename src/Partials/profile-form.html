@@ -1,80 +1,134 @@
-<div class="panel-group" id="PanelAddress" role="tablist" aria-multiselectable="true">
-    <div class="panel ob-panel-default">
+<div class="panel-group" role="tablist" aria-multiselectable="true">
+    <div class="panel ob-panel-default" id="PanelAddress">
         <div class="panel-heading" role="tab" id="headingOne">
             <div class="panel-btn pull-right">
-                <a class="btn btn-black-hollow" data-toggle="collapse" data-parent="#PanelAddress" href="#PanelAddressEdit" id="PanelAddressToggle">Change</a>
-                <a data-toggle="collapse" data-parent="#PanelAddress" href="#PanelAddressEdit" id="PanelAddressToggleMob"><i class="fa fa-pencil fa fa-lg"></i></a>
+                <a class="btn btn-black-hollow" data-toggle="collapse" href="#PanelAddressEdit" id="PanelAddressToggle">Change</a>
+                <a data-toggle="collapse" href="#PanelAddressEdit" id="PanelAddressToggleMob"><i class="fa fa-pencil fa fa-lg"></i></a>
             </div>
             <h4 class="panel-title">
                 Current address
             </h4>
             <hr class="dash">
         </div>
+        <div id="PanelAddressEdit" class="panel-active panel-collapse collapse">
+            <div class="panel-body">
+                <form>
+                    <div class="ob-form-group empty">
+                        <input type="text" class="ob-form-input" id="AddressFlatInput" required>
+                        <label for="AddressFlatInput">Flat</label>
+                    </div>
+                    <div class="ob-form-group empty">
+                        <input type="text" class="ob-form-input" id="AddressHouseNameInput" required>
+                        <label for="AddressHouseNameInput">House name</label>
+                    </div>
+                    <div class="ob-form-group empty">
+                        <input type="text" class="ob-form-input" id="AddressHouseNumberInput" required>
+                        <label for="AddressHouseNumberInput">House number</label>
+                    </div>
+                    <div class="ob-form-group empty">
+                        <input type="text" class="ob-form-input" id="AddressStreetNameInput" required>
+                        <label for="AddressStreetNameInput">Street name</label>
+                    </div>
+                    <div class="ob-form-group empty">
+                        <input type="text" class="ob-form-input" id="AddressCityInput" required>
+                        <label for="AddressCityInput">City / Town</label>
+                    </div>
+                    <div class="ob-form-group empty has-error">
+                        <input type="text" class="ob-form-input" id="AddressCountyInput" required>
+                        <label for="AddressCountyInput">County</label>
+                    </div>
+                    <div class="ob-form-group ob-form-sml empty">
+                        <input type="text" class="ob-form-input" id="AddressPostcodeInput" required>
+                        <label for="AddressPostcodeInput">Postcode</label>
+                    </div>
+                    <ul>
+                        <li class="form-btn"> <a class="btn btn-black-hollow">Cancel</a> </li>
+                        <li class="form-btn"> <a class="btn btn-primary-1">Update</a></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
         <div class="panel-collapse collapse in" id="PanelAddressHeader">
             <div class="panel-body">
                 <strong>45 Wollaton Street</strong>, Nottingham, NG1 5FW
             </div>
         </div>
-        <div id="PanelAddressEdit" class="panel-collapse collapse">
-            <div class="panel-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia in nesciunt perferendis doloremque ipsam, nemo, cumque
-                perspiciatis praesentium provident fugiat magni nobis porro molestias minus blanditiis explicabo sed, saepe
-                dolores.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius molestiae iste ducimus nobis
-                enim nam nisi, recusandae quam, quo hic ab sit pariatur, beatae distinctio alias suscipit blanditiis doloribus!
-            </div>
-        </div>
+
     </div>
-    <div class="panel ob-panel-default">
+    <div class="panel ob-panel-default" id="PanelContact">
         <div class="panel-heading" role="tab" id="headingOne">
             <div class="panel-btn pull-right">
-                <a class="btn btn-black-hollow" data-toggle="collapse" data-parent="#PanelContact" href="#PanelContactEdit" id="PanelContactToggle">Change</a>
-                <a data-toggle="collapse" data-parent="#PanelContact" href="#PanelContactEdit" id="PanelContactToggleMob"><i class="fa fa-pencil fa fa-lg"></i></a>
+                <a class="btn btn-black-hollow" data-toggle="collapse" href="#PanelContactEdit" id="PanelContactToggle">Change</a>
+                <a data-toggle="collapse" href="#PanelContactEdit" id="PanelContactToggleMob"><i class="fa fa-pencil fa fa-lg"></i></a>
             </div>
             <h4 class="panel-title">
                 Contact numbers
             </h4>
             <hr class="dash">
         </div>
+        <div id="PanelContactEdit" class="panel-active panel-collapse collapse">
+            <div class="panel-body">
+                <form>
+                    <div class="ob-form-material empty">
+                        <input type="tel" class="ob-form-input" id="ContactHomeInput" required>
+                        <label for="ContactHomeInput">Home</label>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="ob-form-material empty">
+                        <input type="tel" class="ob-form-input" id="ContactMobileInput" required>
+                        <label for="ContactMobileInput">Mobile</label>
+                        <span class="bar"></span>
+                    </div>
+                    <div class="ob-form-material empty has-error">
+                        <input type="tel" class="ob-form-input" id="ContactWorkInput" required>
+                        <label for="ContactWorkInput">Work</label>
+                        <span class="bar"></span>
+                    </div>
+                    <ul>
+                        <li class="form-btn"> <a class="btn btn-black-hollow">Cancel</a> </li>
+                        <li class="form-btn"> <a class="btn btn-primary-1">Update</a></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
         <div class="panel-collapse collapse in" id="PanelContactHeader">
             <div class="panel-body">
                 <ul class="list-unstyled">
-                    <li><i class="fa icon-phone fa-lg"></i> Home: <strong>01551 1231234</strong></li>
-                    <li><i class="fa icon-mobile fa-lg"></i> Mobile: <strong>07712345678</strong></li>
-                    <li><i class="fa fa-building-o fa-lg"></i> Work: <strong>0111 1234562</strong></li>
+                    <li class="panel-list"><i class="fa icon-phone fa-lg"></i> Home: <strong>01551 1231234</strong></li>
+                    <li class="panel-list"><i class="fa icon-mobile fa-lg"></i> Mobile: <strong>07712345678</strong></li>
+                    <li class="panel-list"><i class="fa fa-building-o fa-lg"></i> Work: <strong>0111 1234562</strong></li>
                 </ul>
             </div>
         </div>
-        <div id="PanelContactEdit" class="panel-collapse collapse">
-            <div class="panel-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia in nesciunt perferendis doloremque ipsam, nemo, cumque
-                perspiciatis praesentium provident fugiat magni nobis porro molestias minus blanditiis explicabo sed, saepe
-                dolores.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius molestiae iste ducimus nobis
-                enim nam nisi, recusandae quam, quo hic ab sit pariatur, beatae distinctio alias suscipit blanditiis doloribus!
-            </div>
-        </div>
     </div>
-    <div class="panel ob-panel-default">
+    <div class="panel ob-panel-default" id="PanelEmail">
         <div class="panel-heading" role="tab" id="headingOne">
             <div class="panel-btn pull-right">
-                <a class="btn btn-black-hollow" data-toggle="collapse" data-parent="#PanelEmail" href="#PanelEmailEdit" id="PanelEmailToggle">Change</a>
-                <a data-toggle="collapse" data-parent="#PanelEmail" href="#PanelEmailEdit" id="PanelEmailToggleMob"><i class="fa fa-pencil fa fa-lg"></i></a>
+                <a class="btn btn-black-hollow" data-toggle="collapse" href="#PanelEmailEdit" id="PanelEmailToggle">Change</a>
+                <a data-toggle="collapse" href="#PanelEmailEdit" id="PanelEmailToggleMob"><i class="fa fa-pencil fa fa-lg"></i></a>
             </div>
             <h4 class="panel-title">
                 Email address
             </h4>
             <hr class="dash">
         </div>
+        <div id="PanelEmailEdit" class="panel-active panel-collapse collapse">
+            <div class="panel-body">
+                <form>
+                    <div class="ob-form-group empty">
+                        <input type="text" class="ob-form-input" id="EmailInput" required>
+                        <label for="EmailInput">Email address</label>
+                    </div>
+                    <ul>
+                        <li class="form-btn"> <a class="btn btn-black-hollow">Cancel</a> </li>
+                        <li class="form-btn"> <a class="btn btn-primary-1">Update</a></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
         <div class="panel-collapse collapse in" id="PanelEmailHeader">
             <div class="panel-body">
                 <strong>danielhumenko@gmail.com</strong>
-            </div>
-        </div>
-        <div id="PanelEmailEdit" class="panel-collapse collapse">
-            <div class="panel-body">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia in nesciunt perferendis doloremque ipsam, nemo, cumque
-                perspiciatis praesentium provident fugiat magni nobis porro molestias minus blanditiis explicabo sed, saepe
-                dolores.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores eius molestiae iste ducimus nobis
-                enim nam nisi, recusandae quam, quo hic ab sit pariatur, beatae distinctio alias suscipit blanditiis doloribus!
             </div>
         </div>
     </div>

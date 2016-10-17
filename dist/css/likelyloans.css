@@ -3763,7 +3763,8 @@ a.thumbnail.active {
 
 .btn-primary-1 {
   background-color: #005BC6;
-  color: #fff; }
+  color: #fff;
+  border: 2px solid #005BC6; }
   .btn-primary-1:focus, .btn-primary-1:hover {
     background-color: #004fad;
     color: #fff; }
@@ -12105,41 +12106,58 @@ hr.dotted-line {
 .ob-panel-default {
   border-color: #fff;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
-  border-radius: 3px; }
+  border: none;
+  transition: 0.25s ease-in-out; }
   .ob-panel-default > .panel-heading {
     color: #005BC6;
-    background-color: #ffffff;
+    background-color: none;
     border-color: #fff; }
     .ob-panel-default > .panel-heading + .panel-collapse > .panel-body {
       border-top-color: #fff; }
     .ob-panel-default > .panel-heading .badge {
-      color: #ffffff;
+      color: none;
       background-color: #005BC6; }
   .ob-panel-default > .panel-footer + .panel-collapse > .panel-body {
     border-bottom-color: #fff; }
+  .ob-panel-default.ob-panel-active {
+    background-color: #f5f3ef; }
+  .ob-panel-default.ob-panel-disabled {
+    opacity: 0.3; }
   .ob-panel-default .panel-heading {
-    padding: 0; }
+    padding: 0;
+    transition: background-color 0.5s ease-in-out; }
     .ob-panel-default .panel-heading .panel-title {
       font-size: 15px;
       padding: 15px; }
     .ob-panel-default .panel-heading hr.dash {
-      margin: 0; }
+      margin: 0;
+      border-top: 1px solid #e3dfda;
+      /*change*/ }
     .ob-panel-default .panel-heading .panel-btn {
       padding: 12.5px 15px 0 0; }
       .ob-panel-default .panel-heading .panel-btn .btn-black-hollow {
         display: none; }
       .ob-panel-default .panel-heading .panel-btn i {
-        color: #4a4a4a; }
+        color: #4a4a4a;
+        /*change*/ }
   .ob-panel-default .panel-body {
     font-size: 18px;
-    color: #4a4a4a; }
+    color: #4a4a4a;
+    /*change*/
+    border: none; }
     .ob-panel-default .panel-body ul {
       margin: 0; }
-      .ob-panel-default .panel-body ul li:nth-child(2) {
+      .ob-panel-default .panel-body ul li.panel-list:nth-child(2) {
         margin: 10px 0; }
       .ob-panel-default .panel-body ul li i {
         text-align: center;
         width: 30px; }
+
+.panel-heading-active {
+  background-color: #f5f3ef; }
+
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+  border: none; }
 
 @media (min-width: 768px) {
   .ob-panel-default .panel-heading .panel-title {
@@ -12157,9 +12175,146 @@ hr.dotted-line {
   .ob-panel-default .panel-body ul li {
     margin: 0;
     display: inline-block; }
-  .ob-panel-default .panel-body ul li:nth-child(2) {
+  .ob-panel-default .panel-body ul li.panel-list:nth-child(2) {
     margin: 0 30px;
     display: inline-block; } }
+
+form > ul {
+  padding: 0; }
+  form > ul > li {
+    display: inline-block;
+    width: calc(50% - 12px); }
+    form > ul > li.form-btn:nth-child(2) {
+      margin-left: 20px; }
+    form > ul > li > a.btn {
+      width: 100%;
+      margin: 0; }
+
+form .ob-form-group {
+  position: relative;
+  margin: 20px 0 30px 0; }
+  form .ob-form-group.ob-form-sml {
+    width: 50%; }
+  form .ob-form-group input {
+    font-size: 18px;
+    display: block;
+    padding: 0 10px;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #979797;
+    border-radius: 3px;
+    box-shadow: none !important; }
+    form .ob-form-group input:focus {
+      outline: none; }
+  form .ob-form-group label {
+    color: #4a4a4a;
+    font-weight: 500;
+    border-radius: 3px;
+    background-color: #fff;
+    opacity: .6;
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    top: 12.5px;
+    transition: 0.25s ease-in-out; }
+  form .ob-form-group input:focus ~ label,
+  form .ob-form-group input:required:valid ~ label,
+  form .ob-form-group:not(.empty) input ~ label {
+    top: -10px;
+    left: 10px;
+    padding: 2.5px 5px;
+    font-size: 12px;
+    font-weight: 600;
+    opacity: 1; }
+  form .ob-form-group.has-error::after {
+    content: 'Please enter a County';
+    color: #DE344F;
+    font-size: 13px;
+    font-weight: 600;
+    position: absolute;
+    margin: 5px; }
+  form .ob-form-group.has-error input {
+    border-color: #DE344F; }
+  form .ob-form-group.has-error label {
+    color: #DE344F;
+    opacity: 1; }
+
+.ob-form-material {
+  position: relative;
+  margin: 20px 0 30px 0; }
+  .ob-form-material input {
+    background-color: transparent;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #767676;
+    box-shadow: none !important; }
+    .ob-form-material input:focus {
+      outline: none;
+      border-bottom: 1px solid #005BC6;
+      transition: 0.25s ease-in-out; }
+  .ob-form-material label {
+    color: #767676;
+    font-weight: 500;
+    opacity: 1;
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.25s ease-in-out;
+    margin: 0; }
+  .ob-form-material input:focus ~ label,
+  .ob-form-material input:required:valid ~ label,
+  .ob-form-material:not(.empty) input ~ label {
+    top: -20px;
+    font-size: 14px;
+    color: #005BC6; }
+  .ob-form-material.has-error input {
+    border-color: #DE344F; }
+    .ob-form-material.has-error input:focus {
+      border-bottom: 1px solid #005BC6;
+      transition: 0.25s ease-in-out; }
+  .ob-form-material.has-error label {
+    color: #DE344F; }
+  .ob-form-material.has-error input:focus ~ label,
+  .ob-form-material.has-error input:required:valid ~ label,
+  .ob-form-material.has-error:not(.empty) input ~ label {
+    color: #005BC6; }
+  .ob-form-material .bar {
+    position: relative;
+    display: block;
+    width: 100%; }
+    .ob-form-material .bar:before, .ob-form-material .bar:after {
+      content: '';
+      height: 2px;
+      width: 0;
+      bottom: 1px;
+      position: absolute;
+      background: #005BC6;
+      transition: 0.25s ease-in-out; }
+    .ob-form-material .bar:before {
+      left: 50%; }
+    .ob-form-material .bar:after {
+      right: 50%; }
+  .ob-form-material input:focus ~ .bar:before,
+  .ob-form-material input:focus ~ .bar:after {
+    width: 50%; }
+  .ob-form-material.has-error .bar:before, .ob-form-material.has-error .bar:after {
+    background: #005BC6; }
+
+@media (min-width: 768px) {
+  form .ob-form-group {
+    width: 35%; }
+    form .ob-form-group.ob-form-sml {
+      width: 15%; }
+  form > ul > li {
+    width: auto; }
+  form > ul.form-btn:nth-child(2) {
+    margin-left: 10px; } }
 
 /**
  * Swiper 3.3.1

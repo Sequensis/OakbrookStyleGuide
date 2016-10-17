@@ -11848,14 +11848,14 @@ hr.dotted-line {
     position: relative; }
   .calendar-carousel .swiper-container {
     margin: 0 auto;
-    padding-top: 13px; }
+    padding-top: 12px; }
     .calendar-carousel .swiper-container .swiper-wrapper {
       width: 100%;
       margin: 0 auto 10px auto;
       padding-top: 10px; }
       .calendar-carousel .swiper-container .swiper-wrapper .swiper-slide {
         cursor: pointer;
-        font-size: 28px;
+        font-size: 22px;
         font-weight: 700;
         text-align: center;
         width: 20vw;
@@ -11868,7 +11868,7 @@ hr.dotted-line {
           height: 21vw;
           margin: -4vw auto 4vw auto;
           color: #005BC6;
-          font-size: 30px;
+          font-size: 24px;
           line-height: 25vw;
           border: none;
           background-image: url(../img/calendar-carousel.svg);
@@ -11879,7 +11879,7 @@ hr.dotted-line {
           opacity: 0.5;
           margin-top: -1vw;
           color: #767676;
-          font-size: 28px;
+          font-size: 24px;
           line-height: 25vw;
           height: 21vw;
           border: none;
@@ -11990,7 +11990,7 @@ hr.dotted-line {
           font-size: 30px;
           height: 90px;
           line-height: 95px;
-          background-size: 88px 90px;
+          background-size: 87px 90px;
           margin: -15px auto 0 auto;
           transition: none; }
         .calendar-carousel .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-disabled {

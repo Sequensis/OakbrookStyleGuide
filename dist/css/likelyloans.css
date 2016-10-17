@@ -11987,11 +11987,11 @@ hr.dotted-line {
         height: 80px;
         margin-top: -10px; }
         .calendar-carousel .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-active {
-          font-size: 34px;
-          height: 88px;
+          font-size: 30px;
+          height: 90px;
           line-height: 95px;
-          background-size: 87px 89px;
-          margin: -25px auto 0 auto;
+          background-size: 88px 90px;
+          margin: -15px auto 0 auto;
           transition: none; }
         .calendar-carousel .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-disabled {
           font-size: 25px;

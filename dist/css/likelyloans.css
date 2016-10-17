@@ -12314,7 +12314,9 @@ form .ob-form-group {
   form > ul > li {
     width: auto; }
   form > ul.form-btn:nth-child(2) {
-    margin-left: 10px; } }
+    margin-left: 10px; }
+  form .ob-form-material {
+    width: 50%; } }
 
 /**
  * Swiper 3.3.1

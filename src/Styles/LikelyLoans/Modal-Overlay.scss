@@ -71,8 +71,8 @@
 
 .close {
     position: fixed;
-    right: 0;
-    top: 5px;
+    right: 5px;
+    top: 15px;
     border: 0px;
     color: $brand-secondary-2;
     i {
@@ -116,8 +116,6 @@ button:focus {
     }
     .close {
         position: absolute;
-        right: 5px;
-        top: 15px;
     }
     .modal-body {
         margin: 0;

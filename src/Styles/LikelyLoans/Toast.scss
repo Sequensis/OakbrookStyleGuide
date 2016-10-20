@@ -1,0 +1,101 @@
+    .toast {
+    width: 100%;
+    border-radius: 3px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .toast-container {
+        margin: 20px auto 40px auto;
+        color: $brand-secondary-3;
+        .toast-body {
+            margin-top: 10px;
+            text-align: center;
+            p {
+                margin: 5px auto;
+            }
+            p:first-child {
+                padding: 0 30px;
+            }
+            p:last-child {
+                padding: 0 20px;
+            }
+        }
+        .toast-icon {
+            text-align: center;
+            margin-top: 5px;
+        }
+    }
+}
+
+.toast-success {
+    background-color: $brand-tint-1;
+    p {
+        color: $brand-secondary-3-font;
+    }
+    .close {
+        i.icon-cross {
+            color: $brand-secondary-3-font;
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .toast {
+        width: 568px;
+        right: 20px;
+        bottom: 20px;
+        .toast-container {
+            margin: 20px auto 20px auto;
+            .toast-body {
+                margin: 0 0 0 -20px;
+                text-align: left;
+                p {
+                    margin: 5px auto;
+                }
+                p:first-child {
+                    padding: 0;
+                }
+                p:last-child {
+                    padding: 0;
+                }
+            }
+            .toast-icon {
+                margin-top: 10px;                
+            }
+        }
+    }
+}
+
+    .toast-fade-out {
+        -webkit-animation: fade-out-7 linear 7s;
+        animation: fade-out-7 linear 7s;
+        @-webkit-keyframes fade-out-7 {
+            0% {
+                opacity: 1;
+            }
+            95% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        @keyframes fade-out-7 {
+            0% {
+                opacity: 1;
+            }
+            95% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    }

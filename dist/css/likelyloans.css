@@ -12265,7 +12265,8 @@ form .ob-form-group {
   .toast .close {
     position: absolute;
     top: 20px;
-    right: 20px; }
+    right: 20px;
+    z-index: 100; }
   .toast .toast-container {
     margin: 20px auto 40px auto;
     color: #33D167; }

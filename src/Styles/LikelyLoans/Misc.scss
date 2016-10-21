@@ -118,13 +118,6 @@
         }
     }
     
-    .owl-carousel.owl-hidden {
-        height: 85px;
-        opacity: 0;
-        -webkit-transition: opacity 1s;
-        transition: opacity 1s;
-    }
-    
     .up {
         transform: translate(0, 100%);
         transition: transform 0.5s ease-in-out;

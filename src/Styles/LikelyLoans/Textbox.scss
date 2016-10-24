@@ -42,9 +42,6 @@
         border: solid 1px $brand-blue;
         text-align: left;
     }
-    .fa-calendar-o {
-        color: $brand-blue;
-    }
     .payment-day {
         p {
             display: inline;
@@ -60,94 +57,6 @@
     }
 }
 
-.payment-textbox-active {
-    height: 100%;
-    width: 100%;
-    background-color: #eee;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: visibility 0s ease-in-out 0.25s, opacity 0.25s ease-in-out;
-    transition: visibility 0s ease-in-out 0.25s, opacity 0.25s ease-in-out;
-    margin-top: -447px;
-    box-shadow: none;
-    .row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .medium {
-        font-size: 25px;
-        font-weight: 700;
-    }
-    .small {
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 1.53;
-        color: $brand-blue;
-    }
-    hr.dash {
-        margin: 5px 0;
-        width: 30px;
-        border: solid 1px $brand-blue;
-        text-align: left;
-    }
-    .btn-black-hollow {
-        margin: 20px 0 0 0;
-    }
-    .btn-green {
-        margin: 20px 0 0 0;
-    }
-    .payment-day {
-        p {
-            display: inline;
-            position: absolute;
-        }
-    }
-    ol,
-    ul {
-        margin: 0;
-        li {
-            padding: 0 0 0 10px;
-        }
-    }
-}
-
-// #change-payment-top,
-// #change-payment-bottom {
-//     -webkit-transition: .25s ease-in-out;
-//     transition: .25s ease-in-out;
-//     -webkit-transition-delay: .25s;
-//     transition-delay: .25s;
-// }
-// #change-payment-top.payment-active {
-//     transform: translate(0, -100%);
-//     -webkit-transform: translate(0, -100%);
-//     -o-transform: translate(0, -100%);
-//     -moz-transform: translate(0, -100%);
-//     display: block;
-//     -webkit-transition-delay: 0s;
-//             transition-delay: 0s;
-// }
-// #change-payment-bottom.payment-active {
-//     transform: translate(0, 120%);
-//     -webkit-transform: translate(0, 120%);
-//     -o-transform: translate(0, 120%);
-//     -moz-transform: translate(0, 120%);
-//     display: block;
-//     -webkit-transition-delay: 0s;
-//             transition-delay: 0s;
-// }
-// #change-payment-dotted-line.payment-active {
-//     visibility: hidden;
-//     opacity: 0;
-//     -webkit-transition: visibility 0s ease-in-out 0.25s, opacity 0.25s ease-in-out;
-//     transition: visibility 0s ease-in-out 0.25s, opacity 0.25s ease-in-out;
-// }
-// #change-payment-active.payment-active {
-//     visibility: visible;
-//     opacity: 1;
-//     -webkit-transition-delay: .25s;
-//     transition-delay: .25s;
-// }
 .recent-history-textbox {
     height: 90px;
     border-radius: 3px;
@@ -166,10 +75,15 @@
 .change-payment-textbox {
     background-color: #fff;
     box-shadow: none;
-    .modal-header p {
-        padding: 0 45px 40px;
-        margin-top: -25px;
-        margin-bottom: 0;
+    .modal-header {
+        p {
+            padding: 0 45px 40px;
+            margin-top: -25px;
+            margin-bottom: 0;
+        }
+        hr.dash {
+            visibility: hidden;
+        }
     }
     .row {
         margin-left: 0;
@@ -190,6 +104,12 @@
         width: 30px;
         border: solid 1px $brand-blue;
         text-align: left;
+    }
+    button .icon-cross {
+        display: none;
+    }
+    button .fa-chevron-left {
+        margin-top: 8px;
     }
     .payment-day {
         p {
@@ -225,13 +145,38 @@
 }
 
 @media (min-width: 768px) {
+    .change-payment-textbox {
+        .modal-header {
+            padding: 50px 30px 30px;
+            p {
+                padding: 0;
+            }
+            hr.dash {
+                visibility: visible;
+            }
+            button .fa-chevron-left {
+                display: none;
+            }
+            button .icon-cross {
+                display: block;
+                position: fixed;
+                right: 15px;
+                color: $brand-secondary-2;
+            }
+        }
         .payment-navigation {
-        position: relative !important;
+            position: relative;
+            border-top: dashed $brand-secondary-2;
+            margin-top: 26px;
+            a {
+                width: 30%;
+            }
+        }
     }
 }
 
 @media (max-width: 320px) {
     .change-payment-textbox .modal-header .header-icon {
         display: none;
-    } 
+    }
 }

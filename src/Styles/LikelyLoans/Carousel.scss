@@ -6,7 +6,7 @@
     }
     .calendar-chevron {
         width: 100%;
-        margin: 20px auto;
+        margin: 0 auto 20px auto;
         position: relative;
     }
     .swiper-container {
@@ -70,7 +70,6 @@
             line-height: 75px;
             background-size: 65px 74px;
             height: 75px;
-            margin-top: -15px;
             transition: none;
         }
         &#calendar-carousel-date-disabled {
@@ -78,7 +77,6 @@
             line-height: 75px;
             background-size: 65px 74px;
             height: 75px;
-            margin-top: -15px;
         }
     }
     .payment-navigation {
@@ -116,23 +114,23 @@
             margin: 0 auto;
             .swiper-wrapper .swiper-slide {
                 font-size: 25px;
-                line-height: 80px;
-                height: 80px;
+                line-height: 88px;
+                height: 88px;
                 margin-top: -10px;
                 &#calendar-carousel-date-active {
                     font-size: 30px;
-                    height: 90px;
-                    line-height: 95px;
-                    background-size: 87px 90px;
+                    height: 95px;
+                    line-height: 100px;
+                    background-size: 87px 95px;
                     margin: -15px auto 0 auto;
                     transition: none;
                 }
                 &#calendar-carousel-date-disabled {
                     font-size: 25px;
-                    line-height: 98px;
-                    background-size: 87px 89px;
-                    height: 88px;
-                    margin: -17px auto 0 auto;
+                    height: 95px;
+                    line-height: 100px;
+                    background-size: 87px 95px;
+                    margin: -15px auto 0 auto;
                 }
             }
         }

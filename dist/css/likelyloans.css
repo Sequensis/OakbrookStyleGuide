@@ -11365,8 +11365,6 @@ hr.dotted-line {
     width: 30px;
     border: solid 1px #005BC6;
     text-align: left; }
-  .payment-textbox .fa-calendar-o {
-    color: #005BC6; }
   .payment-textbox .payment-day p {
     display: inline;
     position: absolute; }
@@ -11375,45 +11373,6 @@ hr.dotted-line {
     margin: 0; }
     .payment-textbox ol li,
     .payment-textbox ul li {
-      padding: 0 0 0 10px; }
-
-.payment-textbox-active {
-  height: 100%;
-  width: 100%;
-  background-color: #eee;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s ease-in-out 0.25s, opacity 0.25s ease-in-out;
-  margin-top: -447px;
-  box-shadow: none; }
-  .payment-textbox-active .row {
-    margin-left: 0;
-    margin-right: 0; }
-  .payment-textbox-active .medium {
-    font-size: 25px;
-    font-weight: 700; }
-  .payment-textbox-active .small {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 1.53;
-    color: #005BC6; }
-  .payment-textbox-active hr.dash {
-    margin: 5px 0;
-    width: 30px;
-    border: solid 1px #005BC6;
-    text-align: left; }
-  .payment-textbox-active .btn-black-hollow {
-    margin: 20px 0 0 0; }
-  .payment-textbox-active .btn-green {
-    margin: 20px 0 0 0; }
-  .payment-textbox-active .payment-day p {
-    display: inline;
-    position: absolute; }
-  .payment-textbox-active ol,
-  .payment-textbox-active ul {
-    margin: 0; }
-    .payment-textbox-active ol li,
-    .payment-textbox-active ul li {
       padding: 0 0 0 10px; }
 
 .recent-history-textbox {
@@ -11435,6 +11394,8 @@ hr.dotted-line {
     padding: 0 45px 40px;
     margin-top: -25px;
     margin-bottom: 0; }
+  .change-payment-textbox .modal-header hr.dash {
+    visibility: hidden; }
   .change-payment-textbox .row {
     margin-left: 0;
     margin-right: 0; }
@@ -11451,6 +11412,10 @@ hr.dotted-line {
     width: 30px;
     border: solid 1px #005BC6;
     text-align: left; }
+  .change-payment-textbox button .icon-cross {
+    display: none; }
+  .change-payment-textbox button .fa-chevron-left {
+    margin-top: 8px; }
   .change-payment-textbox .payment-day p {
     display: inline;
     position: absolute; }
@@ -11475,8 +11440,25 @@ hr.dotted-line {
     font-size: 30px !important; } }
 
 @media (min-width: 768px) {
-  .payment-navigation {
-    position: relative !important; } }
+  .change-payment-textbox .modal-header {
+    padding: 50px 30px 30px; }
+    .change-payment-textbox .modal-header p {
+      padding: 0; }
+    .change-payment-textbox .modal-header hr.dash {
+      visibility: visible; }
+    .change-payment-textbox .modal-header button .fa-chevron-left {
+      display: none; }
+    .change-payment-textbox .modal-header button .icon-cross {
+      display: block;
+      position: fixed;
+      right: 15px;
+      color: #767676; }
+  .change-payment-textbox .payment-navigation {
+    position: relative;
+    border-top: dashed #767676;
+    margin-top: 26px; }
+    .change-payment-textbox .payment-navigation a {
+      width: 30%; } }
 
 @media (max-width: 320px) {
   .change-payment-textbox .modal-header .header-icon {
@@ -11619,7 +11601,7 @@ hr.dotted-line {
     display: none; }
   .calendar-carousel .calendar-chevron {
     width: 100%;
-    margin: 20px auto;
+    margin: 0 auto 20px auto;
     position: relative; }
   .calendar-carousel .swiper-container {
     margin: 0 auto;
@@ -11675,14 +11657,12 @@ hr.dotted-line {
       line-height: 75px;
       background-size: 65px 74px;
       height: 75px;
-      margin-top: -15px;
       transition: none; }
     .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-disabled {
       font-size: 25px;
       line-height: 75px;
       background-size: 65px 74px;
-      height: 75px;
-      margin-top: -15px; }
+      height: 75px; }
   .payment-navigation {
     position: relative !important; } }
 
@@ -11711,22 +11691,22 @@ hr.dotted-line {
       margin: 0 auto; }
       .calendar-carousel .swiper-container .swiper-wrapper .swiper-slide {
         font-size: 25px;
-        line-height: 80px;
-        height: 80px;
+        line-height: 88px;
+        height: 88px;
         margin-top: -10px; }
         .calendar-carousel .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-active {
           font-size: 30px;
-          height: 90px;
-          line-height: 95px;
-          background-size: 87px 90px;
+          height: 95px;
+          line-height: 100px;
+          background-size: 87px 95px;
           margin: -15px auto 0 auto;
           transition: none; }
         .calendar-carousel .swiper-container .swiper-wrapper .swiper-slide#calendar-carousel-date-disabled {
           font-size: 25px;
-          line-height: 98px;
-          background-size: 87px 89px;
-          height: 88px;
-          margin: -17px auto 0 auto; } }
+          height: 95px;
+          line-height: 100px;
+          background-size: 87px 95px;
+          margin: -15px auto 0 auto; } }
 
 .recent-history-timeline {
   margin: 30px 0; }
@@ -11824,6 +11804,7 @@ hr.dotted-line {
     font-size: 18px;
     color: #4a4a4a;
     /*change*/
+    padding: 20px;
     border: none; }
     .ob-panel-default .panel-body ul {
       margin: 0; }

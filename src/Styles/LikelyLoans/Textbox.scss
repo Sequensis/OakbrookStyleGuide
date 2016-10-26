@@ -152,9 +152,6 @@
 
 @media (min-width: 768px) {
     .payment-textbox {
-        .payment-navigation {
-            position: relative !important;
-        }
         .submitted-container {
             .submitted-title {
                 width: 5%;
@@ -165,6 +162,9 @@
                 padding-left: 10px;
             }
         }
+    }
+    .payment-navigation {
+        position: relative !important;
     }
 }
 

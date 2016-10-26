@@ -11448,14 +11448,14 @@ hr.dotted-line {
     font-size: 30px !important; } }
 
 @media (min-width: 768px) {
-  .payment-textbox .payment-navigation {
-    position: relative !important; }
   .payment-textbox .submitted-container .submitted-title {
     width: 5%;
     text-align: center; }
   .payment-textbox .submitted-container .submitted-body {
     width: 80%;
-    padding-left: 10px; } }
+    padding-left: 10px; }
+  .payment-navigation {
+    position: relative !important; } }
 
 @media (max-width: 320px) {
   .change-payment-textbox .modal-header .header-icon {

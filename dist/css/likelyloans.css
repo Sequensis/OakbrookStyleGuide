@@ -11448,13 +11448,14 @@ hr.dotted-line {
     font-size: 30px !important; } }
 
 @media (min-width: 768px) {
-  .payment-navigation {
+  .payment-textbox .payment-navigation {
     position: relative !important; }
-  .submitted-container .submitted-title {
-    width: 10%;
+  .payment-textbox .submitted-container .submitted-title {
+    width: 5%;
     text-align: center; }
-  .submitted-container .submitted-body {
-    width: 75%; } }
+  .payment-textbox .submitted-container .submitted-body {
+    width: 80%;
+    padding-left: 10px; } }
 
 @media (max-width: 320px) {
   .change-payment-textbox .modal-header .header-icon {
@@ -11983,6 +11984,9 @@ form .ob-form-group {
   right: 0;
   bottom: 0;
   z-index: 100; }
+  .toast.up {
+    -ms-transform: translateY(150%);
+        transform: translateY(150%); }
   .toast .close {
     position: absolute;
     top: 20px;

@@ -151,16 +151,19 @@
 }
 
 @media (min-width: 768px) {
-    .payment-navigation {
-        position: relative !important;
-    }
-    .submitted-container {
-        .submitted-title {
-            width: 10%;
-            text-align: center;
+    .payment-textbox {
+        .payment-navigation {
+            position: relative !important;
         }
-        .submitted-body {
-            width: 75%;
+        .submitted-container {
+            .submitted-title {
+                width: 5%;
+                text-align: center;
+            }
+            .submitted-body {
+                width: 80%;
+                padding-left: 10px;
+            }
         }
     }
 }

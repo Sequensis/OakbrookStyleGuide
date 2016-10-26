@@ -5,6 +5,9 @@
     right: 0;
     bottom: 0;
     z-index: 100;
+    &.up {
+        transform: translateY(150%);
+    }
     .close {
         position: absolute;
         top: 20px;

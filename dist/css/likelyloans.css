@@ -11382,7 +11382,7 @@ hr.dotted-line {
     margin-top: 5px; }
   .payment-textbox .submitted-container .submitted-body {
     float: left;
-    widows: 85%; }
+    width: 85%; }
     .payment-textbox .submitted-container .submitted-body .body-sm {
       color: #767676; }
 
@@ -11451,7 +11451,7 @@ hr.dotted-line {
     width: 10%;
     text-align: center; }
   .submitted-container .submitted-body {
-    widows: 75%; } }
+    width: 75%; } }
 
 @media (max-width: 320px) {
   .change-payment-textbox .modal-header .header-icon {
@@ -11979,8 +11979,7 @@ form .ob-form-group {
   position: fixed;
   right: 0;
   bottom: 0;
-  z-index: 100;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+  z-index: 100; }
   .toast .close {
     position: absolute;
     top: 20px;
@@ -12003,10 +12002,19 @@ form .ob-form-group {
       margin-top: 5px; }
 
 .toast-success {
-  background-color: #FAF9ED; }
+  background-color: #FAF9ED;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
   .toast-success p {
     color: #023A15; }
   .toast-success .close i.icon-cross {
+    color: #023A15; }
+
+.toast-fail {
+  background-color: #FAF9ED;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+  .toast-fail p {
+    color: #023A15; }
+  .toast-fail .close i.icon-cross {
     color: #023A15; }
 
 @media (min-width: 768px) {

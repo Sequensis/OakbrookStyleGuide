@@ -8,6 +8,9 @@
     &.up {
         transform: translateY(150%);
     }
+    &.up.in {
+        transform: translateY(0%);
+    }
     .close {
         position: absolute;
         top: 20px;

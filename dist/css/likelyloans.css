@@ -11987,6 +11987,9 @@ form .ob-form-group {
   .toast.up {
     -ms-transform: translateY(150%);
         transform: translateY(150%); }
+  .toast.up.in {
+    -ms-transform: translateY(0%);
+        transform: translateY(0%); }
   .toast .close {
     position: absolute;
     top: 20px;

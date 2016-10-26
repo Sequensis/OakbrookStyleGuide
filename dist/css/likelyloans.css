@@ -11064,7 +11064,7 @@ button:focus {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.ttf?eepofd") format("truetype"), url("../fonts/icomoon.woff?eepofd") format("woff"), url("../fonts/icomoon.svg?eepofd#icomoon") format("svg");
+  src: url("../fonts/icomoon.ttf?kwz8yz") format("truetype"), url("../fonts/icomoon.woff?kwz8yz") format("woff"), url("../fonts/icomoon.svg?kwz8yz#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -11080,6 +11080,9 @@ button:focus {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-information:before {
+  content: "\e917"; }
 
 .icon-tick:before {
   content: "\e900"; }
@@ -11986,8 +11989,7 @@ form .ob-form-group {
     right: 20px;
     z-index: 100; }
   .toast .toast-container {
-    margin: 20px auto 40px auto;
-    color: #33D167; }
+    margin: 20px auto 40px auto; }
     .toast .toast-container .toast-body {
       margin-top: 10px;
       text-align: center; }
@@ -12002,20 +12004,22 @@ form .ob-form-group {
       margin-top: 5px; }
 
 .toast-success {
-  background-color: #FAF9ED;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+  background-color: #F7F7F7;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  color: #33D167; }
   .toast-success p {
     color: #023A15; }
   .toast-success .close i.icon-cross {
     color: #023A15; }
 
 .toast-fail {
-  background-color: #FAF9ED;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+  background-color: #F7F7F7;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  color: #DE344F; }
   .toast-fail p {
-    color: #023A15; }
+    color: #CF1634; }
   .toast-fail .close i.icon-cross {
-    color: #023A15; }
+    color: #CF1634; }
 
 @media (min-width: 768px) {
   .toast {

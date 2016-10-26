@@ -5,7 +5,6 @@
     right: 0;
     bottom: 0;
     z-index: 100;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
     .close {
         position: absolute;
         top: 20px;
@@ -37,6 +36,20 @@
 
 .toast-success {
     background-color: $brand-tint-1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);    
+    p {
+        color: $brand-secondary-3-font;
+    }
+    .close {
+        i.icon-cross {
+            color: $brand-secondary-3-font;
+        }
+    }
+}
+
+.toast-fail {
+    background-color: $brand-tint-1;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);        
     p {
         color: $brand-secondary-3-font;
     }

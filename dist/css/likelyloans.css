@@ -11376,45 +11376,15 @@ hr.dotted-line {
     .payment-textbox ol li,
     .payment-textbox ul li {
       padding: 0 0 0 10px; }
-
-.payment-textbox-active {
-  height: 100%;
-  width: 100%;
-  background-color: #eee;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s ease-in-out 0.25s, opacity 0.25s ease-in-out;
-  margin-top: -447px;
-  box-shadow: none; }
-  .payment-textbox-active .row {
-    margin-left: 0;
-    margin-right: 0; }
-  .payment-textbox-active .medium {
-    font-size: 25px;
-    font-weight: 700; }
-  .payment-textbox-active .small {
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 1.53;
-    color: #005BC6; }
-  .payment-textbox-active hr.dash {
-    margin: 5px 0;
-    width: 30px;
-    border: solid 1px #005BC6;
-    text-align: left; }
-  .payment-textbox-active .btn-black-hollow {
-    margin: 20px 0 0 0; }
-  .payment-textbox-active .btn-green {
-    margin: 20px 0 0 0; }
-  .payment-textbox-active .payment-day p {
-    display: inline;
-    position: absolute; }
-  .payment-textbox-active ol,
-  .payment-textbox-active ul {
-    margin: 0; }
-    .payment-textbox-active ol li,
-    .payment-textbox-active ul li {
-      padding: 0 0 0 10px; }
+  .payment-textbox .submitted-container .submitted-title {
+    float: left;
+    width: 15%;
+    margin-top: 5px; }
+  .payment-textbox .submitted-container .submitted-body {
+    float: left;
+    widows: 85%; }
+    .payment-textbox .submitted-container .submitted-body .body-sm {
+      color: #767676; }
 
 .recent-history-textbox {
   height: 90px;
@@ -11476,7 +11446,12 @@ hr.dotted-line {
 
 @media (min-width: 768px) {
   .payment-navigation {
-    position: relative !important; } }
+    position: relative !important; }
+  .submitted-container .submitted-title {
+    width: 10%;
+    text-align: center; }
+  .submitted-container .submitted-body {
+    widows: 75%; } }
 
 @media (max-width: 320px) {
   .change-payment-textbox .modal-header .header-icon {

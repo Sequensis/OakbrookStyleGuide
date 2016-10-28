@@ -11284,16 +11284,14 @@ h6 {
   text-decoration: none; }
 
 /* toast (clean this up)*/
-hr.dotted-line {
-  border: none;
-  border-top: 4px dotted #cfcfcf;
-  /*??? stu //*/
-  margin: 10px auto;
-  width: 95%;
-  visibility: visible;
-  opacity: 1;
-  transition: 0.25s ease-in-out;
-  transition-delay: .25s; }
+.dotted-line {
+  background-image: linear-gradient(to right, #cfcfcf 20%, rgba(255, 255, 255, 0) 0%);
+  background-position: top;
+  background-size: 10px 2px;
+  background-repeat: repeat-x;
+  margin: 0 auto;
+  height: 2px;
+  width: 95%; }
 
 #important.modal-dialog {
   background-color: #005BC6;
@@ -11441,8 +11439,7 @@ hr.dotted-line {
     position: fixed; }
     .change-payment-textbox .payment-navigation li {
       display: block;
-      padding: 20px 0;
-      cursor: pointer; }
+      padding: 20px 0; }
     .change-payment-textbox .payment-navigation a {
       width: 95%;
       margin: 0 auto; }
@@ -11466,11 +11463,10 @@ hr.dotted-line {
       right: 15px;
       color: #767676; }
   .change-payment-textbox .payment-navigation {
-    position: relative;
-    border-top: dashed #767676;
-    margin-top: 26px; }
+    position: relative; }
     .change-payment-textbox .payment-navigation a {
-      width: 30%; }
+      width: 30%;
+      cursor: pointer; }
   .change-payment-textbox .payment-textbox .submitted-container .submitted-title {
     width: 5%;
     text-align: center; }
@@ -11703,6 +11699,8 @@ hr.dotted-line {
         top: 75px;
         left: 50px;
         float: right; }
+        .calendar-carousel .carousel-navigation .next .fa-chevron-right {
+          margin-left: 2px; }
       .calendar-carousel .carousel-navigation a {
         text-decoration: none;
         z-index: 11;

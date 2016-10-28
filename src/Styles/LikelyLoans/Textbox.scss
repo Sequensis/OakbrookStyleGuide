@@ -143,7 +143,6 @@
         li {
             display: block;
             padding: 20px 0;
-            cursor: pointer;
         }
         a {
             width: 95%;
@@ -180,10 +179,9 @@
         }
         .payment-navigation {
             position: relative;
-            border-top: dashed $brand-secondary-2;
-            margin-top: 26px;
             a {
                 width: 30%;
+                cursor: pointer;
             }
         }
         .payment-textbox {

@@ -83,18 +83,14 @@
     }
     /* toast (clean this up)*/
     
-    hr.dotted-line {
-        border: none;
-        border-top: 4px dotted #cfcfcf;
-        /*??? stu //*/
-        margin: 10px auto;
+    .dotted-line {
+        background-image: linear-gradient(to right, #cfcfcf 20%, rgba(255, 255, 255, 0) 0%);
+        background-position: top;
+        background-size: 10px 2px;
+        background-repeat: repeat-x;
+        margin: 0 auto;
+        height: 2px;
         width: 95%;
-        visibility: visible;
-        opacity: 1;
-        -webkit-transition: 0.25s ease-in-out;
-        transition: 0.25s ease-in-out;
-        -webkit-transition-delay: .25s;
-        transition-delay: .25s;
     }
     
     #important.modal-dialog {

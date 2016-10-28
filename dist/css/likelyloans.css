@@ -11064,7 +11064,7 @@ button:focus {
 
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.ttf?eepofd") format("truetype"), url("../fonts/icomoon.woff?eepofd") format("woff"), url("../fonts/icomoon.svg?eepofd#icomoon") format("svg");
+  src: url("../fonts/icomoon.ttf?kwz8yz") format("truetype"), url("../fonts/icomoon.woff?kwz8yz") format("woff"), url("../fonts/icomoon.svg?kwz8yz#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -11080,6 +11080,9 @@ button:focus {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.icon-information:before {
+  content: "\e917"; }
 
 .icon-tick:before {
   content: "\e900"; }
@@ -11374,6 +11377,15 @@ hr.dotted-line {
     .payment-textbox ol li,
     .payment-textbox ul li {
       padding: 0 0 0 10px; }
+  .payment-textbox .submitted-container .submitted-title {
+    float: left;
+    width: 15%;
+    margin-top: 5px; }
+  .payment-textbox .submitted-container .submitted-body {
+    float: left;
+    width: 85%; }
+    .payment-textbox .submitted-container .submitted-body .body-sm {
+      color: #767676; }
 
 .recent-history-textbox {
   height: 90px;
@@ -11458,7 +11470,15 @@ hr.dotted-line {
     border-top: dashed #767676;
     margin-top: 26px; }
     .change-payment-textbox .payment-navigation a {
-      width: 30%; } }
+      width: 30%; }
+  .change-payment-textbox .payment-textbox .submitted-container .submitted-title {
+    width: 5%;
+    text-align: center; }
+  .change-payment-textbox .payment-textbox .submitted-container .submitted-body {
+    width: 80%;
+    padding-left: 10px; }
+  .change-payment-textbox .payment-navigation {
+    position: relative !important; } }
 
 @media (max-width: 320px) {
   .change-payment-textbox .modal-header .header-icon {
@@ -11780,13 +11800,14 @@ hr.dotted-line {
   .ob-panel-default > .panel-footer + .panel-collapse > .panel-body {
     border-bottom-color: #fff; }
   .ob-panel-default.ob-panel-active {
-    background-color: #f5f3ef; }
+    background-color: #f7f7f7; }
   .ob-panel-default.ob-panel-disabled {
     opacity: 0.3; }
   .ob-panel-default .panel-heading {
     padding: 0;
     transition: background-color 0.5s ease-in-out; }
     .ob-panel-default .panel-heading .panel-title {
+      font-family: Source Sans Pro,sans-serif;
       font-size: 15px;
       padding: 15px; }
     .ob-panel-default .panel-heading hr.dash {
@@ -11809,13 +11830,10 @@ hr.dotted-line {
     .ob-panel-default .panel-body ul {
       margin: 0; }
       .ob-panel-default .panel-body ul li.panel-list:nth-child(2) {
-        margin: 10px 0; }
+        margin: 15px 0; }
       .ob-panel-default .panel-body ul li i {
         text-align: center;
         width: 30px; }
-
-.panel-heading-active {
-  background-color: #f5f3ef; }
 
 .panel-group .panel-heading + .panel-collapse > .panel-body {
   border: none; }
@@ -11985,16 +12003,20 @@ form .ob-form-group {
   position: fixed;
   right: 0;
   bottom: 0;
-  z-index: 100;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+  z-index: 100; }
+  .toast.up {
+    -ms-transform: translateY(150%);
+        transform: translateY(150%); }
+  .toast.up.in {
+    -ms-transform: translateY(0%);
+        transform: translateY(0%); }
   .toast .close {
     position: absolute;
     top: 20px;
     right: 20px;
     z-index: 100; }
   .toast .toast-container {
-    margin: 20px auto 40px auto;
-    color: #33D167; }
+    margin: 20px auto 40px auto; }
     .toast .toast-container .toast-body {
       margin-top: 10px;
       text-align: center; }
@@ -12009,11 +12031,22 @@ form .ob-form-group {
       margin-top: 5px; }
 
 .toast-success {
-  background-color: #FAF9ED; }
+  background-color: #F7F7F7;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  color: #33D167; }
   .toast-success p {
     color: #023A15; }
   .toast-success .close i.icon-cross {
     color: #023A15; }
+
+.toast-fail {
+  background-color: #F7F7F7;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  color: #DE344F; }
+  .toast-fail p {
+    color: #CF1634; }
+  .toast-fail .close i.icon-cross {
+    color: #CF1634; }
 
 @media (min-width: 768px) {
   .toast {

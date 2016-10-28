@@ -14,7 +14,7 @@
         -webkit-transition: $transition-250ms;
         transition: $transition-250ms;
         &.ob-panel-active {
-            background-color: #f5f3ef;
+            background-color: #f7f7f7; //change at later date
         }
         &.ob-panel-disabled {
             opacity: 0.3;
@@ -24,6 +24,7 @@
             -webkit-transition: background-color 0.5s ease-in-out;
             transition: background-color 0.5s ease-in-out;
             .panel-title {
+                font-family: Source Sans Pro,sans-serif;
                 font-size: 15px;
                 padding: 15px;
             }
@@ -52,7 +53,7 @@
             ul {
                 margin: 0;
                 li.panel-list:nth-child(2) {
-                    margin: 10px 0;
+                    margin: 15px 0;
                 }
                 li i {
                     text-align: center;
@@ -60,10 +61,6 @@
                 }
             }
         }
-    }
-    
-    .panel-heading-active {
-        background-color: #f5f3ef;
     }
     
     .panel-group .panel-heading+.panel-collapse>.panel-body {

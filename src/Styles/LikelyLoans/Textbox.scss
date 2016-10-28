@@ -55,6 +55,20 @@
             padding: 0 0 0 10px;
         }
     }
+    .submitted-container {
+        .submitted-title {
+            float: left;
+            width: 15%;
+            margin-top: 5px;
+        }
+        .submitted-body {
+            float: left;
+            width: 85%;
+            .body-sm {
+                color: $brand-secondary-2;
+            }
+        }
+    }
 }
 
 .recent-history-textbox {
@@ -171,6 +185,21 @@
             a {
                 width: 30%;
             }
+        }
+        .payment-textbox {
+            .submitted-container {
+                .submitted-title {
+                    width: 5%;
+                    text-align: center;
+                }
+                .submitted-body {
+                    width: 80%;
+                    padding-left: 10px;
+                }
+            }
+        }
+        .payment-navigation {
+            position: relative !important;
         }
     }
 }

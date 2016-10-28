@@ -5,7 +5,12 @@
     right: 0;
     bottom: 0;
     z-index: 100;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+    &.up {
+        transform: translateY(150%);
+    }
+    &.up.in {
+        transform: translateY(0%);
+    }
     .close {
         position: absolute;
         top: 20px;
@@ -14,7 +19,6 @@
     }
     .toast-container {
         margin: 20px auto 40px auto;
-        color: $brand-secondary-3;
         .toast-body {
             margin-top: 10px;
             text-align: center;
@@ -36,13 +40,29 @@
 }
 
 .toast-success {
-    background-color: $brand-tint-1;
+    background-color: #F7F7F7;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);    
+    color: $brand-secondary-3;    
     p {
         color: $brand-secondary-3-font;
     }
     .close {
         i.icon-cross {
             color: $brand-secondary-3-font;
+        }
+    }
+}
+
+.toast-fail {
+    background-color: #F7F7F7;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50); 
+    color: $brand-secondary-1;       
+    p {
+        color: #CF1634;
+    }
+    .close {
+        i.icon-cross {
+            color: #CF1634;
         }
     }
 }

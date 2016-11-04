@@ -184,20 +184,20 @@
                 cursor: pointer;
             }
         }
-        .payment-textbox {
-            .submitted-container {
-                .submitted-title {
-                    width: 5%;
-                    text-align: center;
-                }
-                .submitted-body {
-                    width: 80%;
-                    padding-left: 10px;
-                }
-            }
-        }
         .payment-navigation {
             position: relative !important;
+        }
+    }
+    .payment-textbox {
+        .submitted-container {
+            .submitted-title {
+                width: 5%;
+                text-align: center;
+            }
+            .submitted-body {
+                width: 80%;
+                padding-left: 10px;
+            }
         }
     }
 }

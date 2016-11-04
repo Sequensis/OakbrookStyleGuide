@@ -11467,14 +11467,14 @@ h6 {
     .change-payment-textbox .payment-navigation a {
       width: 30%;
       cursor: pointer; }
-  .change-payment-textbox .payment-textbox .submitted-container .submitted-title {
+  .change-payment-textbox .payment-navigation {
+    position: relative !important; }
+  .payment-textbox .submitted-container .submitted-title {
     width: 5%;
     text-align: center; }
-  .change-payment-textbox .payment-textbox .submitted-container .submitted-body {
+  .payment-textbox .submitted-container .submitted-body {
     width: 80%;
-    padding-left: 10px; }
-  .change-payment-textbox .payment-navigation {
-    position: relative !important; } }
+    padding-left: 10px; } }
 
 @media (max-width: 320px) {
   .change-payment-textbox .modal-header .header-icon {
@@ -11621,7 +11621,11 @@ h6 {
     position: relative; }
   .calendar-carousel .swiper-container {
     margin: 0 auto;
-    padding-top: 12px; }
+    padding-top: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
     .calendar-carousel .swiper-container .swiper-wrapper {
       width: 100%;
       margin: 0 auto 10px auto;
@@ -11660,6 +11664,7 @@ h6 {
           background-size: 19.5vw 21vw;
           background-repeat: no-repeat; }
 
+/* mobile landscape*/
 @media (max-device-width: 992px) and (orientation: landscape) {
   .swiper-container .swiper-wrapper .swiper-slide {
     font-size: 25px;

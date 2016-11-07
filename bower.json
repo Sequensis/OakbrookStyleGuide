@@ -25,10 +25,10 @@
     "/src/Partials"
   ],
   "dependencies": {
-    "bootstrap-sass": "^3.3.6",
+    "bootstrap-sass": "^3.3.7",
     "jquery-legacy": "jquery#1",
-    "highlightjs": "9.4.0",
-    "components-font-awesome": "^4.6.3",
+    "highlightjs": "^9.8.0",
+    "components-font-awesome": "^4.7.0",
     "Swiper": "swiper#^3.3.1"
   }
 }

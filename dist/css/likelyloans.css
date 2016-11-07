@@ -7956,8 +7956,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  -webkit-filter: none;
-          filter: none; }
+  filter: none; }
 
 .fa-stack {
   position: relative;
@@ -10749,6 +10748,7 @@ code {
 .shake {
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
   transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   perspective: 1000px; }
 
@@ -12082,7 +12082,7 @@ form .ob-form-group {
     opacity: 0; } }
 
 /**
- * Swiper 3.3.1
+ * Swiper 3.4.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * 
  * http://www.idangero.us/swiper/
@@ -12093,10 +12093,11 @@ form .ob-form-group {
  * 
  * Licensed under MIT
  * 
- * Released on: February 7, 2016
+ * Released on: October 16, 2016
  */
 .swiper-container {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   overflow: hidden;
   /* Fix of Webkit flickering */
@@ -12150,8 +12151,7 @@ form .ob-form-group {
 
 .swiper-container-autoheight .swiper-wrapper {
   -ms-flex-align: start;
-  -ms-grid-row-align: flex-start;
-      align-items: flex-start;
+  align-items: flex-start;
   transition-property: transform, height; }
 
 /* a11y */
@@ -12402,6 +12402,7 @@ button.swiper-pagination-bullet {
 .swiper-container-cube .swiper-slide,
 .swiper-container-flip .swiper-slide {
   pointer-events: none;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 1; }
 
@@ -12424,6 +12425,7 @@ button.swiper-pagination-bullet {
 .swiper-container-cube .swiper-slide-shadow-right,
 .swiper-container-flip .swiper-slide-shadow-right {
   z-index: 0;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
 /* Cube */
@@ -12453,7 +12455,6 @@ button.swiper-pagination-bullet {
   height: 100%;
   background: #000;
   opacity: 0.6;
-  -webkit-filter: blur(50px);
   filter: blur(50px);
   z-index: 0; }
 
@@ -12471,6 +12472,24 @@ button.swiper-pagination-bullet {
 .swiper-container-fade .swiper-slide-active,
 .swiper-container-fade .swiper-slide-active .swiper-slide-active {
   pointer-events: auto; }
+
+.swiper-zoom-container {
+  width: 100%;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center; }
+
+.swiper-zoom-container > img,
+.swiper-zoom-container > svg,
+.swiper-zoom-container > canvas {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; }
 
 /* Scrollbar */
 .swiper-scrollbar {

@@ -55,9 +55,14 @@
                 li.panel-list:nth-child(2) {
                     margin: 15px 0;
                 }
-                li i {
+                li {
+                    i {
                     text-align: center;
                     width: 30px;
+                    }
+                    strong {
+                        padding: 0 20px;
+                    }
                 }
             }
         }

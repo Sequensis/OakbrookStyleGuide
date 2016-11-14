@@ -11974,6 +11974,8 @@ h6 {
       .ob-panel-default .panel-body ul li i {
         text-align: center;
         width: 30px; }
+      .ob-panel-default .panel-body ul li strong {
+        padding: 0 20px; }
 
 .panel-group .panel-heading + .panel-collapse > .panel-body {
   border: none; }

@@ -12,6 +12,10 @@
     *:focus {
         outline: -webkit-focus-ring-color auto 0px !important;
     }
+
+    .nowrap {
+        white-space: nowrap;
+    }
     
     .payments-place-img {
         padding: 10px 0 20px;

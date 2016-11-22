@@ -10788,7 +10788,6 @@ input:-webkit-autofill {
     font-size: 25px; } }
 
 .footer-distributed {
-  background-color: #fff;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -10843,7 +10842,6 @@ code {
   color: #005BC6; }
 
 .theme-light * {
-  background-color: #fff;
   color: #005BC6; }
 
 .theme-light a {
@@ -11112,6 +11110,7 @@ code {
     opacity: 0.5; }
 
 .close {
+  background-color: #fff;
   position: fixed;
   right: 5px;
   top: 15px;
@@ -12219,6 +12218,15 @@ form .ob-form-group {
     opacity: 1; }
   100% {
     opacity: 0; } }
+
+@media (min-width: 768px) {
+  html {
+    background: url(../img/bkg@2x.svg) no-repeat center center fixed;
+    background-size: cover; }
+    html body {
+      background-color: transparent; }
+    html.no-bkg {
+      background: none; } }
 
 /**
  * Swiper 3.4.0

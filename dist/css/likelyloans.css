@@ -11099,6 +11099,7 @@ code {
   visibility: hidden; }
 
 .back {
+  background-color: #fff;
   position: fixed;
   left: 10px;
   top: 20px;
@@ -11473,7 +11474,8 @@ h6 {
   width: 100%;
   border-radius: 3px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #fff; }
   .payment-textbox .row {
     margin-left: 0;
     margin-right: 0; }
@@ -12155,7 +12157,8 @@ form .ob-form-group {
     position: absolute;
     top: 20px;
     right: 20px;
-    z-index: 100; }
+    z-index: 100;
+    background-color: transparent; }
   .toast .toast-container {
     margin: 20px auto 40px auto; }
     .toast .toast-container .toast-body {

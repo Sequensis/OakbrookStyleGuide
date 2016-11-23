@@ -11099,6 +11099,7 @@ code {
   visibility: hidden; }
 
 .back {
+  background-color: #fff;
   position: fixed;
   left: 10px;
   top: 20px;

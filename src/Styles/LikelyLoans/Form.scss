@@ -74,6 +74,13 @@ form {
             }
         }
     }
+    .form-small-link {
+        @extend .color-blue;
+        font-size: 13px;
+        line-height: 1.77;
+        text-decoration: underline;
+        font-weight: 600;
+    }
 }
 
 // remove //

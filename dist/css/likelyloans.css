@@ -4155,7 +4155,7 @@ a.active {
 .bg-white {
   background-color: #fff !important; }
 
-.bg-blue {
+.bg-blue, .address-list .address-item.active {
   background-color: #005BC6 !important; }
 
 .bg-yellow {
@@ -4173,7 +4173,7 @@ a.active {
 .color-white {
   color: #fff !important; }
 
-.color-blue {
+.color-blue, form .form-small-link {
   color: #005BC6 !important; }
 
 .color-yellow {
@@ -12086,6 +12086,12 @@ form .ob-form-group {
     color: #DE344F;
     opacity: 1; }
 
+form .form-small-link {
+  font-size: 13px;
+  line-height: 1.77;
+  text-decoration: underline;
+  font-weight: 600; }
+
 .ob-form-material {
   position: relative;
   margin: 20px 0 30px 0; }
@@ -12269,10 +12275,12 @@ form .ob-form-group {
   .address-list .address-item {
     font-size: 15px;
     line-height: 1.53;
-    color: #767676; }
-  .address-list .address-item.active {
-    background-color: #005bc6;
-    color: #ffffff; }
+    color: #767676;
+    padding: 10px 0 10px 10px;
+    white-space: nowrap;
+    overflow-x: hidden; }
+    .address-list .address-item.active {
+      color: #ffffff; }
 
 /**
  * Swiper 3.4.0

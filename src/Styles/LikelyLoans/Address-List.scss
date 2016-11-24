@@ -6,8 +6,12 @@
  		font-size: 15px;
  		line-height: 1.53;
  		color: #767676;
+ 		padding: 10px 0 10px 10px;
+ 		white-space: nowrap;
+ 		overflow-x: hidden;
  		&.active {
-			background-color: #005bc6;
+			@extend .bg-blue;
 			color: #ffffff;
  		}
  	}
+}

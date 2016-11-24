@@ -1,57 +1,59 @@
-<div class="panel ob-panel-default" id="PanelAddress">
-    <div class="panel-heading" role="tab" id="headingOne">
-        <div class="panel-btn pull-right">
-            <a class="btn btn-black-hollow" data-toggle="collapse" href="#PanelAddressEdit" id="PanelAddressToggle">Change</a>
-            <a data-toggle="collapse" href="#PanelAddressEdit" id="PanelAddressToggleMob"><i class="fa fa-pencil fa fa-lg"></i></a>
-        </div>
-        <h4 class="panel-title">
+<div class="panel-group" role="tablist" aria-multiselectable="true">
+    <div class="panel ob-panel-default" id="PanelAddress">
+        <div class="panel-heading" role="tab" id="headingOne">
+            <div class="panel-btn pull-right">
+                <a class="btn btn-black-hollow" data-toggle="collapse" href="#PanelAddressEdit" id="PanelAddressToggle">Change</a>
+                <a data-toggle="collapse" href="#PanelAddressEdit" id="PanelAddressToggleMob"><i class="fa fa-pencil fa fa-lg"></i></a>
+            </div>
+            <h4 class="panel-title">
             Current address
-        </h4>
-        <hr class="dash">
-    </div>
-    <div id="PanelAddressEdit" class="panel-active panel-collapse collapse">
-        <div class="panel-body">
-            <h4 class="form-heading">Search for your address</h4>
-            <form>
-                <div class="ob-form-group empty">
-                    <div class="col-xs-9 p-r-5">
-                        <input type="text" class="ob-form-input" id="AddressPostcodeInput" required>
-                        <label for="AddressPostcodeInput">Postcode</label>
-                    </div>
-                    <button class="btn btn-search m-0 p-0">
-                        <i class="fa fa-search fa-lg color-white"></i>
-                    </button>
-                </div>
-                <div class="ob-form-group">
-                    <h5 class="normal-weight">Choose an address</h5>
-                    <div class="address-list">
-                        <div class="address-item">1 Smitherson Avenue, Eblington, Nottingham, England</div>
-                        <div class="address-item">2 Smitherson Avenue, Eblington, Nottingham, England</div>
-                        <div class="address-item active">3 Smitherson Avenue, Eblington, Nottingham, England</div>
-                        <div class="address-item">4 Smitherson Avenue, Eblington, Nottingham, England</div>
-                        <div class="address-item">5 Smitherson Avenue, Eblington, Nottingham, England</div>
-                        <div class="address-item">6 Smitherson Avenue, Eblington, Nottingham, England</div>
-                        <div class="address-item">7 Smitherson Avenue, Eblington, Nottingham, England</div>
-                        <div class="address-item">8 Smitherson Avenue, Eblington, Nottingham, England</div>
-                        <div class="address-item">9 Smitherson Avenue, Eblington, Nottingham, England</div>
-                        <div class="address-item">10 Smitherson Avenue, Eblington, Nottingham, England</div>
-                        <div class="address-item">11 Smitherson Avenue, Eblington, Nottingham, England</div>
-                        <div class="address-item">12 Smitherson Avenue, Eblington, Nottingham, England</div>
-                        <div class="address-item">13 Smitherson Avenue, Eblington, Nottingham, England</div>
-                    </div>
-                </div>
-                <p class="form-small-link m-b-20">Manually enter your address ></p>
-                <div class="dotted-line full-width"></div>
-                <ul class="p-t-20">
-                    <li class="form-btn"> <a class="btn btn-black-hollow">Cancel</a> </li>
-                    <li class="form-btn"> <a class="btn btn-primary-1">Update</a></li>
-                </ul>
-            </form>
+            </h4>
+            <hr class="dash">
         </div>
-    </div>
-    <div class="panel-collapse collapse in" id="PanelAddressHeader">
-        <div class="panel-body">
-            <strong>45 Wollaton Street</strong>, Nottingham, <span class="nowrap">NG1 5FW</span>
+        <div id="PanelAddressEdit" class="panel-active panel-collapse collapse">
+            <div class="panel-body">
+                <h4 class="form-heading">Search for your address</h4>
+                <form>
+                    <div class="ob-form-group empty">
+                        <div class="col-xs-9 p-r-5">
+                            <input type="text" class="ob-form-input" id="AddressPostcodeInput" required>
+                            <label for="AddressPostcodeInput">Postcode</label>
+                        </div>
+                        <button class="btn btn-search m-0 p-0">
+                        <i class="fa fa-search fa-lg color-white"></i>
+                        </button>
+                    </div>
+                    <div class="ob-form-group">
+                        <h5 class="normal-weight">Choose an address</h5>
+                        <div class="address-list">
+                            <div class="address-item">1 Smitherson Avenue, Eblington, Nottingham, England</div>
+                            <div class="address-item">2 Smitherson Avenue, Eblington, Nottingham, England</div>
+                            <div class="address-item active">3 Smitherson Avenue, Eblington, Nottingham, England</div>
+                            <div class="address-item">4 Smitherson Avenue, Eblington, Nottingham, England</div>
+                            <div class="address-item">5 Smitherson Avenue, Eblington, Nottingham, England</div>
+                            <div class="address-item">6 Smitherson Avenue, Eblington, Nottingham, England</div>
+                            <div class="address-item">7 Smitherson Avenue, Eblington, Nottingham, England</div>
+                            <div class="address-item">8 Smitherson Avenue, Eblington, Nottingham, England</div>
+                            <div class="address-item">9 Smitherson Avenue, Eblington, Nottingham, England</div>
+                            <div class="address-item">10 Smitherson Avenue, Eblington, Nottingham, England</div>
+                            <div class="address-item">11 Smitherson Avenue, Eblington, Nottingham, England</div>
+                            <div class="address-item">12 Smitherson Avenue, Eblington, Nottingham, England</div>
+                            <div class="address-item">13 Smitherson Avenue, Eblington, Nottingham, England</div>
+                        </div>
+                    </div>
+                    <p class="form-small-link m-b-20">Manually enter your address ></p>
+                    <div class="dotted-line full-width"></div>
+                    <ul class="p-t-20">
+                        <li class="form-btn"> <a class="btn btn-black-hollow">Cancel</a> </li>
+                        <li class="form-btn"> <a class="btn btn-primary-1">Update</a></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div class="panel-collapse collapse in" id="PanelAddressHeader">
+            <div class="panel-body">
+                <strong>45 Wollaton Street</strong>, Nottingham, <span class="nowrap">NG1 5FW</span>
+            </div>
         </div>
     </div>
 </div>

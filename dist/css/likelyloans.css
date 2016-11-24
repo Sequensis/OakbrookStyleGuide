@@ -12256,6 +12256,9 @@ form .ob-form-group {
   font-size: 18px;
   font-weight: 100; }
 
+.full-width {
+  width: 100%; }
+
 /**
  * Swiper 3.4.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions

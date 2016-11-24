@@ -3809,6 +3809,12 @@ a.thumbnail.active {
     color: #fff;
     border: 2px solid #2bbf5c; }
 
+.btn-search {
+  width: 50px;
+  height: 49px;
+  border-radius: 4px;
+  background-color: #4a4a4a; }
+
 .section-container nav.navbar .navbar-circle {
   position: absolute; }
 
@@ -11338,6 +11344,9 @@ button:focus {
 .p-10 {
   padding: 10px; }
 
+.p-0 {
+  padding: 0; }
+
 .p-t-20 {
   padding: 20px 0 0 0; }
 
@@ -11358,6 +11367,9 @@ button:focus {
 
 .p-20 {
   margin: 20px; }
+
+.p-r-5 {
+  padding: 0 5px 0 0; }
 
 /* Need to move these //*/
 *:focus {
@@ -11642,6 +11654,9 @@ h6 {
 .m-t-20 {
   margin: 20px 0 0 0; }
 
+.m-0 {
+  margin: 0; }
+
 .m-b-20 {
   margin: 0 0 20px 0; }
 
@@ -11715,6 +11730,9 @@ h6 {
 .p-10 {
   padding: 10px; }
 
+.p-0 {
+  padding: 0; }
+
 .p-t-20 {
   padding: 20px 0 0 0; }
 
@@ -11735,6 +11753,9 @@ h6 {
 
 .p-20 {
   margin: 20px; }
+
+.p-r-5 {
+  padding: 0 5px 0 0; }
 
 .d-inline {
   display: inline; }
@@ -12230,6 +12251,10 @@ form .ob-form-group {
       background-color: transparent; }
     html.no-bkg {
       background: none; } }
+
+.form-heading {
+  font-size: 18px;
+  font-weight: 100; }
 
 /**
  * Swiper 3.4.0

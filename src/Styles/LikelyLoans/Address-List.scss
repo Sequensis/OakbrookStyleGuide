@@ -1,0 +1,13 @@
+.address-list {
+	border-radius: 4px;
+	background-color: #ffffff;
+ 	border: solid 1px #979797;
+ 	.address-item {
+ 		font-size: 15px;
+ 		line-height: 1.53;
+ 		color: #767676;
+ 		&.active {
+			background-color: #005bc6;
+			color: #ffffff;
+ 		}
+ 	}

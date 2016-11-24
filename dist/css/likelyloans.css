@@ -11202,6 +11202,9 @@ button:focus {
 .body-xs {
   font-size: 11px; }
 
+.normal-weight {
+  font-weight: normal; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.ttf?kwz8yz") format("truetype"), url("../fonts/icomoon.woff?kwz8yz") format("woff"), url("../fonts/icomoon.svg?kwz8yz#icomoon") format("svg");
@@ -12258,6 +12261,18 @@ form .ob-form-group {
 
 .full-width {
   width: 100%; }
+
+.address-list {
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #979797; }
+  .address-list .address-item {
+    font-size: 15px;
+    line-height: 1.53;
+    color: #767676; }
+  .address-list .address-item.active {
+    background-color: #005bc6;
+    color: #ffffff; }
 
 /**
  * Swiper 3.4.0

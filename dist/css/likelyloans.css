@@ -11517,15 +11517,21 @@ form .form-small-link {
     position: absolute;
     top: 0;
     height: 100vh;
-    width: 0;
-    background-color: #005BC6;
+    width: 95%;
+    left: -95%;
+    background-color: #fff;
     transition: 0.25s ease-in-out; }
     .navbar-off-canvas .off-canvas.open {
       height: 100vh;
-      width: 95%; }
+      left: 0; }
       @media (min-width: 992px) {
         .navbar-off-canvas .off-canvas.open {
           width: 30%; } }
+    .navbar-off-canvas .off-canvas .off-canvas-top {
+      width: 100%;
+      background-color: #005BC6; }
+    .navbar-off-canvas .off-canvas .off-canvas-bottom {
+      width: 100%; }
   .navbar-off-canvas .navbar-btn {
     transition: .2s ease-in-out;
     font-family: 'Monsterrat', sans-serif;

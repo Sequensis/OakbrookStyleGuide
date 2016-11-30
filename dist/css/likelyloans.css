@@ -11489,6 +11489,14 @@ form .form-small-link {
 
 .navbar-off-canvas {
   /* Navbar Burger Icon*/ }
+  .navbar-off-canvas .ob-fade {
+    transition: 0.25s ease-in-out;
+    -webkit-transition: 0.25s ease-in-out; }
+  .navbar-off-canvas .ob-fade-out {
+    opacity: 0; }
+    @media (min-width: 992px) {
+      .navbar-off-canvas .ob-fade-out {
+        opacity: 1; } }
   .navbar-off-canvas .navbar {
     margin-top: 0;
     margin-bottom: 0 !important;
@@ -11506,12 +11514,18 @@ form .form-small-link {
   .navbar-off-canvas .nav .col-xs-6 {
     padding: 0 10px !important; }
   .navbar-off-canvas .off-canvas {
+    position: absolute;
+    top: 0;
     height: 100vh;
-    width: 0px;
-    background-color: #005BC6; }
+    width: 0;
+    background-color: #005BC6;
+    transition: 0.25s ease-in-out; }
     .navbar-off-canvas .off-canvas.open {
       height: 100vh;
       width: 95%; }
+      @media (min-width: 992px) {
+        .navbar-off-canvas .off-canvas.open {
+          width: 30%; } }
   .navbar-off-canvas .navbar-btn {
     transition: .2s ease-in-out;
     font-family: 'Monsterrat', sans-serif;
@@ -11541,11 +11555,17 @@ form .form-small-link {
       margin-left: -40px; }
   .navbar-off-canvas .navbar-circle {
     position: absolute;
-    width: 125%;
-    left: -25%;
+    width: 100%;
+    left: 0;
     height: 58px;
     background-color: #005BC6;
-    transition: .2s ease-in-out; }
+    transition: 0.25s ease-in-out; }
+    .navbar-off-canvas .navbar-circle.circle-open {
+      background-color: transparent; }
+      @media (min-width: 992px) {
+        .navbar-off-canvas .navbar-circle.circle-open {
+          width: 246px;
+          background-color: #005BC6; } }
   .navbar-off-canvas .navbar-circle-static {
     position: absolute;
     background-color: #005BC6;

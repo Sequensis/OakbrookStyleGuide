@@ -4795,7 +4795,10 @@ if (typeof jQuery === 'undefined') {
 
   $(document).on('click', '#navbar-icon', function (e) {
     $(this).toggleClass('icon-open');
-    // $(".navbar-circle").toggleClass("circle-open");
+    $(".navbar-circle").toggleClass("circle-open");
+    $('.navbar').toggleClass('ob-fade');
+    $('.navbar-logo, .navbar-btn.btn-sign-out').toggleClass('ob-fade-out');
+    // $('.navbar').toggleClass('hide-inner-text');
     // $(".btn-application").toggleClass('btn-application-open');
     // $(".btn-sign-in").toggleClass('btn-sign-in-open');
     // $(".btn-sign-out").toggleClass('btn-sign-out-open');

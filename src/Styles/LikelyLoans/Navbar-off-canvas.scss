@@ -1,5 +1,16 @@
 .navbar-off-canvas {
 
+    .ob-fade {
+    	transition: $transition-250ms;
+    	-webkit-transition: $transition-250ms;
+    }
+    .ob-fade-out {
+    	@include bp(md) {
+    		opacity: 1;
+    	}
+    	opacity: 0;
+    }
+
 	.navbar {
 	    margin-top: 0;
 	    margin-bottom: 0 !important;
@@ -27,10 +38,18 @@
 	}
 
 	.off-canvas {
+		position: absolute;
+		// z-index: 105;
+		top: 0;
 		height: 100vh;
-		width: 0px;
+		width: 0;
 		background-color: $brand-blue;
+	    -webkit-transition: $transition-250ms;
+	    transition: $transition-250ms;
 		&.open {
+			@include bp(md) {
+				width: 30%;
+			}
 			height: 100vh;
 			width: 95%;
 		}
@@ -75,12 +94,19 @@
 
 	.navbar-circle {
 	    position: absolute;
-	    width: 125%;
-	    left: -25%;
+	    width: 100%;
+	    left: 0;
 	    height: 58px;
 	    background-color: $brand-blue;
-	    -webkit-transition: .2s ease-in-out;
-	    transition: .2s ease-in-out;
+	    -webkit-transition: $transition-250ms;
+	    transition: $transition-250ms;
+	    &.circle-open {
+	    	@include bp(md) {
+	    		width: 246px;
+	    		background-color: $brand-blue;
+	    	}
+	    	background-color: transparent;
+	    }
 	}
 
 	.navbar-circle-static {

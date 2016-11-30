@@ -4796,8 +4796,9 @@ if (typeof jQuery === 'undefined') {
   $(document).on('click', '#navbar-icon', function (e) {
     $(this).toggleClass('icon-open');
     $(".navbar-circle").toggleClass("circle-open");
-    $('.navbar').toggleClass('ob-fade');
+    $('.navbar-logo, .navbar-btn.btn-sign-out').toggleClass('ob-fade');
     $('.navbar-logo, .navbar-btn.btn-sign-out').toggleClass('ob-fade-out');
+    $('.mask').toggleClass('on');
     // $('.navbar').toggleClass('hide-inner-text');
     // $(".btn-application").toggleClass('btn-application-open');
     // $(".btn-sign-in").toggleClass('btn-sign-in-open');

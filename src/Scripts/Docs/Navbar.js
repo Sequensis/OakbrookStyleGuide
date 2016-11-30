@@ -6,6 +6,7 @@
    $(".navbar-circle").toggleClass("circle-open");
    $('.navbar-logo, .navbar-btn.btn-sign-out').toggleClass('ob-fade');
    $('.navbar-logo, .navbar-btn.btn-sign-out').toggleClass('ob-fade-out');
+   $('.mask').toggleClass('on');
    // $('.navbar').toggleClass('hide-inner-text');
    // $(".btn-application").toggleClass('btn-application-open');
    // $(".btn-sign-in").toggleClass('btn-sign-in-open');

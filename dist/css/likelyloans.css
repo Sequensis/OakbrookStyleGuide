@@ -10685,6 +10685,16 @@ h6 {
     font-size: 30px;
     text-align: left; } }
 
+.mask {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+  .mask.on {
+    z-index: 104;
+    background-color: grey;
+    opacity: 0.5; }
+
 .payment {
   padding: 0; }
 
@@ -11515,6 +11525,7 @@ form .form-small-link {
     padding: 0 10px !important; }
   .navbar-off-canvas .off-canvas {
     position: absolute;
+    z-index: 105;
     top: 0;
     height: 100vh;
     width: 95%;
@@ -11522,7 +11533,6 @@ form .form-small-link {
     background-color: #fff;
     transition: 0.25s ease-in-out; }
     .navbar-off-canvas .off-canvas.open {
-      height: 100vh;
       left: 0; }
       @media (min-width: 992px) {
         .navbar-off-canvas .off-canvas.open {
@@ -11617,9 +11627,11 @@ form .form-small-link {
     .navbar-off-canvas .btn-username-open:hover {
       color: #fff; }
   .navbar-off-canvas #navbar-icon {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 30px;
     height: 37.5px;
-    position: relative;
     -ms-transform: rotate(0deg);
         transform: rotate(0deg);
     transition: .2s ease-in-out;

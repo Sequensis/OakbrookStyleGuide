@@ -10580,6 +10580,9 @@ button:focus {
 .p-r-5 {
   padding: 0 5px 0 0; }
 
+.p-b-50 {
+  padding: 0 0 50px 0; }
+
 /* Need to move these //*/
 *:focus {
   outline: -webkit-focus-ring-color auto 0px !important; }
@@ -10978,6 +10981,9 @@ h6 {
 
 .p-r-5 {
   padding: 0 5px 0 0; }
+
+.p-b-50 {
+  padding: 0 0 50px 0; }
 
 .d-inline {
   display: inline; }
@@ -11535,7 +11541,6 @@ form .form-small-link {
     height: 100vh;
     width: 90%;
     left: -90%;
-    background-color: #fff;
     transition: 0.25s ease-in-out;
     z-index: 105; }
     .navbar-off-canvas .off-canvas.open {
@@ -11550,6 +11555,8 @@ form .form-small-link {
         background-color: #005BC6; }
       .navbar-off-canvas .off-canvas .off-canvas-container .off-canvas-bottom {
         width: 100%; }
+    .navbar-off-canvas .off-canvas p {
+      margin: 0; }
     .navbar-off-canvas .off-canvas .font-lg {
       font-size: 25px; }
     .navbar-off-canvas .off-canvas .font-md {

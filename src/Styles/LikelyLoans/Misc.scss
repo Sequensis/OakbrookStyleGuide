@@ -164,3 +164,7 @@
             background-color: rgba(0, 0, 0, 0.6);
         }
     }
+
+    .v-align {
+        @include vertical-align();
+    }

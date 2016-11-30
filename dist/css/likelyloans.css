@@ -10580,6 +10580,9 @@ button:focus {
 .p-r-5 {
   padding: 0 5px 0 0; }
 
+.p-t-30 {
+  padding: 30px 0 0 0; }
+
 .p-b-50 {
   padding: 0 0 50px 0; }
 
@@ -10703,6 +10706,12 @@ h6 {
   .mask.on {
     pointer-events: all;
     background-color: rgba(0, 0, 0, 0.6); }
+
+.v-align {
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
 
 .payment {
   padding: 0; }
@@ -10981,6 +10990,9 @@ h6 {
 
 .p-r-5 {
   padding: 0 5px 0 0; }
+
+.p-t-30 {
+  padding: 30px 0 0 0; }
 
 .p-b-50 {
   padding: 0 0 50px 0; }

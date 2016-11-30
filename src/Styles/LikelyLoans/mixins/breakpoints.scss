@@ -1,8 +1,18 @@
 /*********************
 BREAKPOINTS
+Example...
+
+  .some-class {
+    width: 100%;
+    @include bp(md) {
+      width:33.3%;
+      min-height:290px;
+    }
+  }
+
 *********************/
 
- @mixin breakpoint($point) {
+ @mixin bp($point) {
    @if $point == lg {
      @media (min-width: $screen-lg) { @content ; }
   }

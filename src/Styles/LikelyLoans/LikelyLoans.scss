@@ -1,5 +1,6 @@
 @import "Bootstrap/Bootstrap";
 @import "../Bootstrap/Bootstrap";
+@import "./mixins/breakpoints";
 @import "../../../bower_components/components-font-awesome/scss/font-awesome";
 @import "Grid";
 @import "Buttons";
@@ -35,3 +36,4 @@
 @import "Headings";
 @import "Spacing";
 @import "Address-List";
+@import "Navbar-off-canvas";

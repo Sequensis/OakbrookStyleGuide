@@ -11548,13 +11548,14 @@ form .form-small-link {
   .navbar-off-canvas .nav .col-xs-6 {
     padding: 0 10px !important; }
   .navbar-off-canvas .off-canvas {
-    position: absolute;
+    position: fixed;
     top: 0;
     height: 100vh;
     width: 90%;
     left: -90%;
     transition: 0.25s ease-in-out;
-    z-index: 105; }
+    z-index: 105;
+    overflow: auto; }
     .navbar-off-canvas .off-canvas.open {
       left: 0; }
       @media (min-width: 992px) {

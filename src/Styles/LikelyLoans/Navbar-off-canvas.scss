@@ -53,12 +53,24 @@
 			}
 			left: 0;
 		}
-		.off-canvas-top {
-			width: 100%;
-			background-color: $brand-blue;
+		.off-canvas-container {
+			padding: 20px;
+			.off-canvas-top {
+				width: 100%;
+				background-color: $brand-blue;
+			}
+			.off-canvas-bottom {
+				width: 100%;
+			}
 		}
-		.off-canvas-bottom {
-			width: 100%;
+		.font-lg {
+			font-size: 25px;
+		}
+		.font-md {
+			font-size: 20px;
+		}
+		.font-sm {
+			font-size: 15px;
 		}
 	}
 

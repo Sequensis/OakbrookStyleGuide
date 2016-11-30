@@ -10408,6 +10408,9 @@ button:focus {
 .normal-weight {
   font-weight: normal; }
 
+.underline {
+  text-decoration: underline; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.ttf?kwz8yz") format("truetype"), url("../fonts/icomoon.woff?kwz8yz") format("woff"), url("../fonts/icomoon.svg?kwz8yz#icomoon") format("svg");
@@ -10572,7 +10575,7 @@ button:focus {
   padding: 0 20px 0 20px; }
 
 .p-20 {
-  margin: 20px; }
+  padding: 20px; }
 
 .p-r-5 {
   padding: 0 5px 0 0; }
@@ -10971,7 +10974,7 @@ h6 {
   padding: 0 20px 0 20px; }
 
 .p-20 {
-  margin: 20px; }
+  padding: 20px; }
 
 .p-r-5 {
   padding: 0 5px 0 0; }
@@ -11540,11 +11543,19 @@ form .form-small-link {
       @media (min-width: 992px) {
         .navbar-off-canvas .off-canvas.open {
           width: 30%; } }
-    .navbar-off-canvas .off-canvas .off-canvas-top {
-      width: 100%;
-      background-color: #005BC6; }
-    .navbar-off-canvas .off-canvas .off-canvas-bottom {
-      width: 100%; }
+    .navbar-off-canvas .off-canvas .off-canvas-container {
+      padding: 20px; }
+      .navbar-off-canvas .off-canvas .off-canvas-container .off-canvas-top {
+        width: 100%;
+        background-color: #005BC6; }
+      .navbar-off-canvas .off-canvas .off-canvas-container .off-canvas-bottom {
+        width: 100%; }
+    .navbar-off-canvas .off-canvas .font-lg {
+      font-size: 25px; }
+    .navbar-off-canvas .off-canvas .font-md {
+      font-size: 20px; }
+    .navbar-off-canvas .off-canvas .font-sm {
+      font-size: 15px; }
   .navbar-off-canvas .navbar-btn {
     transition: .2s ease-in-out;
     font-family: 'Monsterrat', sans-serif;

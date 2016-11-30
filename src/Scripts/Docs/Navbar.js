@@ -1,7 +1,7 @@
 +function ($) {
  //'use strict';
  
- $(document).on('click', '#navbar-icon', function (e) {
+ $('.navbar-off-canvas').on('click', '#navbar-icon', function (e) {
 	$(this).toggleClass('icon-open');
 	$(".navbar-circle").toggleClass("circle-open");
 	$('.navbar-logo, .navbar-btn.btn-sign-out').toggleClass('ob-fade');
@@ -11,7 +11,7 @@
  });
 
 // click on mask overlay
-$(document).on('click', '.mask.on', function() {
+$('.load-fade-in').on('click', '.mask.on', function() {
 	$('#navbar-icon').toggleClass('icon-open');
 	$(".navbar-circle").toggleClass("circle-open");
 	$('.navbar-logo, .navbar-btn.btn-sign-out').toggleClass('ob-fade');

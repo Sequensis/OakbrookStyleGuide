@@ -160,6 +160,7 @@
         pointer-events: none;
         z-index: 104;
         &.on {
+            pointer-events: all;
             background-color: rgba(0, 0, 0, 0.6);
         }
     }

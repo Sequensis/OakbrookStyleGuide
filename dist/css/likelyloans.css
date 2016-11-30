@@ -10695,6 +10695,7 @@ h6 {
   pointer-events: none;
   z-index: 104; }
   .mask.on {
+    pointer-events: all;
     background-color: rgba(0, 0, 0, 0.6); }
 
 .payment {

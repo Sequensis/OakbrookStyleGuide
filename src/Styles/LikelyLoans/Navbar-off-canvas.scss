@@ -52,16 +52,27 @@
 			}
 			left: 0;
 		}
-		.off-canvas-container {
-			padding: 20px;
-			.off-canvas-top {
-				width: 100%;
-				background-color: $brand-blue;
-			}
-			.off-canvas-bottom {
-				width: 100%;
+		.off-canvas-bottom {
+			width: 100%;
+			ul {
+				li {
+					padding: 0 0 20px 0;
+					a {
+						text-decoration: none;
+						i {
+							width: 50px;
+							padding: 0 10px 0 0;
+							text-align: center;
+						}
+						&.active {
+							color: #4a4a4a;
+							pointer-events: none;
+						}
+					}
+				}
 			}
 		}
+
 		p {
 			margin: 0;
 		}

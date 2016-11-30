@@ -11560,13 +11560,19 @@ form .form-small-link {
       @media (min-width: 992px) {
         .navbar-off-canvas .off-canvas.open {
           width: 30%; } }
-    .navbar-off-canvas .off-canvas .off-canvas-container {
-      padding: 20px; }
-      .navbar-off-canvas .off-canvas .off-canvas-container .off-canvas-top {
-        width: 100%;
-        background-color: #005BC6; }
-      .navbar-off-canvas .off-canvas .off-canvas-container .off-canvas-bottom {
-        width: 100%; }
+    .navbar-off-canvas .off-canvas .off-canvas-bottom {
+      width: 100%; }
+      .navbar-off-canvas .off-canvas .off-canvas-bottom ul li {
+        padding: 0 0 20px 0; }
+        .navbar-off-canvas .off-canvas .off-canvas-bottom ul li a {
+          text-decoration: none; }
+          .navbar-off-canvas .off-canvas .off-canvas-bottom ul li a i {
+            width: 50px;
+            padding: 0 10px 0 0;
+            text-align: center; }
+          .navbar-off-canvas .off-canvas .off-canvas-bottom ul li a.active {
+            color: #4a4a4a;
+            pointer-events: none; }
     .navbar-off-canvas .off-canvas p {
       margin: 0; }
     .navbar-off-canvas .off-canvas .font-lg {

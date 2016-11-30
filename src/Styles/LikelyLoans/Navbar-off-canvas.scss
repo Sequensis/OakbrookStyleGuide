@@ -46,12 +46,12 @@
 		background-color: #fff;
 	    -webkit-transition: $transition-250ms;
 	    transition: $transition-250ms;
+	    z-index: 105;
 		&.open {
 			@include bp(md) {
 				width: 30%;
 			}
 			left: 0;
-			z-index: 105;
 		}
 		.off-canvas-top {
 			width: 100%;

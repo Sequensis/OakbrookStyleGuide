@@ -11532,10 +11532,10 @@ form .form-small-link {
     width: 95%;
     left: -95%;
     background-color: #fff;
-    transition: 0.25s ease-in-out; }
+    transition: 0.25s ease-in-out;
+    z-index: 105; }
     .navbar-off-canvas .off-canvas.open {
-      left: 0;
-      z-index: 105; }
+      left: 0; }
       @media (min-width: 992px) {
         .navbar-off-canvas .off-canvas.open {
           width: 30%; } }

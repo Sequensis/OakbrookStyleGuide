@@ -39,7 +39,6 @@
 
 	.off-canvas {
 		position: absolute;
-		z-index: 105;
 		top: 0;
 		height: 100vh;
 		width: 95%;
@@ -52,6 +51,7 @@
 				width: 30%;
 			}
 			left: 0;
+			z-index: 105;
 		}
 		.off-canvas-top {
 			width: 100%;
@@ -183,12 +183,12 @@
 	/* Navbar Burger Icon*/
 
 	#navbar-icon {
+		z-index: 106;
 		position: fixed;
 		top: 0;
 		left: 0;
 	    width: 30px;
 	    height: 37.5px;
-	    // position: relative;
 	    -webkit-transform: rotate(0deg);
 	    transform: rotate(0deg);
 	    -webkit-transition: .2s ease-in-out;

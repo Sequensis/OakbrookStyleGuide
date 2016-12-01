@@ -22,4 +22,7 @@ Example...
   @else if $point == sm {
      @media (max-width: $screen-sm)  { @content ; }
   }
+  @else if $point == xs {
+     @media (min-width: 321px)  { @content ; }
+  }
 }

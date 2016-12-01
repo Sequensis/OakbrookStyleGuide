@@ -47,7 +47,6 @@
 	    -webkit-transition: $transition-250ms;
 	    transition: $transition-250ms;
 	    z-index: 105;
-	    // overflow: auto;
 		&.open {
 			@include bp(md) {
 				width: 30%;
@@ -74,6 +73,12 @@
 				}
 			}
 		}
+		.off-canvas-personal-details {
+			padding: 0 0 20px;
+			@include bp(xs) {
+				padding: 0 0 50px; 
+			}
+		}
 		.off-canvas-scrollable {
 			@include bp(md) {
 				height: 100%;
@@ -85,13 +90,22 @@
 			margin: 0;
 		}
 		.font-lg {
-			font-size: 25px;
+			font-size: 18px;
+			@include bp(xs) {
+				font-size: 25px;
+			}
 		}
 		.font-md {
-			font-size: 20px;
+			font-size: 15px;
+			@include bp(xs) {
+				font-size: 20px;
+			}
 		}
 		.font-sm {
-			font-size: 15px;
+			font-size: 11px;
+			@include bp(xs) {
+				font-size: 15px;
+			}
 		}
 	}
 

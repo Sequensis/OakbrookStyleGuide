@@ -11574,6 +11574,11 @@ form .form-small-link {
           .navbar-off-canvas .off-canvas .off-canvas-bottom ul li a.active {
             color: #4a4a4a;
             pointer-events: none; }
+    .navbar-off-canvas .off-canvas .off-canvas-personal-details {
+      padding: 0 0 20px; }
+      @media (min-width: 321px) {
+        .navbar-off-canvas .off-canvas .off-canvas-personal-details {
+          padding: 0 0 50px; } }
     .navbar-off-canvas .off-canvas .off-canvas-scrollable {
       height: 300px;
       overflow: auto; }
@@ -11583,11 +11588,20 @@ form .form-small-link {
     .navbar-off-canvas .off-canvas p {
       margin: 0; }
     .navbar-off-canvas .off-canvas .font-lg {
-      font-size: 25px; }
+      font-size: 18px; }
+      @media (min-width: 321px) {
+        .navbar-off-canvas .off-canvas .font-lg {
+          font-size: 25px; } }
     .navbar-off-canvas .off-canvas .font-md {
-      font-size: 20px; }
-    .navbar-off-canvas .off-canvas .font-sm {
       font-size: 15px; }
+      @media (min-width: 321px) {
+        .navbar-off-canvas .off-canvas .font-md {
+          font-size: 20px; } }
+    .navbar-off-canvas .off-canvas .font-sm {
+      font-size: 11px; }
+      @media (min-width: 321px) {
+        .navbar-off-canvas .off-canvas .font-sm {
+          font-size: 15px; } }
   .navbar-off-canvas .navbar-btn {
     transition: .2s ease-in-out;
     font-family: 'Monsterrat', sans-serif;

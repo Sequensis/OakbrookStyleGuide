@@ -11549,13 +11549,13 @@ form .form-small-link {
     padding: 0 10px !important; }
   .navbar-off-canvas .off-canvas {
     position: fixed;
+    background-color: #fff;
     top: 0;
     height: 100vh;
     width: 90%;
     left: -90%;
     transition: 0.25s ease-in-out;
-    z-index: 105;
-    overflow: auto; }
+    z-index: 105; }
     .navbar-off-canvas .off-canvas.open {
       left: 0; }
       @media (min-width: 992px) {
@@ -11574,6 +11574,12 @@ form .form-small-link {
           .navbar-off-canvas .off-canvas .off-canvas-bottom ul li a.active {
             color: #4a4a4a;
             pointer-events: none; }
+    .navbar-off-canvas .off-canvas .off-canvas-scrollable {
+      height: 300px;
+      overflow: auto; }
+      @media (min-width: 992px) {
+        .navbar-off-canvas .off-canvas .off-canvas-scrollable {
+          height: 100%; } }
     .navbar-off-canvas .off-canvas p {
       margin: 0; }
     .navbar-off-canvas .off-canvas .font-lg {

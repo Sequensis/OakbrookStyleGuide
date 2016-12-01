@@ -10714,7 +10714,8 @@ h6 {
   transform: translateY(-50%); }
 
 .noscroll {
-  overflow: hidden; }
+  overflow: hidden;
+  margin-right: 17px; }
 
 .payment {
   padding: 0; }

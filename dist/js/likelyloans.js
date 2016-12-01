@@ -4800,6 +4800,7 @@ if (typeof jQuery === 'undefined') {
 		$('.navbar-logo, .navbar-btn.btn-sign-out').toggleClass('ob-fade-out');
 		$('.mask').toggleClass('on');
 		$('.off-canvas').toggleClass('open');
+		$('body').toggleClass('noscroll');
 	});
 
 	// click on mask overlay
@@ -4810,6 +4811,7 @@ if (typeof jQuery === 'undefined') {
 		$('.navbar-logo, .navbar-btn.btn-sign-out').toggleClass('ob-fade-out');
 		$('.mask').toggleClass('on');
 		$('.off-canvas').toggleClass('open');
+		$('body').toggleClass('noscroll');
 	});
 }(jQuery);
 $('.btn-warning').click(function () {

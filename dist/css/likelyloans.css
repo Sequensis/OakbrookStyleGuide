@@ -10713,6 +10713,9 @@ h6 {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%); }
 
+.noscroll {
+  overflow: hidden; }
+
 .payment {
   padding: 0; }
 
@@ -11549,7 +11552,6 @@ form .form-small-link {
     padding: 0 10px !important; }
   .navbar-off-canvas .off-canvas {
     position: fixed;
-    background-color: #fff;
     top: 0;
     height: 100vh;
     width: 90%;

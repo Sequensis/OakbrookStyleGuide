@@ -168,3 +168,7 @@
     .v-align {
         @include vertical-align();
     }
+
+    .noscroll {
+        overflow: hidden;
+    }

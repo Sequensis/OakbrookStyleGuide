@@ -8,6 +8,7 @@
 	$('.navbar-logo, .navbar-btn.btn-sign-out').toggleClass('ob-fade-out');
 	$('.mask').toggleClass('on');
 	$('.off-canvas').toggleClass('open');
+	$('body').toggleClass('noscroll');
  });
 
 // click on mask overlay
@@ -18,6 +19,7 @@ $('.load-fade-in').on('click', '.mask.on', function() {
 	$('.navbar-logo, .navbar-btn.btn-sign-out').toggleClass('ob-fade-out');
 	$('.mask').toggleClass('on');
 	$('.off-canvas').toggleClass('open');
+	$('body').toggleClass('noscroll');
 });
 
 }(jQuery);

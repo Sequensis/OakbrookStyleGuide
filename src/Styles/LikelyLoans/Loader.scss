@@ -18,13 +18,13 @@
     right: 0;
 }
 
-.first-prompt {
+.first-prompt h2 {
     opacity: 0;
     -webkit-animation: first-prompt-animation 4s ease-in 2s forwards;
     animation: first-prompt-animation 4s ease-in 2s forwards;
 }
 
-.second-prompt {
+.second-prompt h2 {
     opacity: 0;
     -webkit-animation: second-prompt-animation 4s ease-in 6s forwards;
     animation: second-prompt-animation 4s ease-in 6s forwards;

@@ -48,7 +48,7 @@
 	    z-index: 105;
 		&.open {
 			@include bp(md) {
-				width: 30%;
+				width: 20%;
 			}
 			left: 0;
 		}

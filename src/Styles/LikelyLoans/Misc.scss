@@ -149,3 +149,26 @@
             }
         }
     }
+
+    .mask {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        transition: $transition-250ms;
+        -webkit-transition: $transition-250ms;
+        pointer-events: none;
+        z-index: 104;
+        &.on {
+            pointer-events: all;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    .v-align {
+        @include vertical-align();
+    }
+
+    .noscroll {
+        overflow: hidden;
+    }

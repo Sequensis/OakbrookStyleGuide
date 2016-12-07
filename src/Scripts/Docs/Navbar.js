@@ -1,7 +1,7 @@
 +function ($) {
  //'use strict';
  
- $(document).on('click', '#navbar-icon', function (e) {
+ $('.navbar-vertical').on('click', '#navbar-icon', function (e) {
    $(this).toggleClass('icon-open');
    $(".navbar-circle").toggleClass("circle-open");
    $(".btn-application").toggleClass('btn-application-open');

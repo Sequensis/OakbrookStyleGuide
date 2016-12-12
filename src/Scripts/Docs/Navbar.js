@@ -1,7 +1,7 @@
 +function ($) {
  //'use strict';
  
- $('.navbar-vertical').on('click', '#navbar-icon', function (e) {
+ $('.navbar').not('.navbar-off-canvas').on('click', '#navbar-icon', function (e) {
    $(this).toggleClass('icon-open');
    $(".navbar-circle").toggleClass("circle-open");
    $(".btn-application").toggleClass('btn-application-open');

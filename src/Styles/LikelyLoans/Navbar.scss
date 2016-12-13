@@ -75,8 +75,6 @@
     transition: .2s ease-in-out;
     &.circle-open {
         position: fixed;
-        margin-top: -200vh;
-        margin-left: -200vh;
         width: 400vh;
         height: 400vh;
     }

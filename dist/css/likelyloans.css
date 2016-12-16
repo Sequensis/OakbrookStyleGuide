@@ -18091,10 +18091,10 @@ form .form-small-link {
         flex-shrink: 1;
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
-    transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
     width: 100%; }
     .radio-buttons-wrapper .radio-container.term-hidden {
       opacity: 0;

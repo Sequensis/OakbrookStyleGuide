@@ -15,10 +15,10 @@
         flex-grow: 1;
         flex-shrink: 1;
         flex-basis: auto;
-		transition: all 1s;
-	    -moz-transition: all 1s;
-	    -ms-transition: all 1s;
-	    -o-transition: all 1s;
+		transition: all 0.5s;
+	    -moz-transition: all 0.5s;
+	    -ms-transition: all 0.5s;
+	    -o-transition: all 0.5s;
 	    width: 100%;
 	    &.term-hidden {
 	    	opacity: 0;

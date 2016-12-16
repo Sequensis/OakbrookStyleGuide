@@ -18119,6 +18119,32 @@ form .form-small-link {
       .radio-buttons-wrapper .radio-container .btn-radio .btn-radio-copy {
         font-size: 13px; }
 
+.slider.noUi-target {
+  height: 8px;
+  border-radius: 4px;
+  background-color: #e3dfda;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.4); }
+  .slider.noUi-target .noUi-base .noUi-connect {
+    background-color: #FCB829;
+    box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 0 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px; }
+  .slider.noUi-target .noUi-base .noUi-origin .noUi-handle {
+    width: 46px;
+    height: 46px;
+    top: -19px;
+    left: -23px;
+    border-radius: 50%;
+    background: url(../img/slider-handle.svg) 46px 48px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4);
+    border: none; }
+    .slider.noUi-target .noUi-base .noUi-origin .noUi-handle.noUi-horizontal {
+      left: -23px;
+      top: -23px; }
+    .slider.noUi-target .noUi-base .noUi-origin .noUi-handle::after, .slider.noUi-target .noUi-base .noUi-origin .noUi-handle::before {
+      display: none; }
+
 /**
  * Swiper 3.4.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions

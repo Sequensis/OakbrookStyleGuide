@@ -4790,19 +4790,6 @@ if (typeof jQuery === 'undefined') {
   "use strict";
   return window.Swiper;
 });
-+function ($) {
-  //'use strict';
-
-  $('.navbar').not('.navbar-off-canvas').on('click', '#navbar-icon', function (e) {
-    $(this).toggleClass('icon-open');
-    $(".navbar-circle").toggleClass("circle-open");
-    $(".btn-application").toggleClass('btn-application-open');
-    $(".btn-sign-in").toggleClass('btn-sign-in-open');
-    $(".btn-sign-out").toggleClass('btn-sign-out-open');
-    $(".btn-username").toggleClass('btn-username-open');
-    $(".overlay").toggleClass('overlay-open');
-  });
-}(jQuery);
 $('.btn-warning').click(function () {
     $('.modal-container').toggleClass('theme-warning');
     $('.modal-container').toggleClass('theme-light');

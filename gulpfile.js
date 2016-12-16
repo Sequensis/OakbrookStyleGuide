@@ -204,8 +204,6 @@ gulp.task('scripts:application', function () {
         config.paths.bower.root + '/jquery-legacy/dist/jquery.js',
         config.paths.bower.root + '/bootstrap-sass/assets/javascripts/bootstrap.js',
         config.paths.bower.root + '/Swiper/dist/js/swiper.jquery.min.js', 
-        config.paths.bower.root + '/nouislider/distribute/nouislider.min.js',                         
-        config.paths.src.root + '/Scripts/Docs/Navbar.js',
         config.paths.src.root + '/Scripts/Docs/Auth0.js'
 
     ]);

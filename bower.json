@@ -29,6 +29,7 @@
     "jquery-legacy": "jquery#1",
     "highlightjs": "^9.8.0",
     "components-font-awesome": "^4.7.0",
-    "Swiper": "swiper#^3.3.1"
+    "Swiper": "swiper#^3.3.1",
+    "nouislider": "^9.1.0"
   }
 }

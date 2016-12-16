@@ -203,7 +203,8 @@ gulp.task('scripts:application', function () {
         config.paths.src.scripts + '/Modernizr.js',
         config.paths.bower.root + '/jquery-legacy/dist/jquery.js',
         config.paths.bower.root + '/bootstrap-sass/assets/javascripts/bootstrap.js',
-        config.paths.bower.root + '/Swiper/dist/js/swiper.jquery.min.js',                
+        config.paths.bower.root + '/Swiper/dist/js/swiper.jquery.min.js', 
+        config.paths.bower.root + '/nouislider/distribute/nouislider.min.js',                         
         config.paths.src.root + '/Scripts/Docs/Navbar.js',
         config.paths.src.root + '/Scripts/Docs/Auth0.js'
 
@@ -230,6 +231,7 @@ gulp.task('scripts:docs', function () {
         config.paths.bower.root + '/jquery-legacy/dist/jquery.js',
         config.paths.bower.root + '/bootstrap-sass/assets/javascripts/bootstrap.js',
         config.paths.bower.root + '/Swiper/dist/js/swiper.jquery.min.js',        
+        config.paths.bower.root + '/nouislider/distribute/nouislider.min.js',  
         config.paths.bower.root + '/highlightjs/highlight.pack.js',
         config.paths.src.scripts + '/Docs/**/*'
     ])
@@ -247,7 +249,7 @@ gulp.task('scripts:docs', function () {
 gulp.task('styles', ['styles:likelyloans', 'styles:docs']);
 
 gulp.task('styles:likelyloans', function () {
-    return gulp.src([config.paths.src.styles + '/LikelyLoans/Docs.scss',config.paths.bower.root+'/Swiper/dist/css/swiper.css'])
+    return gulp.src([config.paths.src.styles + '/LikelyLoans/Docs.scss',config.paths.bower.root+'/Swiper/dist/css/swiper.css',config.paths.bower.root+'/nouislider/distribute/nouislider.min.css'])
         .pipe($.sourcemaps.init({ loadMaps: true }))
         .pipe($.sass({
             includePaths: config.paths.src.styles + '/LikelyLoans'
@@ -263,7 +265,7 @@ gulp.task('styles:likelyloans', function () {
         .pipe(gulp.dest(config.paths.dist.styles));
 });
 gulp.task('styles:docs', function () {
-    return gulp.src([config.paths.src.styles + '/LikelyLoans/Docs.scss',config.paths.bower.root+'/Swiper/dist/css/swiper.css'])
+    return gulp.src([config.paths.src.styles + '/LikelyLoans/Docs.scss',config.paths.bower.root+'/Swiper/dist/css/swiper.css',config.paths.bower.root+'/nouislider/distribute/nouislider.min.css'])
         .pipe($.sourcemaps.init({ loadMaps: true }))
         .pipe($.sass({
             includePaths: config.paths.src.styles + '/LikelyLoans'

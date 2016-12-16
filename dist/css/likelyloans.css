@@ -18093,16 +18093,16 @@ form .form-small-link {
     width: 100%;
     height: 100px;
     border-radius: 4px;
-    border: solid 2px #005bc6; }
-    .radio-buttons-wrapper .btn-radio span.btn-radio-num, .radio-buttons-wrapper .btn-radio span.btn-radio-copy {
+    border: solid 2px #005bc6;
+    text-align: center; }
+    .radio-buttons-wrapper .btn-radio .btn-radio-num, .radio-buttons-wrapper .btn-radio .btn-radio-copy {
       font-size: 30px;
       font-weight: bold;
       font-style: normal;
       font-stretch: normal;
       line-height: 1;
-      text-align: center;
       color: #005bc6; }
-    .radio-buttons-wrapper .btn-radio span.btn-radio-copy {
+    .radio-buttons-wrapper .btn-radio .btn-radio-copy {
       font-size: 13px; }
 
 /**

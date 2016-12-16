@@ -26,16 +26,16 @@
 		height: 100px;
 		border-radius: 4px;
 		border: solid 2px #005bc6;
-		span.btn-radio-num {
+		text-align: center;
+		.btn-radio-num {
 			font-size: 30px;
 			font-weight: bold;
 			font-style: normal;
 			font-stretch: normal;
 			line-height: 1;
-			text-align: center;
 			color: #005bc6;
 		}
-		span.btn-radio-copy {
+		.btn-radio-copy {
 			@extend .btn-radio-num;
 			font-size: 13px;
 		}

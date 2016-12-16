@@ -3,36 +3,52 @@
 	<div class="radio-buttons-wrapper">
 		<div class="radio-container p-r-10">
 			<input type="radio" name="LoanTerm" value="12">
-			<label class="btn-radio p-t-20">
+			<label class="btn btn-radio p-t-20 checked">
 				<div class="btn-radio-num">12</div>
 				<div class="btn-radio-copy">Months</div>
 			</label>
 		</div>
 		<div class="radio-container p-r-10">
 			<input type="radio" name="LoanTerm" value="18">
-			<label class="btn-radio p-t-20">
+			<label class="btn btn-radio p-t-20">
 				<div class="btn-radio-num">18</div>
 				<div class="btn-radio-copy">Months</div>
 			</label>
 		</div>
 		<div class="radio-container p-r-10">
 			<input type="radio" name="LoanTerm" value="24">
-			<label class="btn-radio p-t-20">
+			<label class="btn btn-radio p-t-20">
 				<div class="btn-radio-num">24</div>
 				<div class="btn-radio-copy">Months</div>
 			</label>
 		</div>
 <!-- 		<div class="radio-container p-r-10">
 			<input type="radio" name="LoanTerm" value="30">
-			<label class="btn-radio p-t-20">
+			<label class="btn btn-radio p-t-20">
 				<span>30</span>
 			</label>
 		</div>
 		<div class="radio-container p-r-10">
 			<input type="radio" name="LoanTerm" value="36">
-			<label class="btn-radio p-t-20">
+			<label class="btn btn-radio p-t-20">
 				<span>36</span>
 			</label>
 		</div> -->
 	</div>
 </div>
+
+<script type="text/javascript">
+
+	(function checkJquery() {
+		if(window.$) {
+			$(function() {
+				$('.btn-radio').click(function() {
+					$(this).toggleClass('checked');
+				});
+			});
+		} else {
+			setTimeout(checkJquery,100);
+		}
+	})();
+
+</script>

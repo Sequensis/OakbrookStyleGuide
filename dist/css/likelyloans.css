@@ -9102,6 +9102,150 @@ Example...
   overflow: visible;
   clip: auto; }
 
+/* Need to move these //*/
+*:focus {
+  outline: -webkit-focus-ring-color auto 0px !important; }
+
+.nowrap {
+  white-space: nowrap; }
+
+.payments-place-img {
+  padding: 10px 0 20px;
+  width: 182px; }
+
+.form-input-other {
+  margin: 40px 0 20px 0; }
+
+body {
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.25em !important; }
+
+@media (max-width: 480px) {
+  .summary-header h1 {
+    font-size: 30px; } }
+
+@media (min-width: 480px) {
+  .summary-header h1 {
+    font-size: 35px; } }
+
+.font-yellow {
+  color: #FCB829; }
+
+.fa-7x {
+  font-size: 7em; }
+
+.absolute-t-r {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.v-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%); }
+
+.header-icon {
+  padding-bottom: 10px; }
+
+.no-underline {
+  text-decoration: none; }
+
+.no-underline:hover,
+.no-underline:focus {
+  text-decoration: none; }
+
+/* toast (clean this up)*/
+.dotted-line {
+  background-image: linear-gradient(to right, #cfcfcf 20%, rgba(255, 255, 255, 0) 0%);
+  background-position: top;
+  background-size: 10px 2px;
+  background-repeat: repeat-x;
+  margin: 0 auto;
+  height: 2px;
+  width: 95%; }
+
+#important.modal-dialog {
+  background-color: #005BC6;
+  color: #fff; }
+  #important.modal-dialog .modal-title {
+    color: #fff; }
+  #important.modal-dialog .modal-content {
+    background-color: #005BC6; }
+  #important.modal-dialog .change-payment-textbox {
+    background-color: #005BC6; }
+    #important.modal-dialog .change-payment-textbox .payment-navigation {
+      background-color: #005BC6;
+      position: relative; }
+      #important.modal-dialog .change-payment-textbox .payment-navigation li {
+        padding: 10px 0; }
+
+.up {
+  -ms-transform: translate(0, 100%);
+      transform: translate(0, 100%);
+  transition: transform 0.5s ease-in-out; }
+
+.up.in {
+  -ms-transform: translate(0, 0);
+      transform: translate(0, 0); }
+
+.ob-ss-bold {
+  font-weight: 700; }
+
+#payment-page h2 {
+  font-size: 18px;
+  text-align: center;
+  margin: 30px auto; }
+
+@media (min-width: 768px) {
+  #payment-page h2 {
+    font-size: 30px;
+    text-align: left; } }
+
+.mask {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.25s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  pointer-events: none;
+  z-index: 104; }
+  .mask.on {
+    pointer-events: all;
+    background-color: rgba(0, 0, 0, 0.6); }
+
+.v-align {
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.noscroll {
+  overflow: hidden; }
+
+.rep-apr {
+  font-size: 15px;
+  text-align: left;
+  color: #005BC6;
+  line-height: 1.1; }
+  @media (min-width: 992px) {
+    .rep-apr {
+      text-align: right; } }
+  .rep-apr span {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans serif;
+    display: block; }
+
 .vcenter-container .col-lg-1,
 .vcenter-container .col-lg-2,
 .vcenter-container .col-lg-3,
@@ -9307,8 +9451,14 @@ Example...
 .ob-btn {
   font-size: 18px;
   font-family: 'Montserrat', sans serif;
-  font-weight: 700; }
-  .ob-btn.full-wodth-btn {
+  font-weight: 700;
+  text-align: left;
+  padding: 10px 15px;
+  border-radius: 4px; }
+  .ob-btn i {
+    position: relative;
+    bottom: -3px; }
+  .ob-btn.full-width-btn {
     width: 100%; }
   .ob-btn.btn-green {
     background-color: #33D167;
@@ -16897,150 +17047,6 @@ button:focus {
 .p-b-50 {
   padding: 0 0 50px 0; }
 
-/* Need to move these //*/
-*:focus {
-  outline: -webkit-focus-ring-color auto 0px !important; }
-
-.nowrap {
-  white-space: nowrap; }
-
-.payments-place-img {
-  padding: 10px 0 20px;
-  width: 182px; }
-
-.form-input-other {
-  margin: 40px 0 20px 0; }
-
-body {
-  height: 100%; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: 1.25em !important; }
-
-@media (max-width: 480px) {
-  .summary-header h1 {
-    font-size: 30px; } }
-
-@media (min-width: 480px) {
-  .summary-header h1 {
-    font-size: 35px; } }
-
-.font-yellow {
-  color: #FCB829; }
-
-.fa-7x {
-  font-size: 7em; }
-
-.absolute-t-r {
-  position: absolute;
-  top: 0;
-  right: 0; }
-
-.v-center {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%); }
-
-.header-icon {
-  padding-bottom: 10px; }
-
-.no-underline {
-  text-decoration: none; }
-
-.no-underline:hover,
-.no-underline:focus {
-  text-decoration: none; }
-
-/* toast (clean this up)*/
-.dotted-line {
-  background-image: linear-gradient(to right, #cfcfcf 20%, rgba(255, 255, 255, 0) 0%);
-  background-position: top;
-  background-size: 10px 2px;
-  background-repeat: repeat-x;
-  margin: 0 auto;
-  height: 2px;
-  width: 95%; }
-
-#important.modal-dialog {
-  background-color: #005BC6;
-  color: #fff; }
-  #important.modal-dialog .modal-title {
-    color: #fff; }
-  #important.modal-dialog .modal-content {
-    background-color: #005BC6; }
-  #important.modal-dialog .change-payment-textbox {
-    background-color: #005BC6; }
-    #important.modal-dialog .change-payment-textbox .payment-navigation {
-      background-color: #005BC6;
-      position: relative; }
-      #important.modal-dialog .change-payment-textbox .payment-navigation li {
-        padding: 10px 0; }
-
-.up {
-  -ms-transform: translate(0, 100%);
-      transform: translate(0, 100%);
-  transition: transform 0.5s ease-in-out; }
-
-.up.in {
-  -ms-transform: translate(0, 0);
-      transform: translate(0, 0); }
-
-.ob-ss-bold {
-  font-weight: 700; }
-
-#payment-page h2 {
-  font-size: 18px;
-  text-align: center;
-  margin: 30px auto; }
-
-@media (min-width: 768px) {
-  #payment-page h2 {
-    font-size: 30px;
-    text-align: left; } }
-
-.mask {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  transition: 0.25s ease-in-out;
-  -webkit-transition: 0.25s ease-in-out;
-  pointer-events: none;
-  z-index: 104; }
-  .mask.on {
-    pointer-events: all;
-    background-color: rgba(0, 0, 0, 0.6); }
-
-.v-align {
-  position: relative;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
-.noscroll {
-  overflow: hidden; }
-
-.rep-apr {
-  font-size: 15px;
-  text-align: left;
-  color: #005BC6;
-  line-height: 1.1; }
-  @media (min-width: 992px) {
-    .rep-apr {
-      text-align: right; } }
-  .rep-apr span {
-    font-size: 40px;
-    font-weight: 700;
-    font-family: 'Montserrat', sans serif;
-    display: block; }
-
 .payment {
   padding: 0; }
 
@@ -17370,7 +17376,7 @@ h6 {
         text-align: center;
         width: 20vw;
         height: 20vw;
-        border-radius: 3px;
+        border-radius: 4px;
         border: solid 2px #767676;
         line-height: 20vw;
         color: #767676; }
@@ -17619,14 +17625,14 @@ form .ob-form-group {
     height: 50px;
     width: 100%;
     border: 1px solid #979797;
-    border-radius: 3px;
+    border-radius: 4px;
     box-shadow: none !important; }
     form .ob-form-group input:focus {
       outline: none; }
   form .ob-form-group label {
     color: #4a4a4a;
     font-weight: 500;
-    border-radius: 3px;
+    border-radius: 4px;
     background-color: #fff;
     opacity: .6;
     font-size: 18px;
@@ -18213,7 +18219,7 @@ form .custom-input {
 
 .ob-rounded-table {
   width: 100%;
-  border-radius: 6px; }
+  border-radius: 8px; }
   .ob-rounded-table.ob-table-grey {
     background: #f7f7f7; }
   .ob-rounded-table tr {
@@ -18231,7 +18237,7 @@ form .custom-input {
 
 .ob-card {
   box-shadow: none;
-  border-radius: 3px; }
+  border-radius: 4px; }
   .ob-card.ob-card-white {
     background: #fff; }
   @media (min-width: 992px) {

@@ -16653,6 +16653,12 @@ button:focus {
   padding: 0;
   margin: 0;
   list-style-type: none; }
+  .full-width-list ul.custom-bullets {
+    padding-left: 30px;
+    text-indent: -15px;
+    color: #4a4a4a; }
+    .full-width-list ul.custom-bullets i {
+      vertical-align: bottom; }
 
 .full-width-list li a {
   border-top: 1px solid #E3DFDA;
@@ -17174,6 +17180,9 @@ h6 {
 
 .m-10 {
   margin: 10px; }
+
+.m-b-15 {
+  margin: 0 0 15px 0; }
 
 .m-t-20 {
   margin: 20px 0 0 0; }

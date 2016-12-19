@@ -1,0 +1,23 @@
+.ob-rounded-table {
+    width: 100%;
+    border-radius: $radius*2;
+    &.ob-table-grey {
+        background: $brand-light-grey;
+    }
+    tr {
+        border-bottom: solid 1px #e7e7e7;
+        &:last-child {
+            border: none;
+        }
+        td {
+            padding: 12px;
+            font-size: 15px;
+            text-align: left;
+            &:last-child {
+                font-family: 'Monsterrat', sans-serif;
+                font-weight: 700;
+                text-align: right;
+            }
+        }
+    }
+}

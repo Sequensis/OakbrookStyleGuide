@@ -85,15 +85,13 @@ form {
         @extend .custom-input-font;
         position: absolute;
         left: 30px;
-        padding-top: 2px;
+        padding-top: 5px;
         z-index: 10;
     }
     .custom-input-font {
         font-size: 30px;
         font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1;
+        color: $brand-blue;
         font-family: 'Montserrat', sans-serif;
     }
     .custom-input {
@@ -101,7 +99,7 @@ form {
         border-radius: 4px;
         border: 1px solid #979797;
         height: 50px;
-        padding: 0 35px;
+        padding: 0 30px;
     }
 }
 

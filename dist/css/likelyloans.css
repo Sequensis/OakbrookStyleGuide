@@ -17634,6 +17634,26 @@ form .form-small-link {
   text-decoration: underline;
   font-weight: 600; }
 
+form .custom-input-pound {
+  position: absolute;
+  left: 30px;
+  padding-top: 2px;
+  z-index: 10; }
+
+form .custom-input-font, form .custom-input-pound, form .custom-input {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif; }
+
+form .custom-input {
+  border-radius: 4px;
+  border: 1px solid #979797;
+  height: 50px;
+  padding: 0 35px; }
+
 .ob-form-material {
   position: relative;
   margin: 20px 0 30px 0; }

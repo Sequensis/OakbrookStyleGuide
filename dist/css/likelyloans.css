@@ -17522,7 +17522,7 @@ button:focus {
   height: 20px;
   background-color: #000; }
 
-.panel-group .panel:nth-child(2) {
+.panel-group .ob-panel-default:nth-child(2) {
   margin: 30px 0; }
 
 .ob-panel-default {
@@ -18244,6 +18244,48 @@ form .custom-input {
     .ob-card {
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
       padding: 20px 30px; } }
+
+.ob-accordion.ob-blue {
+  background: #005BC6; }
+
+.ob-accordion .panel-group {
+  margin: 0; }
+  .ob-accordion .panel-group .panel + .panel {
+    margin: -2px 0; }
+  .ob-accordion .panel-group .panel {
+    background: none;
+    box-shadow: none; }
+    .ob-accordion .panel-group .panel a {
+      text-decoration: none; }
+    .ob-accordion .panel-group .panel .collapsed .panel-heading {
+      color: #fff;
+      background: #005BC6;
+      border-bottom: solid 0.5px #fff;
+      transition: all .2s ease-in-out; }
+    .ob-accordion .panel-group .panel .panel-heading {
+      padding: 20px 15px;
+      background: #fff;
+      color: #005BC6;
+      border-radius: 0; }
+      @media (min-width: 992px) {
+        .ob-accordion .panel-group .panel .panel-heading {
+          padding: 20px 30px; } }
+      .ob-accordion .panel-group .panel .panel-heading .panel-title {
+        font-family: 'Source Sans Pro', sans serif;
+        font-size: 15px; }
+        .ob-accordion .panel-group .panel .panel-heading .panel-title i {
+          float: right;
+          margin-top: 5px; }
+        @media (min-width: 992px) {
+          .ob-accordion .panel-group .panel .panel-heading .panel-title {
+            font-size: 20px; } }
+    .ob-accordion .panel-group .panel .panel-body {
+      background: #fff;
+      padding: 0 15px 15px 15px; }
+      .ob-accordion .panel-group .panel .panel-body .panel-container {
+        background: #f7f7f7;
+        border-radius: 4px;
+        padding: 10px; }
 
 /**
  * Swiper 3.4.0

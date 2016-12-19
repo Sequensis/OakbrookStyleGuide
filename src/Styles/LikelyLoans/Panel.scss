@@ -2,7 +2,7 @@
     $ob-panel-default-border: #fff !default;
     $ob-panel-default-heading-bg: none !default;
     .panel-group {
-        .panel:nth-child(2) {
+        .ob-panel-default:nth-child(2) {
             margin: 30px 0;
         }
     }

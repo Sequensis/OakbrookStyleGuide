@@ -1,0 +1,54 @@
+.ob-accordion {
+    &.ob-blue {
+        background: $brand-blue;
+    }
+    .panel-group {
+        margin: 0;
+        .panel+.panel {
+            margin: -2px 0;
+        }
+        .panel {
+            background: none;
+            box-shadow: none;
+            a {
+                text-decoration: none;
+            }
+            .collapsed .panel-heading {
+                color: #fff;
+                background: $brand-blue;
+                border-bottom: solid 0.5px #fff;
+                -webkit-transition: all .2s ease-in-out;
+                transition: all .2s ease-in-out;
+            }
+            .panel-heading {
+                padding: 20px 15px;
+                background: #fff;
+                color: $brand-blue;
+                border-radius: 0;
+                @include bp(md) {
+                    padding: 20px 30px;
+                }
+                .panel-title {
+                    font-family: 'Source Sans Pro', sans serif;
+                    font-size: 15px;
+                    i {
+                        float: right;
+                        margin-top: 5px;
+                    }
+                    @include bp(md) {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .panel-body {
+                background: #fff;
+                padding: 0 15px 15px 15px;
+                .panel-container {
+                    background: $brand-light-grey;
+                    border-radius: $radius;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}

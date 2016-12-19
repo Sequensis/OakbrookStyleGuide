@@ -18145,6 +18145,34 @@ form .form-small-link {
     .slider.noUi-target .noUi-base .noUi-origin .noUi-handle::after, .slider.noUi-target .noUi-base .noUi-origin .noUi-handle::before {
       display: none; }
 
+.ob-rounded-table {
+  width: 100%;
+  border-radius: 6px; }
+  .ob-rounded-table.ob-table-grey {
+    background: #f7f7f7; }
+  .ob-rounded-table tr {
+    border-bottom: solid 1px #e7e7e7; }
+    .ob-rounded-table tr:last-child {
+      border: none; }
+    .ob-rounded-table tr td {
+      padding: 12px;
+      font-size: 15px;
+      text-align: left; }
+      .ob-rounded-table tr td:last-child {
+        font-family: 'Monsterrat', sans-serif;
+        font-weight: 700;
+        text-align: right; }
+
+.ob-card {
+  box-shadow: none;
+  border-radius: 3px; }
+  .ob-card.ob-card-white {
+    background: #fff; }
+  @media (min-width: 992px) {
+    .ob-card {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+      padding: 20px 30px; } }
+
 /**
  * Swiper 3.4.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions

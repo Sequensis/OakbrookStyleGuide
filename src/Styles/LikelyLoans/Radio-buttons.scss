@@ -30,6 +30,7 @@
 			border-radius: 4px;
 			border: solid 2px $brand-blue;
 			text-align: center;
+			font-family: 'Montserrat', sans-serif;
 			&.checked {
 				background-color: $brand-blue;
 				.btn-radio-num {
@@ -47,6 +48,9 @@
 			.btn-radio-copy {
 				@extend .btn-radio-num;
 				font-size: 13px;
+			}
+			i.icon-tick {
+    			font-size: x-small;
 			}
 		}
 	}

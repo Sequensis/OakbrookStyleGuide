@@ -7,12 +7,10 @@
     $transition-250ms: .25s ease-in-out;
     $calendar-carousel: url(../img/calendar-carousel.svg);
     $calendar-carousel-disabled: url(../img/calendar-carousel-disabled.svg);
-
-
     *:focus {
         outline: -webkit-focus-ring-color auto 0px !important;
     }
-
+    
     .nowrap {
         white-space: nowrap;
     }
@@ -149,7 +147,7 @@
             }
         }
     }
-
+    
     .mask {
         position: fixed;
         top: 0;
@@ -164,11 +162,27 @@
             background-color: rgba(0, 0, 0, 0.6);
         }
     }
-
+    
     .v-align {
         @include vertical-align();
     }
-
+    
     .noscroll {
         overflow: hidden;
+    }
+    
+    .rep-apr {
+        font-size: 15px;
+        text-align: left;
+        color: $brand-blue;
+        line-height: 1.1;
+        @include bp(md) {
+            text-align: right;
+        }
+        span {
+            font-size: 40px;
+            font-weight: 700;
+            font-family: 'Montserrat', sans serif;
+            display: block;
+        }
     }

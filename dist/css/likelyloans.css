@@ -9304,6 +9304,21 @@ Example...
   border-radius: 4px;
   background-color: #4a4a4a; }
 
+.ob-btn {
+  font-size: 18px;
+  font-family: 'Montserrat', sans serif;
+  font-weight: 700; }
+  .ob-btn.full-wodth-btn {
+    width: 100%; }
+  .ob-btn.btn-green {
+    background-color: #33D167;
+    color: #fff;
+    border: 2px solid #33D167; }
+    .ob-btn.btn-green:focus, .ob-btn.btn-green:hover {
+      background-color: #2bbf5c;
+      color: #fff;
+      border: 2px solid #2bbf5c; }
+
 .section-container nav.navbar .navbar-circle {
   position: absolute; }
 
@@ -17011,6 +17026,20 @@ h6 {
 
 .noscroll {
   overflow: hidden; }
+
+.rep-apr {
+  font-size: 15px;
+  text-align: left;
+  color: #005BC6;
+  line-height: 1.1; }
+  @media (min-width: 992px) {
+    .rep-apr {
+      text-align: right; } }
+  .rep-apr span {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans serif;
+    display: block; }
 
 .payment {
   padding: 0; }

@@ -1,6 +1,22 @@
 .ob-accordion {
     &.ob-blue {
         background: $brand-blue;
+        .panel-group {
+            .panel {
+                .collapsed .panel-heading {
+                    color: #fff;
+                    background: $brand-blue;
+                    border-bottom: solid 0.5px #fff;
+                }
+                .panel-heading {
+                    color: $brand-blue;
+                    background: #fff;
+                }
+                .panel-body {
+                    background: #fff;
+                }
+            }
+        }
     }
     .panel-group {
         margin: 0;
@@ -14,16 +30,13 @@
                 text-decoration: none;
             }
             .collapsed .panel-heading {
-                color: #fff;
-                background: $brand-blue;
-                border-bottom: solid 0.5px #fff;
+                color: #4a4a4a;
+                border-bottom: solid 0.5px #4a4a4a;
                 -webkit-transition: all .2s ease-in-out;
                 transition: all .2s ease-in-out;
             }
             .panel-heading {
                 padding: 20px 15px;
-                background: #fff;
-                color: $brand-blue;
                 border-radius: 0;
                 @include bp(md) {
                     padding: 20px 30px;
@@ -41,7 +54,6 @@
                 }
             }
             .panel-body {
-                background: #fff;
                 padding: 0 15px 15px 15px;
                 .panel-container {
                     background: $brand-light-grey;

@@ -18247,6 +18247,15 @@ form .custom-input {
 
 .ob-accordion.ob-blue {
   background: #005BC6; }
+  .ob-accordion.ob-blue .panel-group .panel .collapsed .panel-heading {
+    color: #fff;
+    background: #005BC6;
+    border-bottom: solid 0.5px #fff; }
+  .ob-accordion.ob-blue .panel-group .panel .panel-heading {
+    color: #005BC6;
+    background: #fff; }
+  .ob-accordion.ob-blue .panel-group .panel .panel-body {
+    background: #fff; }
 
 .ob-accordion .panel-group {
   margin: 0; }
@@ -18258,14 +18267,11 @@ form .custom-input {
     .ob-accordion .panel-group .panel a {
       text-decoration: none; }
     .ob-accordion .panel-group .panel .collapsed .panel-heading {
-      color: #fff;
-      background: #005BC6;
-      border-bottom: solid 0.5px #fff;
+      color: #4a4a4a;
+      border-bottom: solid 0.5px #4a4a4a;
       transition: all .2s ease-in-out; }
     .ob-accordion .panel-group .panel .panel-heading {
       padding: 20px 15px;
-      background: #fff;
-      color: #005BC6;
       border-radius: 0; }
       @media (min-width: 992px) {
         .ob-accordion .panel-group .panel .panel-heading {
@@ -18280,7 +18286,6 @@ form .custom-input {
           .ob-accordion .panel-group .panel .panel-heading .panel-title {
             font-size: 20px; } }
     .ob-accordion .panel-group .panel .panel-body {
-      background: #fff;
       padding: 0 15px 15px 15px; }
       .ob-accordion .panel-group .panel .panel-body .panel-container {
         background: #f7f7f7;

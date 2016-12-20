@@ -10,6 +10,11 @@
     &:focus {
         text-decoration: none;
     }
+    &.dynamic-width-btn {
+        @include bp(sm) {
+            width: 100%
+        }
+    }
 }
 
 .btn-primary-1 {
@@ -46,6 +51,20 @@
     &:hover {
         background-color: darken($brand-secondary-1, 5%);
         color: #fff;
+    }
+}
+
+.btn-secondary-1 {
+    background-color: #fff;
+    border: solid 2px $brand-blue;
+    color: $brand-blue;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Montserrat', Sans-serif;
+    padding: 10px 10px;
+    &:hover {
+        background-color: darken(#fff, 5%);
+        color: darken($brand-blue, 5%)
     }
 }
 

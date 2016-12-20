@@ -127,3 +127,23 @@ button:focus {
         }
     }
 }
+
+.modal-fixed-bottom-list {
+    @include bp(md) {
+        position: relative;
+    }
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    li {
+        display: block;
+        padding: 10px 0;
+    }
+    a {
+        @include bp(md) {
+            width: auto; 
+        }
+        width: 95%;
+        margin: 0 auto;
+    }
+}

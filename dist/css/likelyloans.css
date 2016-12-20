@@ -17799,6 +17799,17 @@ form .custom-input {
       text-align: center;
       margin-top: 5px; }
 
+.toast-generic {
+  background-color: #fff;
+  color: #005BC6;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+  .toast-generic p {
+    color: #005BC6; }
+  .toast-generic .close i.icon-cross {
+    color: #023A15; }
+  .toast-generic .toast-body {
+    margin: 0; }
+
 .toast-success {
   background-color: #F7F7F7;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);

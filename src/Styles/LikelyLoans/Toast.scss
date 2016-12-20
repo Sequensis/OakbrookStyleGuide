@@ -40,6 +40,23 @@
     }
 }
 
+.toast-generic {
+    background-color: #fff;
+    color: $brand-blue;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);    
+    p {
+        color: $brand-blue;
+    }
+    .close {
+        i.icon-cross {
+            color: $brand-secondary-3-font;
+        }
+    }
+    .toast-body {
+        margin: 0;
+    }
+}
+
 .toast-success {
     background-color: #F7F7F7;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);    

@@ -16986,6 +16986,17 @@ button:focus {
     font-weight: 700;
     padding: 0 5px; }
 
+.panel-secondary {
+  border-top: solid 1px #e7e7e7;
+  border-bottom: solid 1px #e7e7e7;
+  color: #005BC6; }
+  .panel-secondary span {
+    padding: 25px 0 15px 10px;
+    float: left; }
+  .panel-secondary .panel-btn {
+    padding: 15px 5px 15px 0;
+    float: right; }
+
 .ob-no-padding {
   padding: 0; }
 

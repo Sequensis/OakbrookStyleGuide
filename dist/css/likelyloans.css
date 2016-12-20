@@ -9390,6 +9390,9 @@ h6 {
   transition: .2s ease-in-out; }
   .btn:hover, .btn:focus {
     text-decoration: none; }
+  @media (max-width: 768px) {
+    .btn.dynamic-width-btn {
+      width: 100%; } }
 
 .btn-primary-1 {
   background-color: #005BC6;
@@ -17807,8 +17810,6 @@ form .custom-input {
     color: #005BC6; }
   .toast-generic .close i.icon-cross {
     color: #023A15; }
-  .toast-generic .toast-body {
-    margin: 0; }
 
 .toast-success {
   background-color: #F7F7F7;

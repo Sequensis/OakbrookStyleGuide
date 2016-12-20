@@ -54,6 +54,20 @@
     }
 }
 
+.btn-secondary-1 {
+    background-color: #fff;
+    border: solid 2px $brand-blue;
+    color: $brand-blue;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Montserrat', Sans-serif;
+    padding: 10px 10px;
+    &:hover {
+        background-color: darken(#fff, 5%);
+        color: darken($brand-blue, 5%)
+    }
+}
+
 .btn-black-hollow {
     background-color: #fff;
     color: #4a4a4a;

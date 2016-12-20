@@ -9422,6 +9422,18 @@ h6 {
     background-color: #d6233f;
     color: #fff; }
 
+.btn-secondary-1 {
+  background-color: #fff;
+  border: solid 2px #005BC6;
+  color: #005BC6;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Montserrat', Sans-serif;
+  padding: 10px 10px; }
+  .btn-secondary-1:hover {
+    background-color: #f2f2f2;
+    color: #004fad; }
+
 .btn-black-hollow {
   background-color: #fff;
   color: #4a4a4a;

@@ -9427,7 +9427,9 @@ h6 {
   border: solid 2px #005BC6;
   color: #005BC6;
   font-size: 13px;
-  font-family: 'Montserrat', Sans-serif; }
+  font-weight: bold;
+  font-family: 'Montserrat', Sans-serif;
+  padding: 10px 10px; }
   .btn-secondary-1:hover {
     background-color: #f2f2f2;
     color: #004fad; }

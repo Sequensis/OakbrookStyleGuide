@@ -215,7 +215,6 @@ gulp.task('scripts:application', function () {
 
     return mergeStream(javaScripts, typeScripts)
         .pipe($.sourcemaps.init({ loadMaps: true }))
-        .pipe($.babel())
         .pipe($.concat('likelyloans.js'))
         .pipe(gulp.dest(config.paths.dist.scripts))
         .pipe($.uglify())
@@ -235,7 +234,6 @@ gulp.task('scripts:docs', function () {
     ])
 
         .pipe($.sourcemaps.init({ loadMaps: true }))
-        .pipe($.babel())
         .pipe($.concat('docs.js'))
         .pipe(gulp.dest(config.paths.docs.scripts))
         .pipe($.uglify())
@@ -273,7 +271,6 @@ gulp.task('styles:docs', function () {
             browsers: config.compatibility
         }))
         .pipe(gulp.dest(config.paths.docs.styles))
-        .pipe($.cssnano())
         .pipe($.rename('likelyloans.min.css'))
         .pipe($.sourcemaps.write('.'))
         .pipe(gulp.dest(config.paths.docs.styles));
@@ -289,5 +286,5 @@ gulp.task('watch', function () {
         runSequence('panini:refresh', 'panini', 'browser:reload');
     });
     gulp.watch(config.paths.src.scripts + '/**/*.{js,ts}', ['scripts', browser.reload]);
-    gulp.watch(config.paths.src.styles + '/**/*.scss', ['styles', browser.reload]);
+    gulp.watch(config.paths.src.styles + '/**/*.scss', ['styles:docs', browser.reload]);
 });

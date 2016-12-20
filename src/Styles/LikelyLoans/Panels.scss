@@ -19,13 +19,15 @@
             border-top: solid 1px #e7e7e7;
         }
         color: $brand-blue;
-        span {
+        span.copy {
             padding: 25px 0 15px 10px;
             float: left;
+            width: 75%;
         }
         .panel-btn {
             padding: 15px 5px 15px 0;
             float: right;
+            width: 25%;
             .btn {
                margin: 0; 
             }

@@ -16991,12 +16991,14 @@ button:focus {
   color: #005BC6; }
   .panel-secondary-group .panel-secondary:nth-child(1) {
     border-top: solid 1px #e7e7e7; }
-  .panel-secondary-group .panel-secondary span {
+  .panel-secondary-group .panel-secondary span.copy {
     padding: 25px 0 15px 10px;
-    float: left; }
+    float: left;
+    width: 75%; }
   .panel-secondary-group .panel-secondary .panel-btn {
     padding: 15px 5px 15px 0;
-    float: right; }
+    float: right;
+    width: 25%; }
     .panel-secondary-group .panel-secondary .panel-btn .btn {
       margin: 0; }
 

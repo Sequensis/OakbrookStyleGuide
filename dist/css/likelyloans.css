@@ -16986,16 +16986,19 @@ button:focus {
     font-weight: 700;
     padding: 0 5px; }
 
-.panel-secondary {
-  border-top: solid 1px #e7e7e7;
+.panel-secondary-group .panel-secondary {
   border-bottom: solid 1px #e7e7e7;
   color: #005BC6; }
-  .panel-secondary span {
+  .panel-secondary-group .panel-secondary:nth-child(1) {
+    border-top: solid 1px #e7e7e7; }
+  .panel-secondary-group .panel-secondary span {
     padding: 25px 0 15px 10px;
     float: left; }
-  .panel-secondary .panel-btn {
+  .panel-secondary-group .panel-secondary .panel-btn {
     padding: 15px 5px 15px 0;
     float: right; }
+    .panel-secondary-group .panel-secondary .panel-btn .btn {
+      margin: 0; }
 
 .ob-no-padding {
   padding: 0; }

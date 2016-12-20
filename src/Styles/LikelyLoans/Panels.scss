@@ -13,6 +13,12 @@
 }
 
 .panel-secondary-group {
+    @include bp(sm) {
+        width: 100vw;
+        position: relative;
+        margin-left: -50vw;
+        left: 50%;
+    }
     .panel-secondary {
         border-bottom: solid 1px #e7e7e7;
         &:nth-child(1) {
@@ -21,7 +27,7 @@
         color: $brand-blue;
         .panel-secondary-container {
             display: table;
-            padding: 15px 5px 15px 10px;
+            padding: 15px 5px 15px 15px;
             span.copy {
                 display: table-cell;
                 vertical-align: middle;
@@ -30,7 +36,7 @@
             .panel-btn {
                 display: table-cell;
                 vertical-align: middle;
-                padding-left: 25px;
+                padding: 0 15px 0 25px;
                 .btn {
                     margin: 0;
                     float: right;

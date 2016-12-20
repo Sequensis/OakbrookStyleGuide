@@ -16986,6 +16986,13 @@ button:focus {
     font-weight: 700;
     padding: 0 5px; }
 
+@media (max-width: 768px) {
+  .panel-secondary-group {
+    width: 100vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%; } }
+
 .panel-secondary-group .panel-secondary {
   border-bottom: solid 1px #e7e7e7;
   color: #005BC6; }
@@ -16993,7 +17000,7 @@ button:focus {
     border-top: solid 1px #e7e7e7; }
   .panel-secondary-group .panel-secondary .panel-secondary-container {
     display: table;
-    padding: 15px 5px 15px 10px; }
+    padding: 15px 5px 15px 15px; }
     .panel-secondary-group .panel-secondary .panel-secondary-container span.copy {
       display: table-cell;
       vertical-align: middle;
@@ -17001,7 +17008,7 @@ button:focus {
     .panel-secondary-group .panel-secondary .panel-secondary-container .panel-btn {
       display: table-cell;
       vertical-align: middle;
-      padding-left: 25px; }
+      padding: 0 15px 0 25px; }
       .panel-secondary-group .panel-secondary .panel-secondary-container .panel-btn .btn {
         margin: 0;
         float: right; }

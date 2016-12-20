@@ -16992,13 +16992,16 @@ button:focus {
   .panel-secondary-group .panel-secondary:nth-child(1) {
     border-top: solid 1px #e7e7e7; }
   .panel-secondary-group .panel-secondary .panel-secondary-container {
-    padding: 15px 5px 15px 0; }
+    display: table;
+    padding: 15px 5px 15px 10px; }
     .panel-secondary-group .panel-secondary .panel-secondary-container span.copy {
-      padding: 10px 0 15px 10px;
-      float: left;
-      width: 75%; }
+      display: table-cell;
+      vertical-align: middle;
+      width: 100%; }
     .panel-secondary-group .panel-secondary .panel-secondary-container .panel-btn {
-      width: 25%; }
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 25px; }
       .panel-secondary-group .panel-secondary .panel-secondary-container .panel-btn .btn {
         margin: 0;
         float: right; }

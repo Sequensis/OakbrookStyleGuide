@@ -20,14 +20,17 @@
         }
         color: $brand-blue;
         .panel-secondary-container {
-            padding: 15px 5px 15px 0;
+            display: table;
+            padding: 15px 5px 15px 10px;
             span.copy {
-                padding: 10px 0 15px 10px;
-                float: left;
-                width: 75%;
+                display: table-cell;
+                vertical-align: middle;
+                width: 100%;
             }
             .panel-btn {
-                width: 25%;
+                display: table-cell;
+                vertical-align: middle;
+                padding-left: 25px;
                 .btn {
                     margin: 0;
                     float: right;

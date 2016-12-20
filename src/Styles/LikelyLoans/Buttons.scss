@@ -10,6 +10,11 @@
     &:focus {
         text-decoration: none;
     }
+    &.dynamic-width-btn {
+        @include bp(sm) {
+            width: 100%
+        }
+    }
 }
 
 .btn-primary-1 {

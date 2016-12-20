@@ -40,8 +40,35 @@
     }
 }
 
+@media(min-width:768px) {
+    .toast {
+        width: 568px;
+        right: 20px;
+        bottom: 20px;
+        .toast-container {
+            margin: 20px auto 20px auto;
+            .toast-body {
+                margin: 0 0 0 -20px;
+                text-align: left;
+                p {
+                    margin: 5px auto;
+                }
+                p:first-child {
+                    padding: 0;
+                }
+                p:last-child {
+                    padding: 0;
+                }
+            }
+            .toast-icon {
+                margin-top: 10px;                
+            }
+        }
+    }
+}
+
 .toast-generic {
-    background-color: #fff;
+    background-color: #F7F7F7;
     color: $brand-blue;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);    
     p {
@@ -50,6 +77,14 @@
     .close {
         i.icon-cross {
             color: $brand-secondary-3-font;
+        }
+    }
+    .toast-container {
+        margin-bottom: 20px;
+        .toast-body {
+            @include bp(md) {
+                margin: 0 0 0 20px;
+            }
         }
     }
 }
@@ -78,33 +113,6 @@
     .close {
         i.icon-cross {
             color: #CF1634;
-        }
-    }
-}
-
-@media(min-width:768px) {
-    .toast {
-        width: 568px;
-        right: 20px;
-        bottom: 20px;
-        .toast-container {
-            margin: 20px auto 20px auto;
-            .toast-body {
-                margin: 0 0 0 -20px;
-                text-align: left;
-                p {
-                    margin: 5px auto;
-                }
-                p:first-child {
-                    padding: 0;
-                }
-                p:last-child {
-                    padding: 0;
-                }
-            }
-            .toast-icon {
-                margin-top: 10px;                
-            }
         }
     }
 }

@@ -9381,6 +9381,12 @@ h6 {
   .vcenter {
     margin-top: 0; } }
 
+.pull-right-md {
+  float: none; }
+  @media (min-width: 992px) {
+    .pull-right-md {
+      float: right !important; } }
+
 .btn {
   font-weight: 700;
   border-radius: 4px;
@@ -16901,6 +16907,12 @@ button:focus {
 .underline {
   text-decoration: underline; }
 
+.text-center-mobile {
+  text-align: center; }
+  @media (min-width: 992px) {
+    .text-center-mobile {
+      text-align: left; } }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.ttf?kwz8yz") format("truetype"), url("../fonts/icomoon.woff?kwz8yz") format("woff"), url("../fonts/icomoon.svg?kwz8yz#icomoon") format("svg");
@@ -18312,8 +18324,11 @@ form .custom-input {
   box-shadow: none;
   border-radius: 4px; }
   .ob-card.ob-card-white {
-    background: #fff; }
-  @media (min-width: 992px) {
+    background: none; }
+    @media (min-width: 768px) {
+      .ob-card.ob-card-white {
+        background: #fff; } }
+  @media (min-width: 768px) {
     .ob-card {
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
       padding: 20px 30px; } }

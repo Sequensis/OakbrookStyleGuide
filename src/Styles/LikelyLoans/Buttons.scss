@@ -112,7 +112,7 @@
     font-family: 'Montserrat', sans serif;
     font-weight: 700;
     text-align: left;
-    padding: 18px 15px;
+    padding: 18px 35px;
     border-radius: $radius;
     i {
         position: relative;
@@ -121,6 +121,12 @@
     &.full-width-btn {
         width: 100%;
     }
+    &.full-width-btn-mobile {
+        width: 100%;
+    @include bp(md) {
+        width: auto;
+    }        
+    }    
     &.btn-green {
         background-color: $brand-secondary-3;
         color: #fff;

@@ -19,6 +19,9 @@ Example...
   @else if $point == md {
      @media (min-width: $screen-md)  { @content ; }
   }
+  @else if $point == sm-plus {
+     @media (min-width: $screen-sm)  { @content ; }
+  }
   @else if $point == sm {
      @media (max-width: $screen-sm)  { @content ; }
   }

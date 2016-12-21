@@ -25,3 +25,10 @@
 .underline {
 	text-decoration: underline;
 }
+
+.text-center-mobile {
+    text-align: center;
+        @include bp(md) {
+        text-align: left;
+    }
+}

@@ -1,109 +1,197 @@
 {{> navbar-off-canvas}}
 <div class="top-up">
-    <div class="container padding-top">
+    <div class="container">
         <div class="row">
-            <div class="col-md-7">
-                <h1 class="color-blue text-center-mobile">Your Top up loan summary</h1>
+            <div class="col-md-5">
+                <h1 class="color-blue text-center-mobile m-0">Take advantage of a Top up loan today</h1>
+                <div class="full-width-list m-t-50" id="bullet-points">
+                    <p class="body-lg ob-bold">Applying to top up your loan means:</p>
+                    <ul class="custom-bullets">
+                        <li class="m-b-15">
+                            <i class="fa icon-tick color-green p-r-10"></i> You won't need to complete the full application
+                            process
+                        </li>
+                        <li class="m-b-15">
+                            <i class="fa icon-tick color-green p-r-10"></i> The application won't affect your credit score
+                        </li>
+                        <li class="m-b-20">
+                            <i class="fa icon-tick color-green p-r-10"></i> If approved your new loan will include your current
+                            loan balance
+                        </li>
+                    </ul>
+                </div>
+                <div class="dotted-line visible-xs visible-sm"></div>
+                <h2 class="color-blue">To get started, please tell us your current income</h2>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-5 col-md-offset-1 pull-right-md m-b-20">
+            <div class="col-md-5 col-md-offset-2">
                 <div class="ob-card ob-card-white">
-                    <h2><strong>Top up loan summary</strong></h2>
-                    <table class="ob-rounded-table ob-table-grey">
-                        <tbody>
-                            <tr>
-                                <td>Current loan balance</td>
-                                <td>£1,560</td>
-                            </tr>
-                            <tr>
-                                <td>Top up loan amount</td>
-                                <td>£2,000</td>
-                            </tr>
-                            <tr>
-                                <td>New loan amount</td>
-                                <td>£3,560</td>
-                            </tr>
-                            <tr>
-                                <td>Term</td>
-                                <td>12 months</td>
-                            </tr>
-                            <tr>
-                                <td>Monthly repayment amount</td>
-                                <td>£450.64</td>
-                            </tr>
-                            <tr>
-                                <td>APR</td>
-                                <td>47.9%</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="m-t-10"><strong>Total repayable</strong>
-                        <h3 class="pull-right m-0">£6,634.73</h3><br>
-                    </div>
-                </div>
-            </div>
-            <div class="dotted-line visible-xs visible-sm"></div>
-            <div class="col-md-6 m-t-10">
-                <h2 class="color-blue">Where we will pay your money</h2>
-                <p>Please check the following information carefully as this is the account we will pay your loan into. If this information
-                    is no longer correct you may need to provide additional documentation.</p>
-                <p> Please contact us on <strong>0208 080 6450</strong> if this information requires updating.</p>
-                <div class="m-y-10" style="line-height:2;">
-                    <strong>Bank account number</strong><strong class="pull-right m-0">****7635</strong><br>
-                    <strong>Current address postcode</strong><strong class="pull-right m-0">NG1 9ND</strong>
-                </div>
-                <h2 class="color-blue m-y-20 p-t-20">Legal information</h2>
-                <div class="panel-secondary-group">
-                    <div class="panel-secondary">
-                        <div class="panel-secondary-container clearfix">
-                            <span class="copy">Pre-contract credit information</span>
-                            <span class="panel-btn"><button class="btn btn-secondary-1">View</button></span>
+                    <h2>Current icome (before tax)</h2>
+                    <form>
+                        <span class="custom-input-pound">&pound;</span>
+                        <input class="custom-input col-xs-12 m-b-20" type="number" name="amount" value="500">
+                    </form>
+                    <h2 class="m-0">Loan term</h2>
+                    <div class="radio-buttons-wrapper m-b-10">
+                        <div class="radio-container">
+                            <div class="m-r-10">
+                                <input type="radio" name="LoanTerm" value="12">
+                                <label class="ob-btn btn-radio btn-radio-sm p-t-20 m-t-20 checked">
+					<div class="btn-radio-copy">Weekly</div>
+					<i class="fa icon-tick color-white"></i>
+				</label>
+                            </div>
+                        </div>
+                        <div class="radio-container">
+                            <div class="m-r-10">
+                                <input type="radio" name="LoanTerm" value="18">
+                                <label class="ob-btn btn-radio btn-radio-sm p-t-20 m-t-20">
+					<div class="btn-radio-copy">Monthly</div>
+					<i class="fa icon-tick color-white"></i>
+				</label>
+                            </div>
+                        </div>
+                        <div class="radio-container">
+                            <div class="m-r-10">
+                                <input type="radio" name="LoanTerm" value="24">
+                                <label class="ob-btn btn-radio btn-radio-sm p-t-20 m-t-20">
+					<div class="btn-radio-copy">Annually</div>
+					<i class="fa icon-tick color-white"></i>
+				</label>
+                            </div>
                         </div>
                     </div>
-                    <div class="panel-secondary">
-                        <div class="panel-secondary-container clearfix">
-                            <span class="copy">Loans terms and condition</span>
-                            <span class="panel-btn"><button class="btn btn-secondary-1">View</button></span>
-                        </div>
-                    </div>
-                    <div class="panel-secondary">
-                        <div class="panel-secondary-container clearfix">
-                            <span class="copy">Fixed Sum Loan Agreement regulated by the Consumer Credit Act 1974</span>
-                            <span class="panel-btn"><button class="btn btn-secondary-1">View</button></span>
-                        </div>
-                    </div>
+                    <p class="body-sm">This is equal to <strong>£25,000</strong> per year.</p>
+                    <button class="ob-btn full-width-btn btn-green">
+                <i class="fa fa-caret-right pull-right"></i>
+                    Continue
+                </button>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-12 m-b-20">
-                <div class="ob-checkbox" style="margin-top:30px;">
-                    <div class="ob-checkbox-input">
-                        <input type="checkbox" value="1" id="checkboxTest1" />
-                        <label for="checkboxTest1">
-                    </label>
-                    </div>
-                    <div class="ob-checkbox-info">
-                        <label for="checkboxTest1">
-                I confirm that I have read and understood the Loan pre-contract information, that all the details given in the application are true and complete, and that I have given consideration to how I will make these payments without falling into financial difficulties.                    </label>
+    </div>
+    <div class="m-t-100">
+        <div class="text-center bg-blue p-t-100">
+            <img src="/img/question-alt-smile.svg">
+            <h1 class="color-white m-t-10 p-b-20 bg-blue">Likely Questions</h1>
+        </div>
+    </div>
+    <div class="ob-accordion ob-blue p-b-100">
+        <div class="container p-y-20">
+            <div class="panel-group" id="accordion">
+                <div class="panel">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">
+                                How much can I borrow?<i class="fa fa-caret-down fa-lg"></i>
+                            </h2>
+                        </div>
+                    </a>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="panel-container">
+                                <p>
+                                    Likely Loans, owned by Oakbrook Finance, provides unsecured personal loans developed for people who may be experiencing difficulty
+                                    in obtaining credit.
+                                </p>
+                                <p>
+                                    Established in 2011, Oakbrook Finance is the parent company for Likely Loans. Oakbrook Finance is authorised and regulated
+                                    by the Financial Conduct Authority.
+                                </p>
+                                <p>
+                                    Our unsecured loans range from £1,000 - £5,000. Our loans are available over 12, 18, 24, 30 or 36 months.
+                                </p>
+                                <p>
+                                    Yes – we will consider your application as long as you have some UK credit history and haven’t been made bankrupt in the
+                                    last 12 months. Before applying for a loan please consider carefully your personal circumstances.
+                                    Ensure you are clear on the repayment terms and you're confident you can repay the loan.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="ob-checkbox m-y-20">
-                    <div class="ob-checkbox-input">
-                        <input type="checkbox" value="1" id="checkboxTest2" />
-                        <label for="checkboxTest2">
-                    </label>
+                <div class="panel">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">
+                                Over what period can I repay?<i class="fa fa-caret-down fa-lg"></i>
+                            </h2>
+                        </div>
+                    </a>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="panel-container">
+                                <p>
+                                    You can check your eligibility and apply for a Likely Loan online using our simple application form. In most cases you will
+                                    receive an instant decision.
+                                </p>
+                                <p>
+                                    In most cases you will simply need to fill in your personal details as required in the application form. In some instances
+                                    we may need you to provide supporting documentation, for example, a copy of your driving
+                                    licence. If we need you to provide this we will ask you. The process to supply this is
+                                    quick and simple and you will be able to upload it online as part of the application
+                                    process.
+                                </p>
+                                <p>
+                                    Yes, if your circumstances have changed and you would like to apply again for a Likely Loan there are no restrictions on
+                                    you doing this.
+                                </p>
+                                <p>
+                                    In your browser address bar, you'll see a padlock and the letters 'https'. This means that whatever you enter on the Likely
+                                    Loans website is sent to us using secure encrypted methods. Once we have received your
+                                    details, you can rest assured that we follow the very latest in secure data handling
+                                    practices, and we work hard to make sure that your details are safe at all times. We
+                                    will also never share your details with third parties without your consent. Additional
+                                    information about how we use and store your data can be found in our
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="ob-checkbox-info">
-                        <label for="checkboxTest2">
-                I have read and understood the Loan Terms and Conditions and by ticking this box I agree to be legally bound by the loan agreement and its terms as regulated by the consumer credit act 1974.                </div>
-                </div>  
-                            <button class="ob-btn text-center full-width-btn-mobile btn-green">
-                        Submit application
-                    </button>          
+                </div>
+                <div class="panel">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">
+                                Can I repay my loan early?<i class="fa fa-caret-down fa-lg"></i>
+                            </h2>
+                        </div>
+                    </a>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="panel-container">
+                                <p>
+                                    Repayments are made monthly by Direct Debit from your nominated bank account. We will automatically set up a Direct Debit
+                                    for you as part of the application process, details of this and your repayment dates
+                                    are contained within the Welcome Pack that you will receive from us.
+                                </p>
+                                <p>
+                                    Yes, if the date of your Direct Debit is not convenient for you then please contact us on <strong>0208 080 6450</strong>                                    and we will be able to change this to a more suitable date.
+                                </p>
+                                <p>
+                                    Yes, you can repay your loan in part or full at any time. We do not charge an early repayment fee but will apply interest
+                                    as permitted under The Consumer Credit (Early Settlement) Regulations 2004.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 {{> footer}}
+<script type="text/javascript">
+
+	(function checkJquery() {
+		if(window.$) {
+			$(function() {
+				// Radio button click handler
+				$('.btn-radio').click(function() {
+					$(this).toggleClass('checked');
+				});
+			});
+		} else {
+			setTimeout(checkJquery,100);
+		}
+	})();
+
+</script>

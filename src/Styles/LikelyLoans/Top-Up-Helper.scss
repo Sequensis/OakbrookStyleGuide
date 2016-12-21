@@ -1,5 +1,8 @@
 .top-up {
-    margin-bottom: 50px;
+    margin: 100px 0 50px 0;
+        @include bp(md) {
+            margin: 200px 0 50px 0;
+        }    
     h1 {
         font-size: 25px;
         @include bp(md) {

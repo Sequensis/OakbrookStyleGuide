@@ -47,6 +47,10 @@
     margin: 0 0 20px 0;
 }
 
+.m-b-50 {
+    margin-bottom: 50px;
+}
+
 .m-r-20 {
     margin: 0 20px 0 0;
 }
@@ -79,10 +83,22 @@
     margin-top: -20px;
 }
 
+.m-t-50 {
+    margin-top: 50px;
+}
+
+.m-t-100 {
+    margin-top: 100px;
+}
+
 .m-x-50 {
     margin: 0 50px;
 }
 
 .m-y-50 {
     margin: 50px 0;
+}
+
+.m-x-auto {
+    margin: 0 auto;
 }

@@ -9849,6 +9849,10 @@ a.active {
 .color-blue, form .form-small-link {
   color: #005BC6 !important; }
 
+@media (min-width: 992px) {
+  .color-blue-md.color-blue-md {
+    color: #005BC6 !important; } }
+
 .color-yellow {
   color: #FCB829 !important; }
 

@@ -9197,7 +9197,7 @@ h6 {
   -ms-transform: translate(0, 0);
       transform: translate(0, 0); }
 
-.ob-ss-bold {
+.ob-bold {
   font-weight: 700; }
 
 #payment-page h2 {
@@ -9474,13 +9474,18 @@ h6 {
   font-family: 'Montserrat', sans serif;
   font-weight: 700;
   text-align: left;
-  padding: 18px 15px;
+  padding: 18px 35px;
   border-radius: 4px; }
   .ob-btn i {
     position: relative;
     bottom: -3px; }
   .ob-btn.full-width-btn {
     width: 100%; }
+  .ob-btn.full-width-btn-mobile {
+    width: 100%; }
+    @media (min-width: 992px) {
+      .ob-btn.full-width-btn-mobile {
+        width: auto; } }
   .ob-btn.btn-green {
     background-color: #33D167;
     color: #fff;
@@ -16862,6 +16867,9 @@ button:focus {
     color: #4a4a4a; }
     .full-width-list ul.custom-bullets i {
       vertical-align: bottom; }
+    @media (min-width: 992px) {
+      .full-width-list ul.custom-bullets {
+        font-size: 18px; } }
 
 .full-width-list li a {
   border-top: 1px solid #E3DFDA;
@@ -17118,6 +17126,15 @@ button:focus {
 .p-b-50 {
   padding: 0 0 50px 0; }
 
+.p-t-100 {
+  padding-top: 100px; }
+
+.p-y-100 {
+  padding: 100px 0; }
+
+.p-b-100 {
+  padding-bottom: 100px; }
+
 .payment {
   padding: 0; }
 
@@ -17302,6 +17319,9 @@ button:focus {
 .m-b-20 {
   margin: 0 0 20px 0; }
 
+.m-b-50 {
+  margin-bottom: 50px; }
+
 .m-r-20 {
   margin: 0 20px 0 0; }
 
@@ -17326,11 +17346,20 @@ button:focus {
 .m-t--20 {
   margin-top: -20px; }
 
+.m-t-50 {
+  margin-top: 50px; }
+
+.m-t-100 {
+  margin-top: 100px; }
+
 .m-x-50 {
   margin: 0 50px; }
 
 .m-y-50 {
   margin: 50px 0; }
+
+.m-x-auto {
+  margin: 0 auto; }
 
 .ob-no-padding {
   padding: 0 !important; }
@@ -17407,6 +17436,15 @@ button:focus {
 
 .p-b-50 {
   padding: 0 0 50px 0; }
+
+.p-t-100 {
+  padding-top: 100px; }
+
+.p-y-100 {
+  padding: 100px 0; }
+
+.p-b-100 {
+  padding-bottom: 100px; }
 
 .d-inline {
   display: inline; }
@@ -17742,7 +17780,7 @@ form .form-small-link {
 
 form .custom-input-pound {
   position: absolute;
-  left: 30px;
+  padding-left: 10px;
   padding-top: 5px;
   z-index: 10; }
 
@@ -18226,7 +18264,6 @@ form .custom-input {
       color: #fff !important; } }
 
 .radio-buttons-wrapper {
-  margin: auto;
   -ms-flex-preferred-size: auto;
       flex-basis: auto;
   display: -ms-flexbox;
@@ -18259,6 +18296,8 @@ form .custom-input {
       border: solid 2px #005BC6;
       text-align: center;
       font-family: 'Montserrat', sans-serif; }
+      .radio-buttons-wrapper .radio-container .btn-radio.btn-radio-sm {
+        height: 75px; }
       .radio-buttons-wrapper .radio-container .btn-radio.checked {
         background-color: #005BC6;
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5); }
@@ -18411,6 +18450,22 @@ form .custom-input {
       display: inline;
       font-size: 13px;
       font-weight: 500; }
+
+.top-up {
+  margin: 100px 0 50px 0; }
+  @media (min-width: 992px) {
+    .top-up {
+      margin: 200px 0 50px 0; } }
+  .top-up h1 {
+    font-size: 25px; }
+    @media (min-width: 992px) {
+      .top-up h1 {
+        font-size: 35px; } }
+  .top-up h2 {
+    font-size: 20px; }
+    @media (min-width: 992px) {
+      .top-up h2 {
+        font-size: 22px; } }
 
 /**
  * Swiper 3.4.0

@@ -2285,7 +2285,7 @@ tbody.collapse.in {
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box; }
-  .dropdown-menu.pull-right {
+  .dropdown-menu.pull-right, .table-grand-total span.dropdown-menu:last-child {
     right: 0;
     left: auto; }
   .dropdown-menu .divider {
@@ -2353,7 +2353,7 @@ tbody.collapse.in {
   top: 0;
   z-index: 990; }
 
-.pull-right > .dropdown-menu {
+.pull-right > .dropdown-menu, .table-grand-total span:last-child > .dropdown-menu {
   right: 0;
   left: auto; }
 
@@ -2939,11 +2939,13 @@ a.thumbnail.active {
     max-width: none; }
 
 .media-right,
-.media > .pull-right {
+.media > .pull-right, .table-grand-total
+.media > span:last-child {
   padding-left: 10px; }
 
 .media-left,
-.media > .pull-left {
+.media > .pull-left, .table-grand-total
+.media > span:first-child {
   padding-right: 10px; }
 
 .media-left,
@@ -3412,10 +3414,10 @@ a.thumbnail.active {
   margin-left: auto;
   margin-right: auto; }
 
-.pull-right {
+.pull-right, .table-grand-total span:last-child {
   float: right !important; }
 
-.pull-left {
+.pull-left, .table-grand-total span:first-child {
   float: left !important; }
 
 .hide {
@@ -5495,7 +5497,7 @@ tbody.collapse.in {
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box; }
-  .dropdown-menu.pull-right {
+  .dropdown-menu.pull-right, .table-grand-total span.dropdown-menu:last-child {
     right: 0;
     left: auto; }
   .dropdown-menu .divider {
@@ -5563,7 +5565,7 @@ tbody.collapse.in {
   top: 0;
   z-index: 990; }
 
-.pull-right > .dropdown-menu {
+.pull-right > .dropdown-menu, .table-grand-total span:last-child > .dropdown-menu {
   right: 0;
   left: auto; }
 
@@ -6576,10 +6578,10 @@ a.thumbnail.active {
   margin-left: auto;
   margin-right: auto; }
 
-.pull-right {
+.pull-right, .table-grand-total span:last-child {
   float: right !important; }
 
-.pull-left {
+.pull-left, .table-grand-total span:first-child {
   float: left !important; }
 
 .hide {
@@ -6867,16 +6869,16 @@ Example...
   margin-left: .3em; }
 
 /* Deprecated as of 4.4.0 */
-.pull-right {
+.pull-right, .table-grand-total span:last-child {
   float: right; }
 
-.pull-left {
+.pull-left, .table-grand-total span:first-child {
   float: left; }
 
-.fa.pull-left {
+.fa.pull-left, .table-grand-total span.fa:first-child {
   margin-right: .3em; }
 
-.fa.pull-right {
+.fa.pull-right, .table-grand-total span.fa:last-child {
   margin-left: .3em; }
 
 .fa-spin {
@@ -9246,6 +9248,10 @@ h6 {
     font-family: 'Montserrat', sans serif;
     display: block; }
 
+@media (min-width: 992px) {
+  .text-center-md {
+    text-align: center; } }
+
 .vcenter-container .col-lg-1,
 .vcenter-container .col-lg-2,
 .vcenter-container .col-lg-3,
@@ -9842,6 +9848,10 @@ a.active {
 
 .color-blue, form .form-small-link {
   color: #005BC6 !important; }
+
+@media (min-width: 992px) {
+  .color-blue-md.color-blue-md {
+    color: #005BC6 !important; } }
 
 .color-yellow {
   color: #FCB829 !important; }
@@ -12136,7 +12146,7 @@ tbody.collapse.in {
   border-radius: 4px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box; }
-  .dropdown-menu.pull-right {
+  .dropdown-menu.pull-right, .table-grand-total span.dropdown-menu:last-child {
     right: 0;
     left: auto; }
   .dropdown-menu .divider {
@@ -12204,7 +12214,7 @@ tbody.collapse.in {
   top: 0;
   z-index: 990; }
 
-.pull-right > .dropdown-menu {
+.pull-right > .dropdown-menu, .table-grand-total span:last-child > .dropdown-menu {
   right: 0;
   left: auto; }
 
@@ -13217,10 +13227,10 @@ a.thumbnail.active {
   margin-left: auto;
   margin-right: auto; }
 
-.pull-right {
+.pull-right, .table-grand-total span:last-child {
   float: right !important; }
 
-.pull-left {
+.pull-left, .table-grand-total span:first-child {
   float: left !important; }
 
 .hide {
@@ -13571,16 +13581,16 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
   margin-left: .3em; }
 
 /* Deprecated as of 4.4.0 */
-.pull-right {
+.pull-right, .table-grand-total span:last-child {
   float: right; }
 
-.pull-left {
+.pull-left, .table-grand-total span:first-child {
   float: left; }
 
-.fa.pull-left {
+.fa.pull-left, .table-grand-total span.fa:first-child {
   margin-right: .3em; }
 
-.fa.pull-right {
+.fa.pull-right, .table-grand-total span.fa:last-child {
   margin-left: .3em; }
 
 .fa-spin {
@@ -17033,6 +17043,10 @@ button:focus {
 .ob-no-padding {
   padding: 0 !important; }
 
+@media (max-width: 768px) {
+  .ob-no-padding-mob {
+    padding: 0 !important; } }
+
 .padding-mobile {
   padding-top: 5em;
   padding-bottom: 5em; }
@@ -17314,6 +17328,15 @@ button:focus {
 .m-t--20 {
   margin-top: -20px; }
 
+.m-t-30 {
+  margin: 30px 0 0 0; }
+
+.m-y-30 {
+  margin: 30px 0 30px 0; }
+
+.m-y-40 {
+  margin: 40px 0 40px 0; }
+
 .m-x-50 {
   margin: 0 50px; }
 
@@ -17322,6 +17345,10 @@ button:focus {
 
 .ob-no-padding {
   padding: 0 !important; }
+
+@media (max-width: 768px) {
+  .ob-no-padding-mob {
+    padding: 0 !important; } }
 
 .padding-mobile {
   padding-top: 5em;
@@ -17933,6 +17960,16 @@ form .custom-input {
   font-size: 18px;
   font-weight: 100; }
 
+.responsive-h1 {
+  font-size: 25px; }
+  @media (min-width: 992px) {
+    .responsive-h1 {
+      font-size: 35px; } }
+
+@media (min-width: 992px) {
+  .responsive-h4 {
+    font-size: 25px; } }
+
 .full-width {
   width: 100%; }
 
@@ -18295,10 +18332,14 @@ form .custom-input {
   border-radius: 8px; }
   .ob-rounded-table.ob-table-grey {
     background: #f7f7f7; }
+  @media (max-width: 768px) {
+    .ob-rounded-table.ob-table-grey-mob {
+      background: #f7f7f7; } }
   .ob-rounded-table tr {
     border-bottom: solid 1px #e7e7e7; }
     .ob-rounded-table tr:last-child {
-      border: none; }
+      border: none;
+      background: none; }
     .ob-rounded-table tr td {
       padding: 12px;
       font-size: 15px;
@@ -18307,6 +18348,14 @@ form .custom-input {
         font-family: 'Monsterrat', sans-serif;
         font-weight: 700;
         text-align: right; }
+
+.table-grand-total {
+  font-weight: 700;
+  padding: 10px; }
+  .table-grand-total span:first-child {
+    padding-top: 5px; }
+  .table-grand-total span:last-child {
+    font-size: 25px; }
 
 .ob-card {
   box-shadow: none;

@@ -30,6 +30,14 @@
     color: $brand-blue !important;
 }
 
+.color-blue-md {
+    &.color-blue-md {
+        @include bp(md) {
+            color: $brand-blue !important;
+        }
+    }
+}
+
 .color-yellow {
     color: $brand-yellow !important;
 }

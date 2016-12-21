@@ -8,3 +8,8 @@
 		font-size: 35px;
 	}
 }
+.responsive-h4 {
+	@include bp(md) {
+		font-size: 25px;
+	}
+}

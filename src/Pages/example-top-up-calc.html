@@ -3,40 +3,44 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-                <h1 class="color-blue text-center-mobile m-0">Take advantage of a Top up loan today</h1>
-                <div class="full-width-list m-t-50" id="bullet-points">
-                    <p class="body-lg ob-bold">Applying to top up your loan means:</p>
-                    <ul class="custom-bullets">
-                        <li class="m-b-15">
-                            <i class="fa icon-tick color-green p-r-10"></i> You won't need to complete the full application
-                            process
-                        </li>
-                        <li class="m-b-15">
-                            <i class="fa icon-tick color-green p-r-10"></i> The application won't affect your credit score
-                        </li>
-                        <li class="m-b-20">
-                            <i class="fa icon-tick color-green p-r-10"></i> If approved your new loan will include your current
-                            loan balance
-                        </li>
-                    </ul>
-                </div>
-                <div class="dotted-line visible-xs visible-sm"></div>
-                <h2 class="color-blue">To get started, please tell us your current income</h2>
+                <h1 class="color-blue text-center-mobile m-0">You're eligible!</h1>
+                <p class="body-lg m-t-50">You are eligible to borrow between £1000 to £2000 on top of your current balance of £1560.00</p>
             </div>
             <div class="col-md-5 col-md-offset-2">
                 <div class="ob-card ob-card-white">
-                    <h2>Current income (before tax)</h2>
+                    <h2>Top up loan amount</h2>
                     <form>
                         <span class="custom-input-pound">&pound;</span>
-                        <input class="custom-input col-xs-12 m-b-20" type="number" name="amount" value="500">
+                        <input type="number" step="10" id="loan-slider-value" class="custom-input col-xs-12 m-b-20" value="">                        
                     </form>
-                    <h2 class="m-0">Loan term</h2>
-                    <div class="radio-buttons-wrapper m-b-10">
+                    <div class="m-y-40">
+                        <div id="loan-slider" class="slider"></div>
+                    </div>
+                    <table class="ob-rounded-table ob-table-grey m-b-20">
+                        <tbody>
+                            <tr>
+                                <td>Current loan amount</td>
+                                <td>£1,560</td>
+                            </tr>
+                            <tr>
+                                <td>Top up loan amount</td>
+                                <td>£2,000</td>
+                            </tr>
+                            <tr>
+                                <td>New loan amount</td>
+                                <td>£3,560</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="dotted-line visible-xs visible-sm"></div>
+                    <h2 class="m-t-20">Loan term</h2>
+                    <div class="radio-buttons-wrapper">
                         <div class="radio-container">
                             <div class="m-r-10">
                                 <input type="radio" name="LoanTerm" value="12">
-                                <label class="ob-btn btn-radio btn-radio-sm p-t-20 m-t-20 checked">
-					<div class="btn-radio-copy">Weekly</div>
+                                <label class="btn btn-radio p-t-20 checked">
+					<div class="btn-radio-num">12</div>
+					<div class="btn-radio-copy">Months</div>
 					<i class="fa icon-tick color-white"></i>
 				</label>
                             </div>
@@ -44,8 +48,9 @@
                         <div class="radio-container">
                             <div class="m-r-10">
                                 <input type="radio" name="LoanTerm" value="18">
-                                <label class="ob-btn btn-radio btn-radio-sm p-t-20 m-t-20">
-					<div class="btn-radio-copy">Monthly</div>
+                                <label class="btn btn-radio p-t-20">
+					<div class="btn-radio-num">18</div>
+					<div class="btn-radio-copy">Months</div>
 					<i class="fa icon-tick color-white"></i>
 				</label>
                             </div>
@@ -53,14 +58,31 @@
                         <div class="radio-container">
                             <div class="m-r-10">
                                 <input type="radio" name="LoanTerm" value="24">
-                                <label class="ob-btn btn-radio btn-radio-sm p-t-20 m-t-20">
-					<div class="btn-radio-copy">Annually</div>
+                                <label class="btn btn-radio p-t-20">
+					<div class="btn-radio-num">24</div>
+					<div class="btn-radio-copy">Months</div>
 					<i class="fa icon-tick color-white"></i>
 				</label>
                             </div>
                         </div>
                     </div>
-                    <p class="body-sm">This is equal to <strong>£25,000</strong> per year.</p>
+                    <p class="body-sm">The term offered is based on the amount you owe and your remining number of payments.</p>
+                    <table class="ob-rounded-table ob-table-grey m-b-20">
+                        <tbody>
+                            <tr>
+                                <td>24 Monthly repayment amount</td>
+                                <td>£100.64</td>
+                            </tr>
+                            <tr>
+                                <td>Representative APR</td>
+                                <td>47.9%</td>
+                            </tr>
+                            <tr>
+                                <td>Total Repayable</td>
+                                <td>£2143.34</td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <button class="ob-btn full-width-btn btn-green">
                 <i class="fa fa-caret-right pull-right"></i>
                     Continue

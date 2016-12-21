@@ -18515,9 +18515,13 @@ form .custom-input {
     @media (min-width: 992px) {
       .top-up h2 {
         font-size: 22px; } }
+  .top-up .m-t-20 {
+    margin: 20px auto 0 auto; }
+  .top-up form {
+    height: 50px; }
 
 /**
- * Swiper 3.4.0
+ * Swiper 3.4.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * 
  * http://www.idangero.us/swiper/
@@ -18528,7 +18532,7 @@ form .custom-input {
  * 
  * Licensed under MIT
  * 
- * Released on: October 16, 2016
+ * Released on: December 13, 2016
  */
 .swiper-container {
   margin-left: auto;

@@ -1,0 +1,18 @@
+.top-up {
+    margin: 100px 0 50px 0;
+        @include bp(md) {
+            margin: 200px 0 50px 0;
+        }    
+    h1 {
+        font-size: 25px;
+        @include bp(md) {
+            font-size: 35px;
+        }
+    }
+    h2 {
+        font-size: 20px;
+        @include bp(md) {
+            font-size: 22px;
+        }
+    }
+}

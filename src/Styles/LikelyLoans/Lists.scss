@@ -10,6 +10,9 @@
             i {
                 vertical-align: bottom;
             }
+            @include bp(md) {
+                font-size: 18px;
+            }
         }
     }
     li a {

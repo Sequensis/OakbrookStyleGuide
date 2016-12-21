@@ -1,11 +1,14 @@
 .ob-card {
-    box-shadow: none;    
+    box-shadow: none;
     border-radius: $radius;
     &.ob-card-white {
-        background: #fff;
+        background: none;
+        @include bp(sm-plus) {
+            background: #fff;
+        }
     }
-    @include bp(md) {
-        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);        
+    @include bp(sm-plus) {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
         padding: 20px 30px;
     }
 }

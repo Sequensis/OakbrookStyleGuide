@@ -147,3 +147,10 @@
         margin-top: 0;
     }
 }
+
+.pull-right-md {
+    float: none;
+    @include bp(md) {
+        float: right !important;
+    }
+}

@@ -1,4 +1,81 @@
-    <div class="ob-accordion ob-blue">
+{{> navbar-off-canvas}}
+<div class="top-up">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h1 class="color-blue text-center-mobile m-0">Take advantage of a Top up loan today</h1>
+                <div class="full-width-list m-t-50" id="bullet-points">
+                    <p class="body-lg ob-bold">Applying to top up your loan means:</p>
+                    <ul class="custom-bullets">
+                        <li class="m-b-15">
+                            <i class="fa icon-tick color-green p-r-10"></i> You won't need to complete the full application
+                            process
+                        </li>
+                        <li class="m-b-15">
+                            <i class="fa icon-tick color-green p-r-10"></i> The application won't affect your credit score
+                        </li>
+                        <li class="m-b-20">
+                            <i class="fa icon-tick color-green p-r-10"></i> If approved your new loan will include your current
+                            loan balance
+                        </li>
+                    </ul>
+                </div>
+                <div class="dotted-line visible-xs visible-sm"></div>
+                <h2 class="color-blue">To get started, please tell us your current income</h2>
+            </div>
+            <div class="col-md-5 col-md-offset-2">
+                <div class="ob-card ob-card-white">
+                    <h2>Current icome (before tax)</h2>
+                    <form>
+                        <span class="custom-input-pound">&pound;</span>
+                        <input class="custom-input col-xs-12 m-b-20" type="number" name="amount" value="500">
+                    </form>
+                    <h2 class="m-0">Loan term</h2>
+                    <div class="radio-buttons-wrapper m-b-10">
+                        <div class="radio-container">
+                            <div class="m-r-10">
+                                <input type="radio" name="LoanTerm" value="12">
+                                <label class="ob-btn btn-radio btn-radio-sm p-t-20 m-t-20 checked">
+					<div class="btn-radio-copy">Weekly</div>
+					<i class="fa icon-tick color-white"></i>
+				</label>
+                            </div>
+                        </div>
+                        <div class="radio-container">
+                            <div class="m-r-10">
+                                <input type="radio" name="LoanTerm" value="18">
+                                <label class="ob-btn btn-radio btn-radio-sm p-t-20 m-t-20">
+					<div class="btn-radio-copy">Monthly</div>
+					<i class="fa icon-tick color-white"></i>
+				</label>
+                            </div>
+                        </div>
+                        <div class="radio-container">
+                            <div class="m-r-10">
+                                <input type="radio" name="LoanTerm" value="24">
+                                <label class="ob-btn btn-radio btn-radio-sm p-t-20 m-t-20">
+					<div class="btn-radio-copy">Annually</div>
+					<i class="fa icon-tick color-white"></i>
+				</label>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="body-sm">This is equal to <strong>£25,000</strong> per year.</p>
+                    <button class="ob-btn full-width-btn btn-green">
+                <i class="fa fa-caret-right pull-right"></i>
+                    Continue
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-t-100">
+        <div class="text-center bg-blue p-t-100">
+            <img src="/img/question-alt-smile.svg">
+            <h1 class="color-white m-t-10 p-b-20 bg-blue">Likely Questions</h1>
+        </div>
+    </div>
+    <div class="ob-accordion ob-blue p-b-100">
         <div class="container p-y-20">
             <div class="panel-group" id="accordion">
                 <div class="panel">
@@ -40,7 +117,7 @@
                             </h2>
                         </div>
                     </a>
-                    <div id="collapse2" class="panel-collapse collapse" style="height: auto;">
+                    <div id="collapse2" class="panel-collapse collapse">
                         <div class="panel-body">
                             <div class="panel-container">
                                 <p>
@@ -100,3 +177,21 @@
             </div>
         </div>
     </div>
+</div>
+{{> footer}}
+<script type="text/javascript">
+
+	(function checkJquery() {
+		if(window.$) {
+			$(function() {
+				// Radio button click handler
+				$('.btn-radio').click(function() {
+					$(this).toggleClass('checked');
+				});
+			});
+		} else {
+			setTimeout(checkJquery,100);
+		}
+	})();
+
+</script>

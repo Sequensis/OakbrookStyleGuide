@@ -4,6 +4,11 @@
     &.ob-table-grey {
         background: $brand-light-grey;
     }
+    &.ob-table-grey-mob {
+        @include bp(sm) {
+            background: $brand-light-grey;
+        }
+    }
     tr {
         border-bottom: solid 1px #e7e7e7;
         &:last-child {

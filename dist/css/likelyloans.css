@@ -17819,7 +17819,7 @@ form .form-small-link {
 form .custom-input-pound {
   position: absolute;
   padding-left: 10px;
-  padding-top: 4px;
+  line-height: 51px;
   z-index: 10; }
   @media (min-width: 992px) {
     form .custom-input-pound {
@@ -18535,7 +18535,7 @@ form .custom-input {
     height: 50px; }
 
 /**
- * Swiper 3.4.0
+ * Swiper 3.4.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * 
  * http://www.idangero.us/swiper/
@@ -18546,7 +18546,7 @@ form .custom-input {
  * 
  * Licensed under MIT
  * 
- * Released on: October 16, 2016
+ * Released on: December 13, 2016
  */
 .swiper-container {
   margin-left: auto;

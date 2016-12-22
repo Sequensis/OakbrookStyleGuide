@@ -210,6 +210,10 @@
 				$('.btn-radio').click(function() {
 					$(this).toggleClass('checked');
 				});
+                $('.ob-btn.btn-green').click(function(e) {
+                    e.preventDefault();
+                    location.replace('example-top-up-check-confirmation.html');
+                });
 			});
 		} else {
 			setTimeout(checkJquery,100);

@@ -107,3 +107,17 @@
     </div>
 </div>
 {{> footer}}
+<script type="text/javascript">
+    (function checkJquery() {
+        if(window.$) {
+            $(function() {
+                $('.ob-btn.btn-green').click(function(e) {
+                    e.preventDefault();
+                    location.replace('example-top-up-thanks.html');
+                });
+            });
+        } else {
+            setTimeout(checkJquery,100);
+        }
+    })();
+</script>

@@ -9482,15 +9482,18 @@ h6 {
   text-align: left;
   padding: 18px 35px;
   border-radius: 4px; }
+  .ob-btn.ob-btn-sm {
+    padding: 13px 35px;
+    font-size: 15px; }
   .ob-btn i {
     position: relative;
     bottom: -3px; }
   .ob-btn.full-width-btn {
     width: 100%; }
-  .ob-btn.full-width-btn-mobile {
+  .ob-btn.full-width-btn-sm {
     width: 100%; }
     @media (min-width: 992px) {
-      .ob-btn.full-width-btn-mobile {
+      .ob-btn.full-width-btn-sm {
         width: auto; } }
   .ob-btn.btn-green {
     background-color: #33D167;
@@ -9500,6 +9503,14 @@ h6 {
       background-color: #2bbf5c;
       color: #fff;
       border: 2px solid #2bbf5c; }
+  .ob-btn.btn-blue {
+    background-color: #005BC6;
+    color: #fff;
+    border: 2px solid #005BC6; }
+    .ob-btn.btn-blue:focus, .ob-btn.btn-blue:hover {
+      background-color: #004fad;
+      color: #fff;
+      border: 2px solid #004fad; }
 
 .section-container nav.navbar .navbar-circle {
   position: absolute; }

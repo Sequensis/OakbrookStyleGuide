@@ -18116,6 +18116,8 @@ form .custom-input {
       @media (min-width: 992px) {
         .navbar-off-canvas .off-canvas .off-canvas-scrollable {
           height: 100%; } }
+    .navbar-off-canvas .off-canvas .previous-loan-details ul li {
+      border-bottom: 1px solid #c9c9c9; }
     .navbar-off-canvas .off-canvas p {
       margin: 0; }
     .navbar-off-canvas .off-canvas .font-lg {

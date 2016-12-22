@@ -125,7 +125,7 @@
     &.full-width-btn {
         width: 100%;
     }
-    &.full-width-btn-mobile {
+    &.full-width-btn-sm {
         width: 100%;
     @include bp(md) {
         width: auto;

@@ -114,6 +114,10 @@
     text-align: left;
     padding: 18px 35px;
     border-radius: $radius;
+    &.ob-btn-sm {
+        padding: 13px 35px;
+        font-size: 15px;
+    }
     i {
         position: relative;
         bottom: -3px;
@@ -136,6 +140,17 @@
             background-color: darken($brand-secondary-3, 5%);
             color: #fff;
             border: 2px solid darken($brand-secondary-3, 5%);
+        }
+    }
+    &.btn-blue {
+        background-color: $brand-blue;
+        color: #fff;
+        border: 2px solid $brand-blue;
+        &:focus,
+        &:hover {
+            background-color: darken($brand-blue, 5%);
+            color: #fff;
+            border: 2px solid darken($brand-blue, 5%);
         }
     }
 }

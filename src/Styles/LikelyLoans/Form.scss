@@ -85,7 +85,7 @@ form {
         @extend .custom-input-font;
         position: absolute;
         padding-left: 10px;
-        padding-top: 4px;
+        line-height: 51px;
         z-index: 10;
         @include bp(md) {
             left: 50px;

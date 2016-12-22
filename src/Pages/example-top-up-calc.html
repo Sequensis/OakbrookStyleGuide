@@ -83,7 +83,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <button class="ob-btn full-width-btn btn-green">
+                    <button class="ob-btn full-width-btn btn-green" onclick="window.location.href='/example-top-up-check-confirmation.html'">
                 <i class="fa fa-caret-right pull-right"></i>
                     Continue
                 </button>
@@ -210,10 +210,6 @@
 				$('.btn-radio').click(function() {
 					$(this).toggleClass('checked');
 				});
-                $('.ob-btn.btn-green').click(function(e) {
-                    e.preventDefault();
-                    location.replace('example-top-up-check-confirmation.html');
-                });
 			});
 		} else {
 			setTimeout(checkJquery,100);

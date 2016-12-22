@@ -30,7 +30,7 @@
                         <span class="custom-input-pound">&pound;</span>
                         <input class="custom-input col-xs-12 m-b-20" type="number" name="amount" value="500">
                     </form>
-                    <h2 class="m-0">Loan term</h2>
+                    <h2 class="m-0">Frequency</h2>
                     <div class="radio-buttons-wrapper m-b-10">
                         <div class="radio-container">
                             <div class="m-r-10">
@@ -188,6 +188,10 @@
 				$('.btn-radio').click(function() {
 					$(this).toggleClass('checked');
 				});
+                $('.ob-btn.btn-green').click(function(e) {
+                    e.preventDefault();
+                    location.replace('example-top-up-calc.html');
+                });
 			});
 		} else {
 			setTimeout(checkJquery,100);

@@ -61,7 +61,7 @@
                         </div>
                     </div>
                     <p class="body-sm">This is equal to <strong>£25,000</strong> per year.</p>
-                    <button class="ob-btn full-width-btn btn-green" onclick="window.location.href='/example-top-up-calc.html'">
+                    <button class="ob-btn full-width-btn btn-green">
                 <i class="fa fa-caret-right pull-right"></i>
                     Continue
                 </button>
@@ -188,6 +188,12 @@
 				$('.btn-radio').click(function() {
 					$(this).toggleClass('checked');
 				});
+                $('.ob-btn.btn-green').click(function(e) {
+                    e.preventDefault();
+                    var value = +$('.custom-input').val();
+                    var navHref = value === 100 ? 'example-top-up-not-eligible-1.html' : 'example-top-up-calc.html';
+                    location.replace(navHref);
+                })
 			});
 		} else {
 			setTimeout(checkJquery,100);

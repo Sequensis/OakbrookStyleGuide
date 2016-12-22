@@ -85,8 +85,11 @@ form {
         @extend .custom-input-font;
         position: absolute;
         padding-left: 10px;
-        padding-top: 5px;
+        padding-top: 4px;
         z-index: 10;
+        @include bp(md) {
+            left: 50px;
+        }
     }
     .custom-input-font {
         font-size: 30px;

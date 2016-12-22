@@ -17819,8 +17819,11 @@ form .form-small-link {
 form .custom-input-pound {
   position: absolute;
   padding-left: 10px;
-  padding-top: 5px;
+  padding-top: 4px;
   z-index: 10; }
+  @media (min-width: 992px) {
+    form .custom-input-pound {
+      left: 50px; } }
 
 form .custom-input-font, form .custom-input-pound, form .custom-input {
   font-size: 30px;

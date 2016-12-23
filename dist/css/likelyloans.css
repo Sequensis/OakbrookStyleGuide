@@ -18092,6 +18092,11 @@ form .custom-input {
       @media (min-width: 992px) {
         .navbar-off-canvas .off-canvas.open {
           width: 350px; } }
+    .navbar-off-canvas .off-canvas .off-canvas-top a {
+      color: #fff;
+      text-decoration: none !important; }
+      .navbar-off-canvas .off-canvas .off-canvas-top a:hover, .navbar-off-canvas .off-canvas .off-canvas-top a:active {
+        color: #fff; }
     .navbar-off-canvas .off-canvas .off-canvas-bottom {
       width: 100%; }
       .navbar-off-canvas .off-canvas .off-canvas-bottom ul li {
@@ -18118,6 +18123,9 @@ form .custom-input {
           height: 100%; } }
     .navbar-off-canvas .off-canvas .previous-loan-details ul li {
       border-bottom: 1px solid #c9c9c9; }
+      .navbar-off-canvas .off-canvas .previous-loan-details ul li:hover {
+        background: #f7f7f7;
+        cursor: pointer; }
     .navbar-off-canvas .off-canvas p {
       margin: 0; }
     .navbar-off-canvas .off-canvas .font-lg {

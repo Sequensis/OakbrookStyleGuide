@@ -1,4 +1,4 @@
-+function($) {
++ function ($) {
 
 	var preventBodyScrollIosFlag = false;
 
@@ -6,7 +6,7 @@
 		preventBodyScrollIosFlag = !preventBodyScrollIosFlag;
 		if (preventBodyScrollIosFlag) {
 			// Prevent body scrolling in background on iOS
-			$('body').on('touchmove', function(e) {
+			$('body').on('touchmove', function (e) {
 				e.preventDefault();
 				//CODE GOES HERE
 			});
@@ -15,7 +15,7 @@
 		}
 	}
 
-	$('.navbar-off-canvas').on('click', '#navbar-icon', function(e) {
+	$('.navbar-off-canvas').on('click', '#navbar-icon', function (e) {
 		$(this).toggleClass('icon-open');
 		$(".navbar-circle").toggleClass("circle-open");
 		$('.navbar-logo, .navbar-btn.btn-sign-out').toggleClass('ob-fade');
@@ -27,7 +27,7 @@
 	});
 
 	// click on mask overlay
-	$('.load-fade-in').on('click', '.mask.on', function() {
+	$('.load-fade-in').on('click', '.mask.on', function () {
 		$('#navbar-icon').toggleClass('icon-open');
 		$(".navbar-circle").toggleClass("circle-open");
 		$('.navbar-logo, .navbar-btn.btn-sign-out').toggleClass('ob-fade');
@@ -37,5 +37,11 @@
 		$('body').toggleClass('noscroll');
 		preventBodyScrollIos();
 	});
+
+
+	$('#previous-loan-selector').click(function (e) {
+		$('.fa.fa-caret-down').toggleClass('fa-rotate-180');
+		$('.off-canvas-bottom').fadeToggle(200);
+	})
 
 }(jQuery);

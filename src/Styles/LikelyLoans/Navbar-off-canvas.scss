@@ -48,6 +48,16 @@
 			}
 			left: 0;
 		}
+		.off-canvas-top {
+			a {
+				color: #fff;
+				text-decoration: none !important;
+				&:hover,
+				&:active {
+					color: #fff;
+				}
+			}
+		}
 		.off-canvas-bottom {
 			width: 100%;
 			ul {
@@ -85,6 +95,10 @@
 			ul {
 				li {
 					border-bottom: 1px solid $brand-dark-grey;
+					&:hover {
+						background: $brand-light-grey;
+						cursor: pointer;
+					}
 				}
 			}
 		}

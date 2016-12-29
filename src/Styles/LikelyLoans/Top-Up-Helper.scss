@@ -1,9 +1,15 @@
 .top-up {
     &.top-up-container {
         margin: 100px 0 50px 0;
-        @include bp(md) {
-            margin: 80px 0 50px 0;
+        @include bp(sm-plus) {
+            margin-top: 80px;
         }
+    }
+    &.vcenter-container-one-page.top-up-container{
+        margin: 100px 0 50px 0;
+        @include bp(sm-plus) {
+            margin: 0;
+        }        
     }
     h1 {
         font-size: 25px;

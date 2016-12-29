@@ -42,6 +42,7 @@
 		-webkit-transition: $transition-250ms;
 		transition: $transition-250ms;
 		z-index: 105;
+		overflow: auto;
 		&.open {
 			@include bp(md) {
 				width: 350px;

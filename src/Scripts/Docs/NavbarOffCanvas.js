@@ -6,12 +6,12 @@
 		preventBodyScrollIosFlag = !preventBodyScrollIosFlag;
 		if (preventBodyScrollIosFlag) {
 			// Prevent body scrolling in background on iOS
-			$('body').on('touchmove', function (e) {
+			$('.container-fluid').on('touchmove', function (e) {
 				e.preventDefault();
 				//CODE GOES HERE
 			});
 		} else {
-			$('body').off('touchmove');
+			$('.container-fluid').off('touchmove');
 		}
 	}
 
@@ -41,7 +41,7 @@
 
 	$('#previous-loan-selector').click(function (e) {
 		$('.fa.fa-caret-down').toggleClass('fa-rotate-180');
-		$('.off-canvas-bottom').fadeToggle(200);
+		// $('.off-canvas-bottom').fadeToggle(200);
 	})
 
 }(jQuery);

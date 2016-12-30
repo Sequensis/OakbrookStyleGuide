@@ -3,6 +3,9 @@
     min-height: 370px;
     a {
         cursor: default;
+        &:hover {
+            color: $brand-blue;
+        }
     }
 }
 

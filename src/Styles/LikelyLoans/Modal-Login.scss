@@ -18,12 +18,8 @@ $brand-login-modal: #FAF9F7;
     a:hover {
         color: $brand-blue !important;
     }
-    h1,
-    p {
-        color: $brand-blue;
-    }
     h1 {
-        font-size: $font-size-h2;
+        color: $brand-blue;        
         margin: 30px 0;
     }
 }
@@ -40,9 +36,6 @@ $brand-login-modal: #FAF9F7;
 }
 
 @media (min-width: 768px) {
-    .modal-login-header h1 {
-        font-size: $font-size-h1;
-    }
     .modal-login {
         width: 500px;
         margin: 0 auto;

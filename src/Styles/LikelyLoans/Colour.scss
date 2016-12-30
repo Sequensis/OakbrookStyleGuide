@@ -1,3 +1,6 @@
+$brand-light-grey: #f7f7f7;
+$brand-dark-grey: #c9c9c9;
+
 .bg-white {
     background-color: #fff !important;
 }
@@ -20,6 +23,10 @@
 
 .bg-beige {
     background-color: $brand-tint-1;
+}
+
+.bg-light-grey {
+    background-color: $brand-light-grey;
 }
 
 .color-white {
@@ -53,6 +60,3 @@
 .color-grey {
     color: #4a4a4a !important; // Stu? //
 }
-
-$brand-light-grey: #f7f7f7;
-$brand-dark-grey: #c9c9c9;

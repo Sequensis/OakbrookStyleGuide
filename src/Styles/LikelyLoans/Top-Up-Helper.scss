@@ -1,28 +1,4 @@
 .top-up {
-    &.top-up-container {
-        margin: 100px 0 50px 0;
-        @include bp(sm-plus) {
-            margin-top: 80px;
-        }
-    }
-    &.vcenter-container-one-page.top-up-container{
-        margin: 100px 0 50px 0;
-        @include bp(sm-plus) {
-            margin: 0;
-        }        
-    }
-    h1 {
-        font-size: 25px;
-        @include bp(md) {
-            font-size: 35px;
-        }
-    }
-    h2 {
-        font-size: 20px;
-        @include bp(md) {
-            font-size: 22px;
-        }
-    }
     .m-t-20 {
         margin: 20px auto 0 auto;
     }

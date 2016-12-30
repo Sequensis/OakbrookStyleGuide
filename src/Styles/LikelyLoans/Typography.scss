@@ -1,3 +1,22 @@
+$h1: 25px;
+$h2: 20px;
+$h1-lg: 35px;
+$h2-lg: 22px;
+
+h1 {
+    font-size: $h1;
+    @include bp(md) {
+        font-size: $h1-lg;
+    }
+}
+
+h2 {
+    font-size: $h2;
+    @include bp(md) {
+        font-size: $h2-lg;
+    }
+}
+
 .body-lg {
     font-size: 18px;
 }
@@ -19,16 +38,16 @@
 }
 
 .normal-weight {
-	font-weight: normal;
+    font-weight: normal;
 }
 
 .underline {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 .text-center-mobile {
     text-align: center;
-        @include bp(md) {
+    @include bp(md) {
         text-align: left;
     }
 }

@@ -3,6 +3,7 @@
 @import "./mixins/breakpoints";
 @import "./mixins/vertical-align";
 @import "../../../bower_components/components-font-awesome/scss/font-awesome";
+@import "Typography";
 @import "Misc";
 @import "Alignment";
 @import "Grid";
@@ -20,7 +21,6 @@
 @import "Tables";
 @import "Modal-Overlay";
 @import "Lists";
-@import "Typography";
 @import "LikelyLoans-Icons";
 @import "Panels";
 @import "Padding";

@@ -37,18 +37,6 @@
         line-height: 1.25em !important;
     }
     
-    @media (max-width: 480px) {
-        .summary-header h1 {
-            font-size: 30px;
-        }
-    }
-    
-    @media (min-width: 480px) {
-        .summary-header h1 {
-            font-size: 35px;
-        }
-    }
-    
     .font-yellow {
         color: $brand-yellow;
     }
@@ -171,9 +159,7 @@
         overflow: hidden;
     }
     
-
     /////////////////////////////////
-
     .rep-apr {
         font-size: 15px;
         text-align: left;
@@ -187,5 +173,18 @@
             font-weight: 700;
             font-family: 'Montserrat', sans serif;
             display: block;
+        }
+    }
+    
+    .content-container {
+        margin: 100px 0 50px 0;
+        @include bp(sm-plus) {
+            margin-top: 80px;
+        }
+        &.vcenter-container-one-page {
+            margin: 100px 0 50px 0;
+            @include bp(sm-plus) {
+                margin: 0;
+            }
         }
     }

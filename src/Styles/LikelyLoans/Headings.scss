@@ -2,12 +2,7 @@
 	font-size: 18px;
 	font-weight: 100;
 }
-.responsive-h1 {
-	font-size: 25px;
-	@include bp(md) {
-		font-size: 35px;
-	}
-}
+
 .responsive-h4 {
 	@include bp(md) {
 		font-size: 25px;

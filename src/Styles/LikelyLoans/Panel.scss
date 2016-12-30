@@ -14,7 +14,7 @@
         -webkit-transition: $transition-250ms;
         transition: $transition-250ms;
         &.ob-panel-active {
-            background-color: #f7f7f7; //change at later date
+            background-color: $brand-light-grey;
         }
         &.ob-panel-disabled {
             opacity: 0.3;

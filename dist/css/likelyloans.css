@@ -9104,6 +9104,45 @@ Example...
   overflow: visible;
   clip: auto; }
 
+h1 {
+  font-size: 25px; }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 35px; } }
+
+h2 {
+  font-size: 20px; }
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 22px; } }
+
+.body-lg {
+  font-size: 18px; }
+
+.body-xlg {
+  font-size: 22px; }
+
+.body-md {
+  font-size: 15px; }
+
+.body-sm {
+  font-size: 13px; }
+
+.body-xs {
+  font-size: 11px; }
+
+.normal-weight {
+  font-weight: normal; }
+
+.underline {
+  text-decoration: underline; }
+
+.text-center-mobile {
+  text-align: center; }
+  @media (min-width: 992px) {
+    .text-center-mobile {
+      text-align: left; } }
+
 /* Need to move these //*/
 *:focus {
   outline: -webkit-focus-ring-color auto 0px !important; }
@@ -9128,14 +9167,6 @@ h4,
 h5,
 h6 {
   line-height: 1.25em !important; }
-
-@media (max-width: 480px) {
-  .summary-header h1 {
-    font-size: 30px; } }
-
-@media (min-width: 480px) {
-  .summary-header h1 {
-    font-size: 35px; } }
 
 .font-yellow {
   color: #FCB829; }
@@ -9247,6 +9278,17 @@ h6 {
     font-weight: 700;
     font-family: 'Montserrat', sans serif;
     display: block; }
+
+.content-container {
+  margin: 100px 0 50px 0; }
+  @media (min-width: 768px) {
+    .content-container {
+      margin-top: 80px; } }
+  .content-container.vcenter-container-one-page {
+    margin: 100px 0 50px 0; }
+    @media (min-width: 768px) {
+      .content-container.vcenter-container-one-page {
+        margin: 0; } }
 
 @media (min-width: 992px) {
   .text-center-md {
@@ -9864,6 +9906,9 @@ a.active {
 
 .bg-beige {
   background-color: #FAF9ED; }
+
+.bg-light-grey {
+  background-color: #f7f7f7; }
 
 .color-white {
   color: #fff !important; }
@@ -16413,6 +16458,8 @@ input:-webkit-autofill {
   min-height: 370px; }
   .circle-container a {
     cursor: default; }
+    .circle-container a:hover {
+      color: #005BC6; }
 
 .circle-primary {
   margin: 0 auto;
@@ -16638,11 +16685,8 @@ code {
     font-weight: 400; }
   .modal-login-header a:hover {
     color: #005BC6 !important; }
-  .modal-login-header h1,
-  .modal-login-header p {
-    color: #005BC6; }
   .modal-login-header h1 {
-    font-size: 30px;
+    color: #005BC6;
     margin: 30px 0; }
 
 .modal-validate {
@@ -16655,8 +16699,6 @@ code {
   background-color: #fff; }
 
 @media (min-width: 768px) {
-  .modal-login-header h1 {
-    font-size: 35px; }
   .modal-login {
     width: 500px;
     margin: 0 auto; } }
@@ -16915,6 +16957,18 @@ button:focus {
 .full-width-list-border li a {
   border: 1px solid #E3DFDA; }
 
+h1 {
+  font-size: 25px; }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 35px; } }
+
+h2 {
+  font-size: 20px; }
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 22px; } }
+
 .body-lg {
   font-size: 18px; }
 
@@ -17033,16 +17087,13 @@ button:focus {
 .icon-exclamation-circle:before {
   content: "\e916"; }
 
-.panel-beige {
-  background-color: #FAF9ED;
-  color: #005BC6;
-  margin: 20px auto 40px auto; }
-  .panel-beige p {
-    padding: 20px; }
-  .panel-beige span {
-    font-size: 30px;
-    font-weight: 700;
-    padding: 0 5px; }
+.full-width-panel p {
+  padding: 20px; }
+
+.full-width-panel span {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 0 5px; }
 
 @media (max-width: 768px) {
   .panel-secondary-group {
@@ -18024,12 +18075,6 @@ form .custom-input {
   font-size: 18px;
   font-weight: 100; }
 
-.responsive-h1 {
-  font-size: 25px; }
-  @media (min-width: 992px) {
-    .responsive-h1 {
-      font-size: 35px; } }
-
 @media (min-width: 992px) {
   .responsive-h4 {
     font-size: 25px; } }
@@ -18523,30 +18568,6 @@ form .custom-input {
       display: inline;
       font-size: 13px;
       font-weight: 500; }
-
-.top-up.top-up-container {
-  margin: 100px 0 50px 0; }
-  @media (min-width: 768px) {
-    .top-up.top-up-container {
-      margin-top: 80px; } }
-
-.top-up.vcenter-container-one-page.top-up-container {
-  margin: 100px 0 50px 0; }
-  @media (min-width: 768px) {
-    .top-up.vcenter-container-one-page.top-up-container {
-      margin: 0; } }
-
-.top-up h1 {
-  font-size: 25px; }
-  @media (min-width: 992px) {
-    .top-up h1 {
-      font-size: 35px; } }
-
-.top-up h2 {
-  font-size: 20px; }
-  @media (min-width: 992px) {
-    .top-up h2 {
-      font-size: 22px; } }
 
 .top-up .m-t-20 {
   margin: 20px auto 0 auto; }

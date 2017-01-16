@@ -1,0 +1,93 @@
+{{> navbar-off-canvas}}
+<div class="top-up content-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <img src="/img/exclamation-circle-smile.svg">
+                <h1 class="color-blue m-t-20">Lorem Ipsum</h1>
+                <p class="body-lg m-t-20">Lorem elit sit laboris reprehenderit aliquip sint non esse nulla eiusmod adipisicing irure id fugiat. Tempor
+                    labore deserunt Lorem do reprehenderit ad ad aute pariatur. Exercitation occaecat quis magna tempor ullamco
+                    consectetur officia.</p>
+                <form>
+                    <div class="ob-form-group ob-form-center empty">
+                        <input type="text" class="ob-form-input" id="AddressFlatInput" required="">
+                        <label for="SMSVerification">Enter Lorem code</label>
+                    </div>
+                </form>
+                <button class="ob-btn ob-btn-sm btn-blue m-t-30">Submit</button>
+                <div class="m-t-20">
+                    <a href="#" id="smsVerification">Resend code</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-t-100">
+        <div class="text-center bg-blue p-t-100">
+            <img src="/img/question-alt-smile.svg">
+            <h1 class="color-white m-t-10 p-b-20 bg-blue">Need Help?</h1>
+        </div>
+    </div>
+    <div class="ob-accordion ob-blue p-b-100">
+        <div class="container p-y-20">
+            <div class="panel-group" id="accordion">
+                <div class="panel">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="collapsed">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">
+                                Lorem ipsum<i class="fa fa-caret-down fa-lg"></i>
+                            </h2>
+                        </div>
+                    </a>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="panel-container">
+                                <p>
+                                    Magna et id dolor culpa laboris eiusmod consectetur Lorem ea consequat velit excepteur. Nostrud minim reprehenderit labore
+                                    nostrud tempor Lorem non in. Id amet eiusmod adipisicing nostrud ipsum ut adipisicing
+                                    aliquip labore qui nisi. Reprehenderit in culpa proident ipsum id elit et id nisi exercitation
+                                    non nostrud minim. Lorem nisi in anim aute consequat magna irure labore officia dolor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
+                        <div class="panel-heading">
+                            <h2 class="panel-title">
+                                Lorem ipsum<i class="fa fa-caret-down fa-lg"></i>
+                            </h2>
+                        </div>
+                    </a>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="panel-container">
+                                <p>
+                                    Magna et id dolor culpa laboris eiusmod consectetur Lorem ea consequat velit excepteur. Nostrud minim reprehenderit labore
+                                    nostrud tempor Lorem non in. Id amet eiusmod adipisicing nostrud ipsum ut adipisicing
+                                    aliquip labore qui nisi. Reprehenderit in culpa proident ipsum id elit et id nisi exercitation
+                                    non nostrud minim. Lorem nisi in anim aute consequat magna irure labore officia dolor.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{> footer}}
+<script type="text/javascript">
+    (function checkJquery() {
+        if (window.$) {
+            $(function () {
+                // Radio button click handler
+                $('.btn-radio').click(function () {
+                    $(this).toggleClass('checked');
+                });
+            });
+        } else {
+            setTimeout(checkJquery, 100);
+        }
+    })();
+</script>

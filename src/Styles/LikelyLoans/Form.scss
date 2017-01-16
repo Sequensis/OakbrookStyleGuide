@@ -19,6 +19,9 @@ form {
         &.ob-form-sml {
             width: 50%;
         }
+        &.ob-form-center {
+            margin: 20px auto 30px auto; 
+        }        
         input {
             font-size: 18px;
             display: block;

@@ -12,7 +12,6 @@
 	.navbar {
 		margin-top: 0;
 		margin-bottom: 0 !important;
-		z-index: 100 !important;
 		position: fixed;
 		top: 0;
 		-webkit-transition: .2s ease-in-out;
@@ -320,11 +319,11 @@
 		.navbar-circle {
 			left: 50%;
 			margin-left: -123px;
-			margin-top: -123px;
+			margin-top: -10px;
 			width: 246px;
-			height: 226px;
+			height: 114px;
 			display: block;
-			border-radius: 50%;
+			border-radius: 0 0 116px 116px;
 		}
 		#navbar-icon span {
 			background: $brand-blue;

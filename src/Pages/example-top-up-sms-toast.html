@@ -7,7 +7,7 @@
         Exercitation eiusmod cillum qui culpa
     </div>
 
-<div class="page">
+<div class="page-collapse in">
     {{> navbar-off-canvas}}
     <div class="top-up content-container">
         <div class="container">
@@ -26,7 +26,7 @@
                     </form>
                     <button class="ob-btn ob-btn-sm btn-blue m-t-30">Submit</button>
                     <div class="m-t-20">
-                        <a id="resendCode">Resend code</a>
+                        <a id="resendCode" href="#">Resend code</a>
                     </div>
                 </div>
             </div>
@@ -95,7 +95,7 @@
             $(document).ready(function() {
                 $('#resendCode').click(function(e) {
                     e.preventDefault();
-                    $('.page').toggleClass('page-collapse');
+                    $('.page-collapse').toggleClass('in');
                     $('.full-width-toast').toggleClass('toast-collapse');
 
                 });

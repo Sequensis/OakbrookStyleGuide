@@ -146,25 +146,57 @@
     
     .full-width-toast {
         width: 100%;
-        position: relative;
+        height: 50px;        
+        position: fixed;
         font-family: "Montserrat", sans-serif;
         font-size: 13px;
         font-weight: bold;
         text-align: center;
         line-height: 50px;
-        height: 50px;
         top: -50px;
-        transition: top ease-in-out 0.25s;
+        background: #fff;
+        transition: all ease-in-out 0.25s;
+        z-index: 105;
         &.toast-collapse {
             top: 0;
         }
     }
 
-    .page {
-        margin-top: -50px;
+.page-collapse {   
+    .navbar-off-canvas {
+        .navbar {
+            margin-top: 50px;
+            transition: margin-top ease-in-out 0.25s;    
+        }
+        .off-canvas {
+            margin-top: 50px;
+        }        
+        #navbar-icon {
+            margin-top: 68.5px;
+            transition: margin-top ease-in-out 0.25s;        
+        }        
+    } 
+    .content-container {
+        margin-top: 150px;
         transition: margin-top ease-in-out 0.25s;
+        @include bp(md) {
+            margin-top: 80px;
+        }
     }
-
-    .page-collapse {
-        margin-top: 0px;
+    &.in {             
+        .navbar-off-canvas {
+            .navbar, .off-canvas {
+                margin-top: 0;          
+            }
+            #navbar-icon {
+                margin-top: 18.5px;
+            }        
+        }
+        .content-container {
+            margin-top: 100px;
+            @include bp(md) {
+                margin-top: 80px;
+            }            
+        }
     }
+}

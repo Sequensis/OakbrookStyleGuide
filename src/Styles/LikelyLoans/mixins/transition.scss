@@ -1,0 +1,5 @@
+@mixin ob-transition-transform($ease-in-out, $duration) {
+  transition: transform $ease-in-out $duration;
+  -webkit-transition: transform $ease-in-out $duration;
+  -ms-transition: transform $ease-in-out $duration;
+}

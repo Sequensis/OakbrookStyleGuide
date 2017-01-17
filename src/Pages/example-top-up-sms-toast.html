@@ -1,13 +1,8 @@
-<!--<div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
-    <div class="full-width-toast">
+<div class="header-toast toast-error">
         Exercitation eiusmod cillum qui culpa
-    </div>
-</div>-->
-    <div class="full-width-toast">
-        Exercitation eiusmod cillum qui culpa
-    </div>
+</div>
 
-<div class="page-collapse in">
+<div class="page-collapse">
     {{> navbar-off-canvas}}
     <div class="top-up content-container">
         <div class="container">
@@ -96,7 +91,7 @@
                 $('#resendCode').click(function(e) {
                     e.preventDefault();
                     $('.page-collapse').toggleClass('in');
-                    $('.full-width-toast').toggleClass('toast-collapse');
+                    $('.header-toast').toggleClass('header-toast-collapse');
 
                 });
             });

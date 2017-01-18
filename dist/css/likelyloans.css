@@ -9508,7 +9508,6 @@ h6 {
   border: 2px solid #33D167; }
   .btn-green:focus, .btn-green:hover {
     background-color: #2bbf5c;
-    color: #fff;
     border: 2px solid #2bbf5c; }
 
 .btn-search {
@@ -9524,6 +9523,9 @@ h6 {
   text-align: left;
   padding: 16px 35px;
   border-radius: 4px; }
+  .ob-btn:disabled {
+    opacity: 0.5;
+    cursor: default; }
   .ob-btn.ob-btn-sm {
     padding: 13px 35px;
     font-size: 15px; }
@@ -9543,16 +9545,20 @@ h6 {
     border: 2px solid #33D167; }
     .ob-btn.btn-green:focus, .ob-btn.btn-green:hover {
       background-color: #2bbf5c;
-      color: #fff;
       border: 2px solid #2bbf5c; }
+      .ob-btn.btn-green:focus:disabled, .ob-btn.btn-green:hover:disabled {
+        background-color: #33D167;
+        border: 2px solid #33D167; }
   .ob-btn.btn-blue {
     background-color: #005BC6;
     color: #fff;
     border: 2px solid #005BC6; }
     .ob-btn.btn-blue:focus, .ob-btn.btn-blue:hover {
       background-color: #004fad;
-      color: #fff;
       border: 2px solid #004fad; }
+      .ob-btn.btn-blue:focus:disabled, .ob-btn.btn-blue:hover:disabled {
+        background-color: #005BC6;
+        border: 2px solid #005BC6; }
 
 .section-container nav.navbar .navbar-circle {
   position: absolute; }
@@ -18662,9 +18668,6 @@ form input[type=number]::-webkit-outer-spin-button {
 
 .top-up .m-t-20 {
   margin: 20px auto 0 auto; }
-
-.top-up form {
-  height: 50px; }
 
 /**
  * Swiper 3.4.1

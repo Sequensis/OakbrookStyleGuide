@@ -1,28 +1,25 @@
 .radio-buttons-wrapper {
-
 	flex-basis: auto;
 	display: flex;
 	flex-direction: row;
-    width: 100%;
-
+	width: 100%;
 	input[type="radio"] {
 		display: none;
 	}
-
 	.radio-container {
 		overflow: hidden;
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: auto;
-		transition: all 0.5s;
-	    -moz-transition: all 0.5s;
-	    -ms-transition: all 0.5s;
-	    -o-transition: all 0.5s;
-	    width: 100%;
-	    &.term-hidden {
-	    	opacity: 0;
-	    	width: 0;
-	    }
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-basis: auto;
+		transition: all 0.25s;
+		-moz-transition: all 0.25s;
+		-ms-transition: all 0.25s;
+		width: 100%;
+		margin: 0 5px;
+		&.term-hidden {
+			opacity: 0;
+			width: 0;
+		}
 		.btn-radio {
 			width: 100%;
 			height: 100px;
@@ -31,14 +28,22 @@
 			text-align: center;
 			font-family: 'Montserrat', sans-serif;
 			cursor: pointer;
+			margin-bottom: 5px;
+			transition: background 0.25s;
+			-moz-transition: background 0.25s;
+			-ms-transition: background 0.25s;
 			&.btn-radio-sm {
 				height: 75px;
+				&.btn-radio-copy {
+					@extend .btn-radio-num;
+					font-size: 15px;
+				}
 			}
 			&.checked {
-				background-color: $brand-blue;
-				-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
-				-moz-box-shadow:    0 1px 2px 0 rgba(0, 0, 0, 0.5);
-				box-shadow:         0 1px 2px 0 rgba(0, 0, 0, 0.5);
+				background: $brand-blue;
+				-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+				-moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+				box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
 				.btn-radio-num {
 					color: #fff;
 				}
@@ -56,7 +61,7 @@
 				font-size: 13px;
 			}
 			i.icon-tick {
-    			font-size: x-small;
+				font-size: x-small;
 			}
 		}
 	}

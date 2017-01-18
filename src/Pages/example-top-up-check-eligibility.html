@@ -5,7 +5,7 @@
             <div class="col-md-5">
                 <h1 class="color-blue text-center-mobile m-0">Take advantage of a Top up loan today</h1>
                 <div class="full-width-list m-t-50" id="bullet-points">
-                    <p class="body-lg ob-bold">Applying to top up your loan means:</p>
+                    <h3 class="body-lg ob-bold">Applying to top up your loan means:</h3>
                     <ul class="custom-bullets">
                         <li class="m-b-15">
                             <i class="fa icon-tick color-green p-r-10"></i> You won't need to complete the full application
@@ -33,31 +33,25 @@
                     <h2 class="m-0">Frequency</h2>
                     <div class="radio-buttons-wrapper m-b-10">
                         <div class="radio-container">
-                            <div class="m-r-10">
-                                <input type="radio" name="LoanTerm" value="12">
-                                <label class="ob-btn btn-radio btn-radio-sm p-t-20 m-t-20 checked">
+                            <input type="radio" name="LoanTerm" value="12">
+                            <label class="ob-btn btn-radio btn-radio-sm p-t-20 m-t-20 checked">
 					<div class="btn-radio-copy">Weekly</div>
 					<i class="fa icon-tick color-white"></i>
 				</label>
-                            </div>
                         </div>
                         <div class="radio-container">
-                            <div class="m-r-10">
-                                <input type="radio" name="LoanTerm" value="18">
-                                <label class="ob-btn btn-radio btn-radio-sm p-t-20 m-t-20">
+                            <input type="radio" name="LoanTerm" value="18">
+                            <label class="ob-btn btn-radio btn-radio-sm p-t-20 m-t-20">
 					<div class="btn-radio-copy">Monthly</div>
 					<i class="fa icon-tick color-white"></i>
 				</label>
-                            </div>
                         </div>
                         <div class="radio-container">
-                            <div class="m-r-10">
-                                <input type="radio" name="LoanTerm" value="24">
-                                <label class="ob-btn btn-radio btn-radio-sm p-t-20 m-t-20">
+                            <input type="radio" name="LoanTerm" value="24">
+                            <label class="ob-btn btn-radio btn-radio-sm p-t-20 m-t-20">
 					<div class="btn-radio-copy">Annually</div>
 					<i class="fa icon-tick color-white"></i>
 				</label>
-                            </div>
                         </div>
                     </div>
                     <p class="body-sm">This is equal to <strong>£25,000</strong> per year.</p>
@@ -180,24 +174,23 @@
 </div>
 {{> footer}}
 <script type="text/javascript">
-
-	(function checkJquery() {
-		if(window.$) {
-			$(function() {
-				// Radio button click handler
-				$('.btn-radio').click(function() {
-					$(this).toggleClass('checked');
-				});
-                $('.ob-btn.btn-green').click(function(e) {
+    (function checkJquery() {
+        if (window.$) {
+            $(function () {
+                // Radio button click handler
+                $('.btn-radio').click(function () {
+                    $(this).toggleClass('checked');
+                });
+                $('.ob-btn.btn-green').click(function (e) {
                     e.preventDefault();
                     var value = +$('.custom-input').val();
-                    var navHref = value === 100 ? 'example-top-up-not-eligible-1.html' : 'example-top-up-calc.html';
+                    var navHref = value === 100 ? 'example-top-up-not-eligible-1.html' :
+                        'example-top-up-calc.html';
                     location.replace(navHref);
                 })
-			});
-		} else {
-			setTimeout(checkJquery,100);
-		}
-	})();
-
+            });
+        } else {
+            setTimeout(checkJquery, 100);
+        }
+    })();
 </script>

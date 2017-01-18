@@ -18471,11 +18471,11 @@ form input[type=number]::-webkit-outer-spin-button {
         flex-shrink: 1;
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
-    transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    width: 100%; }
+    transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    width: 100%;
+    margin: 0 5px; }
     .radio-buttons-wrapper .radio-container.term-hidden {
       opacity: 0;
       width: 0; }
@@ -18486,15 +18486,21 @@ form input[type=number]::-webkit-outer-spin-button {
       border: solid 2px #005BC6;
       text-align: center;
       font-family: 'Montserrat', sans-serif;
-      cursor: pointer; }
+      cursor: pointer;
+      margin-bottom: 5px;
+      transition: background 0.25s;
+      -moz-transition: background 0.25s;
+      -ms-transition: background 0.25s; }
       .radio-buttons-wrapper .radio-container .btn-radio.btn-radio-sm {
         height: 75px; }
+        .radio-buttons-wrapper .radio-container .btn-radio.btn-radio-sm.btn-radio-copy {
+          font-size: 15px; }
       .radio-buttons-wrapper .radio-container .btn-radio.checked {
-        background-color: #005BC6;
-        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5); }
+        background: #005BC6;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4); }
         .radio-buttons-wrapper .radio-container .btn-radio.checked .btn-radio-num, .radio-buttons-wrapper .radio-container .btn-radio.checked .btn-radio-copy {
           color: #fff; }
-      .radio-buttons-wrapper .radio-container .btn-radio .btn-radio-num, .radio-buttons-wrapper .radio-container .btn-radio .btn-radio-copy {
+      .radio-buttons-wrapper .radio-container .btn-radio .btn-radio-num, .radio-buttons-wrapper .radio-container .btn-radio .btn-radio.btn-radio-sm.btn-radio-copy, .radio-buttons-wrapper .radio-container .btn-radio .btn-radio-copy {
         font-size: 30px;
         font-weight: bold;
         font-style: normal;

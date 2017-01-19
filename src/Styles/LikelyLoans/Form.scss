@@ -86,29 +86,29 @@ form {
     }
     .custom-input-container {
         height: 50px;
-        .custom-input-pound {
-            @extend .custom-input-font;
-            position: absolute;
-            padding-left: 10px;
-            line-height: 51px;
-            z-index: 10;
-            @include bp(md) {
-                left: 50px;
-            }
+    }
+    .custom-input-pound {
+        @extend .custom-input-font;
+        position: absolute;
+        padding-left: 10px;
+        line-height: 51px;
+        z-index: 10;
+        @include bp(md) {
+            left: 50px;
         }
-        .custom-input-font {
-            font-size: 40px;
-            font-weight: bold;
-            color: $brand-blue;
-            font-family: 'Montserrat', sans-serif;
-        }
-        .custom-input {
-            @extend .custom-input-font;
-            border-radius: 4px;
-            border: 1px solid #d8d8d8;
-            height: 50px;
-            padding: 0 35px;
-        }
+    }
+    .custom-input-font {
+        font-size: 40px;
+        font-weight: bold;
+        color: $brand-blue;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .custom-input {
+        @extend .custom-input-font;
+        border-radius: 4px;
+        border: 1px solid #d8d8d8;
+        height: 50px;
+        padding: 0 35px;
     }
     input[type=number]::-webkit-inner-spin-button,
     input[type=number]::-webkit-outer-spin-button {

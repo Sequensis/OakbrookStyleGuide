@@ -17877,24 +17877,27 @@ form .form-small-link {
 
 form .custom-input-container {
   height: 50px; }
-  form .custom-input-container .custom-input-pound {
-    position: absolute;
-    padding-left: 10px;
-    line-height: 51px;
-    z-index: 10; }
-    @media (min-width: 992px) {
-      form .custom-input-container .custom-input-pound {
-        left: 50px; } }
-  form .custom-input-container .custom-input-font, form .custom-input-container .custom-input-pound, form .custom-input-container .custom-input {
-    font-size: 40px;
-    font-weight: bold;
-    color: #005BC6;
-    font-family: 'Montserrat', sans-serif; }
-  form .custom-input-container .custom-input {
-    border-radius: 4px;
-    border: 1px solid #d8d8d8;
-    height: 50px;
-    padding: 0 35px; }
+
+form .custom-input-pound {
+  position: absolute;
+  padding-left: 10px;
+  line-height: 51px;
+  z-index: 10; }
+  @media (min-width: 992px) {
+    form .custom-input-pound {
+      left: 50px; } }
+
+form .custom-input-font, form .custom-input-pound, form .custom-input {
+  font-size: 40px;
+  font-weight: bold;
+  color: #005BC6;
+  font-family: 'Montserrat', sans-serif; }
+
+form .custom-input {
+  border-radius: 4px;
+  border: 1px solid #d8d8d8;
+  height: 50px;
+  padding: 0 35px; }
 
 form input[type=number]::-webkit-inner-spin-button,
 form input[type=number]::-webkit-outer-spin-button {

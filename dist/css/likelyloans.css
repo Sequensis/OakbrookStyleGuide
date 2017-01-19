@@ -17875,26 +17875,26 @@ form .form-small-link {
   text-decoration: underline;
   font-weight: 600; }
 
-form .custom-input-pound {
-  position: absolute;
-  padding-left: 10px;
-  line-height: 51px;
-  z-index: 10; }
-  @media (min-width: 992px) {
-    form .custom-input-pound {
-      left: 50px; } }
-
-form .custom-input-font, form .custom-input-pound, form .custom-input {
-  font-size: 40px;
-  font-weight: bold;
-  color: #005BC6;
-  font-family: 'Montserrat', sans-serif; }
-
-form .custom-input {
-  border-radius: 4px;
-  border: 1px solid #d8d8d8;
-  height: 50px;
-  padding: 0 35px; }
+form .custom-input-container {
+  height: 50px; }
+  form .custom-input-container .custom-input-pound {
+    position: absolute;
+    padding-left: 10px;
+    line-height: 51px;
+    z-index: 10; }
+    @media (min-width: 992px) {
+      form .custom-input-container .custom-input-pound {
+        left: 50px; } }
+  form .custom-input-container .custom-input-font, form .custom-input-container .custom-input-pound, form .custom-input-container .custom-input {
+    font-size: 40px;
+    font-weight: bold;
+    color: #005BC6;
+    font-family: 'Montserrat', sans-serif; }
+  form .custom-input-container .custom-input {
+    border-radius: 4px;
+    border: 1px solid #d8d8d8;
+    height: 50px;
+    padding: 0 35px; }
 
 form input[type=number]::-webkit-inner-spin-button,
 form input[type=number]::-webkit-outer-spin-button {
@@ -17902,72 +17902,6 @@ form input[type=number]::-webkit-outer-spin-button {
   -moz-appearance: none;
   appearance: none;
   margin: 0; }
-
-.ob-form-material {
-  position: relative;
-  margin: 20px 0 30px 0; }
-  .ob-form-material input {
-    background-color: transparent;
-    font-size: 18px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #767676;
-    box-shadow: none !important; }
-    .ob-form-material input:focus {
-      outline: none;
-      border-bottom: 1px solid #005BC6;
-      transition: 0.25s ease-in-out; }
-  .ob-form-material label {
-    color: #767676;
-    font-weight: 500;
-    opacity: 1;
-    font-size: 18px;
-    position: absolute;
-    pointer-events: none;
-    left: 5px;
-    top: 10px;
-    transition: 0.25s ease-in-out;
-    margin: 0; }
-  .ob-form-material input:focus ~ label,
-  .ob-form-material input:required:valid ~ label,
-  .ob-form-material:not(.empty) input ~ label {
-    top: -20px;
-    font-size: 14px;
-    color: #005BC6; }
-  .ob-form-material.has-error input {
-    border-color: #DE344F; }
-    .ob-form-material.has-error input:focus {
-      border-bottom: 1px solid #005BC6;
-      transition: 0.25s ease-in-out; }
-  .ob-form-material.has-error label {
-    color: #DE344F; }
-  .ob-form-material.has-error input:focus ~ label,
-  .ob-form-material.has-error input:required:valid ~ label,
-  .ob-form-material.has-error:not(.empty) input ~ label {
-    color: #005BC6; }
-  .ob-form-material .bar {
-    position: relative;
-    display: block;
-    width: 100%; }
-    .ob-form-material .bar:before, .ob-form-material .bar:after {
-      content: '';
-      height: 2px;
-      width: 0;
-      bottom: 1px;
-      position: absolute;
-      background: #005BC6;
-      transition: 0.25s ease-in-out; }
-    .ob-form-material .bar:before {
-      left: 50%; }
-    .ob-form-material .bar:after {
-      right: 50%; }
-  .ob-form-material input:focus ~ .bar:before,
-  .ob-form-material input:focus ~ .bar:after {
-    width: 50%; }
-  .ob-form-material.has-error .bar:before, .ob-form-material.has-error .bar:after {
-    background: #005BC6; }
 
 @media (min-width: 768px) {
   form .ob-form-group {

@@ -10,77 +10,79 @@
                 <div class="ob-card ob-card-white">
                     <h2>Top up loan amount</h2>
                     <form>
-                        <span class="custom-input-pound">&pound;</span>
-                        <input type="number" step="10" id="loan-slider-value" class="custom-input col-xs-12 m-b-20" value="">                        
-                    </form>
-                    <div class="m-y-40">
-                        <div id="loan-slider" class="slider"></div>
-                    </div>
-                    <table class="ob-rounded-table ob-table-grey m-b-20">
-                        <tbody>
-                            <tr>
-                                <td>Current loan amount</td>
-                                <td>£1,560</td>
-                            </tr>
-                            <tr>
-                                <td>Top up loan amount</td>
-                                <td>£2,000</td>
-                            </tr>
-                            <tr>
-                                <td>New loan amount</td>
-                                <td>£3,560</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="dotted-line visible-xs visible-sm"></div>
-                    <h2 class="m-t-20">Loan term</h2>
-                    <div class="radio-buttons-wrapper">
-                        <div class="radio-container">
+                        <div class="custom-input-container">
+                            <span class="custom-input-pound">&pound;</span>
+                            <input type="number" step="10" id="loan-slider-value" class="custom-input col-xs-12 m-b-20" value="">
+                        </div>
+                        <div class="m-y-40">
+                            <div id="loan-slider" class="slider"></div>
+                        </div>
+                        <table class="ob-rounded-table ob-table-grey m-b-20">
+                            <tbody>
+                                <tr>
+                                    <td>Current loan amount</td>
+                                    <td>£1,560</td>
+                                </tr>
+                                <tr>
+                                    <td>Top up loan amount</td>
+                                    <td>£2,000</td>
+                                </tr>
+                                <tr>
+                                    <td>New loan amount</td>
+                                    <td>£3,560</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="dotted-line visible-xs visible-sm"></div>
+                        <h2 class="m-t-20">Loan term</h2>
+                        <div class="radio-buttons-wrapper">
+                            <div class="radio-container">
                                 <input type="radio" name="LoanTerm" value="12">
                                 <label class="btn btn-radio p-t-20 checked">
 					<div class="btn-radio-num">12</div>
 					<div class="btn-radio-copy">Months</div>
 					<i class="fa icon-tick color-white"></i>
 				</label>
-                        </div>
-                        <div class="radio-container">
+                            </div>
+                            <div class="radio-container">
                                 <input type="radio" name="LoanTerm" value="18">
                                 <label class="btn btn-radio p-t-20">
 					<div class="btn-radio-num">18</div>
 					<div class="btn-radio-copy">Months</div>
 					<i class="fa icon-tick color-white"></i>
 				</label>
-                        </div>
-                        <div class="radio-container">
+                            </div>
+                            <div class="radio-container">
                                 <input type="radio" name="LoanTerm" value="24">
                                 <label class="btn btn-radio p-t-20">
 					<div class="btn-radio-num">24</div>
 					<div class="btn-radio-copy">Months</div>
 					<i class="fa icon-tick color-white"></i>
 				</label>
+                            </div>
                         </div>
-                    </div>
-                    <p class="body-sm">The term offered is based on the amount you owe and your remining number of payments.</p>
-                    <table class="ob-rounded-table ob-table-grey m-b-20">
-                        <tbody>
-                            <tr>
-                                <td>24 Monthly repayment amount</td>
-                                <td>£100.64</td>
-                            </tr>
-                            <tr>
-                                <td>Representative APR</td>
-                                <td>47.9%</td>
-                            </tr>
-                            <tr>
-                                <td>Total Repayable</td>
-                                <td>£2143.34</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <button class="ob-btn full-width-btn btn-green" onclick="window.location.href='/example-top-up-check-confirmation.html'">
+                        <p class="body-sm">The term offered is based on the amount you owe and your remining number of payments.</p>
+                        <table class="ob-rounded-table ob-table-grey m-b-20">
+                            <tbody>
+                                <tr>
+                                    <td>24 Monthly repayment amount</td>
+                                    <td>£100.64</td>
+                                </tr>
+                                <tr>
+                                    <td>Representative APR</td>
+                                    <td>47.9%</td>
+                                </tr>
+                                <tr>
+                                    <td>Total Repayable</td>
+                                    <td>£2143.34</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="ob-btn full-width-btn btn-green" onclick="window.location.href='/example-top-up-check-confirmation.html'">
                 <i class="fa fa-caret-right pull-right"></i>
                     Continue
                 </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -196,18 +198,16 @@
 </div>
 {{> footer}}
 <script type="text/javascript">
-
-	(function checkJquery() {
-		if(window.$) {
-			$(function() {
-				// Radio button click handler
-				$('.btn-radio').click(function() {
-					$(this).toggleClass('checked');
-				});
-			});
-		} else {
-			setTimeout(checkJquery,100);
-		}
-	})();
-
+    (function checkJquery() {
+        if (window.$) {
+            $(function () {
+                // Radio button click handler
+                $('.btn-radio').click(function () {
+                    $(this).toggleClass('checked');
+                });
+            });
+        } else {
+            setTimeout(checkJquery, 100);
+        }
+    })();
 </script>

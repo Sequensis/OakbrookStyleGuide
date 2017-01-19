@@ -20,8 +20,8 @@ form {
             width: 50%;
         }
         &.ob-form-center {
-            margin: 20px auto 30px auto; 
-        }        
+            margin: 20px auto 30px auto;
+        }
         input {
             font-size: 18px;
             display: block;
@@ -84,128 +84,38 @@ form {
         text-decoration: underline;
         font-weight: 600;
     }
-    .custom-input-pound {
-        @extend .custom-input-font;
-        position: absolute;
-        padding-left: 10px;
-        line-height: 51px;
-        z-index: 10;
-        @include bp(md) {
-            left: 50px;
+    .custom-input-container {
+        height: 50px;
+        .custom-input-pound {
+            @extend .custom-input-font;
+            position: absolute;
+            padding-left: 10px;
+            line-height: 51px;
+            z-index: 10;
+            @include bp(md) {
+                left: 50px;
+            }
+        }
+        .custom-input-font {
+            font-size: 40px;
+            font-weight: bold;
+            color: $brand-blue;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .custom-input {
+            @extend .custom-input-font;
+            border-radius: 4px;
+            border: 1px solid #d8d8d8;
+            height: 50px;
+            padding: 0 35px;
         }
     }
-    .custom-input-font {
-        font-size: 40px;
-        font-weight: bold;
-        color: $brand-blue;
-        font-family: 'Montserrat', sans-serif;
-    }
-    .custom-input {
-        @extend .custom-input-font;
-        border-radius: 4px;
-        border: 1px solid #d8d8d8;
-        height: 50px;
-        padding: 0 35px;   
-    }
-
-    input[type=number]::-webkit-inner-spin-button, 
-    input[type=number]::-webkit-outer-spin-button { 
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none;
-        margin: 0; 
-    }         
-}
-
-// remove //
-.ob-form-material {
-    position: relative;
-    margin: 20px 0 30px 0;
-    input {
-        background-color: transparent;
-        font-size: 18px;
-        padding: 10px 10px 10px 5px;
-        display: block;
-        width: 100%;
-        border: none;
-        border-bottom: 1px solid #767676;
-        box-shadow: none!important;
-        &:focus {
-            outline: none;
-            border-bottom: 1px solid $brand-blue;
-            -webkit-transition: $transition-250ms;
-            transition: $transition-250ms;
-        }
-    }
-    label {
-        color: #767676;
-        font-weight: 500;
-        opacity: 1;
-        font-size: 18px;
-        position: absolute;
-        pointer-events: none;
-        left: 5px;
-        top: 10px;
-        -webkit-transition: $transition-250ms;
-        transition: $transition-250ms;
         margin: 0;
-    }
-    input:focus~label,
-    input:required:valid~label,
-    &:not(.empty) input~label {
-        top: -20px;
-        font-size: 14px;
-        color: $brand-blue;
-    }
-    &.has-error {
-        input {
-            border-color: $brand-secondary-1;
-            &:focus {
-                border-bottom: 1px solid $brand-blue;
-                -webkit-transition: $transition-250ms;
-                transition: $transition-250ms;
-            }
-        }
-        label {
-            color: $brand-secondary-1;
-        }
-    }
-    &.has-error input:focus~label,
-    &.has-error input:required:valid~label,
-    &.has-error:not(.empty) input~label {
-        color: $brand-blue;
-    }
-    .bar {
-        position: relative;
-        display: block;
-        width: 100%;
-        &:before,
-        &:after {
-            content: '';
-            height: 2px;
-            width: 0;
-            bottom: 1px;
-            position: absolute;
-            background: $brand-blue;
-            -webkit-transition: $transition-250ms;
-            transition: $transition-250ms;
-        }
-        &:before {
-            left: 50%;
-        }
-        &:after {
-            right: 50%;
-        }
-    }
-    input:focus~.bar:before,
-    input:focus~.bar:after {
-        width: 50%;
-    }
-    &.has-error .bar {
-        &:before,
-        &:after {
-            background: $brand-blue;
-        }
     }
 }
 

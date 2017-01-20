@@ -19,6 +19,7 @@
 		&.term-hidden {
 			opacity: 0;
 			width: 0;
+			margin: 0;
 		}
 		.btn-radio {
 			width: 100%;
@@ -58,7 +59,10 @@
 			}
 			.btn-radio-copy {
 				@extend .btn-radio-num;
-				font-size: 13px;
+				font-size: 11px;
+				    @include bp(md) {
+            			font-size: 13px;
+        			}
 			}
 			i.icon-tick {
 				font-size: x-small;

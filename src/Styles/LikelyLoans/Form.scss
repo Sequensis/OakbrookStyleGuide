@@ -140,3 +140,7 @@ form {
         }
     }
 }
+
+.disable-default-validation input:invalid {
+    box-shadow: none;
+}

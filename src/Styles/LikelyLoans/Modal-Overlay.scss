@@ -168,7 +168,7 @@ button:focus {
 }
 
 .modal-backdrop {
-    @include bp(sm) {
+    @media (max-width: 767px) {
         display: none;
     }
 }

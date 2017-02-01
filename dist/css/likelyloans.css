@@ -16954,7 +16954,7 @@ button:focus {
       .modal-fixed-bottom-list a {
         width: auto; } }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .modal-backdrop {
     display: none; } }
 

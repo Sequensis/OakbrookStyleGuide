@@ -1,0 +1,41 @@
+.modal {
+    .ob-modal-body {
+        padding: 0 15px 20px 15px;
+        overflow-y: scroll;
+        @include bp(sm-plus) {
+            padding: 0 40px 40px 40px;
+            max-height: 600px;            
+        }
+        ol {
+            li.ob-list-header {
+                counter-increment: item;
+                margin-bottom: 5px;
+                display: inline-block;
+                h3 {
+                    display: inline-block
+                }
+                &:before {
+                    content: counter(item);
+                    display: inline-block;
+                    font-size: 25px;
+                    font-weight: 700;
+                    color: $brand-blue;
+                }
+            }
+        }
+        h1,
+        h3 {
+            color: $brand-blue;
+        }
+    }
+    .modal-document {
+        .modal-header {
+            padding: 0;
+        }
+        .modal-body {
+            a {
+                word-break: break-all;
+            }
+        }
+    }
+}

@@ -120,6 +120,9 @@
     &.ob-btn-sm {
         padding: 13px 35px;
         font-size: 15px;
+        & span {
+            padding-left: 35px;
+        }
     }
     i {
         position: relative;
@@ -162,4 +165,20 @@
             }
         }
     }
+    &.btn-outline-blue {
+        background-color: #fff;
+        color: $brand-blue;
+        border: 2px solid $brand-blue;
+            &.checked {
+                border-color: #4a4a4a;
+                color: #4a4a4a;
+                span {
+                    color: $brand-secondary-3;
+                }
+            }        
+        &:focus,
+        &:hover {
+            background-color: darken(#fff, 5%);
+        }
+    }    
 }

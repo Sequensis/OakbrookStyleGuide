@@ -17,10 +17,10 @@
     height: 100%;
     margin: 0;
     background-color: #fff;
+    border-radius: 3px;
 }
 
 .modal-content {
-    border-radius: 3px;
     border: 0px;
     box-shadow: none;
 }
@@ -76,9 +76,28 @@
     right: 5px;
     top: 15px;
     border: 0px;
-    color: $brand-secondary-2;
+    color: #4a4a4a;
     i {
-        color: $brand-secondary-2;
+        color: #4a4a4a;
+    }
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.print {
+    background-color: #fff;
+    position: fixed;
+    right: 60px;
+    top: 15px;
+    border: 0;
+    color: #4a4a4a;
+    font-weight: 700;
+    i {
+        color: #4a4a4a;
+    }
+    span {
+        padding-left: 5px;
     }
     &:hover {
         opacity: 0.5;

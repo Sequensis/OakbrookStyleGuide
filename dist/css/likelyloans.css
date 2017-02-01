@@ -9529,6 +9529,8 @@ h6 {
   .ob-btn.ob-btn-sm {
     padding: 13px 35px;
     font-size: 15px; }
+    .ob-btn.ob-btn-sm span {
+      padding-left: 35px; }
   .ob-btn i {
     position: relative;
     bottom: -3px; }
@@ -9559,6 +9561,17 @@ h6 {
       .ob-btn.btn-blue:focus:disabled, .ob-btn.btn-blue:hover:disabled {
         background-color: #005BC6;
         border: 2px solid #005BC6; }
+  .ob-btn.btn-outline-blue {
+    background-color: #fff;
+    color: #005BC6;
+    border: 2px solid #005BC6; }
+    .ob-btn.btn-outline-blue.checked {
+      border-color: #4a4a4a;
+      color: #4a4a4a; }
+      .ob-btn.btn-outline-blue.checked span {
+        color: #33D167; }
+    .ob-btn.btn-outline-blue:focus, .ob-btn.btn-outline-blue:hover {
+      background-color: #f2f2f2; }
 
 .section-container nav.navbar .navbar-circle {
   position: absolute; }
@@ -16821,10 +16834,10 @@ code {
   width: 100%;
   height: 100%;
   margin: 0;
-  background-color: #fff; }
+  background-color: #fff;
+  border-radius: 3px; }
 
 .modal-content {
-  border-radius: 3px;
   border: 0px;
   box-shadow: none; }
 
@@ -16869,10 +16882,25 @@ code {
   right: 5px;
   top: 15px;
   border: 0px;
-  color: #767676; }
+  color: #4a4a4a; }
   .close i {
-    color: #767676; }
+    color: #4a4a4a; }
   .close:hover {
+    opacity: 0.5; }
+
+.print {
+  background-color: #fff;
+  position: fixed;
+  right: 60px;
+  top: 15px;
+  border: 0;
+  color: #4a4a4a;
+  font-weight: 700; }
+  .print i {
+    color: #4a4a4a; }
+  .print span {
+    padding-left: 5px; }
+  .print:hover {
     opacity: 0.5; }
 
 button:focus {
@@ -18612,6 +18640,35 @@ form input[type=number]::-webkit-outer-spin-button {
 
 .top-up .m-t-20 {
   margin: 20px auto 0 auto; }
+
+.modal .ob-modal-body {
+  padding: 0 15px 20px 15px;
+  overflow-y: scroll; }
+  @media (min-width: 768px) {
+    .modal .ob-modal-body {
+      padding: 0 40px 40px 40px;
+      max-height: 600px; } }
+  .modal .ob-modal-body ol li.ob-list-header {
+    counter-increment: item;
+    margin-bottom: 5px;
+    display: inline-block; }
+    .modal .ob-modal-body ol li.ob-list-header h3 {
+      display: inline-block; }
+    .modal .ob-modal-body ol li.ob-list-header:before {
+      content: counter(item);
+      display: inline-block;
+      font-size: 25px;
+      font-weight: 700;
+      color: #005BC6; }
+  .modal .ob-modal-body h1,
+  .modal .ob-modal-body h3 {
+    color: #005BC6; }
+
+.modal .modal-document .modal-header {
+  padding: 0; }
+
+.modal .modal-document .modal-body a {
+  word-break: break-all; }
 
 /**
  * Swiper 3.4.1

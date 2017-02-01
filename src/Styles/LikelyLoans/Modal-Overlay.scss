@@ -4,7 +4,7 @@
 
 .modal.fade .modal-dialog {
     -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    transform: translateY(0%);
     -webkit-transition: -webkit-transform 0s;
     transition: -webkit-transform 0s;
     transition: transform 0s;
@@ -127,7 +127,7 @@ button:focus {
         top: 50%;
         left: 50%;
         -webkit-transform: translateX(-50%) translateY(-50%) !important;
-                transform: translateX(-50%) translateY(-50%) !important;
+        transform: translateX(-50%) translateY(-50%) !important;
         width: 600px;
         height: auto;
     }
@@ -160,9 +160,15 @@ button:focus {
     }
     a {
         @include bp(md) {
-            width: auto; 
+            width: auto;
         }
         width: 95%;
         margin: 0 auto;
+    }
+}
+
+.modal-backdrop {
+    @include bp(sm) {
+        display: none;
     }
 }

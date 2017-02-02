@@ -1,5 +1,9 @@
 .table-striped>tbody>tr:nth-of-type(odd) {
-    background-color: $brand-tint-1;
+    background-color: $brand-light-grey;
+}
+
+.ob-table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: $brand-light-grey;
 }
 
 .theme-default {
@@ -23,6 +27,23 @@
         }
         td:nth-child(2) {
             color: $brand-blue;
+        }
+    }
+}
+
+.ob-table {
+    padding-bottom: 30px;
+    tbody {
+        th {
+            border-top: none;
+            padding: 10px;
+            background-color: #fff;
+        }
+        td {
+            border-top: none;
+            color: #4a4a4a;
+            padding: 10px 20px;
+            width:50%
         }
     }
 }

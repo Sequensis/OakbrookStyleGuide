@@ -9570,6 +9570,11 @@ h6 {
       color: #4a4a4a; }
       .ob-btn.btn-outline-blue.checked span {
         color: #33D167; }
+    .ob-btn.btn-outline-blue.error {
+      border-color: #DE344F;
+      color: #DE344F; }
+      .ob-btn.btn-outline-blue.error span {
+        color: #DE344F; }
     .ob-btn.btn-outline-blue:focus, .ob-btn.btn-outline-blue:hover {
       background-color: #f2f2f2; }
   .ob-btn.ob-btn-info {
@@ -9956,6 +9961,9 @@ a.active {
 
 .color-grey {
   color: #4a4a4a !important; }
+
+.text-error {
+  color: #DE344F; }
 
 .navbar {
   position: relative;
@@ -16808,7 +16816,10 @@ code {
     top: 60%; } }
 
 .table-striped > tbody > tr:nth-of-type(odd) {
-  background-color: #FAF9ED; }
+  background-color: #f7f7f7; }
+
+.ob-table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f7f7f7; }
 
 .theme-default {
   all: unset; }
@@ -16826,6 +16837,18 @@ code {
     font-weight: 700; }
   .table tbody td:nth-child(2) {
     color: #005BC6; }
+
+.ob-table {
+  padding-bottom: 30px; }
+  .ob-table tbody th {
+    border-top: none;
+    padding: 10px;
+    background-color: #fff; }
+  .ob-table tbody td {
+    border-top: none;
+    color: #4a4a4a;
+    padding: 10px 20px;
+    width: 50%; }
 
 .modal {
   padding: 0 !important; }
@@ -18677,7 +18700,7 @@ form input[type=number]::-webkit-outer-spin-button {
 .modal .modal-document .modal-header {
   padding: 0; }
 
-.modal .modal-document .modal-body a {
+.modal .modal-document .ob-modal-body a {
   word-break: break-all; }
 
 /**

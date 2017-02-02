@@ -175,7 +175,14 @@
                 span {
                     color: $brand-secondary-3;
                 }
-            }        
+            }
+            &.error {
+                border-color: $brand-secondary-1;
+                color: $brand-secondary-1;
+                span {
+                    color: $brand-secondary-1;
+                }
+            }                        
         &:focus,
         &:hover {
             background-color: darken(#fff, 5%);

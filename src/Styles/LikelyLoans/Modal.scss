@@ -4,7 +4,7 @@
         overflow-y: scroll;
         @include bp(sm-plus) {
             padding: 0 40px 40px 40px;
-            max-height: 600px;            
+            max-height: 600px;
         }
         ol {
             li.ob-list-header {
@@ -32,7 +32,7 @@
         .modal-header {
             padding: 0;
         }
-        .modal-body {
+        .ob-modal-body {
             a {
                 word-break: break-all;
             }

@@ -118,10 +118,10 @@
         cursor: default;
     }
     &.ob-btn-sm {
-        padding: 13px 35px;
+        padding: 13px 20px;
         font-size: 15px;
         & span {
-            padding-left: 35px;
+            padding-left: 20px;
         }
     }
     i {
@@ -181,4 +181,12 @@
             background-color: darken(#fff, 5%);
         }
     }    
+    &.ob-btn-info {
+        font-family: Source Sans Pro,sans-serif;
+        font-weight: 500;
+        & span {
+            font-family: Montserrat,sans serif;
+            font-weight: 700;
+        }
+    }
 }

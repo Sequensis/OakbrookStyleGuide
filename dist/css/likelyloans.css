@@ -9527,10 +9527,10 @@ h6 {
     opacity: 0.5;
     cursor: default; }
   .ob-btn.ob-btn-sm {
-    padding: 13px 35px;
+    padding: 13px 20px;
     font-size: 15px; }
     .ob-btn.ob-btn-sm span {
-      padding-left: 35px; }
+      padding-left: 20px; }
   .ob-btn i {
     position: relative;
     bottom: -3px; }
@@ -9572,6 +9572,12 @@ h6 {
         color: #33D167; }
     .ob-btn.btn-outline-blue:focus, .ob-btn.btn-outline-blue:hover {
       background-color: #f2f2f2; }
+  .ob-btn.ob-btn-info {
+    font-family: Source Sans Pro,sans-serif;
+    font-weight: 500; }
+    .ob-btn.ob-btn-info span {
+      font-family: Montserrat,sans serif;
+      font-weight: 700; }
 
 .section-container nav.navbar .navbar-circle {
   position: absolute; }

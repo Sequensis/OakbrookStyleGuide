@@ -16908,8 +16908,8 @@ code {
 .close {
   background-color: #fff;
   position: fixed;
-  right: 5px;
-  top: 15px;
+  right: 15px;
+  top: 20px;
   border: 0px;
   color: #4a4a4a; }
   .close i {
@@ -16920,11 +16920,14 @@ code {
 .print {
   background-color: #fff;
   position: fixed;
-  right: 60px;
-  top: 15px;
+  left: 5px;
+  top: 10px;
   border: 0;
   color: #4a4a4a;
   font-weight: 700; }
+  .print .print-text {
+    padding: 0;
+    font-size: 18px; }
   .print i {
     color: #4a4a4a; }
   .print span {
@@ -18675,8 +18678,8 @@ form input[type=number]::-webkit-outer-spin-button {
   margin: 20px auto 0 auto; }
 
 .modal .ob-modal-body {
-  padding: 0 15px 20px 15px;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  padding: 0 15px 20px 15px; }
   @media (min-width: 768px) {
     .modal .ob-modal-body {
       padding: 0 40px 40px 40px;
@@ -18697,14 +18700,28 @@ form input[type=number]::-webkit-outer-spin-button {
   .modal .ob-modal-body h3 {
     color: #005BC6; }
 
-.modal .modal-document .modal-header {
-  padding: 0; }
+.modal .modal-document .ob-modal-body {
+  max-height: calc(100vh);
+  overflow-y: auto; }
+  .modal .modal-document .ob-modal-body a {
+    word-break: break-all; }
 
-.modal .modal-document .ob-modal-body a {
-  word-break: break-all; }
+@media screen {
+  #printSection {
+    display: none; } }
+
+@media print {
+  body * {
+    visibility: hidden; }
+  #printSection, #printSection * {
+    visibility: visible; }
+  #printSection {
+    position: absolute;
+    left: 0;
+    top: 0; } }
 
 /**
- * Swiper 3.4.1
+ * Swiper 3.4.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * 
  * http://www.idangero.us/swiper/
@@ -18715,7 +18732,7 @@ form input[type=number]::-webkit-outer-spin-button {
  * 
  * Licensed under MIT
  * 
- * Released on: December 13, 2016
+ * Released on: October 16, 2016
  */
 .swiper-container {
   margin-left: auto;

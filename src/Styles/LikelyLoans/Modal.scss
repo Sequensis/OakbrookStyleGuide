@@ -9,10 +9,10 @@
         ol {
             li.ob-list-header {
                 counter-increment: item;
-                margin-bottom: 5px;
+                margin: 10px 0;
                 display: inline-block;
                 h3 {
-                    display: inline-block
+                    display: inline;
                 }
                 &:before {
                     content: counter(item);
@@ -21,11 +21,22 @@
                     font-weight: 700;
                     color: $brand-blue;
                 }
+                ol {
+                    padding-left: 20px;
+                }
             }
         }
         h1,
         h3 {
             color: $brand-blue;
+        }
+        dl {
+            dt {
+                margin-top: 15px;
+            }
+            dd {
+                margin-top: 2.5px;
+            }
         }
     }
     .modal-document {

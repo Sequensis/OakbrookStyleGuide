@@ -30,8 +30,10 @@
     }
     .modal-document {
         .ob-modal-body {
-            max-height: calc(100vh);
-            overflow-y: auto;
+            @include bp(sm) {
+                max-height: calc(100vh);
+                overflow-y: auto;
+            };
             a {
                 word-break: break-all;
             }

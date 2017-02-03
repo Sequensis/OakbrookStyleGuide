@@ -25,6 +25,9 @@ Example...
   @else if $point == sm {
      @media (max-width: $screen-sm)  { @content ; }
   }
+  @else if $point == sm-ipad {
+     @media (max-width: 767px)  { @content ; }
+  }  
   @else if $point == xs {
      @media (min-width: 321px)  { @content ; }
   }

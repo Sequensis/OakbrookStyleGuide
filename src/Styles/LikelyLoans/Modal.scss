@@ -41,7 +41,7 @@
     }
     .modal-document {
         .ob-modal-body {
-            @include bp(sm) {
+            @include bp(sm-ipad) {
                 max-height: calc(100vh);
                 overflow-y: auto;
             };

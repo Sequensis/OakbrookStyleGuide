@@ -9570,6 +9570,8 @@ h6 {
       color: #4a4a4a; }
       .ob-btn.btn-outline-blue.checked span {
         color: #33D167; }
+        .ob-btn.btn-outline-blue.checked span i {
+          bottom: -1px; }
     .ob-btn.btn-outline-blue.error {
       border-color: #DE344F;
       color: #DE344F; }
@@ -18697,7 +18699,7 @@ form input[type=number]::-webkit-outer-spin-button {
       font-weight: 700;
       color: #005BC6; }
     .modal .ob-modal-body ol li.ob-list-header ol {
-      padding-left: 20px; }
+      padding: 10px 0 0 20px; }
   .modal .ob-modal-body h1,
   .modal .ob-modal-body h3 {
     color: #005BC6; }

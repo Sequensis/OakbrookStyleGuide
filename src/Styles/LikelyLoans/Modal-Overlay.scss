@@ -73,8 +73,8 @@
 .close {
     background-color: #fff;
     position: fixed;
-    right: 5px;
-    top: 15px;
+    right: 15px;
+    top: 20px;
     border: 0px;
     color: #4a4a4a;
     i {
@@ -86,10 +86,14 @@
 }
 
 .print {
+    .print-text {
+        padding: 0;
+        font-size: 18px;
+    }
     background-color: #fff;
     position: fixed;
-    right: 60px;
-    top: 15px;
+    left: 5px;
+    top: 10px;
     border: 0;
     color: #4a4a4a;
     font-weight: 700;

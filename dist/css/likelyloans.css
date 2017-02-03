@@ -16908,8 +16908,8 @@ code {
 .close {
   background-color: #fff;
   position: fixed;
-  right: 5px;
-  top: 15px;
+  right: 15px;
+  top: 20px;
   border: 0px;
   color: #4a4a4a; }
   .close i {
@@ -16920,11 +16920,14 @@ code {
 .print {
   background-color: #fff;
   position: fixed;
-  right: 60px;
-  top: 15px;
+  left: 5px;
+  top: 10px;
   border: 0;
   color: #4a4a4a;
   font-weight: 700; }
+  .print .print-text {
+    padding: 0;
+    font-size: 18px; }
   .print i {
     color: #4a4a4a; }
   .print span {

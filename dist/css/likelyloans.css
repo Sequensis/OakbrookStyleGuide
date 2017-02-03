@@ -18675,8 +18675,7 @@ form input[type=number]::-webkit-outer-spin-button {
   margin: 20px auto 0 auto; }
 
 .modal .ob-modal-body {
-  max-height: calc(100vh);
-  overflow-y: auto;
+  overflow-y: scroll;
   padding: 0 15px 20px 15px; }
   @media (min-width: 768px) {
     .modal .ob-modal-body {
@@ -18701,8 +18700,11 @@ form input[type=number]::-webkit-outer-spin-button {
 .modal .modal-document .modal-header {
   padding: 0; }
 
-.modal .modal-document .ob-modal-body a {
-  word-break: break-all; }
+.modal .modal-document .ob-modal-body {
+  max-height: calc(100vh);
+  overflow-y: auto; }
+  .modal .modal-document .ob-modal-body a {
+    word-break: break-all; }
 
 @media screen {
   #printSection {

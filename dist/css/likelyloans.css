@@ -16847,7 +16847,7 @@ code {
   .ob-table tbody td {
     border-top: none;
     color: #4a4a4a;
-    padding: 10px 20px;
+    padding: 5px 10px;
     width: 50%; }
 
 .modal {
@@ -18686,19 +18686,25 @@ form input[type=number]::-webkit-outer-spin-button {
       max-height: 600px; } }
   .modal .ob-modal-body ol li.ob-list-header {
     counter-increment: item;
-    margin-bottom: 5px;
+    margin: 10px 0;
     display: inline-block; }
     .modal .ob-modal-body ol li.ob-list-header h3 {
-      display: inline-block; }
+      display: inline; }
     .modal .ob-modal-body ol li.ob-list-header:before {
       content: counter(item);
       display: inline-block;
       font-size: 25px;
       font-weight: 700;
       color: #005BC6; }
+    .modal .ob-modal-body ol li.ob-list-header ol {
+      padding-left: 20px; }
   .modal .ob-modal-body h1,
   .modal .ob-modal-body h3 {
     color: #005BC6; }
+  .modal .ob-modal-body dl dt {
+    margin-top: 15px; }
+  .modal .ob-modal-body dl dd {
+    margin-top: 2.5px; }
 
 @media (max-width: 768px) {
   .modal .modal-document .ob-modal-body {

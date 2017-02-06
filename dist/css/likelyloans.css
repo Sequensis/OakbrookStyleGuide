@@ -18437,11 +18437,11 @@ form input[type=number]::-webkit-outer-spin-button {
     .navbar-off-canvas .navbar-circle {
       left: 50%;
       margin-left: -123px;
-      margin-top: -10px;
+      margin-top: -123px;
       width: 246px;
-      height: 114px;
+      height: 226px;
       display: block;
-      border-radius: 0 0 116px 116px; }
+      border-radius: 50%; }
     .navbar-off-canvas #navbar-icon span {
       background: #005BC6; }
     .navbar-off-canvas .btn-username {

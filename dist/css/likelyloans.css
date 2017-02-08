@@ -9233,9 +9233,6 @@ h6 {
 .ob-bold {
   font-weight: 700; }
 
-.ob-no-box-shadow {
-  box-shadow: none; }
-
 #payment-page h2 {
   font-size: 18px;
   text-align: center;
@@ -16419,6 +16416,12 @@ input:-webkit-autofill {
   padding: 16px !important;
   margin-bottom: 20px !important; }
 
+#a0-lock.a0-theme-default .a0-panel .a0-email .a0-input-box.a0-error-input,
+#a0-lock.a0-theme-default .a0-panel .a0-password .a0-input-box.a0-error-input,
+#a0-lock.a0-theme-default .a0-panel .a0-repeatPassword .a0-input-box.a0-error-input,
+#a0-lock.a0-theme-default .a0-panel .a0-username .a0-input-box.a0-error-input {
+  border-color: #DE344F !important; }
+
 /* Submit //*/
 #a0-lock.a0-theme-default .a0-primary {
   background-color: #33D167 !important;
@@ -16459,7 +16462,7 @@ input:-webkit-autofill {
   color: #DE344F !important; }
 
 #a0-lock.a0-theme-default .a0-panel .a0-inputs .a0-password {
-  margin-top: 20px !important; }
+  margin-top: 10px !important; }
 
 .theme-error #a0-lock.a0-theme-default .a0-panel .a0-forgot-pass {
   color: #fff !important; }
@@ -18593,10 +18596,10 @@ form input[type=number]::-webkit-outer-spin-button {
     background: none; }
     @media (min-width: 768px) {
       .ob-card.ob-card-white {
-        background: #fff; } }
+        background: #fff;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2); } }
   @media (min-width: 768px) {
     .ob-card {
-      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
       padding: 20px 30px; } }
 
 .ob-accordion.ob-blue {

@@ -122,7 +122,7 @@ input:-webkit-autofill {
 #a0-lock.a0-theme-default .a0-panel .a0-username input {
     font-size: 18px !important;
     height: 50px !important;
-    padding: 0 16px !important;    
+    padding: 0 16px !important;
     color: #767676 !important;
 }
 
@@ -136,6 +136,13 @@ input:-webkit-autofill {
     border: 1px solid #efefef !important;
     padding: 16px !important;
     margin-bottom: 20px !important;
+}
+
+#a0-lock.a0-theme-default .a0-panel .a0-email .a0-input-box.a0-error-input,
+#a0-lock.a0-theme-default .a0-panel .a0-password .a0-input-box.a0-error-input,
+#a0-lock.a0-theme-default .a0-panel .a0-repeatPassword .a0-input-box.a0-error-input,
+#a0-lock.a0-theme-default .a0-panel .a0-username .a0-input-box.a0-error-input {
+    border-color: $brand-secondary-1 !important;
 }
 
 
@@ -158,8 +165,9 @@ input:-webkit-autofill {
 }
 
 #a0-lock.a0-theme-default .a0-panel .a0-action button:after {
-    background: none !important;    
+    background: none !important;
 }
+
 
 /* Footer //*/
 
@@ -192,7 +200,7 @@ input:-webkit-autofill {
 }
 
 #a0-lock.a0-theme-default .a0-panel .a0-inputs .a0-password {
-    margin-top: 20px !important;
+    margin-top: 10px !important;
 }
 
 .theme-error #a0-lock.a0-theme-default .a0-panel .a0-forgot-pass {

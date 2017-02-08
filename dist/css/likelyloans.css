@@ -9233,6 +9233,9 @@ h6 {
 .ob-bold {
   font-weight: 700; }
 
+.ob-no-box-shadow {
+  box-shadow: none; }
+
 #payment-page h2 {
   font-size: 18px;
   text-align: center;
@@ -16335,7 +16338,7 @@ input:-webkit-autofill {
   box-shadow: none !important; }
 
 #a0-lock.a0-theme-default .a0-panel {
-  width: 100% !important;
+  width: 90% !important;
   margin: 0 auto; }
 
 /* Header // */
@@ -16381,26 +16384,30 @@ input:-webkit-autofill {
 
 /* Input Box //*/
 #a0-lock.a0-theme-default .a0-panel .a0-mode form .a0-body-content {
-  padding: 10px 0 30px 0 !important; }
+  padding: 10px 0 25px 0 !important; }
 
 #a0-lock.a0-theme-default .a0-emailPassword {
-  margin: 0 auto !important;
-  width: 90%; }
+  margin: 0 auto !important; }
 
 #a0-lock.a0-theme-default .a0-input-box {
-  background-color: #fff !important; }
+  background-color: #fff !important;
+  padding: 0 !important;
+  border: 1px solid #979797 !important; }
 
 #a0-lock.a0-theme-default .a0-panel .a0-email .a0-input-box i,
 #a0-lock.a0-theme-default .a0-panel .a0-password .a0-input-box i,
 #a0-lock.a0-theme-default .a0-panel .a0-repeatPassword .a0-input-box i,
 #a0-lock.a0-theme-default .a0-panel .a0-username .a0-input-box i {
-  z-index: 1 !important; }
+  display: none; }
 
 #a0-lock.a0-theme-default .a0-panel .a0-email input,
 #a0-lock.a0-theme-default .a0-panel .a0-password input,
 #a0-lock.a0-theme-default .a0-panel .a0-repeatPassword input,
 #a0-lock.a0-theme-default .a0-panel .a0-username input {
-  font-size: 16px !important; }
+  font-size: 18px !important;
+  height: 50px !important;
+  padding: 0 16px !important;
+  color: #767676 !important; }
 
 #a0-lock.a0-theme-default .a0-btn-small.a0-back {
   background: #fff !important;
@@ -16415,13 +16422,20 @@ input:-webkit-autofill {
 /* Submit //*/
 #a0-lock.a0-theme-default .a0-primary {
   background-color: #33D167 !important;
-  border-radius: 3px !important;
+  border-radius: 4px !important;
   margin: 0 auto !important;
   bottom: 0;
-  z-index: 1000 !important; }
+  z-index: 1000 !important;
+  text-indent: 0px !important;
+  text-transform: none !important;
+  font-size: 18px !important;
+  font-family: 'Montserrat', sans-serif !important; }
 
 #a0-lock.a0-theme-default .a0-primary:hover {
   background-color: #26ab52 !important; }
+
+#a0-lock.a0-theme-default .a0-panel .a0-action button:after {
+  background: none !important; }
 
 /* Footer //*/
 #a0-lock.a0-theme-default .a0-panel .a0-footer {
@@ -16433,12 +16447,6 @@ input:-webkit-autofill {
 
 .theme-warning #a0-lock.a0-theme-default .a0-panel .a0-forgot-pass {
   color: #2750C8 !important; }
-
-.theme-warning #a0-lock.a0-theme-default .a0-panel .a0-email .a0-input-box i,
-#a0-lock.a0-theme-default .a0-panel .a0-password .a0-input-box i,
-#a0-lock.a0-theme-default .a0-panel .a0-repeatPassword .a0-input-box i,
-#a0-lock.a0-theme-default .a0-panel .a0-username .a0-input-box i {
-  color: #222 !important; }
 
 .theme-error #a0-lock.a0-theme-default .a0-primary {
   background-color: #c01f39 !important; }
@@ -16452,12 +16460,6 @@ input:-webkit-autofill {
 
 #a0-lock.a0-theme-default .a0-panel .a0-inputs .a0-password {
   margin-top: 20px !important; }
-
-.theme-error #a0-lock.a0-theme-default .a0-panel .a0-email .a0-input-box i,
-#a0-lock.a0-theme-default .a0-panel .a0-password .a0-input-box i,
-#a0-lock.a0-theme-default .a0-panel .a0-repeatPassword .a0-input-box i,
-#a0-lock.a0-theme-default .a0-panel .a0-username .a0-input-box i {
-  color: #222 !important; }
 
 .theme-error #a0-lock.a0-theme-default .a0-panel .a0-forgot-pass {
   color: #fff !important; }

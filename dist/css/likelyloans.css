@@ -9158,7 +9158,8 @@ h2 {
   margin: 40px 0 20px 0; }
 
 body {
-  height: 100%; }
+  height: 100%;
+  color: #4a4a4a; }
 
 h1,
 h2,
@@ -9522,7 +9523,8 @@ h6 {
   font-weight: 700;
   text-align: left;
   padding: 16px 35px;
-  border-radius: 4px; }
+  border-radius: 4px;
+  max-width: 400px; }
   .ob-btn:disabled {
     opacity: 0.5;
     cursor: default; }
@@ -16335,7 +16337,7 @@ input:-webkit-autofill {
   box-shadow: none !important; }
 
 #a0-lock.a0-theme-default .a0-panel {
-  width: 90% !important;
+  width: 100% !important;
   margin: 0 auto; }
 
 /* Header // */
@@ -16376,7 +16378,7 @@ input:-webkit-autofill {
 
 /* Forgot Password //*/
 #a0-lock.a0-theme-default .a0-forgot-pass {
-  color: #005BC6 !important;
+  color: #4a4a4a !important;
   text-decoration: underline; }
 
 /* Input Box //*/
@@ -16428,7 +16430,6 @@ input:-webkit-autofill {
   border-radius: 4px !important;
   margin: 0 auto !important;
   bottom: 0;
-  z-index: 1000 !important;
   text-indent: 0px !important;
   text-transform: none !important;
   font-size: 18px !important;
@@ -16713,21 +16714,19 @@ code {
 
 .modal-login {
   border-radius: 3px;
-  margin: 80px auto 0 auto;
   padding: 0;
   width: 100%; }
   .modal-login a {
     font-size: 15px !important; }
 
-.modal-login-header {
-  margin: 30px 0 0 0; }
-  .modal-login-header a {
-    font-weight: 400; }
-  .modal-login-header a:hover {
-    color: #005BC6 !important; }
-  .modal-login-header h1 {
-    color: #005BC6;
-    margin: 30px 0; }
+.modal-login-header a {
+  font-weight: 400; }
+
+.modal-login-header a:hover {
+  color: #005BC6 !important; }
+
+.modal-login-header h1 {
+  color: #005BC6; }
 
 .modal-validate {
   background-color: #fff !important; }
@@ -17282,11 +17281,18 @@ h2 {
 .p-t-100 {
   padding-top: 100px; }
 
+.p-y-40 {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
 .p-y-100 {
   padding: 100px 0; }
 
 .p-b-100 {
   padding-bottom: 100px; }
+
+.p-t-0 {
+  padding-top: 0 !important; }
 
 .payment {
   padding: 0; }
@@ -17606,11 +17612,18 @@ h2 {
 .p-t-100 {
   padding-top: 100px; }
 
+.p-y-40 {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
 .p-y-100 {
   padding: 100px 0; }
 
 .p-b-100 {
   padding-bottom: 100px; }
+
+.p-t-0 {
+  padding-top: 0 !important; }
 
 .d-inline {
   display: inline; }

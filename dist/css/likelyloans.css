@@ -9147,6 +9147,10 @@ h2 {
 *:focus {
   outline: -webkit-focus-ring-color auto 0px !important; }
 
+html {
+  position: relative;
+  min-height: 100%; }
+
 .nowrap {
   white-space: nowrap; }
 
@@ -9158,7 +9162,8 @@ h2 {
   margin: 40px 0 20px 0; }
 
 body {
-  height: 100%; }
+  height: 100%;
+  margin-bottom: 85px !important; }
 
 h1,
 h2,
@@ -16582,8 +16587,12 @@ input:-webkit-autofill {
 .footer-distributed {
   box-sizing: border-box;
   width: 100%;
+  width: 100%;
+  height: 85px;
   text-align: left;
-  padding: 0 20px; }
+  padding: 0 20px;
+  position: absolute;
+  bottom: 0; }
   .footer-distributed a {
     line-height: 1.8;
     text-decoration: none;

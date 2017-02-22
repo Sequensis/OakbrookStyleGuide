@@ -110,10 +110,10 @@
     font-size: 18px;
     font-family: 'Montserrat', sans serif;
     font-weight: 700;
+    max-width: 400px;
     text-align: left;
     padding: 16px 35px;
     border-radius: $radius;
-    max-width: 400px;
     &:disabled {
         opacity: 0.5;
         cursor: default;
@@ -131,6 +131,7 @@
     }
     &.full-width-btn {
         width: 100%;
+        max-width: 100%;
     }
     &.full-width-btn-sm {
         width: 100%;

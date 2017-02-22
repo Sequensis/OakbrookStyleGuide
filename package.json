@@ -1,7 +1,7 @@
 {
   "name": "oakbrookstyleguide",
   "description": "Oakbrook Style Guide",
-  "version": "2.55.1",
+  "version": "2.55.3",
   "author": "Oakbrook Finance",
   "license": "MIT",
   "main": "gulpfile.js",

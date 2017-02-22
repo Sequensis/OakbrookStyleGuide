@@ -10,7 +10,12 @@
     *:focus {
         outline: -webkit-focus-ring-color auto 0px !important;
     }
-    
+
+    html {
+    position: relative;
+    min-height: 100%;
+    }
+   
     .nowrap {
         white-space: nowrap;
     }
@@ -27,6 +32,7 @@
     body {
         height: 100%;
         color: #4a4a4a;
+        margin-bottom: 85px !important;
     }
     
     h1,

@@ -146,13 +146,13 @@
     
     .header-toast {
         width: 100%;
-        height: 50px;        
+        height: 50px;
         position: fixed;
         display: flex;
         align-items: center;
-        text-align: center;    
-        background: #fff;   
-        z-index: 105;                 
+        text-align: center;
+        background: #fff;
+        z-index: 105;
         @include translateY(-150px);
         @include ob-transition-transform(ease-in-out, 0.25s);
         p {
@@ -164,50 +164,64 @@
                 font-weight: 700;
                 font-size: 13px;
             }
+            a {
+                display: block;
+                @include bp(md) {
+                    display: inline;
+                }
+            }
         }
         &.toast-success {
             background: $brand-secondary-3;
             color: $brand-secondary-3-font;
-        }        
+        }
         &.toast-error {
             background: $brand-secondary-1;
             color: #fff;
         }
         &.toast-info {
             background: $brand-light-grey;
-        }        
+        }
         @include bp(md) {
             @include translateY(-50px);
         }
         &.header-toast-collapse {
-            @include translateY(-100px);
+            @include translateY(-80px);
+            @include bp(sm) {
+                @include translateY(-100px);
+            }            
             @include bp(md) {
                 @include translateY(0);
             }
         }
     }
-
-.page-collapse {   
-    .navbar-off-canvas {
-        .navbar, .off-canvas, #navbar-icon {
-            @include translateY(0);
-        }      
-        .navbar, #navbar-icon {
-            @include ob-transition-transform(ease-in-out, 0.25s);
-        }
-    } 
-    .content-container {
-        @include translateY(0);
-        @include ob-transition-transform(ease-in-out, 0.25s);
-    }
-    &.in {             
+    
+    .page-collapse {
         .navbar-off-canvas {
-            .navbar, .off-canvas, #navbar-icon {
-                @include translateY(50px);         
+            .navbar,
+            .off-canvas,
+            #navbar-icon {
+                @include translateY(0);
+            }
+            .navbar,
+            #navbar-icon {
+                @include ob-transition-transform(ease-in-out, 0.25s);
             }
         }
         .content-container {
-            @include translateY(50px);         
+            @include translateY(0);
+            @include ob-transition-transform(ease-in-out, 0.25s);
+        }
+        &.in {
+            .navbar-off-canvas {
+                .navbar,
+                .off-canvas,
+                #navbar-icon {
+                    @include translateY(50px);
+                }
+            }
+            .content-container {
+                @include translateY(50px);
+            }
         }
     }
-}

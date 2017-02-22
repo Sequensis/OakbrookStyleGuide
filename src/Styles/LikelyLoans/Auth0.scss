@@ -29,7 +29,7 @@ input:-webkit-autofill {
 }
 
 #a0-lock.a0-theme-default .a0-panel {
-    width: 90% !important;
+    width: 100% !important;
     margin: 0 auto;
 }
 
@@ -88,7 +88,7 @@ input:-webkit-autofill {
 /* Forgot Password //*/
 
 #a0-lock.a0-theme-default .a0-forgot-pass {
-    color: $brand-blue !important;
+    color: #4a4a4a !important;
     text-decoration: underline;
 }
 
@@ -153,7 +153,6 @@ input:-webkit-autofill {
     border-radius: 4px !important;
     margin: 0 auto !important;
     bottom: 0;
-    z-index: 1000 !important;
     text-indent: 0px !important;
     text-transform: none !important;
     font-size: 18px !important;

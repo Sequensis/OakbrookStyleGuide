@@ -1,0 +1,106 @@
+<nav class="navbar navbar-fixed-top navbar-relative-top">
+    <div class="navbar-circle"></div>
+    <div class="navbar-logo"><img src="/img/LikelyLoansWhite.svg"></div>
+    <div class="invisible">
+        <ul class="nav col-xs-6">
+            <div id="navbar-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </ul>
+    </div>
+</nav>
+<div class="top-up content-container">
+    <div class="container">
+        <div class="col-md-12 ob-no-padding">
+            <div class="modal-container theme-light m-b-50">
+                <div class="modal-login text-center ">
+                    <div class="modal-login-header">
+                        <a class="modal-padlock">
+                            <img class="lock-svg" src="/img/lock-smile.svg">
+                            <img class="lock-warning-svg" src="/img/exclamation-smile-lock-warning.svg" style="display:none">
+                            <img class="lock-error-svg" src="/img/exclamation-smile-lock-error.svg" style="display:none">
+                        </a>
+                        <h1 class="m-t-30">Log In</h1>
+                    </div>
+                    <div id="lock-widget">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-blue p-y-40 text-center m-b-50">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="ob-card color-white">
+                    <h3>Not yet registered?</h3>
+                    <p>It only takes couple of minutes to sign up</p>
+                    <button class="ob-btn ob-btn-sm full-width-btn btn-outline-blue text-center m-y-20">
+                    <i class="fa fa-caret-right pull-right"></i>
+                    Get started
+                </button>
+                    <p class="body-lg ob-bold">Did your loan start before 27th Jan 2016?</p>
+                    <p class="body-sm">If your loan started before this date we do not currently offer access to your account online. However
+                        our friendly team are here to answer any query you may have on.</p>
+                    <h3>0208 000 000</h3>
+                    <p class="ob-bold">We are available Monday to Friday between 8am and 8pm</p>
+                </div>
+            </div>
+            <!--<div class="col-md-5 col-md-offset-2">
+                <div class="ob-card ob-card-white">
+                    <p class="body-lg ob-bold">Benefits of a Likely Loans account</p>
+                    <div class="full-width-list" id="bullet-points">
+                        <ul class="custom-bullets">
+                            <li class="m-b-15">
+                                <i class="fa icon-tick color-green p-r-10"></i> Cras mattis consectetur purus sit.
+                            </li>
+                            <li class="m-b-15">
+                                <i class="fa icon-tick color-green p-r-10"></i> Aenean lacinia bibendum nulla sed consectetur. 
+                            </li>
+                            <li class="m-b-15">
+                                <i class="fa icon-tick color-green p-r-10"></i> Lorem Vestibulum Dapibus
+                            </li>
+                            <li class="m-b-15">
+                                <i class="fa icon-tick color-green p-r-10"></i> Cras mattis consectetur purus sit.
+                            </li>
+                            <li class="m-b-15">
+                                <i class="fa icon-tick color-green p-r-10"></i> Aenean lacinia bibendum nulla sed consectetur. 
+                            </li>
+                            <li class="m-b-15">
+                                <i class="fa icon-tick color-green p-r-10"></i> Lorem Vestibulum Dapibus
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </div>
+</div>
+{{> footer}}
+<script src="https://cdn.auth0.com/js/lock-9.0.js"></script>
+<script>
+    var lock = new Auth0Lock('wgX0JYnX2B7VWRy5WjiAKfGxnaup9l4S', 'likelyloans.eu.auth0.com');
+    var failedAttempts = 0;
+
+    lock.show({
+        authParams: {
+            scope: 'openid profile'
+        },
+
+        container: 'lock-widget',
+        callbackURL: window.location.origin + '/signin-auth0',
+        disableSignupAction: true,
+        responseType: 'code',
+        closable: false,
+        dict: {
+            signin: {
+                'forgotText': "Forgotten your password?",
+                'action': "Log in"
+            }
+        }
+
+    });
+</script>

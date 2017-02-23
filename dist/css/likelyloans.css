@@ -18118,7 +18118,7 @@ form input[type=number]::-webkit-outer-spin-button {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   text-align: center;
   background: #fff;
   z-index: 105;
@@ -18128,6 +18128,12 @@ form input[type=number]::-webkit-outer-spin-button {
   transition: transform ease-in-out 0.25s;
   -webkit-transition: transform ease-in-out 0.25s;
   -ms-transition: transform ease-in-out 0.25s; }
+  .header-toast ng-component {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center; }
   .header-toast p {
     font-family: "Montserrat", sans-serif;
     font-size: 13px;

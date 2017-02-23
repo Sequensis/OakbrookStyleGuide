@@ -152,12 +152,12 @@
         align-items: center;
         text-align: center;
         background: #fff;
-        z-index: 105;
+        z-index: 105;       
         @include translateY(-150px);
         @include ob-transition-transform(ease-in-out, 0.25s);
         p {
             font-family: "Montserrat", sans-serif;
-            font-size: 11px;
+            font-size: 13px;
             padding: 0 10px;
             margin: 0 auto;
             span {
@@ -170,6 +170,14 @@
                     display: inline;
                 }
             }
+        }
+        .close {
+            background-color: transparent;
+            position: relative;
+            right: 0;
+            top: 0;
+            text-decoration: none;
+            font-size: 13px;
         }
         &.toast-success {
             background: $brand-secondary-3;
@@ -189,7 +197,7 @@
             @include translateY(-80px);
             @include bp(sm) {
                 @include translateY(-100px);
-            }            
+            }
             @include bp(md) {
                 @include translateY(0);
             }

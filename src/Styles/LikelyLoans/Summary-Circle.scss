@@ -105,12 +105,6 @@
     }
 }
 
-.flex-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .new-summary {
     .radial-progress {
         svg {
@@ -132,12 +126,12 @@
             .progress-amount {
                 font-size: 44px;
                 font-family: 'Montserrat', sans-serif;
-                fill: #222;
+                fill: $brand-blue;
             }
             .total-amount {
                 font-size: 20px;
                 font-family: 'Montserrat', sans-serif;
-                fill: #7d7d7d;
+                fill: $brand-dark-grey;
             }
             .info {
                 fill: none;
@@ -146,12 +140,16 @@
             }
         }
     }
-    .stat-group {
+    .summary-group {
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        justify-content: center;
+        border-radius: 4px;
+        &.grey {
+            background: $brand-light-grey;
+        }
         dl {
-            margin-bottom: 12px;
-            &:last-child {
-                margin-bottom: 0;
-            }
+            margin: 0;
             dt {
                 font-weight: 500;
                 font-size: 13px;
@@ -159,13 +157,54 @@
             dd {
                 font-weight: 700;
                 font-size: 22px;
+                margin-bottom: 5px;
+                display: inline-block;
+            }
+            a {
+                display: block;
+                font-size: 13px;
+                font-weight: 500;
+                text-decoration: underline;
+                color: #4a4a4a;
+                i {
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+.check-list {
+    dl {
+        dd {
+            padding: 10px;
+            margin: 10px 4px;
+            border-radius: 4px;
+            div {
+                font-size: 11px;
+                font-weight: 700; 
+                font-family: 'Montserrat', sans-serif;
+                color: #4a4a4a;                
+                position: absolute;
+                bottom: -10px;
+            }
+            i {
+                font-size: 18px;
+            }
+            &.y {
+                background: $brand-secondary-3;
+                color: $brand-secondary-3-font;
+            }
+            &.n {
+                background: $brand-secondary-1;
+                color: #fff;
             }
         }
     }
 }
 
 .pulse {
-    animation: pulse 5s infinite;
+    animation: pulse 8s infinite;
     animation-delay: 2s;
     animation-timing-function: ease-in-out;
     will-change: pulse;
@@ -185,3 +224,24 @@
         transform: scale(1);
     }
 }
+
+// .summary-group {
+//     display: flex;
+//     -webkit-flex-flow: row wrap;
+//     justify-content: center;
+//     border-radius: 4px;
+//     background: $brand-light-grey;
+//     dl {
+//         margin-bottom: 0;
+//         padding: 14px 7px;
+//         dt {
+//             font-weight: 500;
+//             font-size: 13px;
+//             padding-bottom: 5px;
+//         }
+//         dd {
+//             font-weight: 700;
+//             font-size: 22px;
+//         }
+//     }
+// }

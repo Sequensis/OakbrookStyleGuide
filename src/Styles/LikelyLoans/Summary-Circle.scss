@@ -104,3 +104,84 @@
         font-size: 25px;
     }
 }
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-summary {
+    .radial-progress {
+        svg {
+            fill: #fff;
+            .radial {
+                fill: none;
+                stroke: $brand-dark-grey;
+                stroke-width: 6;
+                stroke-miterlimit: 10;
+                fill: #fff;
+            }
+            .progress {
+                fill: none;
+                stroke: $brand-blue;
+                stroke-width: 8;
+                stroke-miterlimit: 10;
+                fill: #fff;
+            }
+            .progress-amount {
+                font-size: 44px;
+                font-family: 'Montserrat', sans-serif;
+                fill: #222;
+            }
+            .total-amount {
+                font-size: 20px;
+                font-family: 'Montserrat', sans-serif;
+                fill: #7d7d7d;
+            }
+            .info {
+                fill: none;
+                stroke: #4a4a4a;
+                stroke-miterlimit: 10;
+            }
+        }
+    }
+    .stat-group {
+        dl {
+            margin-bottom: 12px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            dt {
+                font-weight: 500;
+                font-size: 13px;
+            }
+            dd {
+                font-weight: 700;
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+.pulse {
+    animation: pulse 5s infinite;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    will-change: pulse;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    5% {
+        transform: scale(1.02);
+    }
+    10% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

@@ -5,8 +5,8 @@
     margin: 0 auto;
     opacity: 0;
     width: 30px;
-    -webkit-animation: pulse 1.5s ease-out;
-    animation: pulse 1.5s ease-out;
+    -webkit-animation: loader 1.5s ease-out;
+    animation: loader 1.5s ease-out;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
@@ -35,7 +35,7 @@
     animation: load-in ease-in 0.25s;
 }
 
-@-webkit-keyframes pulse {
+@-webkit-keyframes loader {
     0% {
         transform: scale(.1);
         -ms-transform: scale(.1);
@@ -53,7 +53,7 @@
     }
 }
 
-@keyframes pulse {
+@keyframes loader {
     0% {
         transform: scale(.1);
         -ms-transform: scale(.1);

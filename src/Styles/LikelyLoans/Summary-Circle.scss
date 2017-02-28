@@ -123,20 +123,56 @@
                 stroke-miterlimit: 10;
                 fill: #fff;
             }
-            .progress-amount {
-                font-size: 44px;
-                font-family: 'Montserrat', sans-serif;
-                fill: $brand-blue;
-            }
-            .total-amount {
-                font-size: 20px;
-                font-family: 'Montserrat', sans-serif;
-                fill: $brand-dark-grey;
-            }
             .info {
                 fill: none;
                 stroke: #4a4a4a;
                 stroke-miterlimit: 10;
+            }
+        }
+        .swiper-container {
+            height: 260px;
+            width: 250px;
+            position: absolute;
+            top: 0;
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                span p {
+                    display: flex;
+                }
+                p {
+                    font-size: 44px;
+                    font-family: 'Montserrat', sans-serif;
+                    color: $brand-blue;
+                    word-spacing: 100px;
+                    line-height: 0.8;
+                }
+                span {
+                    font-size: 20px;
+                    font-family: 'Montserrat', sans-serif;
+                    color: $brand-dark-grey;
+                    word-spacing: normal;
+                }
+            }
+            .swiper-pagination {
+                bottom: 24px;
+                .swiper-pagination-bullet {
+                    opacity: 1;
+                    background: $brand-light-grey;
+                    &.swiper-pagination-bullet-active {
+                        background: $brand-blue;
+                    }
+                }
             }
         }
     }
@@ -164,7 +200,6 @@
                 display: block;
                 font-size: 13px;
                 font-weight: 500;
-                text-decoration: underline;
                 color: #4a4a4a;
                 i {
                     padding-right: 5px;
@@ -182,9 +217,9 @@
             border-radius: 4px;
             div {
                 font-size: 11px;
-                font-weight: 700; 
+                font-weight: 700;
                 font-family: 'Montserrat', sans-serif;
-                color: #4a4a4a;                
+                color: #4a4a4a;
                 position: absolute;
                 bottom: -10px;
             }

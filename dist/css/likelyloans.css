@@ -16595,7 +16595,6 @@ input:-webkit-autofill {
 .footer-distributed {
   box-sizing: border-box;
   width: 100%;
-  width: 100%;
   height: 85px;
   text-align: left;
   padding: 0 20px;
@@ -16607,6 +16606,20 @@ input:-webkit-autofill {
     color: inherit;
     padding: 0; }
   .footer-distributed a:hover {
+    opacity: 0.5; }
+
+.footer-distributed-unfixed {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 20px;
+  text-align: left;
+  padding: 0 20px; }
+  .footer-distributed-unfixed a {
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    padding: 0; }
+  .footer-distributed-unfixed a:hover {
     opacity: 0.5; }
 
 .footer-links {
@@ -18751,6 +18764,9 @@ form input[type=number]::-webkit-outer-spin-button {
 
 .top-up .m-t-20 {
   margin: 20px auto 0 auto; }
+
+income, loan-amount, summary, approve {
+  -webkit-overflow-scrolling: touch; }
 
 .modal .ob-modal-body {
   overflow-y: scroll;

@@ -18180,7 +18180,7 @@ form input[type=number]::-webkit-outer-spin-button {
     right: 0;
     top: 0;
     text-decoration: none;
-    curser: pointer;
+    cursor: pointer;
     font-size: 13px; }
   .header-toast.toast-success {
     background: #33D167;

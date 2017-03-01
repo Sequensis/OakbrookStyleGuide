@@ -17440,6 +17440,8 @@ h2 {
     .change-payment-textbox .payment-navigation li {
       display: block;
       padding: 20px 0; }
+      .change-payment-textbox .payment-navigation li.ob-cancel {
+        cursor: pointer; }
     .change-payment-textbox .payment-navigation a {
       width: 95%;
       margin: 0 auto; }
@@ -18178,6 +18180,7 @@ form input[type=number]::-webkit-outer-spin-button {
     right: 0;
     top: 0;
     text-decoration: none;
+    curser: pointer;
     font-size: 13px; }
   .header-toast.toast-success {
     background: #33D167;

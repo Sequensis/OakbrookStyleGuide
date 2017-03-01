@@ -144,6 +144,9 @@
         li {
             display: block;
             padding: 20px 0;
+            &.ob-cancel {
+                cursor: pointer;
+            }
         }
         a {
             width: 95%;

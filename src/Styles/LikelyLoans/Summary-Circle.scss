@@ -104,3 +104,83 @@
         font-size: 25px;
     }
 }
+
+////////////// New Summary //////////////////
+.new-summary {
+    .radial-progress {
+        svg {
+            z-index: 10;
+            position: absolute;
+            top: 0;
+            .radial {
+                fill: transparent;
+                stroke: $brand-dark-grey;
+                stroke-width: 6;
+                stroke-miterlimit: 10;
+                z-index: -1;
+            }
+            .progress {
+                fill: transparent;
+                stroke: $brand-blue;
+                stroke-width: 8;
+                stroke-miterlimit: 10;
+            }
+        }
+    }
+    .ob-btn-group {
+        padding: 0 20px;
+        &.full-width {
+            display: inline-flex;
+            flex-flow: row nowrap;
+            flex-basis: auto;
+            justify-content: center;
+        }
+        li {
+            list-style: none;
+            padding: 15px 0;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+            &:hover {
+                box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+                outline: 0;
+            }
+            &:first-child {
+                border-radius: 6px 0 0 6px;
+            }
+            &:last-child {
+                border-radius: 0 6px 6px 0;
+            }
+        }
+        .ob-btn {
+            font-size: 15px;
+            cursor: pointer;
+            &.ob-btn-toggle {
+                background: $brand-light-grey;
+                color: #4a4a4a;
+                border-radius: 0;
+                text-decoration: none;
+                transition: .3s ease-out;
+            }
+        }
+    }
+}
+
+.ripple {
+    display: block;
+    position: absolute;
+    background: lighten($brand-dark-blue, 30);
+    border-radius: 100%;
+    transform: scale(0);
+}
+
+.ripple.animate {
+    animation: ripple 0.5s linear;
+}
+
+@keyframes ripple {
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}

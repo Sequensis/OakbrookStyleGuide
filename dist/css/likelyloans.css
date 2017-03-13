@@ -18822,8 +18822,60 @@ income, loan-amount, summary, approve {
     left: 0;
     top: 0; } }
 
+.new-summary .ob-btn-group {
+  padding: 0 20px; }
+  .new-summary .ob-btn-group.full-width {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .new-summary .ob-btn-group li {
+    list-style: none;
+    padding: 15px 0;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+    .new-summary .ob-btn-group li:hover {
+      outline: 0; }
+  .new-summary .ob-btn-group .ob-btn {
+    font-size: 15px;
+    cursor: pointer;
+    padding: 18px; }
+    .new-summary .ob-btn-group .ob-btn.ob-btn-toggle {
+      background: #f7f7f7;
+      color: #4a4a4a;
+      border-radius: 0;
+      text-decoration: none;
+      transition: .3s ease-out;
+      font-weight: 500; }
+      .new-summary .ob-btn-group .ob-btn.ob-btn-toggle:focus, .new-summary .ob-btn-group .ob-btn.ob-btn-toggle:hover, .new-summary .ob-btn-group .ob-btn.ob-btn-toggle.checked {
+        background: #dedede;
+        box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.14), inset 0 1px 5px 0 rgba(0, 0, 0, 0.12), inset 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+      .new-summary .ob-btn-group .ob-btn.ob-btn-toggle.checked {
+        pointer-events: none; }
+
+.ripple {
+  display: block;
+  position: absolute;
+  background: #bcbcbc;
+  border-radius: 100%;
+  -ms-transform: scale(0);
+      transform: scale(0); }
+
+.ripple.animate {
+  animation: ripple 0.5s ease-out; }
+
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    transform: scale(2.5); } }
+
 /**
- * Swiper 3.4.0
+ * Swiper 3.4.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * 
  * http://www.idangero.us/swiper/
@@ -18834,7 +18886,7 @@ income, loan-amount, summary, approve {
  * 
  * Licensed under MIT
  * 
- * Released on: October 16, 2016
+ * Released on: December 13, 2016
  */
 .swiper-container {
   margin-left: auto;

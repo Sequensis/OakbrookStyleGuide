@@ -25,3 +25,7 @@ $("a").click(function(e){
 	//set the position and add class .animate
 	ripple.css({top: y+'px', left: x+'px'}).addClass("animate");
 })  
+
+$(".ob-btn-toggle").click(function (e) { 
+	$(this).toggleClass("checked");
+});

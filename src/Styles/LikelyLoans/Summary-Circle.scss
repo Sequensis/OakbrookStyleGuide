@@ -76,6 +76,38 @@
     font-size: 20px;
 }
 
+.summary-group {
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+    border-radius: 4px;
+    &.grey {
+        background: $brand-light-grey;
+    }
+    dl {
+        margin: 0;
+        dt {
+            font-weight: 500;
+            font-size: 13px;
+        }
+        dd {
+            font-weight: 700;
+            font-size: 22px;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        a {
+            display: block;
+            font-size: 13px;
+            font-weight: 500;
+            color: #4a4a4a;
+            i {
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
 @media(min-width:992px) {
     .circle-primary {
         height: 270px;

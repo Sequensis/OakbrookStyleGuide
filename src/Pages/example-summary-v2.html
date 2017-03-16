@@ -1,0 +1,138 @@
+{{> navbar-off-canvas}}
+<div class="container-fluid padding-top">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 text-center">
+      <div class="theme-light">
+        <h1 class="m-0">Summary</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 text-center">
+      <div class="circle-container">
+        <a data-toggle="modal" href="#SummaryTable">
+          <div class="circle-primary">
+            <div class="circle-inner">
+              <div class="circle-amount color-blue">
+                <h2 class="body-md">Amount borrowed</h2>
+                <p class="m-0">£3000</p>
+                <p class="link-sm">View full details</p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="SummaryTable" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content modal-table">
+        <div class="modal-header theme-light text-center">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fa icon-cross fa-lg"></i>
+          </button>
+          <h2 class="modal-title" id="myModalLabel">Amount borrowed<br>£3000</h2>
+        </div>
+        <div class="modal-body theme-default">
+          <table class="table table-striped body-lg">
+            <tbody>
+              <tr>
+                <th scope="row"></th>
+                <td>Agreement number</td>
+                <td>10000123</td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>Amount borrowed</td>
+                <td>£3000</td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>Total charge for credit</td>
+                <td>£1442.10</td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>Total amount to pay</td>
+                <td>£4539.12</td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>Loan interest (APR)</td>
+                <td>47.9%</td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>Monthly payment amount</td>
+                <td>£183.40</td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td>Number of payments</td>
+                <td>24</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3 text-center">
+      <ul class="list-unstyled">
+        <li class="theme-light">
+          <p><strong>Your next payment is due on</strong></p>
+        </li>
+        <li class="theme-light summary-change-date">
+          <h2><strong>Tuesday 5th September 2016</strong><a data-toggle="modal" href="#ChangeDate"><span><i class="fa fa-pencil fa fa-lg"></i>change</span></a></h2>
+        </li>
+        <li class="theme-light">
+          <p>If you have a Direct Debit set up this will be collected automatically</p>
+        </li>
+        <a class="btn btn-primary-1 body-md" data-toggle="modal" href="#MakePayment">Make a payment</a>
+      </ul>
+    </div>
+  </div>
+  <div class="modal fade" id="ChangeDate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content modal-padding-bottom">
+        <div class="modal-header theme-light text-center">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fa icon-cross fa-lg"></i>
+          </button>
+          <h2 class="modal-title" id="myModalLabel">Change your payment date</h2>
+        </div>
+        <div class="modal-body theme-light text-center body-lg">
+          <p>You can change your payment date to any day of the month.</p>
+          <p>You can do this by emailing us at <a href="mailto:loans@likelyloans.com" target="_blank"><strong>loans@likelyloans.com</strong></a> or call us on</p>
+          <p class="lead"><strong>0208 080 6450</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="MakePayment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content modal-padding-bottom">
+        <div class="modal-header theme-light text-center">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fa icon-cross fa-lg"></i>
+          </button>
+          <h2 class="modal-title" id="myModalLabel">Make a payment</h2>
+        </div>
+        <div class="modal-body theme-light text-center body-lg">
+          <p>You can make a card payment using Payments Place, with your reference number: <strong>123</strong></p>
+          <a href="https://paymentsplace.com/likelyloans/" target="_blank"> <img src="/img/PaymentsPlace.png" class="payments-place-img"></a>
+          <p>Alternatively, you can do this by calling us on</p>
+          <p class="lead"><strong>0208 080 6450</strong></p>
+          <p>Please note that if you have a Direct Debit your automatic payment will still be made.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="full-width-panel color-blue bg-light-grey text-center">
+      <p class="body-lg">After this payment has been made, you will have <span>9</span> payments remaining.</p>
+    </div>
+  </div>
+</div>
+{{> footer}}

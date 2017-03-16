@@ -82,13 +82,23 @@
     justify-content: center;
     border-radius: 4px;
     &.grey {
-        background: $brand-light-grey;
+        background: lighten($brand-dark-grey, 15%);
+        padding: 10px;
     }
     dl {
+        width: 50%;
+        @include bp(xs) {
+            padding: 10px;
+        }
+        @include bp(md) {
+            width: inherit;
+            padding: 20px;
+        }
         margin: 0;
         dt {
-            font-weight: 500;
-            font-size: 13px;
+            font-weight: 700;
+            font-size: 15px;
+            font-family: 'Montserrat', sans-serif;
         }
         dd {
             font-weight: 700;
@@ -100,7 +110,6 @@
             display: block;
             font-size: 13px;
             font-weight: 500;
-            color: #4a4a4a;
             i {
                 padding-right: 5px;
             }

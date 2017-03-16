@@ -1,6 +1,6 @@
 .circle-container {
     margin: 40px 0 0 0;
-    min-height: 290px;
+    min-height: 270px;
     a {
         cursor: default;
         &:hover {
@@ -97,7 +97,7 @@
         -webkit-transform: translateY(-50%);
     }
     .circle-container {
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
     .circle-primary .circle-amount p {
         font-size: 60px;

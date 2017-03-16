@@ -84,8 +84,12 @@
     &.grey {
         background: lighten($brand-dark-grey, 15%);
         padding: 10px;
-        @include bp(md) {
+        @include bp(sm-plus) {
             padding: 0;
+        }
+        @include bp(lg) {
+            padding: 0;
+            margin: 0 14%;
         }
     }
     dl {
@@ -94,7 +98,7 @@
         @include bp(xs) {
             padding: 10px;
         }
-        @include bp(md) {
+        @include bp(sm-plus) {
             width: inherit;
             padding: 20px;
             &:first-child {
@@ -129,6 +133,7 @@
         }
         .date-sm {
             font-size: 15px;
+            font-weight: 700;
         }
         .amount-sm {
             font-size: 20px;

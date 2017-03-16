@@ -16508,7 +16508,7 @@ input:-webkit-autofill {
 
 .circle-container {
   margin: 40px 0 0 0;
-  min-height: 370px; }
+  min-height: 270px; }
   .circle-container a {
     cursor: default; }
     .circle-container a:hover {
@@ -16555,6 +16555,10 @@ input:-webkit-autofill {
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
   color: #2750C8; }
+  .circle-primary .circle-amount p.link-sm {
+    font-size: 15px;
+    font-weight: 100;
+    text-decoration: underline; }
 
 .circle-secondary .circle-amount p {
   margin: 0;
@@ -16565,6 +16569,67 @@ input:-webkit-autofill {
 
 .circle-secondary .circle-amount span {
   font-size: 20px; }
+
+.summary-group {
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border-radius: 4px; }
+  .summary-group.grey {
+    box-shadow: 0px 0px 40px -20px rgba(0, 0, 0, 0.75);
+    background: #efefef;
+    padding: 10px; }
+    @media (min-width: 768px) {
+      .summary-group.grey {
+        padding: 0; } }
+    @media (min-width: 1200px) {
+      .summary-group.grey {
+        padding: 0;
+        margin: 0 14%; } }
+  .summary-group dl {
+    width: 50%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; }
+    @media (min-width: 321px) {
+      .summary-group dl {
+        padding: 10px; } }
+    @media (min-width: 768px) {
+      .summary-group dl {
+        width: inherit;
+        padding: 20px; }
+        .summary-group dl:first-child {
+          border-right: 1px dashed #d6d6d6; } }
+    .summary-group dl dt {
+      font-weight: 700;
+      font-size: 15px; }
+    .summary-group dl dd {
+      font-weight: 700;
+      font-size: 22px;
+      margin-bottom: 5px;
+      display: inline-block; }
+      .summary-group dl dd.font-sm {
+        font-size: 15px; }
+      .summary-group dl dd.date-number {
+        margin-bottom: -8px; }
+      .summary-group dl dd .font-light {
+        font-weight: 500; }
+    .summary-group dl .amount-lg {
+      font-size: 35px; }
+    .summary-group dl .date-lg {
+      font-size: 35px; }
+    .summary-group dl .date-sm {
+      font-size: 15px;
+      font-weight: 700; }
+    .summary-group dl .amount-sm {
+      font-size: 20px; }
+    .summary-group dl a {
+      display: block;
+      font-size: 13px;
+      font-weight: 500; }
+      .summary-group dl a i {
+        padding-right: 5px; }
 
 @media (min-width: 992px) {
   .circle-primary {
@@ -16584,7 +16649,7 @@ input:-webkit-autofill {
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%); }
   .circle-container {
-    margin-bottom: 0; }
+    margin-bottom: 20px; }
   .circle-primary .circle-amount p {
     font-size: 60px; }
   .circle-secondary .circle-amount p {

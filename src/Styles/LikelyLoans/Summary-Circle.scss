@@ -82,6 +82,9 @@
     justify-content: center;
     border-radius: 4px;
     &.grey {
+        -webkit-box-shadow: 0px 0px 60px -20px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 60px -20px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 60px -20px rgba(0,0,0,0.75);
         background: lighten($brand-dark-grey, 15%);
         padding: 10px;
         @include bp(sm-plus) {

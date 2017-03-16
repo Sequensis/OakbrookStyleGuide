@@ -84,27 +84,54 @@
     &.grey {
         background: lighten($brand-dark-grey, 15%);
         padding: 10px;
+        @include bp(md) {
+            padding: 0;
+        }
     }
     dl {
         width: 50%;
+        font-family: 'Montserrat', sans-serif;
         @include bp(xs) {
             padding: 10px;
         }
         @include bp(md) {
             width: inherit;
             padding: 20px;
+            &:first-child {
+                border-right: 1px dashed lighten($brand-dark-grey, 5%);
+            }
         }
         margin: 0;
         dt {
             font-weight: 700;
             font-size: 15px;
-            font-family: 'Montserrat', sans-serif;
         }
         dd {
             font-weight: 700;
             font-size: 22px;
             margin-bottom: 5px;
             display: inline-block;
+            &.font-sm {
+                font-size: 15px;
+            }
+            &.date-number {
+                margin-bottom: -8px;
+            }
+            .font-light {
+                font-weight: 500;
+            }
+        }
+        .amount-lg {
+            font-size: 35px;
+        }
+        .date-lg {
+            font-size: 35px;
+        }
+        .date-sm {
+            font-size: 15px;
+        }
+        .amount-sm {
+            font-size: 20px;
         }
         a {
             display: block;

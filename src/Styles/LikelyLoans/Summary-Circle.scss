@@ -76,6 +76,31 @@
     font-size: 20px;
 }
 
+// balance ring chart
+.balance-chart-title {
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+    text-anchor: middle;
+    font-size: 18px;
+    fill: #005bc6;
+    text-decoration: none;
+}
+
+.balance-chart-text, .balance-chart-text-prefix {
+    font-size: 55px;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+    fill: #005bc6;
+    text-decoration: none;
+}
+
+.balance-chart-sm {
+    font-size: 15px;
+    text-decoration: underline;
+    text-anchor: middle;
+    fill: #005bc6;
+}
+
 .summary-group {
     display: flex;
     -webkit-flex-flow: row wrap;
@@ -102,7 +127,6 @@
             padding: 10px;
         }
         @include bp(sm-plus) {
-            width: inherit;
             padding: 20px;
             &:first-child {
                 border-right: 1px dashed lighten($brand-dark-grey, 5%);

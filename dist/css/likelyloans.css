@@ -16570,6 +16570,27 @@ input:-webkit-autofill {
 .circle-secondary .circle-amount span {
   font-size: 20px; }
 
+.balance-chart-title {
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+  text-anchor: middle;
+  font-size: 18px;
+  fill: #005bc6;
+  text-decoration: none; }
+
+.balance-chart-text, .balance-chart-text-prefix {
+  font-size: 55px;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+  fill: #005bc6;
+  text-decoration: none; }
+
+.balance-chart-sm {
+  font-size: 15px;
+  text-decoration: underline;
+  text-anchor: middle;
+  fill: #005bc6; }
+
 .summary-group {
   display: -ms-flexbox;
   display: flex;
@@ -16597,7 +16618,6 @@ input:-webkit-autofill {
         padding: 10px; } }
     @media (min-width: 768px) {
       .summary-group dl {
-        width: inherit;
         padding: 20px; }
         .summary-group dl:first-child {
           border-right: 1px dashed #d6d6d6; } }

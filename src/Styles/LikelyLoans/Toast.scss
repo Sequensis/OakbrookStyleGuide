@@ -208,7 +208,7 @@
             @include translateY(-50px);
         }
         &.header-toast-collapse {
-            @include translateY(-80px);
+            @include translateY(-100px);
             @include bp(sm) {
                 @include translateY(-100px);
             }

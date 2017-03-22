@@ -18281,9 +18281,9 @@ form input[type=number]::-webkit-outer-spin-button {
       -webkit-transform: translateY(-50px);
       -ms-transform: translateY(-50px); } }
   .header-toast.header-toast-collapse {
-    transform: translateY(-80px);
-    -webkit-transform: translateY(-80px);
-    -ms-transform: translateY(-80px); }
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -ms-transform: translateY(-100px); }
     @media (max-width: 768px) {
       .header-toast.header-toast-collapse {
         transform: translateY(-100px);

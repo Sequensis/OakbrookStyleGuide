@@ -87,7 +87,7 @@
 }
 
 .balance-chart-text, .balance-chart-text-prefix {
-    font-size: 55px;
+    font-size: 52px;
     font-weight: 700;
     font-family: Montserrat, sans-serif;
     fill: #005bc6;
@@ -99,6 +99,14 @@
     text-decoration: underline;
     text-anchor: middle;
     fill: #005bc6;
+}
+
+.balance-chart-decimal {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+    fill: #005bc6;
+    text-decoration: none;
 }
 
 .summary-group {

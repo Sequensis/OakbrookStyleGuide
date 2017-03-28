@@ -230,6 +230,7 @@ gulp.task('scripts:docs', function () {
         config.paths.bower.root + '/bootstrap-sass/assets/javascripts/bootstrap.js',
         config.paths.bower.root + '/Swiper/dist/js/swiper.jquery.min.js',        
         config.paths.bower.root + '/nouislider/distribute/nouislider.min.js',  
+        config.paths.bower.root + '/jquery-animateNumber/jquery.animateNumber.min.js',
         config.paths.bower.root + '/highlightjs/highlight.pack.js',
         config.paths.src.scripts + '/Docs/**/*'
     ])

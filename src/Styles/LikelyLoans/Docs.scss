@@ -1,10 +1,10 @@
 @import "Bootstrap/Bootstrap";
-@import "../Bootstrap/Bootstrap";
+//@import "../Bootstrap/Bootstrap";
 @import "./mixins/breakpoints";
 @import "./mixins/vertical-align";
 @import "./mixins/translateY";
 @import "./mixins/transition";
-@import "../../../bower_components/components-font-awesome/scss/font-awesome";
+@import "components-font-awesome/scss/font-awesome";
 @import "Typography";
 @import "Misc";
 @import "Alignment";
@@ -12,7 +12,7 @@
 @import "Buttons";
 @import "Navbar";
 @import "Colour";
-@import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/navbar";
 @import "../Docs/Docs";
 @import "Auth0";
 @import "Change-Date-Summary";

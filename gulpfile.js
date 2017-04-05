@@ -250,7 +250,7 @@ gulp.task('styles:likelyloans', function () {
     return gulp.src([config.paths.src.styles + '/LikelyLoans/Docs.scss',config.paths.bower.root+'/Swiper/dist/css/swiper.css',config.paths.bower.root+'/nouislider/distribute/nouislider.min.css'])
         .pipe($.sourcemaps.init({ loadMaps: true }))
         .pipe($.sass({
-            includePaths: config.paths.src.styles + '/LikelyLoans'
+            includePaths: [config.paths.src.styles + '/LikelyLoans',config.paths.bower.root]
         }).on('error', $.sass.logError))
         .pipe($.concat('likelyloans.css'))
         .pipe($.autoprefixer({
@@ -266,7 +266,7 @@ gulp.task('styles:docs', function () {
     return gulp.src([config.paths.src.styles + '/LikelyLoans/Docs.scss',config.paths.bower.root+'/Swiper/dist/css/swiper.css',config.paths.bower.root+'/nouislider/distribute/nouislider.min.css'])
         .pipe($.sourcemaps.init({ loadMaps: true }))
         .pipe($.sass({
-            includePaths: config.paths.src.styles + '/LikelyLoans'
+            includePaths: [config.paths.src.styles + '/LikelyLoans',config.paths.bower.root]
         }).on('error', $.sass.logError))
         .pipe($.concat('likelyloans.css'))
         .pipe($.autoprefixer({

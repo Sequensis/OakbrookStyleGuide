@@ -35,6 +35,11 @@
     animation: load-in ease-in 0.25s;
 }
 
+.fa-spin-2x {
+  -webkit-animation: fa-spin 1.5s infinite linear;
+  animation: fa-spin 1.5s infinite linear;
+}
+
 @-webkit-keyframes pulse {
     0% {
         transform: scale(.1);

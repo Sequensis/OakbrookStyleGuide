@@ -15533,7 +15533,8 @@ form input[type=number]::-webkit-outer-spin-button {
           color: #fff; }
       .radio-buttons-wrapper .radio-container .btn-radio.disabled {
         opacity: 0.5;
-        cursor: default; }
+        cursor: default;
+        pointer-events: none; }
       .radio-buttons-wrapper .radio-container .btn-radio .btn-radio-num, .radio-buttons-wrapper .radio-container .btn-radio .btn-radio.btn-radio-sm.btn-radio-copy, .radio-buttons-wrapper .radio-container .btn-radio .btn-radio-copy {
         font-size: 30px;
         font-weight: bold;

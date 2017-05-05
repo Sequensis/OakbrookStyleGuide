@@ -52,6 +52,7 @@
 			&.disabled {
 				opacity: 0.5;
 				cursor: default;
+				pointer-events: none;
 			}
 			.btn-radio-num {
 				font-size: 30px;

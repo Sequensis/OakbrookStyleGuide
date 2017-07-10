@@ -64,10 +64,7 @@
 			}
 			.btn-radio-copy {
 				@extend .btn-radio-num;
-				font-size: 11px;
-				@include bp(md) {
-					font-size: 13px;
-				}
+				font-size: 15px;
 			}
 			i.icon-tick {
 				font-size: x-small;

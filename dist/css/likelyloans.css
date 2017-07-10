@@ -13436,6 +13436,7 @@ input:-webkit-autofill {
 .summary-group {
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow: row wrap;
   -ms-flex-pack: center;
       justify-content: center;
   border-radius: 4px; }
@@ -15543,10 +15544,7 @@ form input[type=number]::-webkit-outer-spin-button {
         line-height: 1;
         color: #005BC6; }
       .radio-buttons-wrapper .radio-container .btn-radio .btn-radio-copy {
-        font-size: 11px; }
-        @media (min-width: 992px) {
-          .radio-buttons-wrapper .radio-container .btn-radio .btn-radio-copy {
-            font-size: 13px; } }
+        font-size: 15px; }
       .radio-buttons-wrapper .radio-container .btn-radio i.icon-tick {
         font-size: x-small; }
 
@@ -15808,18 +15806,18 @@ income, loan-amount, summary, approve {
     transform: scale(2.5); } }
 
 /**
- * Swiper 3.4.2
+ * Swiper 3.4.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * 
  * http://www.idangero.us/swiper/
  * 
- * Copyright 2017, Vladimir Kharlampidi
+ * Copyright 2016, Vladimir Kharlampidi
  * The iDangero.us
  * http://www.idangero.us/
  * 
  * Licensed under MIT
  * 
- * Released on: March 10, 2017
+ * Released on: October 16, 2016
  */
 .swiper-container {
   margin-left: auto;
@@ -16283,7 +16281,7 @@ button.swiper-pagination-bullet {
   100% {
     transform: rotate(360deg); } }
 
-/*! nouislider - 9.2.0 - 2017-01-11 10:35:35 */
+/*! nouislider - 9.1.0 - 2016-12-10 16:00:32 */
 .noUi-target, .noUi-target * {
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;

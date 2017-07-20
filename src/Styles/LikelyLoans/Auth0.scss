@@ -1,5 +1,6 @@
 $brand-login-outline: #E6E5E3;
 $brand-login-modal: #FAF9F7;
+$brand-error-background: #f04848;
 
 /*Body//*/
 
@@ -18,7 +19,7 @@ input:-webkit-autofill {
 }
 
 #a0-lock.a0-theme-default .a0-panel .a0-error {
-    display: none;
+    background: $brand-error-background !important;
 }
 
 

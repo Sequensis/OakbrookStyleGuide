@@ -13178,7 +13178,7 @@ input:-webkit-autofill {
   color: #005BC6 !important; }
 
 #a0-lock.a0-theme-default .a0-panel .a0-error {
-  display: none; }
+  background: #f04848 !important; }
 
 /* Container //*/
 #a0-lock.a0-theme-default .a0-panel {

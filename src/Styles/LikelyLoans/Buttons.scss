@@ -202,3 +202,9 @@
         }
     }
 }
+
+.ob-btn-group .ob-btn:not(:first-child) {
+    @include bp(md) {
+        margin-left: 10px;
+    }
+}

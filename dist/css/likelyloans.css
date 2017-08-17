@@ -6436,6 +6436,10 @@ h6 {
       font-family: Montserrat,sans serif;
       font-weight: 700; }
 
+@media (min-width: 992px) {
+  .ob-btn-group .ob-btn:not(:first-child) {
+    margin-left: 10px; } }
+
 .section-container nav.navbar .navbar-circle {
   position: absolute; }
 
@@ -13436,7 +13440,6 @@ input:-webkit-autofill {
 .summary-group {
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
   -ms-flex-pack: center;
       justify-content: center;
   border-radius: 4px; }
@@ -15806,18 +15809,18 @@ income, loan-amount, summary, approve {
     transform: scale(2.5); } }
 
 /**
- * Swiper 3.4.0
+ * Swiper 3.4.2
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * 
  * http://www.idangero.us/swiper/
  * 
- * Copyright 2016, Vladimir Kharlampidi
+ * Copyright 2017, Vladimir Kharlampidi
  * The iDangero.us
  * http://www.idangero.us/
  * 
  * Licensed under MIT
  * 
- * Released on: October 16, 2016
+ * Released on: March 10, 2017
  */
 .swiper-container {
   margin-left: auto;
@@ -16281,7 +16284,7 @@ button.swiper-pagination-bullet {
   100% {
     transform: rotate(360deg); } }
 
-/*! nouislider - 9.1.0 - 2016-12-10 16:00:32 */
+/*! nouislider - 9.2.0 - 2017-01-11 10:35:35 */
 .noUi-target, .noUi-target * {
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
